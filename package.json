@@ -1,0 +1,10 @@
+{
+	"type": "module",
+    "scripts": {
+        "dev": "vite"
+    },
+	"dependencies": {
+		"json5": "^2.2.3",
+		"vite": "^6.2.5"
+	}
+}
