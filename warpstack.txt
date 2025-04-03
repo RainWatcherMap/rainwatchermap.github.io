@@ -1,0 +1,2 @@
+System.Exception: Exception of type 'System.Exception' was thrown.
+  at Room.AddObject (UpdatableAndDeletable obj) [0x001ce] in <1ce43d89235949a5ba90dc605b43f579>:0 

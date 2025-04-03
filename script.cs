@@ -23,6 +23,15 @@ startPlease.start(this.manager);
    RoomCamera.FireUpSinglePlayerHUD(): remove
 */
 
+/*
+   Room.AddObject()
+using (var log = new System.IO.StreamWriter(@"C:\Users\Artem\Downloads\rwmap\warpstack.txt")) {
+    try { throw new Exception(); }
+    catch(Exception e) { log.WriteLine(e); }
+}
+}
+*/
+
 class StartPlease : MonoBehaviour {
     public static bool started;
 
@@ -34,15 +43,15 @@ class StartPlease : MonoBehaviour {
     private static System.Collections.IEnumerator stupidWrapper(ProcessManager m) {
         var path = "C:\\Users\\Artem\\Downloads\\rwmap\\data.txt";
         using (var fileStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None, bufferSize: 1, useAsync: false))
-        using (var sw = new System.IO.StreamWriter(fileStream)) {
-            sw.AutoFlush = true;
-            sw.WriteLine("Starting");
+        using (var log = new System.IO.StreamWriter(fileStream)) {
+            log.AutoFlush = true;
+            log.WriteLine("Starting");
             System.Collections.IEnumerator it = null;
             try {
-                it = stuff(sw, m);
+                it = stuff(log, m);
             }
             catch(Exception e) {
-                sw.WriteLine(e);
+                log.WriteLine(e);
             }
 
             while(it != null) {
@@ -51,7 +60,7 @@ class StartPlease : MonoBehaviour {
                     contin = it.MoveNext();
                 }
                 catch(Exception e) {
-                    sw.WriteLine(e);
+                    log.WriteLine(e);
                 }
                 yield return it.Current;
                 if(!contin) break;
@@ -69,7 +78,7 @@ class StartPlease : MonoBehaviour {
         global::UnityEngine.Random.InitState(0);
     }
 
-    private static System.Collections.IEnumerator stuff(StreamWriter sw, ProcessManager pm) {
+    private static System.Collections.IEnumerator stuff(StreamWriter log, ProcessManager pm) {
         var bas = "C:\\Users\\Artem\\Downloads\\rwmap\\output\\";
 
         {
@@ -80,15 +89,14 @@ class StartPlease : MonoBehaviour {
                 yield return null;
             }
         }
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
 
 		var rainWorld = pm.currentMainLoop as RainWorldGame;
 
         var iii = 0;
         unrand();
         foreach (Region r in Region.LoadAllRegions(SlugcatStats.Name.Night)) {
-            if(r.name.Length == 2) continue;
-
+            if(r.name != "WVWA") continue;
             {
                 var name = Region.GetRegionFullName(r.name, SlugcatStats.Name.Night);
 
@@ -115,25 +123,16 @@ class StartPlease : MonoBehaviour {
             var render = new RenderTexture((int)(renderSize * cam.aspect), renderSize, 24);
             var image = new Texture2D(render.width, render.height, TextureFormat.RGB24, false);
             cam.targetTexture = render;
-            sw.WriteLine("Aspect: " + cam.aspect + "\nSize: " + cam.orthographicSize);
+            log.WriteLine("Aspect: " + cam.aspect + "\nSize: " + cam.orthographicSize);
 
             var ii = 0;
             foreach(var room in world.abstractRooms) {
                 iii++;
 
-                try {
-                    {
-                        var dirname = bas + r.name + "\\" + room.name + "\\";
-                        System.IO.Directory.CreateDirectory(dirname);
-                        using(var sw2 = new StreamWriter(dirname + "data.json", false)) {
-                            sw2.WriteLine("{");
-                            sw2.WriteLine("mapPos: [" + room.mapPos.x + ", " + room.mapPos.y + "],");
-                            sw2.WriteLine("size: [" + room.size.x + ", " + room.size.y + "],");
-                            sw2.WriteLine("layer: " + room.layer + ",");
-                            sw2.WriteLine("}");
-                        }
-                    }
+                var dirname = bas + r.name + "\\" + room.name + "\\";
+                System.IO.Directory.CreateDirectory(dirname);
 
+                try {
                     unrand();
                     world.ActivateRoom(room);
                     //(rainWorld.Players[0].realizedCreature as Player).PlaceInRoom(room.realizedRoom);
@@ -148,10 +147,65 @@ class StartPlease : MonoBehaviour {
                         System.Threading.Thread.Sleep(1);
                     }
 
+                    using(var sw2 = new StreamWriter(dirname + "data.json", false)) {
+                        sw2.WriteLine("{");
+                        sw2.WriteLine("mapPos: [" + room.mapPos.x + ", " + room.mapPos.y + "],");
+                        sw2.WriteLine("size: [" + room.size.x + ", " + room.size.y + "],");
+                        sw2.WriteLine("layer: " + room.layer + ",");
+
+                        var warpPoints = new List<WarpPoint.WarpPointData>();
+                        var echoSpots = new List<SpinningTopData>();
+                        foreach(var obj in room.realizedRoom.roomSettings.placedObjects) {
+                            if(obj.type == PlacedObject.Type.WarpPoint) {
+                                warpPoints.Add(obj.data as WarpPoint.WarpPointData);
+                            }
+                            else if(obj.type == WatcherEnums.PlacedObjectType.SpinningTopSpot) {
+                                echoSpots.Add(obj.data as SpinningTopData);
+                            }
+                        }
+
+                        sw2.WriteLine("warpPoints: [");
+                        foreach(var data in warpPoints) {
+                            var reg = data.RegionString;
+                            var roomName = data.destRoom;
+                            var pos = data.destPos;
+                            var oneWay = data.oneWay;
+
+                            sw2.WriteLine("{");
+                            sw2.WriteLine("region: " + (reg != null ? "\"" + reg + "\"" : "null") + ",");
+                            sw2.WriteLine("room: " + (roomName != null ? "\"" + roomName + "\"" : "null") + ",");
+                            sw2.WriteLine("pos: " + (pos != null ? "[" + pos.Value.x + ", " + pos.Value.y + "]" : "null") + ",");
+                            sw2.WriteLine("oneWay: " + (oneWay ? "true" : "false") + ",");
+                            sw2.WriteLine("},");
+                        }
+                        sw2.WriteLine("],");
+
+                        sw2.WriteLine("echoSpots: [");
+                        foreach(var data in echoSpots) {
+                            var panelPos = data.panelPos;
+                            var destPos = data.destPos;
+                            var destRegion = data.RegionString;
+                            var destRoom = data.destRoom;
+                            var spawnId = data.spawnIdentifier;
+
+                            sw2.WriteLine("{");
+                            sw2.WriteLine("panelPos: " + (panelPos != null ? "[" + panelPos.x + ", " + panelPos.y + "]" : "null") + ",");
+                            sw2.WriteLine("destPos: " + (destPos != null ? "[" + destPos.Value.x + ", " + destPos.Value.y + "]" : "null") + ",");
+                            sw2.WriteLine("destRegion: " + (destRegion != null ? "\"" + destRegion + "\"" : "null") + ",");
+                            sw2.WriteLine("destRoom: " + (destRoom != null ? "\"" + destRoom + "\"" : "null") + ",");
+                            sw2.WriteLine("spawnId: " + spawnId + ",");
+                            sw2.WriteLine("},");
+                        }
+                        sw2.WriteLine("],");
+
+                        sw2.WriteLine("}");
+                    }
+                    continue;
+
                     rainWorld.cameras[0].MoveCamera(room.realizedRoom, 0);
                 }
                 catch(Exception e) {
-                    sw.WriteLine("Room " + r.name + " " + room.name + ": " + e + "\n");
+                    log.WriteLine("Room " + r.name + " " + room.name + ": " + e + "\n");
                     continue;
                 }
 
@@ -176,9 +230,6 @@ class StartPlease : MonoBehaviour {
                     image.ReadPixels(new Rect(0, 0, render.width, render.height), 0, 0);
                     image.Apply();
                     RenderTexture.active = null;
-
-                    var dirname = bas + r.name + "\\" + room.name + "\\";
-                    System.IO.Directory.CreateDirectory(dirname);
 
                     var pos = poses[i];
 

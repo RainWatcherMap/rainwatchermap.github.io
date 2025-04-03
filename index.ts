@@ -5,7 +5,7 @@ const size = 384
 
 const content = window.content
 
-const regionName = 'WARC'
+const regionName = 'WARD'
 const region = hierarchy[regionName]
 
 var minX = Infinity
@@ -13,7 +13,7 @@ var maxY = -Infinity
 
 for(const k in region) {
     const room = region[k]
-    console.log(k, room.data.size)
+    if(room.data.warpPoints?.length > 0) console.log(k, room.data.warpPoints)
     for(const s of room.screens) {
         const ps = s.split('$')
         let x = room.data.mapPos[0] / 3 - room.data.size[0] * 0.5
