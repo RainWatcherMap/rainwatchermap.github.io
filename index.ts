@@ -49,6 +49,10 @@ function fillRegions(filter: string | null) {
         el.append(document.createTextNode(reg.region.data.name))
         el.classList.add('region')
         el.onclick = () => {
+            for(const other of document.querySelectorAll('.region-selected')) {
+                other.classList.remove('region-selected')
+            }
+            el.classList.add('region-selected')
             showRegion(reg.key, reg.region)
         }
         regionsEl.append(el)
