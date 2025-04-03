@@ -1,30 +1,44 @@
-import fs from 'node:fs'
-import path from 'node:path'
+
+import fs from 'fs';
+import path from 'path';
+import JSON5 from 'json5';
 
 function generateHierarchy(basePath) {
-    const hierarchy = {}
+    const hierarchy = {};
 
-    const regions = fs.readdirSync(basePath)
+    const regions = fs.readdirSync(basePath);
     regions.forEach(region => {
-        const regionPath = path.join(basePath, region)
+        const regionPath = path.join(basePath, region);
         if (fs.statSync(regionPath).isDirectory()) {
-            hierarchy[region] = {}
+            hierarchy[region] = {};
 
-            const rooms = fs.readdirSync(regionPath)
+            const rooms = fs.readdirSync(regionPath);
             rooms.forEach(room => {
-                const roomPath = path.join(regionPath, room)
+                const roomPath = path.join(regionPath, room);
                 if (fs.statSync(roomPath).isDirectory()) {
-                    hierarchy[region][room] = fs.readdirSync(roomPath)
-                        .filter(file => fs.statSync(path.join(roomPath, file)).isFile())
-                }
-            })
-        }
-    })
+                    let data = {};
+                    const dataFilePath = path.join(roomPath, 'data.json');
+                    if (fs.existsSync(dataFilePath)) {
+                        try {
+                            const dataContent = fs.readFileSync(dataFilePath, 'utf8');
+                            data = JSON5.parse(dataContent);
+                        } catch (error) {
+                            console.error(`Error parsing JSON5 in ${dataFilePath}:`, error);
+                        }
+                    }
 
-    return hierarchy
+                    const screens = fs.readdirSync(roomPath)
+                        .filter(file => file !== 'data.json' && fs.statSync(path.join(roomPath, file)).isFile());
+
+                    hierarchy[region][room] = { screens, data };
+                }
+            });
+        }
+    });
+
+    return hierarchy;
 }
 
 const basePath = './output'
 const hierarchy = generateHierarchy(basePath)
-console.log(hierarchy)
 fs.writeFileSync("hierarchy.json", JSON.stringify(hierarchy, null, 2))

@@ -19,14 +19,20 @@ StartPlease startPlease = new GameObject("", new Type[] { typeof(StartPlease) })
 startPlease.start(this.manager);
 */
 
+/*
+   RoomCamera.FireUpSinglePlayerHUD(): remove
+*/
+
 class StartPlease : MonoBehaviour {
+    public static bool started;
+
     public void start(ProcessManager m) {
         StartCoroutine(stupidWrapper(m));
     }
 
     // C# couldn't possible generate this when I do try catch with yield return inside...
     private static System.Collections.IEnumerator stupidWrapper(ProcessManager m) {
-        var path = "C:\\Users\\Artem\\Downloads\\data.txt";
+        var path = "C:\\Users\\Artem\\Downloads\\rwmap\\data.txt";
         using (var fileStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None, bufferSize: 1, useAsync: false))
         using (var sw = new System.IO.StreamWriter(fileStream)) {
             sw.AutoFlush = true;
@@ -64,6 +70,8 @@ class StartPlease : MonoBehaviour {
     }
 
     private static System.Collections.IEnumerator stuff(StreamWriter sw, ProcessManager pm) {
+        var bas = "C:\\Users\\Artem\\Downloads\\rwmap\\output\\";
+
         {
             var ii = 0;
             while(pm.currentMainLoop as RainWorldGame == null) {
@@ -72,12 +80,27 @@ class StartPlease : MonoBehaviour {
                 yield return null;
             }
         }
+        yield return new WaitForSeconds(5);
+
 		var rainWorld = pm.currentMainLoop as RainWorldGame;
 
         var iii = 0;
         unrand();
         foreach (Region r in Region.LoadAllRegions(SlugcatStats.Name.Night)) {
             if(r.name.Length == 2) continue;
+
+            {
+                var name = Region.GetRegionFullName(r.name, SlugcatStats.Name.Night);
+
+                var dirname = bas + r.name + "\\";
+                System.IO.Directory.CreateDirectory(dirname);
+                using(var sw2 = new StreamWriter(dirname + "data.json", false)) {
+                    sw2.WriteLine("{");
+                    sw2.WriteLine("name: \"" + name + "\",");
+                    sw2.WriteLine("}");
+                }
+            }
+
             assert(rainWorld != null, "rainWorld is null");
             var ow = rainWorld.overWorld;
             assert(rainWorld.overWorld != null, "overWorld is null");
@@ -88,7 +111,8 @@ class StartPlease : MonoBehaviour {
 
             var cam = rainWorld.rainWorld.MainCamera;
 
-            var render = new RenderTexture((int)(720 * cam.aspect), 720, 24);
+            var renderSize = 256;
+            var render = new RenderTexture((int)(renderSize * cam.aspect), renderSize, 24);
             var image = new Texture2D(render.width, render.height, TextureFormat.RGB24, false);
             cam.targetTexture = render;
             sw.WriteLine("Aspect: " + cam.aspect + "\nSize: " + cam.orthographicSize);
@@ -98,15 +122,17 @@ class StartPlease : MonoBehaviour {
                 iii++;
 
                 try {
-                    var bas = "C:\\Users\\Artem\\Downloads\\output\\";
-                    var dirname = bas + r.name + "\\" + room.name + "\\";
-                    System.IO.Directory.CreateDirectory(dirname);
-                    using(var sw2 = new StreamWriter(dirname + "data.json", false)) {
-                        sw2.WriteLine("{");
-                        sw2.WriteLine("mapPos: [" + room.mapPos.x + ", " + room.mapPos.y + "],");
-                        sw2.WriteLine("}");
+                    {
+                        var dirname = bas + r.name + "\\" + room.name + "\\";
+                        System.IO.Directory.CreateDirectory(dirname);
+                        using(var sw2 = new StreamWriter(dirname + "data.json", false)) {
+                            sw2.WriteLine("{");
+                            sw2.WriteLine("mapPos: [" + room.mapPos.x + ", " + room.mapPos.y + "],");
+                            sw2.WriteLine("size: [" + room.size.x + ", " + room.size.y + "],");
+                            sw2.WriteLine("layer: " + room.layer + ",");
+                            sw2.WriteLine("}");
+                        }
                     }
-                    continue;
 
                     unrand();
                     world.ActivateRoom(room);
@@ -122,10 +148,10 @@ class StartPlease : MonoBehaviour {
                         System.Threading.Thread.Sleep(1);
                     }
 
-                    //rainWorld.cameras[0].MoveCamera(room.realizedRoom, 0);
+                    rainWorld.cameras[0].MoveCamera(room.realizedRoom, 0);
                 }
                 catch(Exception e) {
-                    sw.WriteLine("Room " + iii + " " + room.name + " " + e + "\n");
+                    sw.WriteLine("Room " + r.name + " " + room.name + ": " + e + "\n");
                     continue;
                 }
 
@@ -151,14 +177,13 @@ class StartPlease : MonoBehaviour {
                     image.Apply();
                     RenderTexture.active = null;
 
-                    var bas = "C:\\Users\\Artem\\Downloads\\output\\";
                     var dirname = bas + r.name + "\\" + room.name + "\\";
                     System.IO.Directory.CreateDirectory(dirname);
 
                     var pos = poses[i];
 
                     byte[] bytes = image.EncodeToPNG();
-                    System.IO.File.WriteAllBytes(dirname + pos.x + '$' + pos.y + ".png", bytes);
+                    System.IO.File.WriteAllBytes(dirname + pos.x + '$' + pos.y + "$.png", bytes);
                 }
             }
         }

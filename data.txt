@@ -1,55 +1,136 @@
 Starting
-Aspect: 1.770833
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WVWA OffScreenDen_WVWA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WRRA OffScreenDen_WRRA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WARA OffScreenDen_WARA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WARB OffScreenDen_WARB: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WARC OffScreenDen_WARC: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WARD OffScreenDen_WARD: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WARE OffScreenDen_WARE: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WARF OffScreenDen_WARF: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WARG OffScreenDen_WARG: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WAUA OffScreenDen_WAUA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WBLA OffScreenDen_WBLA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WPTA OffScreenDen_WPTA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WRFA OffScreenDen_WRFA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WRFB OffScreenDen_WRFB: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WRSA OffScreenDen_WRSA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WSKA OffScreenDen_WSKA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WSKB OffScreenDen_WSKB: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WSKC OffScreenDen_WSKC: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WSKD OffScreenDen_WSKD: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WTDA OffScreenDen_WTDA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WTDB OffScreenDen_WTDB: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WORA OffScreenDen_WORA: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WDSR OffScreenDen_WDSR: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WGWR OffScreenDen_WGWR: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WHIR OffScreenDen_WHIR: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
-Aspect: 1.770833
+Room WSSR OffScreenDen_WSSR: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
+Aspect: 1.769531
 Size: 384
+Room WSUR OffScreenDen_WSUR: System.NullReferenceException: Object reference not set to an instance of an object
+  at StartPlease+<stuff>d__5__0.MoveNext () [0x004c1] in <1ce43d89235949a5ba90dc605b43f579>:0 
+
