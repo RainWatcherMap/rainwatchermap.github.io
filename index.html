@@ -19,7 +19,6 @@ body {
     display: flex;
 }
 .map {
-    flex-grow: 1;
     display: flex;
     overflow: hidden;
 }
@@ -27,14 +26,39 @@ body {
     flex-grow: 1;
     position: relative;
 }
+.root {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+}
+#menu {
+    min-height: 0;
+    max-height: 100%;
+    display: flex;
+}
+#regions {
+    flex-grow: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.region {
+    padding: 0.5rem;
+}
         </style>
     </head>
     <body>
-        <div class="map">
-            <div id="map_container">
-                <div style="position: absolute; inset: 50%;">
-                    <div id="map_content">
+        <div class="root">
+            <div class="map">
+                <div id="map_container">
+                    <div style="position: absolute; inset: 50%;">
+                        <div id="map_content">
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div id="menu">
+                <div id="regions">
                 </div>
             </div>
         </div>

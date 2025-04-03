@@ -10,7 +10,11 @@ function generateHierarchy(basePath) {
     regions.forEach(region => {
         const regionPath = path.join(basePath, region);
         if (fs.statSync(regionPath).isDirectory()) {
-            hierarchy[region] = {};
+            const regionObj = {
+                rooms: {},
+                data: JSON5.parse(fs.readFileSync(path.join(regionPath, 'data.json'), 'utf8')),
+            }
+            hierarchy[region] = regionObj
 
             const rooms = fs.readdirSync(regionPath);
             rooms.forEach(room => {
@@ -30,7 +34,7 @@ function generateHierarchy(basePath) {
                     const screens = fs.readdirSync(roomPath)
                         .filter(file => file !== 'data.json' && fs.statSync(path.join(roomPath, file)).isFile());
 
-                    hierarchy[region][room] = { screens, data };
+                    regionObj.rooms[room] = { screens, data };
                 }
             });
         }
