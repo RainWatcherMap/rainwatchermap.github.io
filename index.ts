@@ -1,9 +1,32 @@
 import hierarchy from './hierarchy.json'
+import { setup } from './camera.js'
 
-// half height
-const size = 384
+// half height of camera
+// const size = 384
 
-const content = window.content
+const outer = window.map_container
+const inner = window.map_content
+
+setup({
+    canvas: outer,
+    camera: {
+        posX: 0,
+        posY: 0,
+        scale: 500,
+    },
+    canvasSize: [1, 1],
+    sizes: { fontSize: 16, heightCssPx: 1000 },
+    requestRender() {
+        const c = this.camera
+        const r = inner
+        const rect = outer.getBoundingClientRect()
+        const height = rect.height
+        const scale = 0.5 * height / c.scale
+        const x = -c.posX * scale
+        const y = c.posY * scale
+        r.style.transform = `matrix(${scale}, 0, 0, ${scale}, ${x}, ${y})`
+    },
+})
 
 const regionName = 'WARD'
 const region = hierarchy[regionName]
@@ -24,13 +47,12 @@ for(const k in region) {
         const image = document.createElement('img')
         image.classList.add('bg')
         image.setAttribute('src', '/output/' + regionName + '/' + k + '/' + s)
-        image.style.left = x * 10 + 'px'
-        image.style.top = -y * 10 + 'px'
+        image.style.left = x + 'px'
+        image.style.top = -y + 'px'
 
         minX = Math.min(minX, x)
         maxY = Math.max(maxY, y)
 
-        content.append(image)
+        inner.append(image)
     }
 }
-content.style.transform = `translate(${(-minX - 10) * 10}px, ${(maxY + 10) * 10}px)`
