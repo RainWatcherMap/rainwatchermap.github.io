@@ -3,6 +3,7 @@
     height: 39px;
     user-drag: none;
     pointer-events: none;
+    transform: translate(-50%, -50%);
 }
 :root {
     width: 100%;
@@ -43,6 +44,7 @@ body {
     transition: color 0.2s;
 }
 #layers {
+    min-height: 5rem;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -54,4 +56,12 @@ body {
 }
 .region-selected {
     color: #2060ae;
+}
+.marker-warp {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 999999px;
+    background: red;
 }

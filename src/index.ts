@@ -2,10 +2,29 @@ import allRegions from './hierarchy.json'
 import ignore from './ignore.json'
 import { setup } from './camera.js'
 
-type RegionKey = keyof typeof allRegions
-type Region = (typeof allRegions)[RegionKey]
+type RegionKey = string
+type Region = {
+    rooms: Array<{
+        screens: string[]
+        data: {
+            mapPos: [number, number]
+            size: [number, number]
+            layer: number
+            warpPoints: {
+                region: string | null
+                room: string | null
+                pos: [number, number] | null
+                oneWay: boolean
+            }[]
+            echoSpots: unknown[]
+        } | { mapPos?: never }
+    }>
+    data: {
+      name: string
+    }
+}
 
-const regions: Partial<Record<RegionKey, Region>> = {}
+const regions: Record<RegionKey, Region> = {}
 for(const rk in allRegions) {
     if(ignore.region.includes(rk)) continue
     regions[rk] = allRegions[rk]
@@ -14,8 +33,8 @@ for(const rk in allRegions) {
 // half height of camera
 // const size = 384
 
-const outer = window.map_container
-const inner = window.map_content
+const outer = (window as any).map_container
+const inner = (window as any).map_content
 
 const context = {
     canvas: outer,
@@ -40,7 +59,7 @@ const context = {
 
 setup(context)
 
-const regionsEl = window.regions
+const regionsEl = (window as any).regions
 
 // null if show all
 function fillRegions(filter: string | null) {
@@ -65,6 +84,16 @@ function fillRegions(filter: string | null) {
     }
 }
 
+function lget(list: Map<number, HTMLElement>, layer: number) {
+    let v = list.get(layer)
+    if(!v) {
+        v = document.createElement('div')
+        v.style.position = 'absolute'
+        list.set(layer, v)
+    }
+    return v
+}
+
 function showRegion(regionName: RegionKey, region: Region) {
     inner.innerHTML = ''
     var minX = Infinity
@@ -78,10 +107,14 @@ function showRegion(regionName: RegionKey, region: Region) {
     const markerLayerEls: Map<number, HTMLElement> = new Map()
 
     for(const k in region.rooms) {
-        const room = region.rooms[k as RegionKey]
+        const room = region.rooms[k]
         if(!room.data.mapPos) continue
         const layer = room.data.layer
         layers.add(layer)
+
+        let totalX = 0
+        let totalY = 0
+        let count = 0
 
         for(const s of room.screens) {
             const ps = s.split('$')
@@ -89,6 +122,10 @@ function showRegion(regionName: RegionKey, region: Region) {
             let y = room.data.mapPos[1] / 3 - room.data.size[1] * 0.5
             x += Number(ps[0]) / 20
             y += Number(ps[1]) / 20
+
+            totalX += x
+            totalY += y
+            count++
 
             const image = document.createElement('img')
             image.classList.add('bg')
@@ -101,15 +138,19 @@ function showRegion(regionName: RegionKey, region: Region) {
             minY = Math.min(minY, y)
             maxY = Math.max(maxY, y)
 
-            let v = layerEls.get(layer)
-            if(!v) {
-                v = document.createElement('div')
-                v.classList.add('room-layer')
-                v.style.position = 'absolute'
-                layerEls.set(layer, v)
-            }
+            lget(layerEls, layer).append(image)
+        }
 
-            v.append(image)
+        for(let i = 0; i < room.data.warpPoints.length; i++) {
+            const it = room.data.warpPoints[i]
+
+            const v = lget(markerLayerEls, layer)
+            const m = document.createElement('div')
+            m.classList.add('marker-warp')
+            m.classList.add('warp-oneway', '' + it.oneWay)
+            m.style.left = (totalX / count) + 'px'
+            m.style.top = -(totalY / count) + 'px'
+            v.append(m)
         }
     }
 
@@ -117,7 +158,12 @@ function showRegion(regionName: RegionKey, region: Region) {
     layersArr.sort((a, b) => a - b)
 
     for(const l of layersArr) {
-        inner.append(layerEls.get(l))
+        const e = layerEls.get(l)
+        if(e) inner.append(e)
+    }
+    for(const l of layersArr) {
+        const e = markerLayerEls.get(l)
+        if(e) inner.append(e)
     }
 
     let curLayer = layersArr[0]
@@ -136,7 +182,8 @@ function showRegion(regionName: RegionKey, region: Region) {
     context.requestRender()
 
     {
-        window.layers.innerHTML = ''
+        const layerEl = (window as any).layers
+        layerEl.innerHTML = ''
 
         const form = document.createElement('form')
         for(const l of layersArr) {
@@ -151,7 +198,7 @@ function showRegion(regionName: RegionKey, region: Region) {
             form.append(cont)
         }
 
-        window.layers.append(
+        layerEl.append(
             document.createTextNode('Layers:'),
             form,
         )
