@@ -9,6 +9,8 @@ using Watcher;
 using UnityEngine;
 using System.IO;
 using System.Reflection;
+using MonoMod.RuntimeDetour.Platforms;
+using System.Linq;
 
 // Token: 0x02000110 RID: 272
 
@@ -31,6 +33,8 @@ using (var log = new System.IO.StreamWriter(@"C:\Users\Artem\Downloads\rwmap\war
 }
 }
 */
+
+// See MapExporter in game dll
 
 class StartPlease : MonoBehaviour {
     public static bool started;
@@ -95,9 +99,31 @@ class StartPlease : MonoBehaviour {
 
 		var rainWorld = pm.currentMainLoop as RainWorldGame;
 
+        // ignore.json
+        var list = new[]{
+            "CL",
+            "DM",
+            "DS",
+            "GW",
+            "HR",
+            "LC",
+            "LM",
+            "MS",
+            "OE",
+            "RM",
+            "SB",
+            "SI",
+            "SL",
+            "SS",
+            "UG",
+            "UW",
+            "VS"
+        };
+
         var iii = 0;
         unrand();
         foreach (Region r in Region.LoadAllRegions(SlugcatStats.Name.Night)) {
+            if(list.Contains(r.name)) continue;
             {
                 var name = Region.GetRegionFullName(r.name, SlugcatStats.Name.Night);
 
@@ -119,15 +145,13 @@ class StartPlease : MonoBehaviour {
             assert(world != null, "world is null");
 
             var cam = rainWorld.rainWorld.MainCamera;
-
-            var renderSize = 256;
-            var render = new RenderTexture((int)(renderSize * cam.aspect), renderSize, 24);
-            var image = new Texture2D(render.width, render.height, TextureFormat.RGB24, false);
-            cam.targetTexture = render;
-            log.WriteLine("Aspect: " + cam.aspect + "\nSize: " + cam.orthographicSize);
+			var renderSize = 256;
+            Screen.SetResolution((int)(renderSize * cam.aspect), renderSize, FullScreenMode.Windowed);
 
             var ii = 0;
             foreach(var room in world.abstractRooms) {
+				var prev = rainWorld.cameras[0].room;
+                try { if(prev != null) prev.abstractRoom.Abstractize(); } catch(Exception e) {}
                 iii++;
 
                 var dirname = bas + r.name + "\\" + room.name + "\\";
@@ -153,6 +177,7 @@ class StartPlease : MonoBehaviour {
                         sw2.WriteLine("mapPos: [" + room.mapPos.x + ", " + room.mapPos.y + "],");
                         sw2.WriteLine("size: [" + room.size.x + ", " + room.size.y + "],");
                         sw2.WriteLine("layer: " + room.layer + ",");
+                        sw2.WriteLine("shelter: " + (room.shelter ? "true" : "false") + ",");
 
                         var warpPoints = new List<WarpPoint.WarpPointData>();
                         var echoSpots = new List<SpinningTopData>();
@@ -201,7 +226,6 @@ class StartPlease : MonoBehaviour {
 
                         sw2.WriteLine("}");
                     }
-                    continue;
 
                     rainWorld.cameras[0].MoveCamera(room.realizedRoom, 0);
                 }
@@ -227,15 +251,8 @@ class StartPlease : MonoBehaviour {
                     unrand();
                     yield return null;
 
-                    RenderTexture.active = render;
-                    image.ReadPixels(new Rect(0, 0, render.width, render.height), 0, 0);
-                    image.Apply();
-                    RenderTexture.active = null;
-
                     var pos = poses[i];
-
-                    byte[] bytes = image.EncodeToPNG();
-                    System.IO.File.WriteAllBytes(dirname + pos.x + '$' + pos.y + "$.png", bytes);
+                    ScreenCapture.CaptureScreenshot(dirname + pos.x + '$' + pos.y + "$.png");
                 }
             }
         }
