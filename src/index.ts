@@ -1,8 +1,15 @@
-import regions from './hierarchy.json'
+import allRegions from './hierarchy.json'
+import ignore from './ignore.json'
 import { setup } from './camera.js'
 
-type RegionKey = keyof typeof regions
-type Region = (typeof regions)[RegionKey]
+type RegionKey = keyof typeof allRegions
+type Region = (typeof allRegions)[RegionKey]
+
+const regions: Partial<Record<RegionKey, Region>> = {}
+for(const rk in allRegions) {
+    if(ignore.region.includes(rk)) continue
+    regions[rk] = allRegions[rk]
+}
 
 // half height of camera
 // const size = 384
@@ -46,7 +53,7 @@ function fillRegions(filter: string | null) {
     regionsEl.innerHTML = ''
     for(const reg of regs) {
         const el = document.createElement('div')
-        el.append(document.createTextNode(reg.region.data.name))
+        el.append(document.createTextNode(`${reg.region.data.name} (${reg.key})`))
         el.classList.add('region')
         el.onclick = () => {
             for(const other of document.querySelectorAll('.region-selected')) {
@@ -78,7 +85,7 @@ function showRegion(regionName: RegionKey, region: Region) {
 
             const image = document.createElement('img')
             image.classList.add('bg')
-            image.setAttribute('src', '/output/' + regionName + '/' + k + '/' + s)
+            image.setAttribute('src', '/images/' + regionName + '/' + k + '/' + s)
             image.style.left = x + 'px'
             image.style.top = -y + 'px'
 
