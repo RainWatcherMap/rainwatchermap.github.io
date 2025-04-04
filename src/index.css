@@ -63,7 +63,7 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 999999px;
-    background: #e02020;
+    background: #20e0e0;
 }
 .warp-oneway {
     background: #2020e0;
@@ -78,10 +78,20 @@ body {
     background: #20e020;
 }
 
+.marker-backlink {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 999999px;
+    background: #e0e020;
+}
+
 #element {
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
 }
 .marker-selected {
-    filter: brightness(2);
+    border: 2px solid red;
 }

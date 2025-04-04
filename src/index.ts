@@ -43,6 +43,48 @@ for(const rk in allRegions) {
     regionNames.set(rk, regions[rk].data.name + ' (' + rk + ')')
 }
 
+type TraceData = {
+    type: 'warp'
+    data: WarpPoint
+} | {
+    type: 'echo'
+    data: EchoData
+}
+type WarpTrace = {
+    fromRegion: RegionKey
+    fromRoom: string
+    from: TraceData
+
+}
+
+const backlinks: Record<RegionKey, Record<string, WarpTrace[]>> = {}
+function bfill(toRegion: string | null, toRoom: string | null, trace: WarpTrace) {
+    if(!toRegion || !toRoom) return
+    toRegion = toRegion.toLowerCase()
+    toRoom = toRoom.toLowerCase()
+
+    let a = backlinks[toRegion]
+    if(!a) backlinks[toRegion] = a = {}
+    let b = a[toRoom]
+    if(!b) a[toRoom] = b = []
+    b.push(trace)
+}
+
+for(const regK in regions) {
+    const region = regions[regK]
+    for(const roomK in region.rooms) {
+        const room = region.rooms[roomK]
+        if(!room.data.mapPos) continue
+        for(const wp of room.data.warpPoints) {
+            bfill(wp.region, wp.room, { fromRegion: regK, fromRoom: roomK, from: { type: 'warp', data: wp } })
+        }
+        for(const wp of room.data.echoSpots) {
+            bfill(wp.destRegion, wp.destRoom, { fromRegion: regK, fromRoom: roomK, from: { type: 'echo', data: wp } })
+        }
+    }
+}
+console.log(backlinks)
+
 // half height of camera
 // const size = 384
 
@@ -54,7 +96,7 @@ const context = {
     camera: {
         posX: 0,
         posY: 0,
-        scale: 500,
+        scale: 300,
     },
     canvasSize: [1, 1],
     sizes: { fontSize: 16, heightCssPx: 1000 },
@@ -127,8 +169,13 @@ type Marker = {
     position: [number, number]
     data: EchoData
 }
+| {
+    type: 'backlink'
+    position: [number, number]
+    data: WarpTrace
+}
 
-function showRegion(regionName: RegionKey, region: Region, pos?: [number, number]) {
+function showRegion(regionName: RegionKey, region: Region, pos?: [number, number], layerI?: number) {
     inner.innerHTML = ''
     var minX = Infinity
     var maxX = -Infinity
@@ -177,6 +224,9 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             lget(layerEls, layer).append(image)
         }
 
+        const mx = totalX / count
+        const my = totalY / count
+
         for(let i = 0; i < room.data.warpPoints.length; i++) {
             const it = room.data.warpPoints[i]
 
@@ -184,8 +234,6 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             const m = document.createElement('div')
             m.classList.add('marker-warp')
             if(it.oneWay) m.classList.add('warp-oneway')
-            const mx = totalX / count
-            const my = totalY / count
             m.style.left = mx + 'px'
             m.style.top = -my + 'px'
             v.append(m)
@@ -198,12 +246,21 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             const v = lget(markerLayerEls, layer)
             const m = document.createElement('div')
             m.classList.add('marker-echo')
-            const mx = totalX / count
-            const my = totalY / count
             m.style.left = mx + 'px'
             m.style.top = -my + 'px'
             v.append(m)
             markers.push({ type: 'echo', position: [mx, my], data: it, element: m })
+        }
+
+        const backlink = backlinks[regionName.toLowerCase()]?.[k.toLowerCase()]
+        for(let i = 0; backlink && i < backlink.length; i++) {
+            const v = lget(markerLayerEls, layer)
+            const m = document.createElement('div')
+            m.classList.add('marker-backlink')
+            m.style.left = mx + 'px'
+            m.style.top = -my + 'px'
+            v.append(m)
+            markers.push({ type: 'backlink', position: [mx, my], data: backlink[i], element: m })
         }
     }
 
@@ -219,13 +276,18 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
         if(e) inner.append(e)
     }
 
-    let curLayer = layersArr[0]
+    let curLayer = layersArr[layerI ?? 0]
     function setLayer(l: number) {
         curLayer = l
         for(const ol of layersArr) {
             const el = layerEls.get(ol)
             if(!el) continue
             el.style.opacity = l == ol ? '1' : '0.2'
+        }
+        for(const ol of layersArr) {
+            const el = markerLayerEls.get(ol)
+            if(!el) continue
+            el.style.opacity = l == ol ? '1' : '0.5'
         }
     }
     setLayer(curLayer)
@@ -334,7 +396,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 const b = gotoButton(it.region, it.room)
                 if(b) elementEl.append(b)
             }
-            else {
+            else if(c[1].type === 'echo') {
                 const it = c[1].data
                 elementEl.append(wrap('Echo'))
                 elementEl.append(wrap('Destination region: ' + (it.destRegion ? regionNames.get(it.destRegion) : it.destRegion)))
@@ -343,8 +405,22 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 const b = gotoButton(it.destRegion, it.destRoom)
                 if(b) elementEl.append(b)
             }
+            else {
+                const it = c[1].data
+                elementEl.append(wrap('Other side of a warp'))
+                elementEl.append(wrap('From region: ' + (it.fromRegion ? regionNames.get(it.fromRegion) : it.fromRegion)))
+                elementEl.append(wrap('From room: ' + it.fromRoom))
+                //elementEl.append(wrap('Destination position: ' + it.destPos))
+                const b = gotoButton(it.fromRegion, it.fromRoom)
+                if(b) elementEl.append(b)
+            }
         }
     }
 }
 
 fillRegions(null)
+
+{
+    setSelected(regionEls.get('HI'))
+    showRegion('HI', regions['HI'], [-150, 150], 1)
+}
