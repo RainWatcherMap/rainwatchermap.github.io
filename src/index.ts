@@ -44,7 +44,6 @@ const regionsEl = window.regions
 
 // null if show all
 function fillRegions(filter: string | null) {
-    console.log(Object.keys(regions))
     const regs: Array<{ key: RegionKey, region: Region }> = []
     for(const regK in regions) {
         if(filter && !regK.includes(filter)) continue
@@ -73,9 +72,17 @@ function showRegion(regionName: RegionKey, region: Region) {
     var minY = Infinity
     var maxY = -Infinity
 
+    const layers: Set<number> = new Set()
+    const layerEls: Map<number, HTMLElement> = new Map()
+
+    const markerLayerEls: Map<number, HTMLElement> = new Map()
+
     for(const k in region.rooms) {
-        const room = region.rooms[k]
-        if(room.data.warpPoints?.length > 0) console.log(k, room.data.warpPoints)
+        const room = region.rooms[k as RegionKey]
+        if(!room.data.mapPos) continue
+        const layer = room.data.layer
+        layers.add(layer)
+
         for(const s of room.screens) {
             const ps = s.split('$')
             let x = room.data.mapPos[0] / 3 - room.data.size[0] * 0.5
@@ -94,12 +101,61 @@ function showRegion(regionName: RegionKey, region: Region) {
             minY = Math.min(minY, y)
             maxY = Math.max(maxY, y)
 
-            inner.append(image)
+            let v = layerEls.get(layer)
+            if(!v) {
+                v = document.createElement('div')
+                v.classList.add('room-layer')
+                v.style.position = 'absolute'
+                layerEls.set(layer, v)
+            }
+
+            v.append(image)
         }
     }
+
+    const layersArr = [...layers]
+    layersArr.sort((a, b) => a - b)
+
+    for(const l of layersArr) {
+        inner.append(layerEls.get(l))
+    }
+
+    let curLayer = layersArr[0]
+    function setLayer(l: number) {
+        curLayer = l
+        for(const ol of layersArr) {
+            const el = layerEls.get(ol)
+            if(!el) continue
+            el.style.opacity = l == ol ? '1' : '0.2'
+        }
+    }
+    setLayer(curLayer)
+
     context.camera.posX = (minX + maxX) * 0.5
     context.camera.posY = (minY + maxY) * 0.5
     context.requestRender()
+
+    {
+        window.layers.innerHTML = ''
+
+        const form = document.createElement('form')
+        for(const l of layersArr) {
+            const cont = document.createElement('label')
+            const input = document.createElement('input')
+            input.setAttribute('type', 'radio')
+            if(l == curLayer) input.setAttribute('checked', '')
+            input.setAttribute('name', 'layer')
+            input.setAttribute('value', '' + l)
+            input.onchange = () => setLayer(l)
+            cont.append(input, document.createTextNode('' + (l === undefined ? '<none>' : l)))
+            form.append(cont)
+        }
+
+        window.layers.append(
+            document.createTextNode('Layers:'),
+            form,
+        )
+    }
 }
 
 fillRegions(null)
