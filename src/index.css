@@ -1,6 +1,8 @@
 .bg {
     position: absolute;
     height: 39px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     user-drag: none;
     pointer-events: none;
     transform: translate(-50%, -50%);
