@@ -22,6 +22,7 @@ type Room = {
         mapPos: [number, number]
         size: [number, number]
         layer: number
+        shelter: boolean
         warpPoints: WarpPoint[]
         echoSpots: EchoData[]
     } | { mapPos?: never }
@@ -149,7 +150,7 @@ function fillRegions(filter: string | null) {
     }
 }
 
-function lget(list: Map<number, HTMLElement>, layer: number) {
+function lget<T>(list: Map<T, HTMLElement>, layer: T) {
     let v = list.get(layer)
     if(!v) {
         v = document.createElement('div')
@@ -182,17 +183,17 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
     var minY = Infinity
     var maxY = -Infinity
 
-    const layers: Set<number> = new Set()
-    const layerEls: Map<number, HTMLElement> = new Map()
+    const layers: Set<number | 'shelter'> = new Set()
+    const layerEls: Map<number | 'shelter', HTMLElement> = new Map()
 
-    const markerLayerEls: Map<number, HTMLElement> = new Map()
+    const markerLayerEls: Map<number | 'shelter', HTMLElement> = new Map()
 
     const markers: Array<Marker & { element: HTMLElement }> = []
 
     for(const k in region.rooms) {
         const room = region.rooms[k]
         if(!room.data.mapPos) continue
-        const layer = room.data.layer
+        const layer = room.data.shelter ? 'shelter' : room.data.layer
         layers.add(layer)
 
         let totalX = 0
@@ -279,7 +280,12 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
     }
 
     const layersArr = [...layers]
-    layersArr.sort((a, b) => a - b)
+    layersArr.sort((a, b) => {
+        if(a === 'shelter' && b === 'shelter') return 0
+        if(a === 'shelter') return 1
+        if(b === 'shelter') return -1
+        return a - b
+    })
 
     for(const l of layersArr) {
         const e = layerEls.get(l)
@@ -291,7 +297,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
     }
 
     let curLayer = layersArr[layerI ?? 0]
-    function setLayer(l: number) {
+    function setLayer(l: number | 'shelter') {
         curLayer = l
         for(const ol of layersArr) {
             const el = layerEls.get(ol)
