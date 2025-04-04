@@ -57,6 +57,7 @@ type WarpTrace = {
 
 }
 
+// backlinks by toRegion and toRoom
 const backlinks: Record<RegionKey, Record<string, WarpTrace[]>> = {}
 function bfill(toRegion: string | null, toRoom: string | null, trace: WarpTrace) {
     if(!toRegion || !toRoom) return
@@ -226,15 +227,17 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
         const mx = totalX / count
         const my = totalY / count
 
-        const backlink = backlinks[regionName.toLowerCase()]?.[k.toLowerCase()]
-        for(let i = 0; backlink && i < backlink.length; i++) {
-            const v = lget(markerLayerEls, layer)
-            const m = document.createElement('div')
-            m.classList.add('marker-backlink')
-            m.style.left = mx + 'px'
-            m.style.top = -my + 'px'
-            v.append(m)
-            markers.push({ type: 'backlink', position: [mx, my], data: backlink[i], element: m })
+        const remBacklinks = backlinks[regionName.toLowerCase()]?.[k.toLowerCase()]?.slice()
+        function clearBacklink(fromRegion: string | null, fromRoom: string | null) {
+            if(!remBacklinks || !fromRegion || !fromRoom) return
+            fromRegion = fromRegion.toLowerCase()
+            fromRoom = fromRoom.toLowerCase()
+            for(let i = remBacklinks.length - 1; i > -1; i--) {
+                const b = remBacklinks[i]
+                if(b.fromRegion.toLowerCase() === fromRegion && b.fromRoom.toLowerCase() === fromRoom) {
+                    remBacklinks.splice(i, 1)
+                }
+            }
         }
 
         for(let i = 0; i < room.data.warpPoints.length; i++) {
@@ -248,6 +251,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             m.style.top = -my + 'px'
             v.append(m)
             markers.push({ type: 'warp', position: [mx, my], data: it, element: m })
+            clearBacklink(it.region, it.room)
         }
 
         for(let i = 0; i < room.data.echoSpots.length; i++) {
@@ -260,6 +264,17 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             m.style.top = -my + 'px'
             v.append(m)
             markers.push({ type: 'echo', position: [mx, my], data: it, element: m })
+            clearBacklink(it.destRegion, it.destRoom)
+        }
+
+        for(let i = 0; remBacklinks && i < remBacklinks.length; i++) {
+            const v = lget(markerLayerEls, layer)
+            const m = document.createElement('div')
+            m.classList.add('marker-backlink')
+            m.style.left = mx + 'px'
+            m.style.top = -my + 'px'
+            v.append(m)
+            markers.push({ type: 'backlink', position: [mx, my], data: remBacklinks[i], element: m })
         }
     }
 
