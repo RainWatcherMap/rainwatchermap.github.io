@@ -2,6 +2,13 @@ import allRegions from './hierarchy.json'
 import ignore from './ignore.json'
 import { setup } from './camera.js'
 
+type WarpPoint = {
+    region: string | null
+    room: string | null
+    pos: [number, number] | null
+    oneWay: boolean
+}
+
 type RegionKey = string
 type Region = {
     rooms: Array<{
@@ -10,12 +17,7 @@ type Region = {
             mapPos: [number, number]
             size: [number, number]
             layer: number
-            warpPoints: {
-                region: string | null
-                room: string | null
-                pos: [number, number] | null
-                oneWay: boolean
-            }[]
+            warpPoints: WarpPoint[]
             echoSpots: unknown[]
         } | { mapPos?: never }
     }>
@@ -24,10 +26,13 @@ type Region = {
     }
 }
 
+const regionNames: Map<RegionKey, string> = new Map()
+
 const regions: Record<RegionKey, Region> = {}
 for(const rk in allRegions) {
     if(ignore.region.includes(rk)) continue
     regions[rk] = allRegions[rk]
+    regionNames.set(rk, regions[rk].data.name + ' (' + rk + ')')
 }
 
 // half height of camera
@@ -55,6 +60,7 @@ const context = {
         const y = c.posY * scale
         r.style.transform = `matrix(${scale}, 0, 0, ${scale}, ${x}, ${y})`
     },
+    onClick: (a: number, b: number) => {}
 }
 
 setup(context)
@@ -71,7 +77,7 @@ function fillRegions(filter: string | null) {
     regionsEl.innerHTML = ''
     for(const reg of regs) {
         const el = document.createElement('div')
-        el.append(document.createTextNode(`${reg.region.data.name} (${reg.key})`))
+        el.append(document.createTextNode(regionNames.get(reg.key)!))
         el.classList.add('region')
         el.onclick = () => {
             for(const other of document.querySelectorAll('.region-selected')) {
@@ -94,6 +100,12 @@ function lget(list: Map<number, HTMLElement>, layer: number) {
     return v
 }
 
+type Marker = {
+    type: 'warp'
+    position: [number, number]
+    data: WarpPoint
+}
+
 function showRegion(regionName: RegionKey, region: Region) {
     inner.innerHTML = ''
     var minX = Infinity
@@ -105,6 +117,8 @@ function showRegion(regionName: RegionKey, region: Region) {
     const layerEls: Map<number, HTMLElement> = new Map()
 
     const markerLayerEls: Map<number, HTMLElement> = new Map()
+
+    const markers: Array<Marker & { element: HTMLElement }> = []
 
     for(const k in region.rooms) {
         const room = region.rooms[k]
@@ -147,10 +161,13 @@ function showRegion(regionName: RegionKey, region: Region) {
             const v = lget(markerLayerEls, layer)
             const m = document.createElement('div')
             m.classList.add('marker-warp')
-            m.classList.add('warp-oneway', '' + it.oneWay)
-            m.style.left = (totalX / count) + 'px'
-            m.style.top = -(totalY / count) + 'px'
+            if(it.oneWay) m.classList.add('warp-oneway')
+            const mx = totalX / count
+            const my = totalY / count
+            m.style.left = mx + 'px'
+            m.style.top = -my + 'px'
             v.append(m)
+            markers.push({ type: 'warp', position: [mx, my], data: it, element: m })
         }
     }
 
@@ -202,6 +219,52 @@ function showRegion(regionName: RegionKey, region: Region) {
             document.createTextNode('Layers:'),
             form,
         )
+    }
+
+    context.onClick = (cx, cy) => {
+        const closest: [distance: number, object: (Marker & { element: HTMLElement }) | null][] = Array(20)
+        for(let i = 0; i < closest.length; i++) {
+            closest[i] = [1/0, null]
+        }
+
+        for(let i = 0; i < markers.length; i++) {
+            const obj = markers[i]
+            const pos = obj.position
+            const dx = pos[0] - cx
+            const dy = pos[1] - cy
+            const sqDist = dx*dx + dy*dy
+
+            var insertI = 0
+            while(insertI < closest.length && closest[insertI][0] < sqDist) insertI++
+
+            if(insertI < closest.length) {
+                closest.pop()
+                closest.splice(insertI, 0, [sqDist, obj])
+            }
+        }
+
+        const c = closest[0]
+        if(c[1]) {
+            const elementEl = (window as any).element
+            elementEl.innerHTML = ''
+
+            for(const o of document.querySelectorAll('.marker-selected')) o.classList.remove('marker-selected')
+            c[1].element.classList.add('marker-selected')
+
+            const it = c[1].data
+
+            function wrap(text: string) {
+                var a = document.createElement('div')
+                a.append(document.createTextNode(text))
+                return a
+            }
+
+            elementEl.append(wrap('Warp point'))
+            elementEl.append(wrap('Destination region: ' + (it.region ? regionNames.get(it.region) : it.region)))
+            elementEl.append(wrap('Destination room: ' + it.room))
+            elementEl.append(wrap('Destination position: ' + it.pos))
+            elementEl.append(wrap('One way?: ' + it.oneWay))
+        }
     }
 }
 

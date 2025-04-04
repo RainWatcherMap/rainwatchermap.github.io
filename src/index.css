@@ -63,5 +63,16 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 999999px;
-    background: red;
+    background: #e02020;
+}
+.warp-oneway {
+    background: #2020e0;
+}
+
+#element {
+    display: flex;
+    flex-direction: column;
+}
+.marker-selected {
+    filter: brightness(2);
 }
