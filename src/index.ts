@@ -83,7 +83,6 @@ for(const regK in regions) {
         }
     }
 }
-console.log(backlinks)
 
 // half height of camera
 // const size = 384
@@ -227,6 +226,17 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
         const mx = totalX / count
         const my = totalY / count
 
+        const backlink = backlinks[regionName.toLowerCase()]?.[k.toLowerCase()]
+        for(let i = 0; backlink && i < backlink.length; i++) {
+            const v = lget(markerLayerEls, layer)
+            const m = document.createElement('div')
+            m.classList.add('marker-backlink')
+            m.style.left = mx + 'px'
+            m.style.top = -my + 'px'
+            v.append(m)
+            markers.push({ type: 'backlink', position: [mx, my], data: backlink[i], element: m })
+        }
+
         for(let i = 0; i < room.data.warpPoints.length; i++) {
             const it = room.data.warpPoints[i]
 
@@ -250,17 +260,6 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             m.style.top = -my + 'px'
             v.append(m)
             markers.push({ type: 'echo', position: [mx, my], data: it, element: m })
-        }
-
-        const backlink = backlinks[regionName.toLowerCase()]?.[k.toLowerCase()]
-        for(let i = 0; backlink && i < backlink.length; i++) {
-            const v = lget(markerLayerEls, layer)
-            const m = document.createElement('div')
-            m.classList.add('marker-backlink')
-            m.style.left = mx + 'px'
-            m.style.top = -my + 'px'
-            v.append(m)
-            markers.push({ type: 'backlink', position: [mx, my], data: backlink[i], element: m })
         }
     }
 
@@ -422,5 +421,5 @@ fillRegions(null)
 
 {
     setSelected(regionEls.get('HI'))
-    showRegion('HI', regions['HI'], [-150, 150], 1)
+    showRegion('HI', regions['HI'], [-0, 150], 1)
 }
