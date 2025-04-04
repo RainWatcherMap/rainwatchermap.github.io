@@ -34,14 +34,16 @@ using (var log = new System.IO.StreamWriter(@"C:\Users\Artem\Downloads\rwmap\war
 
 class StartPlease : MonoBehaviour {
     public static bool started;
+    static string begin;
 
     public void start(ProcessManager m) {
+        begin = "C:\\Users\\Artem\\Downloads\\rainwatchermap.github.io\\raw\\";
         StartCoroutine(stupidWrapper(m));
     }
 
     // C# couldn't possible generate this when I do try catch with yield return inside...
     private static System.Collections.IEnumerator stupidWrapper(ProcessManager m) {
-        var path = "C:\\Users\\Artem\\Downloads\\rwmap\\data.txt";
+        var path = begin + "data.txt";
         using (var fileStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None, bufferSize: 1, useAsync: false))
         using (var log = new System.IO.StreamWriter(fileStream)) {
             log.AutoFlush = true;
@@ -79,7 +81,7 @@ class StartPlease : MonoBehaviour {
     }
 
     private static System.Collections.IEnumerator stuff(StreamWriter log, ProcessManager pm) {
-        var bas = "C:\\Users\\Artem\\Downloads\\rwmap\\output\\";
+        var bas = begin + "regions\\";
 
         {
             var ii = 0;
@@ -96,7 +98,6 @@ class StartPlease : MonoBehaviour {
         var iii = 0;
         unrand();
         foreach (Region r in Region.LoadAllRegions(SlugcatStats.Name.Night)) {
-            if(r.name != "WVWA") continue;
             {
                 var name = Region.GetRegionFullName(r.name, SlugcatStats.Name.Night);
 

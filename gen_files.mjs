@@ -43,6 +43,6 @@ function generateHierarchy(basePath) {
     return hierarchy;
 }
 
-const basePath = './output'
+const basePath = './raw/regions'
 const hierarchy = generateHierarchy(basePath)
-fs.writeFileSync("hierarchy.json", JSON.stringify(hierarchy, null, 2))
+fs.writeFileSync("./src/hierarchy.json", JSON.stringify(hierarchy, null, 2))
