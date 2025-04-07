@@ -77,7 +77,7 @@ type WarpTrace = {
     fromRegion: RegionKey
     fromRoom: string
     from: TraceData
-
+    pos: Pos | null
 }
 
 // backlinks by toRegion and toRoom
@@ -100,10 +100,20 @@ for(const regK in regions) {
         const room = region.rooms[roomK]
         if(!room.data.mapPos) continue
         for(const wp of room.data.warpPoints) {
-            bfill(wp.destRegion, wp.destRoom, { fromRegion: regK, fromRoom: roomK, from: { type: 'warp', data: wp } })
+            bfill(wp.destRegion, wp.destRoom, {
+                fromRegion: regK,
+                fromRoom: roomK,
+                from: { type: 'warp', data: wp },
+                pos: wp.destPos,
+            })
         }
         for(const wp of room.data.echoSpots) {
-            bfill(wp.destRegion, wp.destRoom, { fromRegion: regK, fromRoom: roomK, from: { type: 'echo', data: wp } })
+            bfill(wp.destRegion, wp.destRoom, {
+                fromRegion: regK,
+                fromRoom: roomK,
+                from: { type: 'echo', data: wp },
+                pos: wp.destPos,
+            })
         }
     }
 }
@@ -222,12 +232,13 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
         let totalY = 0
         let count = 0
 
+        const bx = room.data.mapPos[0] / 3 - room.data.size[0] * 0.5
+        const by = room.data.mapPos[1] / 3 - room.data.size[1] * 0.5
+
         for(const s of room.screens) {
             const ps = s.split('$')
-            let x = room.data.mapPos[0] / 3 - room.data.size[0] * 0.5
-            let y = room.data.mapPos[1] / 3 - room.data.size[1] * 0.5
-            x += Number(ps[0]) / 20
-            y += Number(ps[1]) / 20
+            const x = bx + Number(ps[0]) / 20
+            const y = by + Number(ps[1]) / 20
 
             totalX += x
             totalY += y
@@ -247,8 +258,8 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             lget(layerEls, layer).append(image)
         }
 
-        const mx = totalX / count
-        const my = totalY / count
+        const mx = totalX / count + 69 * 0.5
+        const my = totalY / count + 39 * 0.5
 
         const remBacklinks = backlinks[regionName.toLowerCase()]?.[k.toLowerCase()]?.slice()
         function clearBacklink(fromRegion: string | null, fromRoom: string | null) {
@@ -265,39 +276,50 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
 
         for(let i = 0; i < room.data.warpPoints.length; i++) {
             const it = room.data.warpPoints[i]
+            const x = bx + it.pos[0] / 20
+            const y = by + it.pos[1] / 20
 
             const v = lget(markerLayerEls, layer)
             const m = document.createElement('div')
             m.classList.add('marker-warp')
             if(it.oneWay) m.classList.add('warp-oneway')
-            m.style.left = mx + 'px'
-            m.style.top = -my + 'px'
+            m.style.left = x + 'px'
+            m.style.top = -y + 'px'
             v.append(m)
-            markers.push({ type: 'warp', position: [mx, my], data: it, element: m })
+
+            markers.push({ type: 'warp', position: [x, y], data: it, element: m })
             clearBacklink(it.destRegion, it.destRoom)
         }
 
         for(let i = 0; i < room.data.echoSpots.length; i++) {
             const it = room.data.echoSpots[i]
+            const x = bx + it.pos[0] / 20
+            const y = by + it.pos[1] / 20
 
             const v = lget(markerLayerEls, layer)
             const m = document.createElement('div')
             m.classList.add('marker-echo')
-            m.style.left = mx + 'px'
-            m.style.top = -my + 'px'
+            m.style.left = x + 'px'
+            m.style.top = -y + 'px'
             v.append(m)
-            markers.push({ type: 'echo', position: [mx, my], data: it, element: m })
+
+            markers.push({ type: 'echo', position: [x, y], data: it, element: m })
             clearBacklink(it.destRegion, it.destRoom)
         }
 
         for(let i = 0; remBacklinks && i < remBacklinks.length; i++) {
+            const it = remBacklinks[i]
+
+            const x = it.pos ? bx + it.pos[0] / 20 : mx
+            const y = it.pos ? by + it.pos[1] / 20 : my
+
             const v = lget(markerLayerEls, layer)
             const m = document.createElement('div')
             m.classList.add('marker-backlink')
-            m.style.left = mx + 'px'
-            m.style.top = -my + 'px'
+            m.style.left = x + 'px'
+            m.style.top = -y + 'px'
             v.append(m)
-            markers.push({ type: 'backlink', position: [mx, my], data: remBacklinks[i], element: m })
+            markers.push({ type: 'backlink', position: [x, y], data: remBacklinks[i], element: m })
         }
     }
 
