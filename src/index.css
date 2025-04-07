@@ -61,8 +61,8 @@ body {
 
 .region {
     transition: color 0.2s;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 .layers {
     padding: 0.5rem;
