@@ -147,6 +147,9 @@ body {
         border-top: 1px solid gray;
         overflow-y: scroll;
     }
+    .regions {
+        overflow: unset;
+    }
     #regions {
         overflow-y: unset;
     }
