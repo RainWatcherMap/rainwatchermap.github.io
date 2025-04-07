@@ -6,9 +6,9 @@ shelter: false,
 warpPoints: [
 {
 pos: [1451.573, 435.2671],
-region: "WSKC",
-room: "wskc_a10",
-pos: [1010, 490],
+destRegion: "WSKC",
+destRoom: "wskc_a10",
+destPos: [1010, 490],
 oneWay: false,
 ripple: false,
 },

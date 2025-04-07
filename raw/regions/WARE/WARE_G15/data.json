@@ -6,9 +6,9 @@ shelter: false,
 warpPoints: [
 {
 pos: [289.6384, 506.9496],
-region: null,
-room: null,
-pos: null,
+destRegion: null,
+destRoom: null,
+destPos: null,
 oneWay: true,
 ripple: true,
 },

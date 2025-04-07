@@ -6,9 +6,9 @@ shelter: false,
 warpPoints: [
 {
 pos: [493.7858, 1231.547],
-region: "WARA",
-room: "WARA_P17",
-pos: [1770, 510],
+destRegion: "WARA",
+destRoom: "WARA_P17",
+destPos: [1770, 510],
 oneWay: true,
 ripple: true,
 },

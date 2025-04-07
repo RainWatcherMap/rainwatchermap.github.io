@@ -6,9 +6,9 @@ shelter: false,
 warpPoints: [
 {
 pos: [309.4246, 1473.448],
-region: "WTDA",
-room: "wtda_a13",
-pos: [450, 270],
+destRegion: "WTDA",
+destRoom: "wtda_a13",
+destPos: [450, 270],
 oneWay: false,
 ripple: false,
 },

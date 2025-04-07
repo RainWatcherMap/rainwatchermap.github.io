@@ -6,9 +6,9 @@ shelter: false,
 warpPoints: [
 {
 pos: [699.9332, 350.1698],
-region: "WSSR",
-room: "wssr_cramped",
-pos: [450, 270],
+destRegion: "WSSR",
+destRoom: "wssr_cramped",
+destPos: [450, 270],
 oneWay: true,
 ripple: false,
 },

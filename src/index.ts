@@ -2,15 +2,18 @@ import allRegions from './hierarchy.json'
 import ignore from './ignore.json'
 import { setup } from './camera.js'
 
+type Pos = [number, number]
 type WarpPoint = {
-    region: string | null
-    room: string | null
-    pos: [number, number] | null // within room
+    pos: Pos
+    destRegion: string | null
+    destRoom: string | null
+    destPos: Pos | null // within room
     oneWay: boolean
 }
 type EchoData = {
-    panelPos: [number, number] | null
-    destPos: [number, number] | null
+    pos: Pos
+    panelPos: Pos | null
+    destPos: Pos | null
     destRegion: string | null
     destRoom: string | null
     spawnId: number
@@ -25,6 +28,15 @@ type Room = {
         shelter: boolean
         warpPoints: WarpPoint[]
         echoSpots: EchoData[]
+        karmaFlowers: { pos: Pos }[]
+        shortcuts: {
+            type: 'Normal' | 'RoomExit' | 'CreatureHole' | 'NPCTransportation'
+                | 'RegionTransportation' | 'DeadEnd'
+            startPos: Pos
+            startRoom: string
+            endPos: Pos
+            endRoom: string
+        }[]
     } | { mapPos?: never }
 }
 type RegionKey = string
@@ -42,6 +54,16 @@ for(const rk in allRegions) {
     if(ignore.region.includes(rk)) continue
     regions[rk] = allRegions[rk]
     regionNames.set(rk, regions[rk].data.name + ' (' + rk + ')')
+
+    /*const r = regions[rk]
+    for(const rok in r.rooms) {
+        const ro = r.rooms[rok]
+        if(!ro.data.mapPos) continue
+        for(const sc of ro.data.shortcuts) {
+            iiii++
+            if(sc.startRoom != sc.endRoom) console.log(rok, sc.endRoom)
+        }
+    }*/
 }
 
 type TraceData = {
@@ -78,7 +100,7 @@ for(const regK in regions) {
         const room = region.rooms[roomK]
         if(!room.data.mapPos) continue
         for(const wp of room.data.warpPoints) {
-            bfill(wp.region, wp.room, { fromRegion: regK, fromRoom: roomK, from: { type: 'warp', data: wp } })
+            bfill(wp.destRegion, wp.destRoom, { fromRegion: regK, fromRoom: roomK, from: { type: 'warp', data: wp } })
         }
         for(const wp of room.data.echoSpots) {
             bfill(wp.destRegion, wp.destRoom, { fromRegion: regK, fromRoom: roomK, from: { type: 'echo', data: wp } })
@@ -252,7 +274,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             m.style.top = -my + 'px'
             v.append(m)
             markers.push({ type: 'warp', position: [mx, my], data: it, element: m })
-            clearBacklink(it.region, it.room)
+            clearBacklink(it.destRegion, it.destRoom)
         }
 
         for(let i = 0; i < room.data.echoSpots.length; i++) {
@@ -409,17 +431,17 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             if(c[1].type === 'warp') {
                 const it = c[1].data
                 elementEl.append(wrap('Warp point'))
-                elementEl.append(wrap('Destination region: ' + (it.region ? regionNames.get(it.region) : it.region)))
-                elementEl.append(wrap('Destination room: ' + it.room))
+                elementEl.append(wrap('Destination region: ' + (it.destRegion ? regionNames.get(it.destRegion) : it.destRegion)))
+                elementEl.append(wrap('Destination room: ' + it.destRoom))
                 //elementEl.append(wrap('Destination position: ' + it.pos))
                 elementEl.append(wrap('One way?: ' + it.oneWay))
-                const b = gotoButton(it.region, it.room)
+                const b = gotoButton(it.destRegion, it.destRoom)
                 if(b) elementEl.append(b)
             }
             else if(c[1].type === 'echo') {
                 const it = c[1].data
                 elementEl.append(wrap('Echo'))
-                elementEl.append(wrap('Destination region: ' + (it.destRegion ? regionNames.get(it.destRegion) : it.destRegion)))
+                elementEl.append(wrap('Destination destRegion: ' + (it.destRegion ? regionNames.get(it.destRegion) : it.destRegion)))
                 elementEl.append(wrap('Destination room: ' + it.destRoom))
                 //elementEl.append(wrap('Destination position: ' + it.destPos))
                 const b = gotoButton(it.destRegion, it.destRoom)

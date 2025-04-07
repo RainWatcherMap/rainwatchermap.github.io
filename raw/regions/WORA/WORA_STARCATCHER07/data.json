@@ -6,9 +6,9 @@ shelter: false,
 warpPoints: [
 {
 pos: [656.6814, 2014.8],
-region: "WORA",
-room: "wora_starcatcher02",
-pos: [650, 470],
+destRegion: "WORA",
+destRoom: "wora_starcatcher02",
+destPos: [650, 470],
 oneWay: true,
 ripple: false,
 },

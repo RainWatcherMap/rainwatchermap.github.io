@@ -6,9 +6,9 @@ shelter: false,
 warpPoints: [
 {
 pos: [498.2588, 1218.085],
-region: "WVWA",
-room: "wvwa_e01",
-pos: [4710, 330],
+destRegion: "WVWA",
+destRoom: "wvwa_e01",
+destPos: [4710, 330],
 oneWay: false,
 ripple: false,
 },
