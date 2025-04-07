@@ -1,0 +1,57 @@
+{
+mapPos: [1003.798, 285.3169],
+size: [152, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+{
+pos: [1816.8, 307.9868],
+region: null,
+room: null,
+pos: null,
+oneWay: true,
+ripple: true,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RegionTransportation",
+startPos: [142, 24],
+startRoom: "WTDA_Z07",
+endPos: [145, 24],
+endRoom: "WTDA_Z07",
+},
+{
+type: "RoomExit",
+startPos: [142, 22],
+startRoom: "WTDA_Z07",
+endPos: [150, 22],
+endRoom: "WTDA_Z07",
+},
+{
+type: "NPCTransportation",
+startPos: [1, 14],
+startRoom: "WTDA_Z07",
+endPos: [0, 14],
+endRoom: "WTDA_Z07",
+},
+{
+type: "RoomExit",
+startPos: [4, 10],
+startRoom: "WTDA_Z07",
+endPos: [1, 4],
+endRoom: "WTDA_Z07",
+},
+{
+type: "NPCTransportation",
+startPos: [140, 8],
+startRoom: "WTDA_Z07",
+endPos: [141, 8],
+endRoom: "WTDA_Z07",
+},
+],
+}

@@ -1,0 +1,49 @@
+{
+mapPos: [4889.148, 598.0091],
+size: [100, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [6, 23],
+startRoom: "WTDA_B04",
+endPos: [2, 33],
+endRoom: "WTDA_B04",
+},
+{
+type: "NPCTransportation",
+startPos: [20, 20],
+startRoom: "WTDA_B04",
+endPos: [20, 19],
+endRoom: "WTDA_B04",
+},
+{
+type: "DeadEnd",
+startPos: [3, 15],
+startRoom: "WTDA_B04",
+endPos: [2, 15],
+endRoom: "WTDA_B04",
+},
+{
+type: "RoomExit",
+startPos: [3, 13],
+startRoom: "WTDA_B04",
+endPos: [0, 13],
+endRoom: "WTDA_B04",
+},
+{
+type: "NPCTransportation",
+startPos: [3, 11],
+startRoom: "WTDA_B04",
+endPos: [1, 11],
+endRoom: "WTDA_B04",
+},
+],
+}

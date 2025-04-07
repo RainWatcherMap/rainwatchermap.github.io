@@ -1,0 +1,70 @@
+{
+mapPos: [862.5168, 2934.764],
+size: [54, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [27, 29],
+startRoom: "CC_A06W",
+endPos: [42, 34],
+endRoom: "CC_A06W",
+},
+{
+type: "DeadEnd",
+startPos: [8, 25],
+startRoom: "CC_A06W",
+endPos: [8, 24],
+endRoom: "CC_A06W",
+},
+{
+type: "DeadEnd",
+startPos: [21, 21],
+startRoom: "CC_A06W",
+endPos: [21, 18],
+endRoom: "CC_A06W",
+},
+{
+type: "RoomExit",
+startPos: [8, 8],
+startRoom: "CC_A06W",
+endPos: [1, 6],
+endRoom: "CC_A06W",
+},
+{
+type: "DeadEnd",
+startPos: [10, 8],
+startRoom: "CC_A06W",
+endPos: [21, 16],
+endRoom: "CC_A06W",
+},
+{
+type: "DeadEnd",
+startPos: [41, 8],
+startRoom: "CC_A06W",
+endPos: [41, 7],
+endRoom: "CC_A06W",
+},
+{
+type: "RoomExit",
+startPos: [43, 8],
+startRoom: "CC_A06W",
+endPos: [52, 6],
+endRoom: "CC_A06W",
+},
+{
+type: "RoomExit",
+startPos: [27, 5],
+startRoom: "CC_A06W",
+endPos: [39, 0],
+endRoom: "CC_A06W",
+},
+],
+}

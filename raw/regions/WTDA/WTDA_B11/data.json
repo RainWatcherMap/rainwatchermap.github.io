@@ -1,0 +1,56 @@
+{
+mapPos: [2557.633, 237.5],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [40, 16],
+startRoom: "WTDA_B11",
+endPos: [41, 16],
+endRoom: "WTDA_B11",
+},
+{
+type: "RoomExit",
+startPos: [7, 14],
+startRoom: "WTDA_B11",
+endPos: [1, 14],
+endRoom: "WTDA_B11",
+},
+{
+type: "DeadEnd",
+startPos: [40, 14],
+startRoom: "WTDA_B11",
+endPos: [44, 14],
+endRoom: "WTDA_B11",
+},
+{
+type: "RoomExit",
+startPos: [40, 12],
+startRoom: "WTDA_B11",
+endPos: [46, 12],
+endRoom: "WTDA_B11",
+},
+{
+type: "CreatureHole",
+startPos: [29, 8],
+startRoom: "WTDA_B11",
+endPos: [29, 7],
+endRoom: "WTDA_B11",
+},
+{
+type: "DeadEnd",
+startPos: [31, 8],
+startRoom: "WTDA_B11",
+endPos: [31, 7],
+endRoom: "WTDA_B11",
+},
+],
+}

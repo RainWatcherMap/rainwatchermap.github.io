@@ -1,0 +1,42 @@
+{
+mapPos: [14194.96, 1134.403],
+size: [75, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [46, 27],
+startRoom: "WORA_STARCATCHER08",
+endPos: [45, 18],
+endRoom: "WORA_STARCATCHER08",
+},
+{
+type: "RoomExit",
+startPos: [17, 23],
+startRoom: "WORA_STARCATCHER08",
+endPos: [2, 23],
+endRoom: "WORA_STARCATCHER08",
+},
+{
+type: "Normal",
+startPos: [45, 18],
+startRoom: "WORA_STARCATCHER08",
+endPos: [46, 27],
+endRoom: "WORA_STARCATCHER08",
+},
+{
+type: "RoomExit",
+startPos: [49, 7],
+startRoom: "WORA_STARCATCHER08",
+endPos: [59, 7],
+endRoom: "WORA_STARCATCHER08",
+},
+],
+}

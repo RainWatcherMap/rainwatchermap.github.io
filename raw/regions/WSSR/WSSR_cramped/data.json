@@ -1,0 +1,35 @@
+{
+mapPos: [653, 52.5],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [19, 30],
+startRoom: "WSSR_cramped",
+endPos: [19, 31],
+endRoom: "WSSR_cramped",
+},
+{
+type: "RoomExit",
+startPos: [22, 30],
+startRoom: "WSSR_cramped",
+endPos: [22, 34],
+endRoom: "WSSR_cramped",
+},
+{
+type: "DeadEnd",
+startPos: [25, 30],
+startRoom: "WSSR_cramped",
+endPos: [25, 31],
+endRoom: "WSSR_cramped",
+},
+],
+}

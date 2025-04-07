@@ -1,0 +1,70 @@
+{
+mapPos: [1658.04, 483.9999],
+size: [48, 112],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [24, 106],
+startRoom: "WARB_J06",
+endPos: [24, 110],
+endRoom: "WARB_J06",
+},
+{
+type: "RoomExit",
+startPos: [7, 93],
+startRoom: "WARB_J06",
+endPos: [2, 93],
+endRoom: "WARB_J06",
+},
+{
+type: "Normal",
+startPos: [14, 89],
+startRoom: "WARB_J06",
+endPos: [20, 86],
+endRoom: "WARB_J06",
+},
+{
+type: "Normal",
+startPos: [20, 86],
+startRoom: "WARB_J06",
+endPos: [14, 89],
+endRoom: "WARB_J06",
+},
+{
+type: "RoomExit",
+startPos: [32, 30],
+startRoom: "WARB_J06",
+endPos: [32, 33],
+endRoom: "WARB_J06",
+},
+{
+type: "DeadEnd",
+startPos: [7, 15],
+startRoom: "WARB_J06",
+endPos: [6, 15],
+endRoom: "WARB_J06",
+},
+{
+type: "RoomExit",
+startPos: [7, 13],
+startRoom: "WARB_J06",
+endPos: [2, 13],
+endRoom: "WARB_J06",
+},
+{
+type: "RoomExit",
+startPos: [24, 7],
+startRoom: "WARB_J06",
+endPos: [24, 2],
+endRoom: "WARB_J06",
+},
+],
+}

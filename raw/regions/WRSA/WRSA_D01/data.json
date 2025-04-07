@@ -1,0 +1,29 @@
+{
+mapPos: [346.6278, 680.327],
+size: [100, 75],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [493.7858, 1231.547],
+region: "WARA",
+room: "WARA_P17",
+pos: [1770, 510],
+oneWay: true,
+ripple: true,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [92, 24],
+startRoom: "WRSA_D01",
+endPos: [99, 19],
+endRoom: "WRSA_D01",
+},
+],
+}

@@ -1,0 +1,77 @@
+{
+mapPos: [1802.994, 179.5082],
+size: [50, 36],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [20, 33],
+startRoom: "WSUR_A40",
+endPos: [48, 26],
+endRoom: "WSUR_A40",
+},
+{
+type: "Normal",
+startPos: [48, 26],
+startRoom: "WSUR_A40",
+endPos: [20, 33],
+endRoom: "WSUR_A40",
+},
+{
+type: "RoomExit",
+startPos: [2, 24],
+startRoom: "WSUR_A40",
+endPos: [0, 24],
+endRoom: "WSUR_A40",
+},
+{
+type: "Normal",
+startPos: [48, 23],
+startRoom: "WSUR_A40",
+endPos: [45, 2],
+endRoom: "WSUR_A40",
+},
+{
+type: "RoomExit",
+startPos: [2, 17],
+startRoom: "WSUR_A40",
+endPos: [0, 17],
+endRoom: "WSUR_A40",
+},
+{
+type: "CreatureHole",
+startPos: [23, 2],
+startRoom: "WSUR_A40",
+endPos: [23, 0],
+endRoom: "WSUR_A40",
+},
+{
+type: "NPCTransportation",
+startPos: [30, 2],
+startRoom: "WSUR_A40",
+endPos: [30, 0],
+endRoom: "WSUR_A40",
+},
+{
+type: "NPCTransportation",
+startPos: [37, 2],
+startRoom: "WSUR_A40",
+endPos: [37, 0],
+endRoom: "WSUR_A40",
+},
+{
+type: "Normal",
+startPos: [45, 2],
+startRoom: "WSUR_A40",
+endPos: [48, 23],
+endRoom: "WSUR_A40",
+},
+],
+}

@@ -1,0 +1,70 @@
+{
+mapPos: [1695.899, 578.0002],
+size: [48, 152],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [8, 143],
+startRoom: "LF_D06",
+endPos: [0, 146],
+endRoom: "LF_D06",
+},
+{
+type: "RoomExit",
+startPos: [42, 141],
+startRoom: "LF_D06",
+endPos: [47, 141],
+endRoom: "LF_D06",
+},
+{
+type: "CreatureHole",
+startPos: [42, 130],
+startRoom: "LF_D06",
+endPos: [47, 130],
+endRoom: "LF_D06",
+},
+{
+type: "CreatureHole",
+startPos: [32, 127],
+startRoom: "LF_D06",
+endPos: [29, 127],
+endRoom: "LF_D06",
+},
+{
+type: "Normal",
+startPos: [4, 28],
+startRoom: "LF_D06",
+endPos: [2, 14],
+endRoom: "LF_D06",
+},
+{
+type: "Normal",
+startPos: [2, 14],
+startRoom: "LF_D06",
+endPos: [4, 28],
+endRoom: "LF_D06",
+},
+{
+type: "RoomExit",
+startPos: [42, 12],
+startRoom: "LF_D06",
+endPos: [47, 4],
+endRoom: "LF_D06",
+},
+{
+type: "RoomExit",
+startPos: [24, 5],
+startRoom: "LF_D06",
+endPos: [24, 1],
+endRoom: "LF_D06",
+},
+],
+}

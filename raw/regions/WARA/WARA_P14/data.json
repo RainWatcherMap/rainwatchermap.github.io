@@ -1,0 +1,98 @@
+{
+mapPos: [2482.001, 904.3291],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RegionTransportation",
+startPos: [89, 30],
+startRoom: "WARA_P14",
+endPos: [94, 30],
+endRoom: "WARA_P14",
+},
+{
+type: "CreatureHole",
+startPos: [48, 18],
+startRoom: "WARA_P14",
+endPos: [48, 12],
+endRoom: "WARA_P14",
+},
+{
+type: "DeadEnd",
+startPos: [10, 17],
+startRoom: "WARA_P14",
+endPos: [6, 17],
+endRoom: "WARA_P14",
+},
+{
+type: "DeadEnd",
+startPos: [89, 17],
+startRoom: "WARA_P14",
+endPos: [92, 17],
+endRoom: "WARA_P14",
+},
+{
+type: "RoomExit",
+startPos: [10, 15],
+startRoom: "WARA_P14",
+endPos: [2, 15],
+endRoom: "WARA_P14",
+},
+{
+type: "RoomExit",
+startPos: [89, 15],
+startRoom: "WARA_P14",
+endPos: [96, 15],
+endRoom: "WARA_P14",
+},
+{
+type: "DeadEnd",
+startPos: [10, 9],
+startRoom: "WARA_P14",
+endPos: [7, 9],
+endRoom: "WARA_P14",
+},
+{
+type: "RegionTransportation",
+startPos: [10, 7],
+startRoom: "WARA_P14",
+endPos: [5, 7],
+endRoom: "WARA_P14",
+},
+{
+type: "DeadEnd",
+startPos: [89, 6],
+startRoom: "WARA_P14",
+endPos: [91, 6],
+endRoom: "WARA_P14",
+},
+{
+type: "Normal",
+startPos: [45, 5],
+startRoom: "WARA_P14",
+endPos: [63, 5],
+endRoom: "WARA_P14",
+},
+{
+type: "Normal",
+startPos: [63, 5],
+startRoom: "WARA_P14",
+endPos: [45, 5],
+endRoom: "WARA_P14",
+},
+{
+type: "CreatureHole",
+startPos: [89, 4],
+startRoom: "WARA_P14",
+endPos: [95, 4],
+endRoom: "WARA_P14",
+},
+],
+}

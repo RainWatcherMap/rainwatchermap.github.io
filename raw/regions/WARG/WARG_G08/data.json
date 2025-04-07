@@ -1,0 +1,42 @@
+{
+mapPos: [2075.501, 820.0563],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [3, 16],
+startRoom: "WARG_G08",
+endPos: [0, 16],
+endRoom: "WARG_G08",
+},
+{
+type: "RoomExit",
+startPos: [44, 16],
+startRoom: "WARG_G08",
+endPos: [47, 16],
+endRoom: "WARG_G08",
+},
+{
+type: "DeadEnd",
+startPos: [19, 11],
+startRoom: "WARG_G08",
+endPos: [19, 10],
+endRoom: "WARG_G08",
+},
+{
+type: "CreatureHole",
+startPos: [28, 11],
+startRoom: "WARG_G08",
+endPos: [28, 10],
+endRoom: "WARG_G08",
+},
+],
+}

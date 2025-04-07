@@ -1,0 +1,94 @@
+{
+mapPos: [4161.251, 970.9108],
+size: [252, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [4392.578, 413.3976],
+},
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [2, 29],
+startRoom: "SH_E05W",
+endPos: [0, 29],
+endRoom: "SH_E05W",
+},
+{
+type: "DeadEnd",
+startPos: [243, 21],
+startRoom: "SH_E05W",
+endPos: [250, 21],
+endRoom: "SH_E05W",
+},
+{
+type: "NPCTransportation",
+startPos: [2, 19],
+startRoom: "SH_E05W",
+endPos: [0, 19],
+endRoom: "SH_E05W",
+},
+{
+type: "RoomExit",
+startPos: [243, 19],
+startRoom: "SH_E05W",
+endPos: [251, 19],
+endRoom: "SH_E05W",
+},
+{
+type: "CreatureHole",
+startPos: [21, 18],
+startRoom: "SH_E05W",
+endPos: [21, 17],
+endRoom: "SH_E05W",
+},
+{
+type: "CreatureHole",
+startPos: [29, 18],
+startRoom: "SH_E05W",
+endPos: [29, 17],
+endRoom: "SH_E05W",
+},
+{
+type: "NPCTransportation",
+startPos: [137, 17],
+startRoom: "SH_E05W",
+endPos: [137, 14],
+endRoom: "SH_E05W",
+},
+{
+type: "DeadEnd",
+startPos: [37, 16],
+startRoom: "SH_E05W",
+endPos: [37, 15],
+endRoom: "SH_E05W",
+},
+{
+type: "NPCTransportation",
+startPos: [71, 16],
+startRoom: "SH_E05W",
+endPos: [71, 15],
+endRoom: "SH_E05W",
+},
+{
+type: "RoomExit",
+startPos: [10, 7],
+startRoom: "SH_E05W",
+endPos: [10, 2],
+endRoom: "SH_E05W",
+},
+{
+type: "RoomExit",
+startPos: [29, 4],
+startRoom: "SH_E05W",
+endPos: [29, 0],
+endRoom: "SH_E05W",
+},
+],
+}

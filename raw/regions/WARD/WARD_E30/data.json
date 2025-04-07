@@ -1,0 +1,56 @@
+{
+mapPos: [799.332, 2055.272],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [8, 30],
+startRoom: "WARD_E30",
+endPos: [8, 33],
+endRoom: "WARD_E30",
+},
+{
+type: "RoomExit",
+startPos: [40, 28],
+startRoom: "WARD_E30",
+endPos: [40, 34],
+endRoom: "WARD_E30",
+},
+{
+type: "CreatureHole",
+startPos: [38, 22],
+startRoom: "WARD_E30",
+endPos: [38, 18],
+endRoom: "WARD_E30",
+},
+{
+type: "NPCTransportation",
+startPos: [9, 14],
+startRoom: "WARD_E30",
+endPos: [3, 14],
+endRoom: "WARD_E30",
+},
+{
+type: "CreatureHole",
+startPos: [11, 12],
+startRoom: "WARD_E30",
+endPos: [11, 6],
+endRoom: "WARD_E30",
+},
+{
+type: "RoomExit",
+startPos: [24, 4],
+startRoom: "WARD_E30",
+endPos: [24, 0],
+endRoom: "WARD_E30",
+},
+],
+}

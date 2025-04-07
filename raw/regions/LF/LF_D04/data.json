@@ -1,0 +1,70 @@
+{
+mapPos: [3587.9, 117],
+size: [105, 78],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [97, 55],
+startRoom: "LF_D04",
+endPos: [96, 14],
+endRoom: "LF_D04",
+},
+{
+type: "RoomExit",
+startPos: [100, 55],
+startRoom: "LF_D04",
+endPos: [104, 50],
+endRoom: "LF_D04",
+},
+{
+type: "CreatureHole",
+startPos: [47, 52],
+startRoom: "LF_D04",
+endPos: [47, 50],
+endRoom: "LF_D04",
+},
+{
+type: "NPCTransportation",
+startPos: [49, 52],
+startRoom: "LF_D04",
+endPos: [49, 50],
+endRoom: "LF_D04",
+},
+{
+type: "RoomExit",
+startPos: [3, 51],
+startRoom: "LF_D04",
+endPos: [0, 46],
+endRoom: "LF_D04",
+},
+{
+type: "DeadEnd",
+startPos: [5, 51],
+startRoom: "LF_D04",
+endPos: [5, 50],
+endRoom: "LF_D04",
+},
+{
+type: "Normal",
+startPos: [96, 14],
+startRoom: "LF_D04",
+endPos: [97, 55],
+endRoom: "LF_D04",
+},
+{
+type: "RoomExit",
+startPos: [6, 12],
+startRoom: "LF_D04",
+endPos: [0, 12],
+endRoom: "LF_D04",
+},
+],
+}

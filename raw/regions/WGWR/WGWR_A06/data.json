@@ -1,0 +1,49 @@
+{
+mapPos: [658.9999, 722.9997],
+size: [54, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [32, 29],
+startRoom: "WGWR_A06",
+endPos: [23, 34],
+endRoom: "WGWR_A06",
+},
+{
+type: "RoomExit",
+startPos: [46, 29],
+startRoom: "WGWR_A06",
+endPos: [52, 29],
+endRoom: "WGWR_A06",
+},
+{
+type: "NPCTransportation",
+startPos: [43, 26],
+startRoom: "WGWR_A06",
+endPos: [43, 25],
+endRoom: "WGWR_A06",
+},
+{
+type: "NPCTransportation",
+startPos: [21, 14],
+startRoom: "WGWR_A06",
+endPos: [21, 13],
+endRoom: "WGWR_A06",
+},
+{
+type: "RoomExit",
+startPos: [5, 10],
+startRoom: "WGWR_A06",
+endPos: [1, 10],
+endRoom: "WGWR_A06",
+},
+],
+}

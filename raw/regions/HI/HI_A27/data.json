@@ -1,0 +1,49 @@
+{
+mapPos: [3319.364, 87.5849],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [4, 16],
+startRoom: "HI_A27",
+endPos: [1, 16],
+endRoom: "HI_A27",
+},
+{
+type: "DeadEnd",
+startPos: [4, 14],
+startRoom: "HI_A27",
+endPos: [1, 14],
+endRoom: "HI_A27",
+},
+{
+type: "RoomExit",
+startPos: [4, 12],
+startRoom: "HI_A27",
+endPos: [0, 12],
+endRoom: "HI_A27",
+},
+{
+type: "RegionTransportation",
+startPos: [16, 8],
+startRoom: "HI_A27",
+endPos: [16, 6],
+endRoom: "HI_A27",
+},
+{
+type: "DeadEnd",
+startPos: [18, 8],
+startRoom: "HI_A27",
+endPos: [18, 7],
+endRoom: "HI_A27",
+},
+],
+}

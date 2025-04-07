@@ -1,0 +1,91 @@
+{
+mapPos: [1505.002, 464.4978],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [6, 29],
+startRoom: "WARF_D13",
+endPos: [6, 34],
+endRoom: "WARF_D13",
+},
+{
+type: "RoomExit",
+startPos: [41, 26],
+startRoom: "WARF_D13",
+endPos: [47, 26],
+endRoom: "WARF_D13",
+},
+{
+type: "CreatureHole",
+startPos: [44, 21],
+startRoom: "WARF_D13",
+endPos: [47, 21],
+endRoom: "WARF_D13",
+},
+{
+type: "NPCTransportation",
+startPos: [7, 18],
+startRoom: "WARF_D13",
+endPos: [7, 15],
+endRoom: "WARF_D13",
+},
+{
+type: "DeadEnd",
+startPos: [9, 18],
+startRoom: "WARF_D13",
+endPos: [9, 17],
+endRoom: "WARF_D13",
+},
+{
+type: "RoomExit",
+startPos: [5, 4],
+startRoom: "WARF_D13",
+endPos: [0, 4],
+endRoom: "WARF_D13",
+},
+{
+type: "RoomExit",
+startPos: [42, 4],
+startRoom: "WARF_D13",
+endPos: [47, 4],
+endRoom: "WARF_D13",
+},
+{
+type: "NPCTransportation",
+startPos: [23, 1],
+startRoom: "WARF_D13",
+endPos: [17, 0],
+endRoom: "WARF_D13",
+},
+{
+type: "DeadEnd",
+startPos: [25, 1],
+startRoom: "WARF_D13",
+endPos: [25, 0],
+endRoom: "WARF_D13",
+},
+{
+type: "DeadEnd",
+startPos: [35, 1],
+startRoom: "WARF_D13",
+endPos: [35, 0],
+endRoom: "WARF_D13",
+},
+{
+type: "NPCTransportation",
+startPos: [37, 1],
+startRoom: "WARF_D13",
+endPos: [41, 0],
+endRoom: "WARF_D13",
+},
+],
+}

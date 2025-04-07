@@ -1,0 +1,70 @@
+{
+mapPos: [1927.502, 815.0563],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [41, 26],
+startRoom: "WARG_G07",
+endPos: [47, 26],
+endRoom: "WARG_G07",
+},
+{
+type: "Normal",
+startPos: [35, 23],
+startRoom: "WARG_G07",
+endPos: [33, 11],
+endRoom: "WARG_G07",
+},
+{
+type: "RegionTransportation",
+startPos: [37, 23],
+startRoom: "WARG_G07",
+endPos: [37, 20],
+endRoom: "WARG_G07",
+},
+{
+type: "RoomExit",
+startPos: [10, 22],
+startRoom: "WARG_G07",
+endPos: [0, 22],
+endRoom: "WARG_G07",
+},
+{
+type: "RoomExit",
+startPos: [33, 18],
+startRoom: "WARG_G07",
+endPos: [47, 18],
+endRoom: "WARG_G07",
+},
+{
+type: "CreatureHole",
+startPos: [12, 11],
+startRoom: "WARG_G07",
+endPos: [5, 11],
+endRoom: "WARG_G07",
+},
+{
+type: "Normal",
+startPos: [33, 11],
+startRoom: "WARG_G07",
+endPos: [35, 23],
+endRoom: "WARG_G07",
+},
+{
+type: "RoomExit",
+startPos: [28, 4],
+startRoom: "WARG_G07",
+endPos: [28, 0],
+endRoom: "WARG_G07",
+},
+],
+}

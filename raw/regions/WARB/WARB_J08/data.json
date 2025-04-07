@@ -1,0 +1,29 @@
+{
+mapPos: [1683.039, 430.9999],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+{
+pos: [463.3199, 429.7054],
+region: null,
+room: null,
+pos: null,
+oneWay: true,
+ripple: true,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [24, 13],
+startRoom: "WARB_J08",
+endPos: [24, 7],
+endRoom: "WARB_J08",
+},
+],
+}

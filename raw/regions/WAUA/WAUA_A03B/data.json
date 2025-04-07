@@ -1,0 +1,98 @@
+{
+mapPos: [4424.55, 649.4108],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [21, 31],
+startRoom: "WAUA_A03B",
+endPos: [21, 33],
+endRoom: "WAUA_A03B",
+},
+{
+type: "RoomExit",
+startPos: [24, 31],
+startRoom: "WAUA_A03B",
+endPos: [24, 34],
+endRoom: "WAUA_A03B",
+},
+{
+type: "Normal",
+startPos: [27, 31],
+startRoom: "WAUA_A03B",
+endPos: [38, 20],
+endRoom: "WAUA_A03B",
+},
+{
+type: "NPCTransportation",
+startPos: [10, 20],
+startRoom: "WAUA_A03B",
+endPos: [7, 20],
+endRoom: "WAUA_A03B",
+},
+{
+type: "Normal",
+startPos: [38, 20],
+startRoom: "WAUA_A03B",
+endPos: [27, 31],
+endRoom: "WAUA_A03B",
+},
+{
+type: "RoomExit",
+startPos: [10, 17],
+startRoom: "WAUA_A03B",
+endPos: [1, 17],
+endRoom: "WAUA_A03B",
+},
+{
+type: "Normal",
+startPos: [38, 17],
+startRoom: "WAUA_A03B",
+endPos: [38, 14],
+endRoom: "WAUA_A03B",
+},
+{
+type: "CreatureHole",
+startPos: [10, 14],
+startRoom: "WAUA_A03B",
+endPos: [7, 14],
+endRoom: "WAUA_A03B",
+},
+{
+type: "Normal",
+startPos: [38, 14],
+startRoom: "WAUA_A03B",
+endPos: [38, 17],
+endRoom: "WAUA_A03B",
+},
+{
+type: "RoomExit",
+startPos: [21, 3],
+startRoom: "WAUA_A03B",
+endPos: [21, 0],
+endRoom: "WAUA_A03B",
+},
+{
+type: "NPCTransportation",
+startPos: [24, 3],
+startRoom: "WAUA_A03B",
+endPos: [24, 0],
+endRoom: "WAUA_A03B",
+},
+{
+type: "CreatureHole",
+startPos: [27, 3],
+startRoom: "WAUA_A03B",
+endPos: [27, 0],
+endRoom: "WAUA_A03B",
+},
+],
+}

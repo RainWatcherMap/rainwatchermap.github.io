@@ -1,0 +1,91 @@
+{
+mapPos: [1550, 586.4986],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [52, 26],
+startRoom: "WARF_D29",
+endPos: [52, 0],
+endRoom: "WARF_D29",
+},
+{
+type: "RoomExit",
+startPos: [5, 24],
+startRoom: "WARF_D29",
+endPos: [0, 24],
+endRoom: "WARF_D29",
+},
+{
+type: "DeadEnd",
+startPos: [1, 19],
+startRoom: "WARF_D29",
+endPos: [0, 19],
+endRoom: "WARF_D29",
+},
+{
+type: "DeadEnd",
+startPos: [2, 14],
+startRoom: "WARF_D29",
+endPos: [1, 14],
+endRoom: "WARF_D29",
+},
+{
+type: "CreatureHole",
+startPos: [5, 9],
+startRoom: "WARF_D29",
+endPos: [0, 9],
+endRoom: "WARF_D29",
+},
+{
+type: "RoomExit",
+startPos: [90, 9],
+startRoom: "WARF_D29",
+endPos: [99, 9],
+endRoom: "WARF_D29",
+},
+{
+type: "NPCTransportation",
+startPos: [46, 7],
+startRoom: "WARF_D29",
+endPos: [46, 0],
+endRoom: "WARF_D29",
+},
+{
+type: "Normal",
+startPos: [48, 7],
+startRoom: "WARF_D29",
+endPos: [56, 7],
+endRoom: "WARF_D29",
+},
+{
+type: "Normal",
+startPos: [56, 7],
+startRoom: "WARF_D29",
+endPos: [48, 7],
+endRoom: "WARF_D29",
+},
+{
+type: "NPCTransportation",
+startPos: [61, 4],
+startRoom: "WARF_D29",
+endPos: [61, 0],
+endRoom: "WARF_D29",
+},
+{
+type: "CreatureHole",
+startPos: [63, 4],
+startRoom: "WARF_D29",
+endPos: [63, 0],
+endRoom: "WARF_D29",
+},
+],
+}

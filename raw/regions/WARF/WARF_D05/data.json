@@ -1,0 +1,63 @@
+{
+mapPos: [1550.001, 312.5],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [95, 26],
+startRoom: "WARF_D05",
+endPos: [99, 26],
+endRoom: "WARF_D05",
+},
+{
+type: "RoomExit",
+startPos: [26, 24],
+startRoom: "WARF_D05",
+endPos: [23, 34],
+endRoom: "WARF_D05",
+},
+{
+type: "RoomExit",
+startPos: [5, 19],
+startRoom: "WARF_D05",
+endPos: [0, 19],
+endRoom: "WARF_D05",
+},
+{
+type: "Normal",
+startPos: [16, 13],
+startRoom: "WARF_D05",
+endPos: [19, 7],
+endRoom: "WARF_D05",
+},
+{
+type: "RoomExit",
+startPos: [94, 11],
+startRoom: "WARF_D05",
+endPos: [99, 11],
+endRoom: "WARF_D05",
+},
+{
+type: "Normal",
+startPos: [19, 7],
+startRoom: "WARF_D05",
+endPos: [16, 13],
+endRoom: "WARF_D05",
+},
+{
+type: "CreatureHole",
+startPos: [65, 3],
+startRoom: "WARF_D05",
+endPos: [58, 3],
+endRoom: "WARF_D05",
+},
+],
+}

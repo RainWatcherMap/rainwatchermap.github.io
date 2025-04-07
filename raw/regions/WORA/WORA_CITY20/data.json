@@ -1,0 +1,49 @@
+{
+mapPos: [8843.331, 107.864],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [21, 26],
+startRoom: "WORA_CITY20",
+endPos: [21, 33],
+endRoom: "WORA_CITY20",
+},
+{
+type: "DeadEnd",
+startPos: [23, 26],
+startRoom: "WORA_CITY20",
+endPos: [23, 31],
+endRoom: "WORA_CITY20",
+},
+{
+type: "DeadEnd",
+startPos: [25, 26],
+startRoom: "WORA_CITY20",
+endPos: [25, 31],
+endRoom: "WORA_CITY20",
+},
+{
+type: "DeadEnd",
+startPos: [31, 20],
+startRoom: "WORA_CITY20",
+endPos: [32, 20],
+endRoom: "WORA_CITY20",
+},
+{
+type: "DeadEnd",
+startPos: [15, 16],
+startRoom: "WORA_CITY20",
+endPos: [14, 16],
+endRoom: "WORA_CITY20",
+},
+],
+}

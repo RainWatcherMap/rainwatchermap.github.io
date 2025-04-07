@@ -25,15 +25,6 @@ startPlease.start(this.manager);
    RoomCamera.FireUpSinglePlayerHUD(): remove
 */
 
-/*
-   Room.AddObject()
-using (var log = new System.IO.StreamWriter(@"C:\Users\Artem\Downloads\rwmap\warpstack.txt")) {
-    try { throw new Exception(); }
-    catch(Exception e) { log.WriteLine(e); }
-}
-}
-*/
-
 // See MapExporter in game dll
 
 class StartPlease : MonoBehaviour {
@@ -179,35 +170,43 @@ class StartPlease : MonoBehaviour {
                         sw2.WriteLine("layer: " + room.layer + ",");
                         sw2.WriteLine("shelter: " + (room.shelter ? "true" : "false") + ",");
 
-                        var warpPoints = new List<WarpPoint.WarpPointData>();
-                        var echoSpots = new List<SpinningTopData>();
+                        var warpPoints = new List<PlacedObject>();
+                        var echoSpots = new List<PlacedObject>();
+                        var karmaFlowers = new List<PlacedObject>();
                         foreach(var obj in room.realizedRoom.roomSettings.placedObjects) {
                             if(obj.type == PlacedObject.Type.WarpPoint) {
-                                warpPoints.Add(obj.data as WarpPoint.WarpPointData);
+                                warpPoints.Add(obj);
                             }
                             else if(obj.type == WatcherEnums.PlacedObjectType.SpinningTopSpot) {
-                                echoSpots.Add(obj.data as SpinningTopData);
+                                echoSpots.Add(obj);
+                            }
+                            else if(obj.type == PlacedObject.Type.KarmaFlower) {
+                                karmaFlowers.Add(obj);
                             }
                         }
 
                         sw2.WriteLine("warpPoints: [");
-                        foreach(var data in warpPoints) {
+                        foreach(var obj in warpPoints) {
+                            var data = obj.data as WarpPoint.WarpPointData;
                             var reg = data.RegionString;
                             var roomName = data.destRoom;
                             var pos = data.destPos;
                             var oneWay = data.oneWay;
 
                             sw2.WriteLine("{");
+                            sw2.WriteLine("pos: " + "[" + obj.pos.x + ", " + obj.pos.y + "]" + ",");
                             sw2.WriteLine("region: " + (reg != null ? "\"" + reg + "\"" : "null") + ",");
                             sw2.WriteLine("room: " + (roomName != null ? "\"" + roomName + "\"" : "null") + ",");
                             sw2.WriteLine("pos: " + (pos != null ? "[" + pos.Value.x + ", " + pos.Value.y + "]" : "null") + ",");
                             sw2.WriteLine("oneWay: " + (oneWay ? "true" : "false") + ",");
+                            sw2.WriteLine("ripple: " + (data.rippleWarp ? "true" : "false") + ",");
                             sw2.WriteLine("},");
                         }
                         sw2.WriteLine("],");
 
                         sw2.WriteLine("echoSpots: [");
-                        foreach(var data in echoSpots) {
+                        foreach(var obj in echoSpots) {
+                            var data = obj.data as SpinningTopData;
                             var panelPos = data.panelPos;
                             var destPos = data.destPos;
                             var destRegion = data.RegionString;
@@ -215,6 +214,7 @@ class StartPlease : MonoBehaviour {
                             var spawnId = data.spawnIdentifier;
 
                             sw2.WriteLine("{");
+                            sw2.WriteLine("pos: " + "[" + obj.pos.x + ", " + obj.pos.y + "]" + ",");
                             sw2.WriteLine("panelPos: " + (panelPos != null ? "[" + panelPos.x + ", " + panelPos.y + "]" : "null") + ",");
                             sw2.WriteLine("destPos: " + (destPos != null ? "[" + destPos.Value.x + ", " + destPos.Value.y + "]" : "null") + ",");
                             sw2.WriteLine("destRegion: " + (destRegion != null ? "\"" + destRegion + "\"" : "null") + ",");
@@ -224,8 +224,33 @@ class StartPlease : MonoBehaviour {
                         }
                         sw2.WriteLine("],");
 
+                        sw2.WriteLine("karmaFlowers: [");
+                        foreach(var obj in karmaFlowers) {
+                            sw2.WriteLine("{");
+                            sw2.WriteLine("pos: " + "[" + obj.pos.x + ", " + obj.pos.y + "]" + ",");
+                            sw2.WriteLine("},");
+                        }
+                        sw2.WriteLine("],");
+
+                        sw2.WriteLine("shortcuts: [");
+                        foreach(var shortcut in room.realizedRoom.shortcuts) {
+                            var conn = shortcut.connection;
+                            var s = conn.startCoord;
+                            var e = conn.destinationCoord;
+
+                            sw2.WriteLine("{");
+                            sw2.WriteLine("type: \"" + shortcut.shortCutType.value + "\",");
+                            sw2.WriteLine("startPos: [" + s.x + ", " + s.y + "],");
+                            sw2.WriteLine("startRoom: \"" + s.ResolveRoomName() + "\",");
+                            sw2.WriteLine("endPos: [" + e.x + ", " + e.y + "],");
+                            sw2.WriteLine("endRoom: \"" + e.ResolveRoomName() + "\",");
+                            sw2.WriteLine("},");
+                        }
+                        sw2.WriteLine("],");
+
                         sw2.WriteLine("}");
                     }
+                    continue;
 
                     rainWorld.cameras[0].MoveCamera(room.realizedRoom, 0);
                 }

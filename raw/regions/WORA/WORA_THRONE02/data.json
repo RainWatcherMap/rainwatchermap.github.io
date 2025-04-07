@@ -1,0 +1,56 @@
+{
+mapPos: [609, 1026.863],
+size: [68, 217],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [20, 209],
+startRoom: "WORA_THRONE02",
+endPos: [12, 213],
+endRoom: "WORA_THRONE02",
+},
+{
+type: "RoomExit",
+startPos: [17, 136],
+startRoom: "WORA_THRONE02",
+endPos: [11, 126],
+endRoom: "WORA_THRONE02",
+},
+{
+type: "RoomExit",
+startPos: [51, 129],
+startRoom: "WORA_THRONE02",
+endPos: [55, 121],
+endRoom: "WORA_THRONE02",
+},
+{
+type: "RoomExit",
+startPos: [13, 57],
+startRoom: "WORA_THRONE02",
+endPos: [1, 57],
+endRoom: "WORA_THRONE02",
+},
+{
+type: "DeadEnd",
+startPos: [55, 53],
+startRoom: "WORA_THRONE02",
+endPos: [66, 52],
+endRoom: "WORA_THRONE02",
+},
+{
+type: "RoomExit",
+startPos: [34, 8],
+startRoom: "WORA_THRONE02",
+endPos: [38, 1],
+endRoom: "WORA_THRONE02",
+},
+],
+}

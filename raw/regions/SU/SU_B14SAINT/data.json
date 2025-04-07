@@ -1,0 +1,70 @@
+{
+mapPos: [1433.229, 545.4922],
+size: [105, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [3, 20],
+startRoom: "SU_B14SAINT",
+endPos: [0, 20],
+endRoom: "SU_B14SAINT",
+},
+{
+type: "DeadEnd",
+startPos: [98, 20],
+startRoom: "SU_B14SAINT",
+endPos: [103, 20],
+endRoom: "SU_B14SAINT",
+},
+{
+type: "DeadEnd",
+startPos: [3, 18],
+startRoom: "SU_B14SAINT",
+endPos: [0, 18],
+endRoom: "SU_B14SAINT",
+},
+{
+type: "DeadEnd",
+startPos: [98, 18],
+startRoom: "SU_B14SAINT",
+endPos: [103, 18],
+endRoom: "SU_B14SAINT",
+},
+{
+type: "DeadEnd",
+startPos: [3, 16],
+startRoom: "SU_B14SAINT",
+endPos: [0, 16],
+endRoom: "SU_B14SAINT",
+},
+{
+type: "DeadEnd",
+startPos: [98, 16],
+startRoom: "SU_B14SAINT",
+endPos: [103, 16],
+endRoom: "SU_B14SAINT",
+},
+{
+type: "RoomExit",
+startPos: [3, 14],
+startRoom: "SU_B14SAINT",
+endPos: [0, 14],
+endRoom: "SU_B14SAINT",
+},
+{
+type: "RoomExit",
+startPos: [98, 14],
+startRoom: "SU_B14SAINT",
+endPos: [104, 14],
+endRoom: "SU_B14SAINT",
+},
+],
+}

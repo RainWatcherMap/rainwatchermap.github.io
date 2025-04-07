@@ -1,0 +1,35 @@
+{
+mapPos: [1929.342, 366.4997],
+size: [54, 78],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [35, 68],
+startRoom: "WHIR_B14",
+endPos: [35, 77],
+endRoom: "WHIR_B14",
+},
+{
+type: "DeadEnd",
+startPos: [4, 64],
+startRoom: "WHIR_B14",
+endPos: [1, 64],
+endRoom: "WHIR_B14",
+},
+{
+type: "RoomExit",
+startPos: [4, 62],
+startRoom: "WHIR_B14",
+endPos: [1, 62],
+endRoom: "WHIR_B14",
+},
+],
+}

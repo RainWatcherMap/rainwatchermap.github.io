@@ -1,0 +1,91 @@
+{
+mapPos: [744, 406.0001],
+size: [110, 38],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "CreatureHole",
+startPos: [11, 36],
+startRoom: "WDSR_B07",
+endPos: [11, 37],
+endRoom: "WDSR_B07",
+},
+{
+type: "Normal",
+startPos: [31, 36],
+startRoom: "WDSR_B07",
+endPos: [48, 36],
+endRoom: "WDSR_B07",
+},
+{
+type: "Normal",
+startPos: [48, 36],
+startRoom: "WDSR_B07",
+endPos: [31, 36],
+endRoom: "WDSR_B07",
+},
+{
+type: "Normal",
+startPos: [67, 36],
+startRoom: "WDSR_B07",
+endPos: [84, 36],
+endRoom: "WDSR_B07",
+},
+{
+type: "Normal",
+startPos: [84, 36],
+startRoom: "WDSR_B07",
+endPos: [67, 36],
+endRoom: "WDSR_B07",
+},
+{
+type: "RoomExit",
+startPos: [4, 31],
+startRoom: "WDSR_B07",
+endPos: [1, 31],
+endRoom: "WDSR_B07",
+},
+{
+type: "RoomExit",
+startPos: [104, 31],
+startRoom: "WDSR_B07",
+endPos: [109, 31],
+endRoom: "WDSR_B07",
+},
+{
+type: "CreatureHole",
+startPos: [4, 7],
+startRoom: "WDSR_B07",
+endPos: [1, 7],
+endRoom: "WDSR_B07",
+},
+{
+type: "RoomExit",
+startPos: [90, 5],
+startRoom: "WDSR_B07",
+endPos: [90, 3],
+endRoom: "WDSR_B07",
+},
+{
+type: "CreatureHole",
+startPos: [25, 3],
+startRoom: "WDSR_B07",
+endPos: [25, 2],
+endRoom: "WDSR_B07",
+},
+{
+type: "CreatureHole",
+startPos: [61, 3],
+startRoom: "WDSR_B07",
+endPos: [61, 2],
+endRoom: "WDSR_B07",
+},
+],
+}

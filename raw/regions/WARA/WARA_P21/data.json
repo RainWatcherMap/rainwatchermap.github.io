@@ -1,0 +1,56 @@
+{
+mapPos: [2786.02, 903.7591],
+size: [100, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "CreatureHole",
+startPos: [5, 29],
+startRoom: "WARA_P21",
+endPos: [0, 29],
+endRoom: "WARA_P21",
+},
+{
+type: "RoomExit",
+startPos: [44, 25],
+startRoom: "WARA_P21",
+endPos: [44, 31],
+endRoom: "WARA_P21",
+},
+{
+type: "DeadEnd",
+startPos: [88, 19],
+startRoom: "WARA_P21",
+endPos: [91, 19],
+endRoom: "WARA_P21",
+},
+{
+type: "DeadEnd",
+startPos: [9, 17],
+startRoom: "WARA_P21",
+endPos: [7, 17],
+endRoom: "WARA_P21",
+},
+{
+type: "RoomExit",
+startPos: [88, 17],
+startRoom: "WARA_P21",
+endPos: [97, 17],
+endRoom: "WARA_P21",
+},
+{
+type: "RoomExit",
+startPos: [9, 15],
+startRoom: "WARA_P21",
+endPos: [3, 15],
+endRoom: "WARA_P21",
+},
+],
+}

@@ -1,0 +1,70 @@
+{
+mapPos: [4068.346, 456.342],
+size: [151, 75],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [137, 62],
+startRoom: "WBLA_F03",
+endPos: [137, 60],
+endRoom: "WBLA_F03",
+},
+{
+type: "RoomExit",
+startPos: [3, 48],
+startRoom: "WBLA_F03",
+endPos: [0, 48],
+endRoom: "WBLA_F03",
+},
+{
+type: "RegionTransportation",
+startPos: [143, 23],
+startRoom: "WBLA_F03",
+endPos: [144, 23],
+endRoom: "WBLA_F03",
+},
+{
+type: "RoomExit",
+startPos: [60, 10],
+startRoom: "WBLA_F03",
+endPos: [55, 10],
+endRoom: "WBLA_F03",
+},
+{
+type: "Normal",
+startPos: [130, 7],
+startRoom: "WBLA_F03",
+endPos: [117, 6],
+endRoom: "WBLA_F03",
+},
+{
+type: "Normal",
+startPos: [117, 6],
+startRoom: "WBLA_F03",
+endPos: [130, 7],
+endRoom: "WBLA_F03",
+},
+{
+type: "CreatureHole",
+startPos: [133, 6],
+startRoom: "WBLA_F03",
+endPos: [133, 5],
+endRoom: "WBLA_F03",
+},
+{
+type: "RoomExit",
+startPos: [136, 6],
+startRoom: "WBLA_F03",
+endPos: [136, 0],
+endRoom: "WBLA_F03",
+},
+],
+}

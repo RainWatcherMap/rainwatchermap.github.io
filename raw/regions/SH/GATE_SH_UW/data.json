@@ -1,0 +1,49 @@
+{
+mapPos: [6621.073, 726.852],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [43, 23],
+startRoom: "GATE_SH_UW",
+endPos: [47, 34],
+endRoom: "GATE_SH_UW",
+},
+{
+type: "DeadEnd",
+startPos: [2, 15],
+startRoom: "GATE_SH_UW",
+endPos: [0, 15],
+endRoom: "GATE_SH_UW",
+},
+{
+type: "DeadEnd",
+startPos: [2, 13],
+startRoom: "GATE_SH_UW",
+endPos: [0, 13],
+endRoom: "GATE_SH_UW",
+},
+{
+type: "RoomExit",
+startPos: [2, 11],
+startRoom: "GATE_SH_UW",
+endPos: [0, 11],
+endRoom: "GATE_SH_UW",
+},
+{
+type: "DeadEnd",
+startPos: [2, 9],
+startRoom: "GATE_SH_UW",
+endPos: [0, 9],
+endRoom: "GATE_SH_UW",
+},
+],
+}

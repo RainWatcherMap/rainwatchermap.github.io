@@ -1,0 +1,84 @@
+{
+mapPos: [1299.342, 429.4997],
+size: [100, 37],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [44, 35],
+startRoom: "WHIR_B06",
+endPos: [44, 36],
+endRoom: "WHIR_B06",
+},
+{
+type: "DeadEnd",
+startPos: [47, 35],
+startRoom: "WHIR_B06",
+endPos: [47, 36],
+endRoom: "WHIR_B06",
+},
+{
+type: "DeadEnd",
+startPos: [50, 35],
+startRoom: "WHIR_B06",
+endPos: [50, 36],
+endRoom: "WHIR_B06",
+},
+{
+type: "DeadEnd",
+startPos: [53, 35],
+startRoom: "WHIR_B06",
+endPos: [53, 36],
+endRoom: "WHIR_B06",
+},
+{
+type: "DeadEnd",
+startPos: [56, 35],
+startRoom: "WHIR_B06",
+endPos: [56, 36],
+endRoom: "WHIR_B06",
+},
+{
+type: "RoomExit",
+startPos: [66, 34],
+startRoom: "WHIR_B06",
+endPos: [66, 36],
+endRoom: "WHIR_B06",
+},
+{
+type: "Normal",
+startPos: [97, 32],
+startRoom: "WHIR_B06",
+endPos: [97, 26],
+endRoom: "WHIR_B06",
+},
+{
+type: "Normal",
+startPos: [97, 26],
+startRoom: "WHIR_B06",
+endPos: [97, 32],
+endRoom: "WHIR_B06",
+},
+{
+type: "RoomExit",
+startPos: [4, 19],
+startRoom: "WHIR_B06",
+endPos: [0, 19],
+endRoom: "WHIR_B06",
+},
+{
+type: "RoomExit",
+startPos: [97, 19],
+startRoom: "WHIR_B06",
+endPos: [99, 19],
+endRoom: "WHIR_B06",
+},
+],
+}

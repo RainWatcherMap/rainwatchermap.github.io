@@ -1,0 +1,56 @@
+{
+mapPos: [521.301, 158.7373],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [20, 27],
+startRoom: "WSKA_D21",
+endPos: [20, 28],
+endRoom: "WSKA_D21",
+},
+{
+type: "DeadEnd",
+startPos: [9, 17],
+startRoom: "WSKA_D21",
+endPos: [8, 17],
+endRoom: "WSKA_D21",
+},
+{
+type: "DeadEnd",
+startPos: [42, 17],
+startRoom: "WSKA_D21",
+endPos: [43, 17],
+endRoom: "WSKA_D21",
+},
+{
+type: "CreatureHole",
+startPos: [9, 15],
+startRoom: "WSKA_D21",
+endPos: [8, 15],
+endRoom: "WSKA_D21",
+},
+{
+type: "RoomExit",
+startPos: [42, 15],
+startRoom: "WSKA_D21",
+endPos: [47, 15],
+endRoom: "WSKA_D21",
+},
+{
+type: "RoomExit",
+startPos: [20, 3],
+startRoom: "WSKA_D21",
+endPos: [20, 0],
+endRoom: "WSKA_D21",
+},
+],
+}

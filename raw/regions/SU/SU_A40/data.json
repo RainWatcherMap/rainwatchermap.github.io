@@ -1,0 +1,91 @@
+{
+mapPos: [3551.917, 1021.504],
+size: [50, 36],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [20, 33],
+startRoom: "SU_A40",
+endPos: [48, 26],
+endRoom: "SU_A40",
+},
+{
+type: "Normal",
+startPos: [48, 26],
+startRoom: "SU_A40",
+endPos: [20, 33],
+endRoom: "SU_A40",
+},
+{
+type: "RoomExit",
+startPos: [2, 24],
+startRoom: "SU_A40",
+endPos: [0, 24],
+endRoom: "SU_A40",
+},
+{
+type: "Normal",
+startPos: [48, 23],
+startRoom: "SU_A40",
+endPos: [45, 2],
+endRoom: "SU_A40",
+},
+{
+type: "RoomExit",
+startPos: [2, 17],
+startRoom: "SU_A40",
+endPos: [0, 17],
+endRoom: "SU_A40",
+},
+{
+type: "Normal",
+startPos: [5, 2],
+startRoom: "SU_A40",
+endPos: [15, 2],
+endRoom: "SU_A40",
+},
+{
+type: "Normal",
+startPos: [15, 2],
+startRoom: "SU_A40",
+endPos: [5, 2],
+endRoom: "SU_A40",
+},
+{
+type: "CreatureHole",
+startPos: [23, 2],
+startRoom: "SU_A40",
+endPos: [23, 0],
+endRoom: "SU_A40",
+},
+{
+type: "NPCTransportation",
+startPos: [30, 2],
+startRoom: "SU_A40",
+endPos: [30, 0],
+endRoom: "SU_A40",
+},
+{
+type: "NPCTransportation",
+startPos: [37, 2],
+startRoom: "SU_A40",
+endPos: [37, 0],
+endRoom: "SU_A40",
+},
+{
+type: "Normal",
+startPos: [45, 2],
+startRoom: "SU_A40",
+endPos: [48, 23],
+endRoom: "SU_A40",
+},
+],
+}

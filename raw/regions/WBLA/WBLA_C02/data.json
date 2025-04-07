@@ -1,0 +1,84 @@
+{
+mapPos: [3241.791, 428.5533],
+size: [150, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [90, 28],
+startRoom: "WBLA_C02",
+endPos: [69, 21],
+endRoom: "WBLA_C02",
+},
+{
+type: "Normal",
+startPos: [55, 22],
+startRoom: "WBLA_C02",
+endPos: [50, 21],
+endRoom: "WBLA_C02",
+},
+{
+type: "Normal",
+startPos: [50, 21],
+startRoom: "WBLA_C02",
+endPos: [55, 22],
+endRoom: "WBLA_C02",
+},
+{
+type: "Normal",
+startPos: [69, 21],
+startRoom: "WBLA_C02",
+endPos: [90, 28],
+endRoom: "WBLA_C02",
+},
+{
+type: "RoomExit",
+startPos: [143, 13],
+startRoom: "WBLA_C02",
+endPos: [149, 13],
+endRoom: "WBLA_C02",
+},
+{
+type: "RoomExit",
+startPos: [8, 5],
+startRoom: "WBLA_C02",
+endPos: [0, 4],
+endRoom: "WBLA_C02",
+},
+{
+type: "CreatureHole",
+startPos: [133, 5],
+startRoom: "WBLA_C02",
+endPos: [133, 4],
+endRoom: "WBLA_C02",
+},
+{
+type: "NPCTransportation",
+startPos: [136, 5],
+startRoom: "WBLA_C02",
+endPos: [136, 4],
+endRoom: "WBLA_C02",
+},
+{
+type: "NPCTransportation",
+startPos: [14, 2],
+startRoom: "WBLA_C02",
+endPos: [14, 1],
+endRoom: "WBLA_C02",
+},
+{
+type: "CreatureHole",
+startPos: [17, 2],
+startRoom: "WBLA_C02",
+endPos: [17, 1],
+endRoom: "WBLA_C02",
+},
+],
+}

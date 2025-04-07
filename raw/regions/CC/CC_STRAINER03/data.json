@@ -1,0 +1,63 @@
+{
+mapPos: [1140.117, 255.291],
+size: [101, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [11, 20],
+startRoom: "CC_STRAINER03",
+endPos: [1, 26],
+endRoom: "CC_STRAINER03",
+},
+{
+type: "RoomExit",
+startPos: [92, 15],
+startRoom: "CC_STRAINER03",
+endPos: [92, 33],
+endRoom: "CC_STRAINER03",
+},
+{
+type: "NPCTransportation",
+startPos: [48, 13],
+startRoom: "CC_STRAINER03",
+endPos: [53, 20],
+endRoom: "CC_STRAINER03",
+},
+{
+type: "NPCTransportation",
+startPos: [65, 7],
+startRoom: "CC_STRAINER03",
+endPos: [65, 0],
+endRoom: "CC_STRAINER03",
+},
+{
+type: "CreatureHole",
+startPos: [33, 6],
+startRoom: "CC_STRAINER03",
+endPos: [33, 0],
+endRoom: "CC_STRAINER03",
+},
+{
+type: "CreatureHole",
+startPos: [73, 4],
+startRoom: "CC_STRAINER03",
+endPos: [73, 0],
+endRoom: "CC_STRAINER03",
+},
+{
+type: "CreatureHole",
+startPos: [87, 4],
+startRoom: "CC_STRAINER03",
+endPos: [87, 0],
+endRoom: "CC_STRAINER03",
+},
+],
+}

@@ -1,0 +1,42 @@
+{
+mapPos: [72, 205.9139],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [36, 19],
+startRoom: "WHIR_GATE",
+endPos: [46, 22],
+endRoom: "WHIR_GATE",
+},
+{
+type: "DeadEnd",
+startPos: [45, 12],
+startRoom: "WHIR_GATE",
+endPos: [47, 12],
+endRoom: "WHIR_GATE",
+},
+{
+type: "RoomExit",
+startPos: [45, 9],
+startRoom: "WHIR_GATE",
+endPos: [47, 9],
+endRoom: "WHIR_GATE",
+},
+{
+type: "DeadEnd",
+startPos: [36, 5],
+startRoom: "WHIR_GATE",
+endPos: [36, 0],
+endRoom: "WHIR_GATE",
+},
+],
+}

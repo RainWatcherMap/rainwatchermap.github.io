@@ -1,0 +1,70 @@
+{
+mapPos: [1478.923, 395.1673],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RegionTransportation",
+startPos: [42, 30],
+startRoom: "WSKD_B23",
+endPos: [42, 31],
+endRoom: "WSKD_B23",
+},
+{
+type: "RoomExit",
+startPos: [44, 30],
+startRoom: "WSKD_B23",
+endPos: [47, 33],
+endRoom: "WSKD_B23",
+},
+{
+type: "RegionTransportation",
+startPos: [23, 28],
+startRoom: "WSKD_B23",
+endPos: [23, 29],
+endRoom: "WSKD_B23",
+},
+{
+type: "RoomExit",
+startPos: [25, 28],
+startRoom: "WSKD_B23",
+endPos: [25, 34],
+endRoom: "WSKD_B23",
+},
+{
+type: "RegionTransportation",
+startPos: [4, 24],
+startRoom: "WSKD_B23",
+endPos: [3, 24],
+endRoom: "WSKD_B23",
+},
+{
+type: "RoomExit",
+startPos: [4, 22],
+startRoom: "WSKD_B23",
+endPos: [0, 22],
+endRoom: "WSKD_B23",
+},
+{
+type: "RoomExit",
+startPos: [23, 7],
+startRoom: "WSKD_B23",
+endPos: [23, 1],
+endRoom: "WSKD_B23",
+},
+{
+type: "DeadEnd",
+startPos: [25, 7],
+startRoom: "WSKD_B23",
+endPos: [25, 6],
+endRoom: "WSKD_B23",
+},
+],
+}

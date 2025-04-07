@@ -1,0 +1,42 @@
+{
+mapPos: [2188.897, 954.0002],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [30, 15],
+startRoom: "LF_A10",
+endPos: [30, 4],
+endRoom: "LF_A10",
+},
+{
+type: "Normal",
+startPos: [30, 4],
+startRoom: "LF_A10",
+endPos: [30, 15],
+endRoom: "LF_A10",
+},
+{
+type: "RoomExit",
+startPos: [6, 1],
+startRoom: "LF_A10",
+endPos: [0, 0],
+endRoom: "LF_A10",
+},
+{
+type: "RoomExit",
+startPos: [40, 1],
+startRoom: "LF_A10",
+endPos: [47, 1],
+endRoom: "LF_A10",
+},
+],
+}

@@ -1,0 +1,28 @@
+{
+mapPos: [5821.54, 2130.947],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [2, 19],
+startRoom: "WARG_A01_Future",
+endPos: [1, 19],
+endRoom: "WARG_A01_Future",
+},
+{
+type: "RoomExit",
+startPos: [2, 17],
+startRoom: "WARG_A01_Future",
+endPos: [0, 17],
+endRoom: "WARG_A01_Future",
+},
+],
+}

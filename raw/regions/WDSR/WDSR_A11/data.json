@@ -1,0 +1,70 @@
+{
+mapPos: [972, 310.9998],
+size: [54, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [14, 30],
+startRoom: "WDSR_A11",
+endPos: [40, 30],
+endRoom: "WDSR_A11",
+},
+{
+type: "Normal",
+startPos: [40, 30],
+startRoom: "WDSR_A11",
+endPos: [14, 30],
+endRoom: "WDSR_A11",
+},
+{
+type: "NPCTransportation",
+startPos: [4, 24],
+startRoom: "WDSR_A11",
+endPos: [3, 24],
+endRoom: "WDSR_A11",
+},
+{
+type: "Normal",
+startPos: [49, 16],
+startRoom: "WDSR_A11",
+endPos: [41, 2],
+endRoom: "WDSR_A11",
+},
+{
+type: "RoomExit",
+startPos: [4, 13],
+startRoom: "WDSR_A11",
+endPos: [1, 13],
+endRoom: "WDSR_A11",
+},
+{
+type: "CreatureHole",
+startPos: [37, 2],
+startRoom: "WDSR_A11",
+endPos: [37, 1],
+endRoom: "WDSR_A11",
+},
+{
+type: "NPCTransportation",
+startPos: [39, 2],
+startRoom: "WDSR_A11",
+endPos: [39, 1],
+endRoom: "WDSR_A11",
+},
+{
+type: "Normal",
+startPos: [41, 2],
+startRoom: "WDSR_A11",
+endPos: [49, 16],
+endRoom: "WDSR_A11",
+},
+],
+}

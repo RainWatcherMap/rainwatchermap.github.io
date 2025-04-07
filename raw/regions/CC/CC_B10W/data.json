@@ -1,0 +1,56 @@
+{
+mapPos: [1986.517, 1888.763],
+size: [48, 152],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [27, 126],
+startRoom: "CC_B10W",
+endPos: [31, 148],
+endRoom: "CC_B10W",
+},
+{
+type: "RoomExit",
+startPos: [27, 84],
+startRoom: "CC_B10W",
+endPos: [34, 83],
+endRoom: "CC_B10W",
+},
+{
+type: "CreatureHole",
+startPos: [13, 6],
+startRoom: "CC_B10W",
+endPos: [13, 5],
+endRoom: "CC_B10W",
+},
+{
+type: "CreatureHole",
+startPos: [16, 6],
+startRoom: "CC_B10W",
+endPos: [16, 5],
+endRoom: "CC_B10W",
+},
+{
+type: "CreatureHole",
+startPos: [31, 6],
+startRoom: "CC_B10W",
+endPos: [31, 5],
+endRoom: "CC_B10W",
+},
+{
+type: "RoomExit",
+startPos: [34, 6],
+startRoom: "CC_B10W",
+endPos: [37, 0],
+endRoom: "CC_B10W",
+},
+],
+}

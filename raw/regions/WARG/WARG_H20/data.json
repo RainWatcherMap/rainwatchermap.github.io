@@ -1,0 +1,36 @@
+{
+mapPos: [3004.543, 721.7301],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+{
+pos: [490.1779, 408.4085],
+region: null,
+room: null,
+pos: null,
+oneWay: true,
+ripple: true,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [24, 27],
+startRoom: "WARG_H20",
+endPos: [24, 33],
+endRoom: "WARG_H20",
+},
+{
+type: "RoomExit",
+startPos: [24, 7],
+startRoom: "WARG_H20",
+endPos: [24, 1],
+endRoom: "WARG_H20",
+},
+],
+}

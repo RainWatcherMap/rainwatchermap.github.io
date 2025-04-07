@@ -1,0 +1,77 @@
+{
+mapPos: [1852.123, 239.0177],
+size: [99, 36],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [93, 20],
+startRoom: "WRRA_B11",
+endPos: [97, 20],
+endRoom: "WRRA_B11",
+},
+{
+type: "Normal",
+startPos: [19, 16],
+startRoom: "WRRA_B11",
+endPos: [34, 5],
+endRoom: "WRRA_B11",
+},
+{
+type: "RoomExit",
+startPos: [93, 11],
+startRoom: "WRRA_B11",
+endPos: [98, 11],
+endRoom: "WRRA_B11",
+},
+{
+type: "RoomExit",
+startPos: [5, 5],
+startRoom: "WRRA_B11",
+endPos: [0, 3],
+endRoom: "WRRA_B11",
+},
+{
+type: "NPCTransportation",
+startPos: [7, 5],
+startRoom: "WRRA_B11",
+endPos: [7, 4],
+endRoom: "WRRA_B11",
+},
+{
+type: "RegionTransportation",
+startPos: [9, 5],
+startRoom: "WRRA_B11",
+endPos: [9, 4],
+endRoom: "WRRA_B11",
+},
+{
+type: "Normal",
+startPos: [34, 5],
+startRoom: "WRRA_B11",
+endPos: [19, 16],
+endRoom: "WRRA_B11",
+},
+{
+type: "NPCTransportation",
+startPos: [53, 5],
+startRoom: "WRRA_B11",
+endPos: [53, 4],
+endRoom: "WRRA_B11",
+},
+{
+type: "CreatureHole",
+startPos: [22, 4],
+startRoom: "WRRA_B11",
+endPos: [22, 5],
+endRoom: "WRRA_B11",
+},
+],
+}

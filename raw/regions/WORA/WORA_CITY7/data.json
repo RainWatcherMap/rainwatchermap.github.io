@@ -1,0 +1,98 @@
+{
+mapPos: [10027.02, 722.722],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [38, 30],
+startRoom: "WORA_CITY7",
+endPos: [42, 30],
+endRoom: "WORA_CITY7",
+},
+{
+type: "RoomExit",
+startPos: [38, 28],
+startRoom: "WORA_CITY7",
+endPos: [45, 28],
+endRoom: "WORA_CITY7",
+},
+{
+type: "NPCTransportation",
+startPos: [24, 23],
+startRoom: "WORA_CITY7",
+endPos: [24, 22],
+endRoom: "WORA_CITY7",
+},
+{
+type: "CreatureHole",
+startPos: [26, 23],
+startRoom: "WORA_CITY7",
+endPos: [26, 22],
+endRoom: "WORA_CITY7",
+},
+{
+type: "NPCTransportation",
+startPos: [38, 15],
+startRoom: "WORA_CITY7",
+endPos: [38, 14],
+endRoom: "WORA_CITY7",
+},
+{
+type: "DeadEnd",
+startPos: [24, 13],
+startRoom: "WORA_CITY7",
+endPos: [24, 14],
+endRoom: "WORA_CITY7",
+},
+{
+type: "NPCTransportation",
+startPos: [26, 13],
+startRoom: "WORA_CITY7",
+endPos: [26, 14],
+endRoom: "WORA_CITY7",
+},
+{
+type: "NPCTransportation",
+startPos: [7, 12],
+startRoom: "WORA_CITY7",
+endPos: [7, 11],
+endRoom: "WORA_CITY7",
+},
+{
+type: "DeadEnd",
+startPos: [12, 12],
+startRoom: "WORA_CITY7",
+endPos: [12, 11],
+endRoom: "WORA_CITY7",
+},
+{
+type: "RoomExit",
+startPos: [8, 8],
+startRoom: "WORA_CITY7",
+endPos: [1, 8],
+endRoom: "WORA_CITY7",
+},
+{
+type: "DeadEnd",
+startPos: [8, 6],
+startRoom: "WORA_CITY7",
+endPos: [3, 6],
+endRoom: "WORA_CITY7",
+},
+{
+type: "DeadEnd",
+startPos: [8, 4],
+startRoom: "WORA_CITY7",
+endPos: [4, 4],
+endRoom: "WORA_CITY7",
+},
+],
+}

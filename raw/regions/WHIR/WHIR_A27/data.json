@@ -1,0 +1,52 @@
+{
+mapPos: [1031.661, 87.58502],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [311.2075, 250.3908],
+},
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [4, 16],
+startRoom: "WHIR_A27",
+endPos: [1, 16],
+endRoom: "WHIR_A27",
+},
+{
+type: "DeadEnd",
+startPos: [4, 14],
+startRoom: "WHIR_A27",
+endPos: [1, 14],
+endRoom: "WHIR_A27",
+},
+{
+type: "RoomExit",
+startPos: [4, 12],
+startRoom: "WHIR_A27",
+endPos: [0, 12],
+endRoom: "WHIR_A27",
+},
+{
+type: "RegionTransportation",
+startPos: [16, 8],
+startRoom: "WHIR_A27",
+endPos: [16, 6],
+endRoom: "WHIR_A27",
+},
+{
+type: "DeadEnd",
+startPos: [18, 8],
+startRoom: "WHIR_A27",
+endPos: [18, 7],
+endRoom: "WHIR_A27",
+},
+],
+}

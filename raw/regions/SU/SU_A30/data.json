@@ -1,0 +1,84 @@
+{
+mapPos: [1358.919, 660.5035],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [14, 25],
+startRoom: "SU_A30",
+endPos: [14, 32],
+endRoom: "SU_A30",
+},
+{
+type: "DeadEnd",
+startPos: [19, 25],
+startRoom: "SU_A30",
+endPos: [19, 32],
+endRoom: "SU_A30",
+},
+{
+type: "DeadEnd",
+startPos: [23, 25],
+startRoom: "SU_A30",
+endPos: [23, 32],
+endRoom: "SU_A30",
+},
+{
+type: "DeadEnd",
+startPos: [43, 21],
+startRoom: "SU_A30",
+endPos: [44, 21],
+endRoom: "SU_A30",
+},
+{
+type: "DeadEnd",
+startPos: [43, 19],
+startRoom: "SU_A30",
+endPos: [44, 19],
+endRoom: "SU_A30",
+},
+{
+type: "DeadEnd",
+startPos: [43, 17],
+startRoom: "SU_A30",
+endPos: [44, 17],
+endRoom: "SU_A30",
+},
+{
+type: "RoomExit",
+startPos: [43, 15],
+startRoom: "SU_A30",
+endPos: [47, 15],
+endRoom: "SU_A30",
+},
+{
+type: "RoomExit",
+startPos: [14, 11],
+startRoom: "SU_A30",
+endPos: [0, 1],
+endRoom: "SU_A30",
+},
+{
+type: "DeadEnd",
+startPos: [19, 11],
+startRoom: "SU_A30",
+endPos: [19, 10],
+endRoom: "SU_A30",
+},
+{
+type: "CreatureHole",
+startPos: [23, 11],
+startRoom: "SU_A30",
+endPos: [23, 10],
+endRoom: "SU_A30",
+},
+],
+}

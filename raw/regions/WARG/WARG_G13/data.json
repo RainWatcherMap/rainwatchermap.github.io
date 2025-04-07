@@ -1,0 +1,28 @@
+{
+mapPos: [1298.5, 660.0551],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [6, 15],
+startRoom: "WARG_G13",
+endPos: [0, 15],
+endRoom: "WARG_G13",
+},
+{
+type: "RoomExit",
+startPos: [41, 15],
+startRoom: "WARG_G13",
+endPos: [47, 15],
+endRoom: "WARG_G13",
+},
+],
+}

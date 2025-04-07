@@ -1,0 +1,28 @@
+{
+mapPos: [4951.808, 548.2397],
+size: [99, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [6, 24],
+startRoom: "WAUA_PEARL",
+endPos: [1, 24],
+endRoom: "WAUA_PEARL",
+},
+{
+type: "RoomExit",
+startPos: [6, 22],
+startRoom: "WAUA_PEARL",
+endPos: [0, 22],
+endRoom: "WAUA_PEARL",
+},
+],
+}

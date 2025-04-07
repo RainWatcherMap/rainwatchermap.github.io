@@ -1,0 +1,91 @@
+{
+mapPos: [4041.492, 221.8271],
+size: [150, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [71, 29],
+startRoom: "WRRA_C05",
+endPos: [71, 30],
+endRoom: "WRRA_C05",
+},
+{
+type: "DeadEnd",
+startPos: [84, 29],
+startRoom: "WRRA_C05",
+endPos: [84, 30],
+endRoom: "WRRA_C05",
+},
+{
+type: "DeadEnd",
+startPos: [116, 25],
+startRoom: "WRRA_C05",
+endPos: [119, 25],
+endRoom: "WRRA_C05",
+},
+{
+type: "Normal",
+startPos: [22, 23],
+startRoom: "WRRA_C05",
+endPos: [43, 23],
+endRoom: "WRRA_C05",
+},
+{
+type: "Normal",
+startPos: [43, 23],
+startRoom: "WRRA_C05",
+endPos: [22, 23],
+endRoom: "WRRA_C05",
+},
+{
+type: "RoomExit",
+startPos: [7, 13],
+startRoom: "WRRA_C05",
+endPos: [1, 13],
+endRoom: "WRRA_C05",
+},
+{
+type: "RoomExit",
+startPos: [142, 8],
+startRoom: "WRRA_C05",
+endPos: [148, 8],
+endRoom: "WRRA_C05",
+},
+{
+type: "CreatureHole",
+startPos: [24, 4],
+startRoom: "WRRA_C05",
+endPos: [24, 3],
+endRoom: "WRRA_C05",
+},
+{
+type: "CreatureHole",
+startPos: [71, 4],
+startRoom: "WRRA_C05",
+endPos: [71, 3],
+endRoom: "WRRA_C05",
+},
+{
+type: "CreatureHole",
+startPos: [108, 4],
+startRoom: "WRRA_C05",
+endPos: [108, 3],
+endRoom: "WRRA_C05",
+},
+{
+type: "DeadEnd",
+startPos: [79, 2],
+startRoom: "WRRA_C05",
+endPos: [79, 1],
+endRoom: "WRRA_C05",
+},
+],
+}

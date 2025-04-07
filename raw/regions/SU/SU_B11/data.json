@@ -1,0 +1,98 @@
+{
+mapPos: [1462.919, 1424.504],
+size: [104, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "CreatureHole",
+startPos: [86, 29],
+startRoom: "SU_B11",
+endPos: [86, 27],
+endRoom: "SU_B11",
+},
+{
+type: "CreatureHole",
+startPos: [24, 20],
+startRoom: "SU_B11",
+endPos: [24, 21],
+endRoom: "SU_B11",
+},
+{
+type: "CreatureHole",
+startPos: [28, 20],
+startRoom: "SU_B11",
+endPos: [28, 21],
+endRoom: "SU_B11",
+},
+{
+type: "CreatureHole",
+startPos: [50, 20],
+startRoom: "SU_B11",
+endPos: [50, 21],
+endRoom: "SU_B11",
+},
+{
+type: "CreatureHole",
+startPos: [54, 20],
+startRoom: "SU_B11",
+endPos: [54, 21],
+endRoom: "SU_B11",
+},
+{
+type: "DeadEnd",
+startPos: [95, 18],
+startRoom: "SU_B11",
+endPos: [102, 18],
+endRoom: "SU_B11",
+},
+{
+type: "DeadEnd",
+startPos: [95, 16],
+startRoom: "SU_B11",
+endPos: [102, 16],
+endRoom: "SU_B11",
+},
+{
+type: "DeadEnd",
+startPos: [95, 14],
+startRoom: "SU_B11",
+endPos: [102, 14],
+endRoom: "SU_B11",
+},
+{
+type: "RoomExit",
+startPos: [95, 12],
+startRoom: "SU_B11",
+endPos: [103, 12],
+endRoom: "SU_B11",
+},
+{
+type: "RoomExit",
+startPos: [10, 3],
+startRoom: "SU_B11",
+endPos: [10, 0],
+endRoom: "SU_B11",
+},
+{
+type: "CreatureHole",
+startPos: [38, 3],
+startRoom: "SU_B11",
+endPos: [38, 0],
+endRoom: "SU_B11",
+},
+{
+type: "RoomExit",
+startPos: [65, 3],
+startRoom: "SU_B11",
+endPos: [65, 0],
+endRoom: "SU_B11",
+},
+],
+}

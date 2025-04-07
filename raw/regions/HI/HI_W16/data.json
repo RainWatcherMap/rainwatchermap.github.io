@@ -1,0 +1,56 @@
+{
+mapPos: [395, 667.246],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [16, 25],
+startRoom: "HI_W16",
+endPos: [10, 25],
+endRoom: "HI_W16",
+},
+{
+type: "NPCTransportation",
+startPos: [27, 24],
+startRoom: "HI_W16",
+endPos: [33, 24],
+endRoom: "HI_W16",
+},
+{
+type: "RoomExit",
+startPos: [29, 18],
+startRoom: "HI_W16",
+endPos: [36, 18],
+endRoom: "HI_W16",
+},
+{
+type: "CreatureHole",
+startPos: [14, 14],
+startRoom: "HI_W16",
+endPos: [10, 14],
+endRoom: "HI_W16",
+},
+{
+type: "NPCTransportation",
+startPos: [19, 7],
+startRoom: "HI_W16",
+endPos: [18, 7],
+endRoom: "HI_W16",
+},
+{
+type: "RoomExit",
+startPos: [22, 4],
+startRoom: "HI_W16",
+endPos: [22, 1],
+endRoom: "HI_W16",
+},
+],
+}

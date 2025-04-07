@@ -1,0 +1,29 @@
+{
+mapPos: [72, 633.9042],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [318.1143, 347.7879],
+panelPos: [0, 0],
+destPos: [490, 250],
+destRegion: "WARE",
+destRoom: "ware_i01x",
+spawnId: 8,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [43, 15],
+startRoom: "WRFB_A22",
+endPos: [47, 15],
+endRoom: "WRFB_A22",
+},
+],
+}

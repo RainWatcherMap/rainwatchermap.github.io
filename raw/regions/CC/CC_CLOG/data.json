@@ -1,0 +1,35 @@
+{
+mapPos: [813.5927, 643.887],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [10, 32],
+startRoom: "CC_CLOG",
+endPos: [5, 32],
+endRoom: "CC_CLOG",
+},
+{
+type: "RoomExit",
+startPos: [10, 30],
+startRoom: "CC_CLOG",
+endPos: [4, 30],
+endRoom: "CC_CLOG",
+},
+{
+type: "RoomExit",
+startPos: [34, 7],
+startRoom: "CC_CLOG",
+endPos: [44, 7],
+endRoom: "CC_CLOG",
+},
+],
+}

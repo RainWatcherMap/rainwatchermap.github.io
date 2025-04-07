@@ -1,0 +1,56 @@
+{
+mapPos: [1862.067, 324.4432],
+size: [216, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [180, 21],
+startRoom: "LF_D09",
+endPos: [180, 0],
+endRoom: "LF_D09",
+},
+{
+type: "DeadEnd",
+startPos: [14, 18],
+startRoom: "LF_D09",
+endPos: [9, 18],
+endRoom: "LF_D09",
+},
+{
+type: "DeadEnd",
+startPos: [14, 16],
+startRoom: "LF_D09",
+endPos: [9, 16],
+endRoom: "LF_D09",
+},
+{
+type: "DeadEnd",
+startPos: [14, 14],
+startRoom: "LF_D09",
+endPos: [9, 14],
+endRoom: "LF_D09",
+},
+{
+type: "RoomExit",
+startPos: [37, 4],
+startRoom: "LF_D09",
+endPos: [37, 0],
+endRoom: "LF_D09",
+},
+{
+type: "CreatureHole",
+startPos: [42, 4],
+startRoom: "LF_D09",
+endPos: [42, 1],
+endRoom: "LF_D09",
+},
+],
+}

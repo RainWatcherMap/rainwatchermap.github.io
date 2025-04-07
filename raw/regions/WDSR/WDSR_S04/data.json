@@ -1,0 +1,21 @@
+{
+mapPos: [613.0502, 304.0027],
+size: [48, 35],
+layer: 2,
+shelter: true,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [15, 23],
+startRoom: "WDSR_S04",
+endPos: [2, 34],
+endRoom: "WDSR_S04",
+},
+],
+}

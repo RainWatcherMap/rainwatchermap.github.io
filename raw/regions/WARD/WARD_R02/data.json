@@ -1,0 +1,78 @@
+{
+mapPos: [383.0031, 1310.83],
+size: [48, 121],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [254.4166, 1922.818],
+panelPos: [-48, 178],
+destPos: [390, 450],
+destRegion: "WARB",
+destRoom: "warb_f01",
+spawnId: 3,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [40, 103],
+startRoom: "WARD_R02",
+endPos: [41, 103],
+endRoom: "WARD_R02",
+},
+{
+type: "DeadEnd",
+startPos: [40, 101],
+startRoom: "WARD_R02",
+endPos: [41, 101],
+endRoom: "WARD_R02",
+},
+{
+type: "RoomExit",
+startPos: [40, 99],
+startRoom: "WARD_R02",
+endPos: [47, 99],
+endRoom: "WARD_R02",
+},
+{
+type: "CreatureHole",
+startPos: [7, 37],
+startRoom: "WARD_R02",
+endPos: [5, 37],
+endRoom: "WARD_R02",
+},
+{
+type: "CreatureHole",
+startPos: [43, 37],
+startRoom: "WARD_R02",
+endPos: [45, 37],
+endRoom: "WARD_R02",
+},
+{
+type: "CreatureHole",
+startPos: [38, 30],
+startRoom: "WARD_R02",
+endPos: [41, 30],
+endRoom: "WARD_R02",
+},
+{
+type: "RoomExit",
+startPos: [7, 22],
+startRoom: "WARD_R02",
+endPos: [2, 22],
+endRoom: "WARD_R02",
+},
+{
+type: "RoomExit",
+startPos: [42, 22],
+startRoom: "WARD_R02",
+endPos: [47, 22],
+endRoom: "WARD_R02",
+},
+],
+}

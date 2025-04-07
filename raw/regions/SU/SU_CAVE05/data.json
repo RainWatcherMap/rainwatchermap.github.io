@@ -1,0 +1,77 @@
+{
+mapPos: [1732.824, 619.2564],
+size: [48, 78],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [7, 69],
+startRoom: "SU_CAVE05",
+endPos: [6, 69],
+endRoom: "SU_CAVE05",
+},
+{
+type: "RoomExit",
+startPos: [7, 66],
+startRoom: "SU_CAVE05",
+endPos: [1, 75],
+endRoom: "SU_CAVE05",
+},
+{
+type: "NPCTransportation",
+startPos: [44, 57],
+startRoom: "SU_CAVE05",
+endPos: [45, 57],
+endRoom: "SU_CAVE05",
+},
+{
+type: "CreatureHole",
+startPos: [4, 26],
+startRoom: "SU_CAVE05",
+endPos: [1, 26],
+endRoom: "SU_CAVE05",
+},
+{
+type: "CreatureHole",
+startPos: [4, 24],
+startRoom: "SU_CAVE05",
+endPos: [1, 24],
+endRoom: "SU_CAVE05",
+},
+{
+type: "CreatureHole",
+startPos: [4, 22],
+startRoom: "SU_CAVE05",
+endPos: [1, 22],
+endRoom: "SU_CAVE05",
+},
+{
+type: "DeadEnd",
+startPos: [6, 7],
+startRoom: "SU_CAVE05",
+endPos: [1, 7],
+endRoom: "SU_CAVE05",
+},
+{
+type: "RoomExit",
+startPos: [6, 5],
+startRoom: "SU_CAVE05",
+endPos: [0, 5],
+endRoom: "SU_CAVE05",
+},
+{
+type: "NPCTransportation",
+startPos: [18, 4],
+startRoom: "SU_CAVE05",
+endPos: [18, 2],
+endRoom: "SU_CAVE05",
+},
+],
+}

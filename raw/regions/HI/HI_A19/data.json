@@ -1,0 +1,49 @@
+{
+mapPos: [2732.021, 467.8987],
+size: [54, 38],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [4, 34],
+startRoom: "HI_A19",
+endPos: [2, 34],
+endRoom: "HI_A19",
+},
+{
+type: "RoomExit",
+startPos: [4, 32],
+startRoom: "HI_A19",
+endPos: [1, 32],
+endRoom: "HI_A19",
+},
+{
+type: "RoomExit",
+startPos: [50, 10],
+startRoom: "HI_A19",
+endPos: [52, 10],
+endRoom: "HI_A19",
+},
+{
+type: "NPCTransportation",
+startPos: [14, 7],
+startRoom: "HI_A19",
+endPos: [14, 2],
+endRoom: "HI_A19",
+},
+{
+type: "DeadEnd",
+startPos: [19, 5],
+startRoom: "HI_A19",
+endPos: [19, 3],
+endRoom: "HI_A19",
+},
+],
+}

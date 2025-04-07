@@ -1,0 +1,70 @@
+{
+mapPos: [9327, 1095.863],
+size: [56, 37],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [7, 35],
+startRoom: "WORA_STARCATCHER04",
+endPos: [5, 35],
+endRoom: "WORA_STARCATCHER04",
+},
+{
+type: "DeadEnd",
+startPos: [48, 35],
+startRoom: "WORA_STARCATCHER04",
+endPos: [49, 35],
+endRoom: "WORA_STARCATCHER04",
+},
+{
+type: "Normal",
+startPos: [7, 21],
+startRoom: "WORA_STARCATCHER04",
+endPos: [7, 7],
+endRoom: "WORA_STARCATCHER04",
+},
+{
+type: "RegionTransportation",
+startPos: [48, 21],
+startRoom: "WORA_STARCATCHER04",
+endPos: [53, 21],
+endRoom: "WORA_STARCATCHER04",
+},
+{
+type: "RoomExit",
+startPos: [7, 19],
+startRoom: "WORA_STARCATCHER04",
+endPos: [1, 19],
+endRoom: "WORA_STARCATCHER04",
+},
+{
+type: "RoomExit",
+startPos: [48, 19],
+startRoom: "WORA_STARCATCHER04",
+endPos: [51, 33],
+endRoom: "WORA_STARCATCHER04",
+},
+{
+type: "Normal",
+startPos: [7, 7],
+startRoom: "WORA_STARCATCHER04",
+endPos: [7, 21],
+endRoom: "WORA_STARCATCHER04",
+},
+{
+type: "CreatureHole",
+startPos: [48, 7],
+startRoom: "WORA_STARCATCHER04",
+endPos: [50, 7],
+endRoom: "WORA_STARCATCHER04",
+},
+],
+}

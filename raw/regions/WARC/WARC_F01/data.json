@@ -1,0 +1,36 @@
+{
+mapPos: [150, 1306.707],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [357.6498, 254.8015],
+panelPos: [0, 0],
+destPos: [1230, 410],
+destRegion: "WARA",
+destRoom: "wara_e08",
+spawnId: 4,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [91, 9],
+startRoom: "WARC_F01",
+endPos: [94, 9],
+endRoom: "WARC_F01",
+},
+{
+type: "RoomExit",
+startPos: [91, 7],
+startRoom: "WARC_F01",
+endPos: [98, 7],
+endRoom: "WARC_F01",
+},
+],
+}

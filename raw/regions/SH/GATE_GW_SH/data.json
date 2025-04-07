@@ -1,0 +1,84 @@
+{
+mapPos: [757.0409, 603.0073],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [11, 19],
+startRoom: "GATE_GW_SH",
+endPos: [2, 22],
+endRoom: "GATE_GW_SH",
+},
+{
+type: "RoomExit",
+startPos: [36, 19],
+startRoom: "GATE_GW_SH",
+endPos: [46, 22],
+endRoom: "GATE_GW_SH",
+},
+{
+type: "DeadEnd",
+startPos: [2, 15],
+startRoom: "GATE_GW_SH",
+endPos: [1, 15],
+endRoom: "GATE_GW_SH",
+},
+{
+type: "DeadEnd",
+startPos: [45, 15],
+startRoom: "GATE_GW_SH",
+endPos: [46, 15],
+endRoom: "GATE_GW_SH",
+},
+{
+type: "DeadEnd",
+startPos: [2, 12],
+startRoom: "GATE_GW_SH",
+endPos: [1, 12],
+endRoom: "GATE_GW_SH",
+},
+{
+type: "DeadEnd",
+startPos: [45, 12],
+startRoom: "GATE_GW_SH",
+endPos: [46, 12],
+endRoom: "GATE_GW_SH",
+},
+{
+type: "RoomExit",
+startPos: [2, 9],
+startRoom: "GATE_GW_SH",
+endPos: [0, 9],
+endRoom: "GATE_GW_SH",
+},
+{
+type: "RoomExit",
+startPos: [45, 9],
+startRoom: "GATE_GW_SH",
+endPos: [47, 9],
+endRoom: "GATE_GW_SH",
+},
+{
+type: "RoomExit",
+startPos: [11, 5],
+startRoom: "GATE_GW_SH",
+endPos: [11, 0],
+endRoom: "GATE_GW_SH",
+},
+{
+type: "DeadEnd",
+startPos: [36, 5],
+startRoom: "GATE_GW_SH",
+endPos: [36, 1],
+endRoom: "GATE_GW_SH",
+},
+],
+}

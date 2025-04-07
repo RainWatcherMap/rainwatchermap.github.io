@@ -1,0 +1,28 @@
+{
+mapPos: [2034.021, 765.8884],
+size: [155, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [5, 28],
+startRoom: "SU_C04",
+endPos: [0, 28],
+endRoom: "SU_C04",
+},
+{
+type: "RoomExit",
+startPos: [151, 11],
+startRoom: "SU_C04",
+endPos: [154, 11],
+endRoom: "SU_C04",
+},
+],
+}

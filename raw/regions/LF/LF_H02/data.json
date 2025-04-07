@@ -1,0 +1,98 @@
+{
+mapPos: [2247.897, 345.9998],
+size: [226, 78],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [19, 55],
+startRoom: "LF_H02",
+endPos: [12, 55],
+endRoom: "LF_H02",
+},
+{
+type: "DeadEnd",
+startPos: [19, 53],
+startRoom: "LF_H02",
+endPos: [12, 53],
+endRoom: "LF_H02",
+},
+{
+type: "RoomExit",
+startPos: [19, 51],
+startRoom: "LF_H02",
+endPos: [11, 51],
+endRoom: "LF_H02",
+},
+{
+type: "DeadEnd",
+startPos: [203, 21],
+startRoom: "LF_H02",
+endPos: [211, 21],
+endRoom: "LF_H02",
+},
+{
+type: "DeadEnd",
+startPos: [203, 19],
+startRoom: "LF_H02",
+endPos: [206, 19],
+endRoom: "LF_H02",
+},
+{
+type: "DeadEnd",
+startPos: [203, 16],
+startRoom: "LF_H02",
+endPos: [212, 16],
+endRoom: "LF_H02",
+},
+{
+type: "DeadEnd",
+startPos: [203, 14],
+startRoom: "LF_H02",
+endPos: [212, 14],
+endRoom: "LF_H02",
+},
+{
+type: "RoomExit",
+startPos: [203, 12],
+startRoom: "LF_H02",
+endPos: [212, 12],
+endRoom: "LF_H02",
+},
+{
+type: "CreatureHole",
+startPos: [167, 3],
+startRoom: "LF_H02",
+endPos: [167, 1],
+endRoom: "LF_H02",
+},
+{
+type: "DeadEnd",
+startPos: [170, 3],
+startRoom: "LF_H02",
+endPos: [170, 2],
+endRoom: "LF_H02",
+},
+{
+type: "CreatureHole",
+startPos: [184, 3],
+startRoom: "LF_H02",
+endPos: [184, 1],
+endRoom: "LF_H02",
+},
+{
+type: "CreatureHole",
+startPos: [187, 3],
+startRoom: "LF_H02",
+endPos: [187, 1],
+endRoom: "LF_H02",
+},
+],
+}

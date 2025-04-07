@@ -1,0 +1,63 @@
+{
+mapPos: [1143.917, 990.504],
+size: [54, 78],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [49, 69],
+startRoom: "SU_B05",
+endPos: [52, 77],
+endRoom: "SU_B05",
+},
+{
+type: "DeadEnd",
+startPos: [49, 67],
+startRoom: "SU_B05",
+endPos: [52, 67],
+endRoom: "SU_B05",
+},
+{
+type: "RegionTransportation",
+startPos: [49, 65],
+startRoom: "SU_B05",
+endPos: [53, 65],
+endRoom: "SU_B05",
+},
+{
+type: "CreatureHole",
+startPos: [32, 58],
+startRoom: "SU_B05",
+endPos: [32, 56],
+endRoom: "SU_B05",
+},
+{
+type: "CreatureHole",
+startPos: [42, 58],
+startRoom: "SU_B05",
+endPos: [50, 53],
+endRoom: "SU_B05",
+},
+{
+type: "RoomExit",
+startPos: [8, 57],
+startRoom: "SU_B05",
+endPos: [2, 53],
+endRoom: "SU_B05",
+},
+{
+type: "RoomExit",
+startPos: [36, 16],
+startRoom: "SU_B05",
+endPos: [51, 16],
+endRoom: "SU_B05",
+},
+],
+}

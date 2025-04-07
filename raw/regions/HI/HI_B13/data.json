@@ -1,0 +1,84 @@
+{
+mapPos: [2623.045, 750.999],
+size: [66, 78],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [25, 70],
+startRoom: "HI_B13",
+endPos: [15, 55],
+endRoom: "HI_B13",
+},
+{
+type: "Normal",
+startPos: [50, 68],
+startRoom: "HI_B13",
+endPos: [49, 53],
+endRoom: "HI_B13",
+},
+{
+type: "Normal",
+startPos: [15, 55],
+startRoom: "HI_B13",
+endPos: [25, 70],
+endRoom: "HI_B13",
+},
+{
+type: "Normal",
+startPos: [49, 53],
+startRoom: "HI_B13",
+endPos: [50, 68],
+endRoom: "HI_B13",
+},
+{
+type: "NPCTransportation",
+startPos: [24, 49],
+startRoom: "HI_B13",
+endPos: [25, 49],
+endRoom: "HI_B13",
+},
+{
+type: "NPCTransportation",
+startPos: [32, 49],
+startRoom: "HI_B13",
+endPos: [32, 48],
+endRoom: "HI_B13",
+},
+{
+type: "RoomExit",
+startPos: [21, 42],
+startRoom: "HI_B13",
+endPos: [21, 3],
+endRoom: "HI_B13",
+},
+{
+type: "RoomExit",
+startPos: [44, 42],
+startRoom: "HI_B13",
+endPos: [44, 23],
+endRoom: "HI_B13",
+},
+{
+type: "NPCTransportation",
+startPos: [31, 41],
+startRoom: "HI_B13",
+endPos: [31, 39],
+endRoom: "HI_B13",
+},
+{
+type: "CreatureHole",
+startPos: [34, 41],
+startRoom: "HI_B13",
+endPos: [34, 39],
+endRoom: "HI_B13",
+},
+],
+}

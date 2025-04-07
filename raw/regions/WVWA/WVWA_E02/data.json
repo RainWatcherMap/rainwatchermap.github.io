@@ -1,0 +1,84 @@
+{
+mapPos: [1568.76, 1079.982],
+size: [100, 112],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [74, 103],
+startRoom: "WVWA_E02",
+endPos: [74, 111],
+endRoom: "WVWA_E02",
+},
+{
+type: "CreatureHole",
+startPos: [96, 59],
+startRoom: "WVWA_E02",
+endPos: [97, 59],
+endRoom: "WVWA_E02",
+},
+{
+type: "CreatureHole",
+startPos: [80, 54],
+startRoom: "WVWA_E02",
+endPos: [80, 53],
+endRoom: "WVWA_E02",
+},
+{
+type: "CreatureHole",
+startPos: [29, 33],
+startRoom: "WVWA_E02",
+endPos: [30, 33],
+endRoom: "WVWA_E02",
+},
+{
+type: "RoomExit",
+startPos: [93, 29],
+startRoom: "WVWA_E02",
+endPos: [99, 29],
+endRoom: "WVWA_E02",
+},
+{
+type: "NPCTransportation",
+startPos: [57, 24],
+startRoom: "WVWA_E02",
+endPos: [56, 24],
+endRoom: "WVWA_E02",
+},
+{
+type: "DeadEnd",
+startPos: [59, 11],
+startRoom: "WVWA_E02",
+endPos: [58, 11],
+endRoom: "WVWA_E02",
+},
+{
+type: "NPCTransportation",
+startPos: [67, 6],
+startRoom: "WVWA_E02",
+endPos: [67, 5],
+endRoom: "WVWA_E02",
+},
+{
+type: "CreatureHole",
+startPos: [69, 6],
+startRoom: "WVWA_E02",
+endPos: [69, 5],
+endRoom: "WVWA_E02",
+},
+{
+type: "RoomExit",
+startPos: [95, 6],
+startRoom: "WVWA_E02",
+endPos: [95, 0],
+endRoom: "WVWA_E02",
+},
+],
+}

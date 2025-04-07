@@ -1,0 +1,56 @@
+{
+mapPos: [192.9005, 657.7645],
+size: [52, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [43, 24],
+startRoom: "WVWA_A05",
+endPos: [43, 28],
+endRoom: "WVWA_A05",
+},
+{
+type: "DeadEnd",
+startPos: [45, 24],
+startRoom: "WVWA_A05",
+endPos: [45, 25],
+endRoom: "WVWA_A05",
+},
+{
+type: "RoomExit",
+startPos: [7, 10],
+startRoom: "WVWA_A05",
+endPos: [3, 7],
+endRoom: "WVWA_A05",
+},
+{
+type: "CreatureHole",
+startPos: [9, 10],
+startRoom: "WVWA_A05",
+endPos: [9, 9],
+endRoom: "WVWA_A05",
+},
+{
+type: "DeadEnd",
+startPos: [43, 10],
+startRoom: "WVWA_A05",
+endPos: [43, 8],
+endRoom: "WVWA_A05",
+},
+{
+type: "RoomExit",
+startPos: [45, 10],
+startRoom: "WVWA_A05",
+endPos: [49, 8],
+endRoom: "WVWA_A05",
+},
+],
+}

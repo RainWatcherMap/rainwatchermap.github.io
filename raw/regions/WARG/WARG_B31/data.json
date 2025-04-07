@@ -1,0 +1,36 @@
+{
+mapPos: [4034.5, 986.5551],
+size: [48, 78],
+layer: 0,
+shelter: false,
+warpPoints: [
+{
+pos: [309.4246, 1473.448],
+region: "WTDA",
+room: "wtda_a13",
+pos: [450, 270],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [4, 70],
+startRoom: "WARG_B31",
+endPos: [0, 70],
+endRoom: "WARG_B31",
+},
+{
+type: "RoomExit",
+startPos: [5, 6],
+startRoom: "WARG_B31",
+endPos: [0, 6],
+endRoom: "WARG_B31",
+},
+],
+}

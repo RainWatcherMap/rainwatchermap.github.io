@@ -1,0 +1,42 @@
+{
+mapPos: [751.4, 1006.662],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [18, 22],
+startRoom: "WARC_F22",
+endPos: [18, 23],
+endRoom: "WARC_F22",
+},
+{
+type: "RoomExit",
+startPos: [34, 19],
+startRoom: "WARC_F22",
+endPos: [34, 22],
+endRoom: "WARC_F22",
+},
+{
+type: "RoomExit",
+startPos: [6, 18],
+startRoom: "WARC_F22",
+endPos: [1, 18],
+endRoom: "WARC_F22",
+},
+{
+type: "RoomExit",
+startPos: [41, 15],
+startRoom: "WARC_F22",
+endPos: [47, 15],
+endRoom: "WARC_F22",
+},
+],
+}

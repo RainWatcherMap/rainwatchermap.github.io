@@ -1,0 +1,31 @@
+{
+mapPos: [3683.485, 629.0738],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [230.1305, 228.3868],
+},
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [41, 22],
+startRoom: "WAUA_A09B",
+endPos: [47, 22],
+endRoom: "WAUA_A09B",
+},
+{
+type: "CreatureHole",
+startPos: [32, 11],
+startRoom: "WAUA_A09B",
+endPos: [33, 11],
+endRoom: "WAUA_A09B",
+},
+],
+}

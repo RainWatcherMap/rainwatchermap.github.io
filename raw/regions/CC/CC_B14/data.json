@@ -1,0 +1,98 @@
+{
+mapPos: [1959.292, 1810.769],
+size: [48, 78],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [37, 73],
+startRoom: "CC_B14",
+endPos: [34, 77],
+endRoom: "CC_B14",
+},
+{
+type: "DeadEnd",
+startPos: [39, 73],
+startRoom: "CC_B14",
+endPos: [39, 72],
+endRoom: "CC_B14",
+},
+{
+type: "Normal",
+startPos: [28, 69],
+startRoom: "CC_B14",
+endPos: [33, 55],
+endRoom: "CC_B14",
+},
+{
+type: "RoomExit",
+startPos: [7, 63],
+startRoom: "CC_B14",
+endPos: [7, 43],
+endRoom: "CC_B14",
+},
+{
+type: "NPCTransportation",
+startPos: [13, 55],
+startRoom: "CC_B14",
+endPos: [13, 54],
+endRoom: "CC_B14",
+},
+{
+type: "Normal",
+startPos: [33, 55],
+startRoom: "CC_B14",
+endPos: [28, 69],
+endRoom: "CC_B14",
+},
+{
+type: "CreatureHole",
+startPos: [35, 55],
+startRoom: "CC_B14",
+endPos: [35, 54],
+endRoom: "CC_B14",
+},
+{
+type: "DeadEnd",
+startPos: [22, 51],
+startRoom: "CC_B14",
+endPos: [22, 50],
+endRoom: "CC_B14",
+},
+{
+type: "Normal",
+startPos: [43, 46],
+startRoom: "CC_B14",
+endPos: [36, 22],
+endRoom: "CC_B14",
+},
+{
+type: "CreatureHole",
+startPos: [30, 22],
+startRoom: "CC_B14",
+endPos: [30, 21],
+endRoom: "CC_B14",
+},
+{
+type: "CreatureHole",
+startPos: [32, 22],
+startRoom: "CC_B14",
+endPos: [32, 21],
+endRoom: "CC_B14",
+},
+{
+type: "Normal",
+startPos: [36, 22],
+startRoom: "CC_B14",
+endPos: [43, 46],
+endRoom: "CC_B14",
+},
+],
+}

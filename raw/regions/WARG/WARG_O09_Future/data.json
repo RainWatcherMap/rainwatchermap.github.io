@@ -1,0 +1,77 @@
+{
+mapPos: [4423.93, 1179.036],
+size: [202, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [143, 26],
+startRoom: "WARG_O09_Future",
+endPos: [155, 22],
+endRoom: "WARG_O09_Future",
+},
+{
+type: "Normal",
+startPos: [155, 22],
+startRoom: "WARG_O09_Future",
+endPos: [143, 26],
+endRoom: "WARG_O09_Future",
+},
+{
+type: "CreatureHole",
+startPos: [48, 14],
+startRoom: "WARG_O09_Future",
+endPos: [48, 11],
+endRoom: "WARG_O09_Future",
+},
+{
+type: "RoomExit",
+startPos: [10, 13],
+startRoom: "WARG_O09_Future",
+endPos: [1, 13],
+endRoom: "WARG_O09_Future",
+},
+{
+type: "NPCTransportation",
+startPos: [40, 13],
+startRoom: "WARG_O09_Future",
+endPos: [40, 10],
+endRoom: "WARG_O09_Future",
+},
+{
+type: "NPCTransportation",
+startPos: [77, 11],
+startRoom: "WARG_O09_Future",
+endPos: [77, 8],
+endRoom: "WARG_O09_Future",
+},
+{
+type: "CreatureHole",
+startPos: [160, 10],
+startRoom: "WARG_O09_Future",
+endPos: [160, 7],
+endRoom: "WARG_O09_Future",
+},
+{
+type: "RoomExit",
+startPos: [197, 8],
+startRoom: "WARG_O09_Future",
+endPos: [201, 8],
+endRoom: "WARG_O09_Future",
+},
+{
+type: "RoomExit",
+startPos: [123, 6],
+startRoom: "WARG_O09_Future",
+endPos: [123, 0],
+endRoom: "WARG_O09_Future",
+},
+],
+}

@@ -1,0 +1,63 @@
+{
+mapPos: [3164.044, 86.49902],
+size: [54, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [15, 27],
+startRoom: "HI_A16",
+endPos: [15, 34],
+endRoom: "HI_A16",
+},
+{
+type: "RoomExit",
+startPos: [20, 27],
+startRoom: "HI_A16",
+endPos: [49, 32],
+endRoom: "HI_A16",
+},
+{
+type: "Normal",
+startPos: [36, 17],
+startRoom: "HI_A16",
+endPos: [43, 9],
+endRoom: "HI_A16",
+},
+{
+type: "RoomExit",
+startPos: [3, 16],
+startRoom: "HI_A16",
+endPos: [1, 16],
+endRoom: "HI_A16",
+},
+{
+type: "RoomExit",
+startPos: [51, 13],
+startRoom: "HI_A16",
+endPos: [53, 13],
+endRoom: "HI_A16",
+},
+{
+type: "Normal",
+startPos: [43, 9],
+startRoom: "HI_A16",
+endPos: [36, 17],
+endRoom: "HI_A16",
+},
+{
+type: "CreatureHole",
+startPos: [45, 9],
+startRoom: "HI_A16",
+endPos: [45, 6],
+endRoom: "HI_A16",
+},
+],
+}

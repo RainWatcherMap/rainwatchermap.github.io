@@ -1,0 +1,70 @@
+{
+mapPos: [803.3424, 428.4998],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [27, 31],
+startRoom: "WHIR_B08",
+endPos: [27, 34],
+endRoom: "WHIR_B08",
+},
+{
+type: "DeadEnd",
+startPos: [30, 31],
+startRoom: "WHIR_B08",
+endPos: [30, 34],
+endRoom: "WHIR_B08",
+},
+{
+type: "RoomExit",
+startPos: [33, 31],
+startRoom: "WHIR_B08",
+endPos: [33, 34],
+endRoom: "WHIR_B08",
+},
+{
+type: "DeadEnd",
+startPos: [36, 31],
+startRoom: "WHIR_B08",
+endPos: [36, 34],
+endRoom: "WHIR_B08",
+},
+{
+type: "DeadEnd",
+startPos: [39, 31],
+startRoom: "WHIR_B08",
+endPos: [39, 34],
+endRoom: "WHIR_B08",
+},
+{
+type: "RoomExit",
+startPos: [97, 19],
+startRoom: "WHIR_B08",
+endPos: [99, 19],
+endRoom: "WHIR_B08",
+},
+{
+type: "RoomExit",
+startPos: [10, 17],
+startRoom: "WHIR_B08",
+endPos: [0, 15],
+endRoom: "WHIR_B08",
+},
+{
+type: "NPCTransportation",
+startPos: [12, 17],
+startRoom: "WHIR_B08",
+endPos: [12, 15],
+endRoom: "WHIR_B08",
+},
+],
+}

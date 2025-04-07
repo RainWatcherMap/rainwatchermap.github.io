@@ -1,0 +1,56 @@
+{
+mapPos: [3498.118, 931.4238],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [4, 29],
+startRoom: "WRFA_A09",
+endPos: [0, 29],
+endRoom: "WRFA_A09",
+},
+{
+type: "NPCTransportation",
+startPos: [12, 25],
+startRoom: "WRFA_A09",
+endPos: [12, 24],
+endRoom: "WRFA_A09",
+},
+{
+type: "RoomExit",
+startPos: [24, 22],
+startRoom: "WRFA_A09",
+endPos: [24, 16],
+endRoom: "WRFA_A09",
+},
+{
+type: "RoomExit",
+startPos: [43, 16],
+startRoom: "WRFA_A09",
+endPos: [47, 16],
+endRoom: "WRFA_A09",
+},
+{
+type: "NPCTransportation",
+startPos: [36, 12],
+startRoom: "WRFA_A09",
+endPos: [36, 11],
+endRoom: "WRFA_A09",
+},
+{
+type: "CreatureHole",
+startPos: [18, 3],
+startRoom: "WRFA_A09",
+endPos: [18, 2],
+endRoom: "WRFA_A09",
+},
+],
+}

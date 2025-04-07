@@ -1,0 +1,56 @@
+{
+mapPos: [1771.918, 1074.504],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [3, 29],
+startRoom: "SU_A31",
+endPos: [3, 34],
+endRoom: "SU_A31",
+},
+{
+type: "NPCTransportation",
+startPos: [5, 26],
+startRoom: "SU_A31",
+endPos: [6, 26],
+endRoom: "SU_A31",
+},
+{
+type: "NPCTransportation",
+startPos: [26, 16],
+startRoom: "SU_A31",
+endPos: [26, 17],
+endRoom: "SU_A31",
+},
+{
+type: "RoomExit",
+startPos: [44, 7],
+startRoom: "SU_A31",
+endPos: [47, 7],
+endRoom: "SU_A31",
+},
+{
+type: "CreatureHole",
+startPos: [17, 5],
+startRoom: "SU_A31",
+endPos: [17, 4],
+endRoom: "SU_A31",
+},
+{
+type: "RoomExit",
+startPos: [3, 3],
+startRoom: "SU_A31",
+endPos: [3, 0],
+endRoom: "SU_A31",
+},
+],
+}

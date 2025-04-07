@@ -1,0 +1,42 @@
+{
+mapPos: [7704.192, 230.722],
+size: [302, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [295, 18],
+startRoom: "WORA_DESERT1",
+endPos: [301, 18],
+endRoom: "WORA_DESERT1",
+},
+{
+type: "DeadEnd",
+startPos: [9, 16],
+startRoom: "WORA_DESERT1",
+endPos: [7, 16],
+endRoom: "WORA_DESERT1",
+},
+{
+type: "RoomExit",
+startPos: [9, 14],
+startRoom: "WORA_DESERT1",
+endPos: [5, 14],
+endRoom: "WORA_DESERT1",
+},
+{
+type: "DeadEnd",
+startPos: [9, 12],
+startRoom: "WORA_DESERT1",
+endPos: [6, 12],
+endRoom: "WORA_DESERT1",
+},
+],
+}

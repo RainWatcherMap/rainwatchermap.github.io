@@ -1,0 +1,21 @@
+{
+mapPos: [1990.444, 932.1401],
+size: [48, 35],
+layer: 1,
+shelter: true,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [7, 23],
+startRoom: "LF_S06",
+endPos: [7, 34],
+endRoom: "LF_S06",
+},
+],
+}

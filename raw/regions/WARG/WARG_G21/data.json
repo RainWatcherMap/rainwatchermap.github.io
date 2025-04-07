@@ -1,0 +1,80 @@
+{
+mapPos: [3564.503, 654.5562],
+size: [152, 78],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [2628.27, 239.4376],
+},
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [137, 57],
+startRoom: "WARG_G21",
+endPos: [148, 57],
+endRoom: "WARG_G21",
+},
+{
+type: "RoomExit",
+startPos: [4, 48],
+startRoom: "WARG_G21",
+endPos: [0, 48],
+endRoom: "WARG_G21",
+},
+{
+type: "CreatureHole",
+startPos: [38, 42],
+startRoom: "WARG_G21",
+endPos: [38, 37],
+endRoom: "WARG_G21",
+},
+{
+type: "DeadEnd",
+startPos: [117, 29],
+startRoom: "WARG_G21",
+endPos: [118, 29],
+endRoom: "WARG_G21",
+},
+{
+type: "RegionTransportation",
+startPos: [117, 27],
+startRoom: "WARG_G21",
+endPos: [124, 27],
+endRoom: "WARG_G21",
+},
+{
+type: "CreatureHole",
+startPos: [12, 21],
+startRoom: "WARG_G21",
+endPos: [5, 21],
+endRoom: "WARG_G21",
+},
+{
+type: "DeadEnd",
+startPos: [140, 19],
+startRoom: "WARG_G21",
+endPos: [141, 19],
+endRoom: "WARG_G21",
+},
+{
+type: "RoomExit",
+startPos: [140, 17],
+startRoom: "WARG_G21",
+endPos: [147, 17],
+endRoom: "WARG_G21",
+},
+{
+type: "RoomExit",
+startPos: [76, 9],
+startRoom: "WARG_G21",
+endPos: [76, 0],
+endRoom: "WARG_G21",
+},
+],
+}

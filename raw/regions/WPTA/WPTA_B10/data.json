@@ -1,0 +1,38 @@
+{
+mapPos: [148.5, 182.3446],
+size: [99, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [234.0673, 370.8051],
+},
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [65, 30],
+startRoom: "WPTA_B10",
+endPos: [55, 32],
+endRoom: "WPTA_B10",
+},
+{
+type: "DeadEnd",
+startPos: [68, 30],
+startRoom: "WPTA_B10",
+endPos: [83, 32],
+endRoom: "WPTA_B10",
+},
+{
+type: "RoomExit",
+startPos: [92, 28],
+startRoom: "WPTA_B10",
+endPos: [98, 28],
+endRoom: "WPTA_B10",
+},
+],
+}

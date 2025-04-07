@@ -1,0 +1,64 @@
+{
+mapPos: [714.3424, 818.5],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [660.05, 440.7469],
+panelPos: [11, 83],
+destPos: null,
+destRegion: null,
+destRoom: null,
+spawnId: 666,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [36, 17],
+startRoom: "WHIR_A22",
+endPos: [36, 16],
+endRoom: "WHIR_A22",
+},
+{
+type: "Normal",
+startPos: [38, 17],
+startRoom: "WHIR_A22",
+endPos: [31, 12],
+endRoom: "WHIR_A22",
+},
+{
+type: "RoomExit",
+startPos: [17, 13],
+startRoom: "WHIR_A22",
+endPos: [17, 0],
+endRoom: "WHIR_A22",
+},
+{
+type: "Normal",
+startPos: [31, 12],
+startRoom: "WHIR_A22",
+endPos: [38, 17],
+endRoom: "WHIR_A22",
+},
+{
+type: "RoomExit",
+startPos: [31, 10],
+startRoom: "WHIR_A22",
+endPos: [39, 10],
+endRoom: "WHIR_A22",
+},
+{
+type: "NPCTransportation",
+startPos: [12, 7],
+startRoom: "WHIR_A22",
+endPos: [12, 6],
+endRoom: "WHIR_A22",
+},
+],
+}

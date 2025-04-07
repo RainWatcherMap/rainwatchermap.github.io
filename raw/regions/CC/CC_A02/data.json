@@ -1,0 +1,77 @@
+{
+mapPos: [307.516, 1514.763],
+size: [54, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [31, 15],
+startRoom: "CC_A02",
+endPos: [38, 3],
+endRoom: "CC_A02",
+},
+{
+type: "RoomExit",
+startPos: [48, 12],
+startRoom: "CC_A02",
+endPos: [52, 12],
+endRoom: "CC_A02",
+},
+{
+type: "RoomExit",
+startPos: [3, 11],
+startRoom: "CC_A02",
+endPos: [1, 11],
+endRoom: "CC_A02",
+},
+{
+type: "NPCTransportation",
+startPos: [26, 3],
+startRoom: "CC_A02",
+endPos: [26, 1],
+endRoom: "CC_A02",
+},
+{
+type: "Normal",
+startPos: [38, 3],
+startRoom: "CC_A02",
+endPos: [31, 15],
+endRoom: "CC_A02",
+},
+{
+type: "NPCTransportation",
+startPos: [44, 3],
+startRoom: "CC_A02",
+endPos: [44, 1],
+endRoom: "CC_A02",
+},
+{
+type: "DeadEnd",
+startPos: [17, 2],
+startRoom: "CC_A02",
+endPos: [17, 1],
+endRoom: "CC_A02",
+},
+{
+type: "RoomExit",
+startPos: [19, 2],
+startRoom: "CC_A02",
+endPos: [19, 0],
+endRoom: "CC_A02",
+},
+{
+type: "DeadEnd",
+startPos: [21, 2],
+startRoom: "CC_A02",
+endPos: [21, 1],
+endRoom: "CC_A02",
+},
+],
+}

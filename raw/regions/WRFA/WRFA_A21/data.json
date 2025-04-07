@@ -1,0 +1,36 @@
+{
+mapPos: [72.22998, 1820.877],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+{
+pos: [479.1837, 556.9419],
+region: "WRFB",
+room: "wrfb_a11",
+pos: [470, 450],
+oneWay: true,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [11, 6],
+startRoom: "WRFA_A21",
+endPos: [11, 0],
+endRoom: "WRFA_A21",
+},
+{
+type: "CreatureHole",
+startPos: [39, 4],
+startRoom: "WRFA_A21",
+endPos: [39, 3],
+endRoom: "WRFA_A21",
+},
+],
+}

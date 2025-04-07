@@ -1,0 +1,56 @@
+{
+mapPos: [433.2019, 555.564],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [23, 28],
+startRoom: "WRRA_A31",
+endPos: [23, 33],
+endRoom: "WRRA_A31",
+},
+{
+type: "RegionTransportation",
+startPos: [16, 20],
+startRoom: "WRRA_A31",
+endPos: [15, 20],
+endRoom: "WRRA_A31",
+},
+{
+type: "DeadEnd",
+startPos: [30, 20],
+startRoom: "WRRA_A31",
+endPos: [31, 20],
+endRoom: "WRRA_A31",
+},
+{
+type: "DeadEnd",
+startPos: [16, 14],
+startRoom: "WRRA_A31",
+endPos: [15, 14],
+endRoom: "WRRA_A31",
+},
+{
+type: "DeadEnd",
+startPos: [30, 14],
+startRoom: "WRRA_A31",
+endPos: [32, 14],
+endRoom: "WRRA_A31",
+},
+{
+type: "RoomExit",
+startPos: [23, 6],
+startRoom: "WRRA_A31",
+endPos: [23, 1],
+endRoom: "WRRA_A31",
+},
+],
+}

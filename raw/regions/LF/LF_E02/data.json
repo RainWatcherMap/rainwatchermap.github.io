@@ -1,0 +1,91 @@
+{
+mapPos: [3432.898, 953.0002],
+size: [254, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [8, 8],
+startRoom: "LF_E02",
+endPos: [0, 0],
+endRoom: "LF_E02",
+},
+{
+type: "NPCTransportation",
+startPos: [41, 8],
+startRoom: "LF_E02",
+endPos: [41, 7],
+endRoom: "LF_E02",
+},
+{
+type: "CreatureHole",
+startPos: [70, 8],
+startRoom: "LF_E02",
+endPos: [70, 7],
+endRoom: "LF_E02",
+},
+{
+type: "NPCTransportation",
+startPos: [179, 8],
+startRoom: "LF_E02",
+endPos: [179, 7],
+endRoom: "LF_E02",
+},
+{
+type: "CreatureHole",
+startPos: [181, 8],
+startRoom: "LF_E02",
+endPos: [181, 7],
+endRoom: "LF_E02",
+},
+{
+type: "CreatureHole",
+startPos: [145, 2],
+startRoom: "LF_E02",
+endPos: [145, 1],
+endRoom: "LF_E02",
+},
+{
+type: "NPCTransportation",
+startPos: [14, 1],
+startRoom: "LF_E02",
+endPos: [13, 1],
+endRoom: "LF_E02",
+},
+{
+type: "NPCTransportation",
+startPos: [119, 1],
+startRoom: "LF_E02",
+endPos: [119, 0],
+endRoom: "LF_E02",
+},
+{
+type: "CreatureHole",
+startPos: [157, 1],
+startRoom: "LF_E02",
+endPos: [157, 0],
+endRoom: "LF_E02",
+},
+{
+type: "NPCTransportation",
+startPos: [178, 1],
+startRoom: "LF_E02",
+endPos: [177, 1],
+endRoom: "LF_E02",
+},
+{
+type: "RoomExit",
+startPos: [221, 1],
+startRoom: "LF_E02",
+endPos: [238, 0],
+endRoom: "LF_E02",
+},
+],
+}

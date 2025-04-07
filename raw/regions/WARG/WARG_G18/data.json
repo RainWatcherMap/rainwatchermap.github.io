@@ -1,0 +1,91 @@
+{
+mapPos: [2390.966, 600.4861],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [6, 32],
+startRoom: "WARG_G18",
+endPos: [0, 32],
+endRoom: "WARG_G18",
+},
+{
+type: "Normal",
+startPos: [28, 32],
+startRoom: "WARG_G18",
+endPos: [55, 30],
+endRoom: "WARG_G18",
+},
+{
+type: "RoomExit",
+startPos: [91, 32],
+startRoom: "WARG_G18",
+endPos: [99, 32],
+endRoom: "WARG_G18",
+},
+{
+type: "Normal",
+startPos: [55, 30],
+startRoom: "WARG_G18",
+endPos: [28, 32],
+endRoom: "WARG_G18",
+},
+{
+type: "Normal",
+startPos: [51, 23],
+startRoom: "WARG_G18",
+endPos: [59, 23],
+endRoom: "WARG_G18",
+},
+{
+type: "Normal",
+startPos: [59, 23],
+startRoom: "WARG_G18",
+endPos: [51, 23],
+endRoom: "WARG_G18",
+},
+{
+type: "DeadEnd",
+startPos: [14, 9],
+startRoom: "WARG_G18",
+endPos: [13, 9],
+endRoom: "WARG_G18",
+},
+{
+type: "DeadEnd",
+startPos: [14, 7],
+startRoom: "WARG_G18",
+endPos: [13, 7],
+endRoom: "WARG_G18",
+},
+{
+type: "DeadEnd",
+startPos: [95, 7],
+startRoom: "WARG_G18",
+endPos: [96, 7],
+endRoom: "WARG_G18",
+},
+{
+type: "CreatureHole",
+startPos: [14, 5],
+startRoom: "WARG_G18",
+endPos: [8, 5],
+endRoom: "WARG_G18",
+},
+{
+type: "RoomExit",
+startPos: [95, 5],
+startRoom: "WARG_G18",
+endPos: [99, 5],
+endRoom: "WARG_G18",
+},
+],
+}

@@ -1,0 +1,63 @@
+{
+mapPos: [732.4633, 435.4071],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [8, 28],
+startRoom: "WVWA_A01",
+endPos: [9, 32],
+endRoom: "WVWA_A01",
+},
+{
+type: "RoomExit",
+startPos: [8, 26],
+startRoom: "WVWA_A01",
+endPos: [11, 32],
+endRoom: "WVWA_A01",
+},
+{
+type: "DeadEnd",
+startPos: [41, 25],
+startRoom: "WVWA_A01",
+endPos: [41, 28],
+endRoom: "WVWA_A01",
+},
+{
+type: "RoomExit",
+startPos: [43, 25],
+startRoom: "WVWA_A01",
+endPos: [43, 33],
+endRoom: "WVWA_A01",
+},
+{
+type: "DeadEnd",
+startPos: [45, 25],
+startRoom: "WVWA_A01",
+endPos: [45, 29],
+endRoom: "WVWA_A01",
+},
+{
+type: "CreatureHole",
+startPos: [31, 15],
+startRoom: "WVWA_A01",
+endPos: [31, 14],
+endRoom: "WVWA_A01",
+},
+{
+type: "CreatureHole",
+startPos: [21, 11],
+startRoom: "WVWA_A01",
+endPos: [21, 10],
+endRoom: "WVWA_A01",
+},
+],
+}

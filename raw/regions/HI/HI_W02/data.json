@@ -1,0 +1,70 @@
+{
+mapPos: [2180.009, 385.553],
+size: [60, 41],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [22, 32],
+startRoom: "HI_W02",
+endPos: [15, 39],
+endRoom: "HI_W02",
+},
+{
+type: "CreatureHole",
+startPos: [30, 29],
+startRoom: "HI_W02",
+endPos: [30, 36],
+endRoom: "HI_W02",
+},
+{
+type: "CreatureHole",
+startPos: [19, 24],
+startRoom: "HI_W02",
+endPos: [5, 24],
+endRoom: "HI_W02",
+},
+{
+type: "CreatureHole",
+startPos: [17, 20],
+startRoom: "HI_W02",
+endPos: [0, 20],
+endRoom: "HI_W02",
+},
+{
+type: "CreatureHole",
+startPos: [17, 16],
+startRoom: "HI_W02",
+endPos: [3, 16],
+endRoom: "HI_W02",
+},
+{
+type: "CreatureHole",
+startPos: [26, 13],
+startRoom: "HI_W02",
+endPos: [13, 5],
+endRoom: "HI_W02",
+},
+{
+type: "CreatureHole",
+startPos: [30, 13],
+startRoom: "HI_W02",
+endPos: [36, 1],
+endRoom: "HI_W02",
+},
+{
+type: "RoomExit",
+startPos: [46, 10],
+startRoom: "HI_W02",
+endPos: [53, 4],
+endRoom: "HI_W02",
+},
+],
+}

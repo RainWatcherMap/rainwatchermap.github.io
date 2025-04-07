@@ -1,0 +1,84 @@
+{
+mapPos: [1658.57, 1260.62],
+size: [48, 78],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [11, 66],
+startRoom: "WARD_E05",
+endPos: [11, 67],
+endRoom: "WARD_E05",
+},
+{
+type: "DeadEnd",
+startPos: [16, 66],
+startRoom: "WARD_E05",
+endPos: [16, 67],
+endRoom: "WARD_E05",
+},
+{
+type: "DeadEnd",
+startPos: [21, 66],
+startRoom: "WARD_E05",
+endPos: [21, 67],
+endRoom: "WARD_E05",
+},
+{
+type: "RoomExit",
+startPos: [42, 63],
+startRoom: "WARD_E05",
+endPos: [42, 68],
+endRoom: "WARD_E05",
+},
+{
+type: "RoomExit",
+startPos: [5, 52],
+startRoom: "WARD_E05",
+endPos: [0, 49],
+endRoom: "WARD_E05",
+},
+{
+type: "DeadEnd",
+startPos: [41, 48],
+startRoom: "WARD_E05",
+endPos: [41, 49],
+endRoom: "WARD_E05",
+},
+{
+type: "Normal",
+startPos: [8, 43],
+startRoom: "WARD_E05",
+endPos: [8, 31],
+endRoom: "WARD_E05",
+},
+{
+type: "Normal",
+startPos: [8, 31],
+startRoom: "WARD_E05",
+endPos: [8, 43],
+endRoom: "WARD_E05",
+},
+{
+type: "CreatureHole",
+startPos: [41, 28],
+startRoom: "WARD_E05",
+endPos: [41, 23],
+endRoom: "WARD_E05",
+},
+{
+type: "RoomExit",
+startPos: [23, 21],
+startRoom: "WARD_E05",
+endPos: [23, 14],
+endRoom: "WARD_E05",
+},
+],
+}

@@ -1,0 +1,94 @@
+{
+mapPos: [297.1887, 1317.183],
+size: [100, 75],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [312.5806, 939.038],
+},
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [63, 65],
+startRoom: "WPTA_D04",
+endPos: [60, 74],
+endRoom: "WPTA_D04",
+},
+{
+type: "Normal",
+startPos: [63, 53],
+startRoom: "WPTA_D04",
+endPos: [60, 28],
+endRoom: "WPTA_D04",
+},
+{
+type: "Normal",
+startPos: [30, 45],
+startRoom: "WPTA_D04",
+endPos: [34, 23],
+endRoom: "WPTA_D04",
+},
+{
+type: "NPCTransportation",
+startPos: [11, 28],
+startRoom: "WPTA_D04",
+endPos: [11, 29],
+endRoom: "WPTA_D04",
+},
+{
+type: "Normal",
+startPos: [60, 28],
+startRoom: "WPTA_D04",
+endPos: [63, 53],
+endRoom: "WPTA_D04",
+},
+{
+type: "CreatureHole",
+startPos: [24, 23],
+startRoom: "WPTA_D04",
+endPos: [24, 22],
+endRoom: "WPTA_D04",
+},
+{
+type: "Normal",
+startPos: [34, 23],
+startRoom: "WPTA_D04",
+endPos: [30, 45],
+endRoom: "WPTA_D04",
+},
+{
+type: "CreatureHole",
+startPos: [83, 10],
+startRoom: "WPTA_D04",
+endPos: [83, 9],
+endRoom: "WPTA_D04",
+},
+{
+type: "RoomExit",
+startPos: [11, 5],
+startRoom: "WPTA_D04",
+endPos: [11, 0],
+endRoom: "WPTA_D04",
+},
+{
+type: "NPCTransportation",
+startPos: [31, 3],
+startRoom: "WPTA_D04",
+endPos: [31, 2],
+endRoom: "WPTA_D04",
+},
+{
+type: "CreatureHole",
+startPos: [34, 3],
+startRoom: "WPTA_D04",
+endPos: [34, 0],
+endRoom: "WPTA_D04",
+},
+],
+}

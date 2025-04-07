@@ -1,0 +1,49 @@
+{
+mapPos: [10094.35, 397.5],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [3, 29],
+startRoom: "WORA_CITY1X",
+endPos: [2, 29],
+endRoom: "WORA_CITY1X",
+},
+{
+type: "CreatureHole",
+startPos: [45, 29],
+startRoom: "WORA_CITY1X",
+endPos: [46, 29],
+endRoom: "WORA_CITY1X",
+},
+{
+type: "RoomExit",
+startPos: [3, 25],
+startRoom: "WORA_CITY1X",
+endPos: [2, 25],
+endRoom: "WORA_CITY1X",
+},
+{
+type: "RoomExit",
+startPos: [45, 21],
+startRoom: "WORA_CITY1X",
+endPos: [46, 16],
+endRoom: "WORA_CITY1X",
+},
+{
+type: "RoomExit",
+startPos: [3, 10],
+startRoom: "WORA_CITY1X",
+endPos: [0, 10],
+endRoom: "WORA_CITY1X",
+},
+],
+}

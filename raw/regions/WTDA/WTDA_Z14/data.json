@@ -1,0 +1,85 @@
+{
+mapPos: [225, 315.5],
+size: [150, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [666.8002, 510.7575],
+panelPos: [-528, -91],
+destPos: [690, 2070],
+destRegion: "WBLA",
+destRoom: "wbla_c01",
+spawnId: 12,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [142, 27],
+startRoom: "WTDA_Z14",
+endPos: [143, 27],
+endRoom: "WTDA_Z14",
+},
+{
+type: "DeadEnd",
+startPos: [142, 25],
+startRoom: "WTDA_Z14",
+endPos: [145, 25],
+endRoom: "WTDA_Z14",
+},
+{
+type: "RoomExit",
+startPos: [142, 23],
+startRoom: "WTDA_Z14",
+endPos: [147, 23],
+endRoom: "WTDA_Z14",
+},
+{
+type: "CreatureHole",
+startPos: [111, 19],
+startRoom: "WTDA_Z14",
+endPos: [111, 18],
+endRoom: "WTDA_Z14",
+},
+{
+type: "NPCTransportation",
+startPos: [127, 19],
+startRoom: "WTDA_Z14",
+endPos: [127, 18],
+endRoom: "WTDA_Z14",
+},
+{
+type: "DeadEnd",
+startPos: [142, 11],
+startRoom: "WTDA_Z14",
+endPos: [144, 11],
+endRoom: "WTDA_Z14",
+},
+{
+type: "DeadEnd",
+startPos: [142, 9],
+startRoom: "WTDA_Z14",
+endPos: [145, 9],
+endRoom: "WTDA_Z14",
+},
+{
+type: "RoomExit",
+startPos: [142, 7],
+startRoom: "WTDA_Z14",
+endPos: [147, 7],
+endRoom: "WTDA_Z14",
+},
+{
+type: "NPCTransportation",
+startPos: [115, 3],
+startRoom: "WTDA_Z14",
+endPos: [115, 2],
+endRoom: "WTDA_Z14",
+},
+],
+}

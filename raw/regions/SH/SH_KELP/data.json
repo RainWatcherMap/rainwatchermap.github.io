@@ -1,0 +1,91 @@
+{
+mapPos: [2176.226, 234.7558],
+size: [101, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [6, 31],
+startRoom: "SH_KELP",
+endPos: [6, 34],
+endRoom: "SH_KELP",
+},
+{
+type: "CreatureHole",
+startPos: [97, 25],
+startRoom: "SH_KELP",
+endPos: [100, 25],
+endRoom: "SH_KELP",
+},
+{
+type: "RoomExit",
+startPos: [36, 22],
+startRoom: "SH_KELP",
+endPos: [36, 28],
+endRoom: "SH_KELP",
+},
+{
+type: "RegionTransportation",
+startPos: [23, 15],
+startRoom: "SH_KELP",
+endPos: [23, 11],
+endRoom: "SH_KELP",
+},
+{
+type: "CreatureHole",
+startPos: [25, 15],
+startRoom: "SH_KELP",
+endPos: [25, 10],
+endRoom: "SH_KELP",
+},
+{
+type: "CreatureHole",
+startPos: [27, 15],
+startRoom: "SH_KELP",
+endPos: [27, 12],
+endRoom: "SH_KELP",
+},
+{
+type: "CreatureHole",
+startPos: [29, 15],
+startRoom: "SH_KELP",
+endPos: [29, 9],
+endRoom: "SH_KELP",
+},
+{
+type: "CreatureHole",
+startPos: [92, 9],
+startRoom: "SH_KELP",
+endPos: [92, 2],
+endRoom: "SH_KELP",
+},
+{
+type: "RoomExit",
+startPos: [94, 9],
+startRoom: "SH_KELP",
+endPos: [98, 5],
+endRoom: "SH_KELP",
+},
+{
+type: "RoomExit",
+startPos: [60, 7],
+startRoom: "SH_KELP",
+endPos: [60, 1],
+endRoom: "SH_KELP",
+},
+{
+type: "DeadEnd",
+startPos: [62, 7],
+startRoom: "SH_KELP",
+endPos: [62, 4],
+endRoom: "SH_KELP",
+},
+],
+}

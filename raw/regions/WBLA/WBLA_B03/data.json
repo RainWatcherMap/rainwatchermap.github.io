@@ -1,0 +1,70 @@
+{
+mapPos: [2714.954, 543.8815],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [13, 30],
+startRoom: "WBLA_B03",
+endPos: [13, 34],
+endRoom: "WBLA_B03",
+},
+{
+type: "NPCTransportation",
+startPos: [7, 27],
+startRoom: "WBLA_B03",
+endPos: [6, 27],
+endRoom: "WBLA_B03",
+},
+{
+type: "RoomExit",
+startPos: [60, 21],
+startRoom: "WBLA_B03",
+endPos: [55, 21],
+endRoom: "WBLA_B03",
+},
+{
+type: "RoomExit",
+startPos: [93, 21],
+startRoom: "WBLA_B03",
+endPos: [99, 21],
+endRoom: "WBLA_B03",
+},
+{
+type: "DeadEnd",
+startPos: [90, 11],
+startRoom: "WBLA_B03",
+endPos: [95, 11],
+endRoom: "WBLA_B03",
+},
+{
+type: "RoomExit",
+startPos: [90, 8],
+startRoom: "WBLA_B03",
+endPos: [99, 8],
+endRoom: "WBLA_B03",
+},
+{
+type: "RoomExit",
+startPos: [74, 5],
+startRoom: "WBLA_B03",
+endPos: [74, 0],
+endRoom: "WBLA_B03",
+},
+{
+type: "NPCTransportation",
+startPos: [81, 4],
+startRoom: "WBLA_B03",
+endPos: [81, 3],
+endRoom: "WBLA_B03",
+},
+],
+}

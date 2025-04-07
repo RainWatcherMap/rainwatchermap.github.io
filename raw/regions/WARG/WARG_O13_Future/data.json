@@ -1,0 +1,49 @@
+{
+mapPos: [4717.82, 893.6071],
+size: [100, 74],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [75, 61],
+startRoom: "WARG_O13_Future",
+endPos: [75, 69],
+endRoom: "WARG_O13_Future",
+},
+{
+type: "Normal",
+startPos: [95, 30],
+startRoom: "WARG_O13_Future",
+endPos: [76, 24],
+endRoom: "WARG_O13_Future",
+},
+{
+type: "CreatureHole",
+startPos: [90, 29],
+startRoom: "WARG_O13_Future",
+endPos: [90, 26],
+endRoom: "WARG_O13_Future",
+},
+{
+type: "Normal",
+startPos: [76, 24],
+startRoom: "WARG_O13_Future",
+endPos: [95, 30],
+endRoom: "WARG_O13_Future",
+},
+{
+type: "RoomExit",
+startPos: [10, 19],
+startRoom: "WARG_O13_Future",
+endPos: [3, 19],
+endRoom: "WARG_O13_Future",
+},
+],
+}

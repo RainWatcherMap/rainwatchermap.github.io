@@ -1,0 +1,77 @@
+{
+mapPos: [2264.412, 338.9998],
+size: [48, 75],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "CreatureHole",
+startPos: [13, 71],
+startRoom: "SH_B11",
+endPos: [13, 72],
+endRoom: "SH_B11",
+},
+{
+type: "RoomExit",
+startPos: [24, 71],
+startRoom: "SH_B11",
+endPos: [24, 74],
+endRoom: "SH_B11",
+},
+{
+type: "CreatureHole",
+startPos: [33, 71],
+startRoom: "SH_B11",
+endPos: [33, 72],
+endRoom: "SH_B11",
+},
+{
+type: "RoomExit",
+startPos: [40, 71],
+startRoom: "SH_B11",
+endPos: [47, 74],
+endRoom: "SH_B11",
+},
+{
+type: "NPCTransportation",
+startPos: [3, 63],
+startRoom: "SH_B11",
+endPos: [2, 63],
+endRoom: "SH_B11",
+},
+{
+type: "RoomExit",
+startPos: [3, 57],
+startRoom: "SH_B11",
+endPos: [0, 57],
+endRoom: "SH_B11",
+},
+{
+type: "CreatureHole",
+startPos: [13, 54],
+startRoom: "SH_B11",
+endPos: [13, 53],
+endRoom: "SH_B11",
+},
+{
+type: "CreatureHole",
+startPos: [33, 54],
+startRoom: "SH_B11",
+endPos: [33, 53],
+endRoom: "SH_B11",
+},
+{
+type: "RoomExit",
+startPos: [24, 9],
+startRoom: "SH_B11",
+endPos: [24, 2],
+endRoom: "SH_B11",
+},
+],
+}

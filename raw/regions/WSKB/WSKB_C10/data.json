@@ -1,0 +1,77 @@
+{
+mapPos: [994.7168, 76.5481],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [18, 29],
+startRoom: "WSKB_C10",
+endPos: [18, 30],
+endRoom: "WSKB_C10",
+},
+{
+type: "RoomExit",
+startPos: [33, 29],
+startRoom: "WSKB_C10",
+endPos: [33, 34],
+endRoom: "WSKB_C10",
+},
+{
+type: "Normal",
+startPos: [14, 21],
+startRoom: "WSKB_C10",
+endPos: [5, 10],
+endRoom: "WSKB_C10",
+},
+{
+type: "NPCTransportation",
+startPos: [37, 21],
+startRoom: "WSKB_C10",
+endPos: [38, 21],
+endRoom: "WSKB_C10",
+},
+{
+type: "Normal",
+startPos: [5, 10],
+startRoom: "WSKB_C10",
+endPos: [14, 21],
+endRoom: "WSKB_C10",
+},
+{
+type: "CreatureHole",
+startPos: [42, 10],
+startRoom: "WSKB_C10",
+endPos: [43, 10],
+endRoom: "WSKB_C10",
+},
+{
+type: "RoomExit",
+startPos: [5, 8],
+startRoom: "WSKB_C10",
+endPos: [0, 8],
+endRoom: "WSKB_C10",
+},
+{
+type: "DeadEnd",
+startPos: [42, 8],
+startRoom: "WSKB_C10",
+endPos: [43, 8],
+endRoom: "WSKB_C10",
+},
+{
+type: "CreatureHole",
+startPos: [5, 6],
+startRoom: "WSKB_C10",
+endPos: [4, 6],
+endRoom: "WSKB_C10",
+},
+],
+}

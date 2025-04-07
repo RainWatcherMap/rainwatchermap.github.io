@@ -1,0 +1,71 @@
+{
+mapPos: [1892.57, 1815.62],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [1451.573, 435.2671],
+region: "WSKC",
+room: "wskc_a10",
+pos: [1010, 490],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [12, 15],
+startRoom: "WARD_E12",
+endPos: [11, 15],
+endRoom: "WARD_E12",
+},
+{
+type: "RoomExit",
+startPos: [12, 12],
+startRoom: "WARD_E12",
+endPos: [5, 12],
+endRoom: "WARD_E12",
+},
+{
+type: "CreatureHole",
+startPos: [48, 8],
+startRoom: "WARD_E12",
+endPos: [48, 2],
+endRoom: "WARD_E12",
+},
+{
+type: "NPCTransportation",
+startPos: [59, 8],
+startRoom: "WARD_E12",
+endPos: [59, 2],
+endRoom: "WARD_E12",
+},
+{
+type: "NPCTransportation",
+startPos: [27, 5],
+startRoom: "WARD_E12",
+endPos: [27, 0],
+endRoom: "WARD_E12",
+},
+{
+type: "RoomExit",
+startPos: [74, 5],
+startRoom: "WARD_E12",
+endPos: [74, 0],
+endRoom: "WARD_E12",
+},
+{
+type: "RoomExit",
+startPos: [32, 4],
+startRoom: "WARD_E12",
+endPos: [32, 0],
+endRoom: "WARD_E12",
+},
+],
+}

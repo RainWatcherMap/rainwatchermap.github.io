@@ -1,0 +1,56 @@
+{
+mapPos: [1761.313, 1508.796],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [3, 10],
+startRoom: "CC_A17",
+endPos: [1, 10],
+endRoom: "CC_A17",
+},
+{
+type: "DeadEnd",
+startPos: [45, 10],
+startRoom: "CC_A17",
+endPos: [46, 10],
+endRoom: "CC_A17",
+},
+{
+type: "DeadEnd",
+startPos: [3, 8],
+startRoom: "CC_A17",
+endPos: [1, 8],
+endRoom: "CC_A17",
+},
+{
+type: "DeadEnd",
+startPos: [45, 8],
+startRoom: "CC_A17",
+endPos: [46, 8],
+endRoom: "CC_A17",
+},
+{
+type: "RoomExit",
+startPos: [3, 6],
+startRoom: "CC_A17",
+endPos: [0, 6],
+endRoom: "CC_A17",
+},
+{
+type: "RegionTransportation",
+startPos: [45, 6],
+startRoom: "CC_A17",
+endPos: [47, 6],
+endRoom: "CC_A17",
+},
+],
+}

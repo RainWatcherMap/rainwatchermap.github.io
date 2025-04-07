@@ -1,0 +1,56 @@
+{
+mapPos: [1955.057, 1258.736],
+size: [48, 35],
+layer: 1,
+shelter: true,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [14, 23],
+startRoom: "WSKD_S03",
+endPos: [14, 24],
+endRoom: "WSKD_S03",
+},
+{
+type: "DeadEnd",
+startPos: [27, 23],
+startRoom: "WSKD_S03",
+endPos: [27, 24],
+endRoom: "WSKD_S03",
+},
+{
+type: "DeadEnd",
+startPos: [9, 19],
+startRoom: "WSKD_S03",
+endPos: [8, 19],
+endRoom: "WSKD_S03",
+},
+{
+type: "DeadEnd",
+startPos: [32, 19],
+startRoom: "WSKD_S03",
+endPos: [33, 19],
+endRoom: "WSKD_S03",
+},
+{
+type: "RoomExit",
+startPos: [38, 16],
+startRoom: "WSKD_S03",
+endPos: [42, 7],
+endRoom: "WSKD_S03",
+},
+{
+type: "DeadEnd",
+startPos: [27, 12],
+startRoom: "WSKD_S03",
+endPos: [27, 11],
+endRoom: "WSKD_S03",
+},
+],
+}

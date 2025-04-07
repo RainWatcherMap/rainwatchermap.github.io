@@ -1,0 +1,63 @@
+{
+mapPos: [5143.87, 1830.651],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [92, 13],
+startRoom: "WARG_A08_Future",
+endPos: [93, 13],
+endRoom: "WARG_A08_Future",
+},
+{
+type: "RoomExit",
+startPos: [92, 11],
+startRoom: "WARG_A08_Future",
+endPos: [97, 11],
+endRoom: "WARG_A08_Future",
+},
+{
+type: "DeadEnd",
+startPos: [7, 7],
+startRoom: "WARG_A08_Future",
+endPos: [6, 7],
+endRoom: "WARG_A08_Future",
+},
+{
+type: "NPCTransportation",
+startPos: [86, 7],
+startRoom: "WARG_A08_Future",
+endPos: [86, 5],
+endRoom: "WARG_A08_Future",
+},
+{
+type: "RoomExit",
+startPos: [7, 5],
+startRoom: "WARG_A08_Future",
+endPos: [2, 5],
+endRoom: "WARG_A08_Future",
+},
+{
+type: "CreatureHole",
+startPos: [18, 2],
+startRoom: "WARG_A08_Future",
+endPos: [18, 0],
+endRoom: "WARG_A08_Future",
+},
+{
+type: "NPCTransportation",
+startPos: [30, 2],
+startRoom: "WARG_A08_Future",
+endPos: [30, 0],
+endRoom: "WARG_A08_Future",
+},
+],
+}

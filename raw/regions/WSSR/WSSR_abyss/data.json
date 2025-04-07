@@ -1,0 +1,70 @@
+{
+mapPos: [971, 2298.5],
+size: [48, 372],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [3, 369],
+startRoom: "WSSR_abyss",
+endPos: [3, 371],
+endRoom: "WSSR_abyss",
+},
+{
+type: "DeadEnd",
+startPos: [6, 369],
+startRoom: "WSSR_abyss",
+endPos: [6, 371],
+endRoom: "WSSR_abyss",
+},
+{
+type: "CreatureHole",
+startPos: [3, 52],
+startRoom: "WSSR_abyss",
+endPos: [3, 51],
+endRoom: "WSSR_abyss",
+},
+{
+type: "DeadEnd",
+startPos: [19, 11],
+startRoom: "WSSR_abyss",
+endPos: [19, 10],
+endRoom: "WSSR_abyss",
+},
+{
+type: "DeadEnd",
+startPos: [22, 11],
+startRoom: "WSSR_abyss",
+endPos: [22, 5],
+endRoom: "WSSR_abyss",
+},
+{
+type: "RoomExit",
+startPos: [25, 11],
+startRoom: "WSSR_abyss",
+endPos: [25, 2],
+endRoom: "WSSR_abyss",
+},
+{
+type: "DeadEnd",
+startPos: [4, 8],
+startRoom: "WSSR_abyss",
+endPos: [1, 8],
+endRoom: "WSSR_abyss",
+},
+{
+type: "DeadEnd",
+startPos: [4, 4],
+startRoom: "WSSR_abyss",
+endPos: [1, 4],
+endRoom: "WSSR_abyss",
+},
+],
+}

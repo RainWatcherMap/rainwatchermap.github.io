@@ -1,0 +1,64 @@
+{
+mapPos: [72, 740.2371],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [289.6384, 506.9496],
+region: null,
+room: null,
+pos: null,
+oneWay: true,
+ripple: true,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [3, 22],
+startRoom: "WARE_G15",
+endPos: [0, 22],
+endRoom: "WARE_G15",
+},
+{
+type: "DeadEnd",
+startPos: [43, 18],
+startRoom: "WARE_G15",
+endPos: [46, 18],
+endRoom: "WARE_G15",
+},
+{
+type: "DeadEnd",
+startPos: [43, 16],
+startRoom: "WARE_G15",
+endPos: [46, 16],
+endRoom: "WARE_G15",
+},
+{
+type: "DeadEnd",
+startPos: [43, 14],
+startRoom: "WARE_G15",
+endPos: [46, 14],
+endRoom: "WARE_G15",
+},
+{
+type: "RoomExit",
+startPos: [43, 12],
+startRoom: "WARE_G15",
+endPos: [47, 12],
+endRoom: "WARE_G15",
+},
+{
+type: "RegionTransportation",
+startPos: [22, 9],
+startRoom: "WARE_G15",
+endPos: [22, 3],
+endRoom: "WARE_G15",
+},
+],
+}

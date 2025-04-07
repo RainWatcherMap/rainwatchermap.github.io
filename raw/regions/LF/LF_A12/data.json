@@ -1,0 +1,42 @@
+{
+mapPos: [3085.898, 81.00049],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [16, 30],
+startRoom: "LF_A12",
+endPos: [16, 33],
+endRoom: "LF_A12",
+},
+{
+type: "RoomExit",
+startPos: [26, 30],
+startRoom: "LF_A12",
+endPos: [26, 34],
+endRoom: "LF_A12",
+},
+{
+type: "RoomExit",
+startPos: [5, 29],
+startRoom: "LF_A12",
+endPos: [5, 34],
+endRoom: "LF_A12",
+},
+{
+type: "RoomExit",
+startPos: [42, 5],
+startRoom: "LF_A12",
+endPos: [47, 5],
+endRoom: "LF_A12",
+},
+],
+}

@@ -1,0 +1,77 @@
+{
+mapPos: [1062.343, 290.4996],
+size: [54, 121],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [45, 118],
+startRoom: "WHIR_C04",
+endPos: [45, 120],
+endRoom: "WHIR_C04",
+},
+{
+type: "RoomExit",
+startPos: [48, 118],
+startRoom: "WHIR_C04",
+endPos: [48, 120],
+endRoom: "WHIR_C04",
+},
+{
+type: "RoomExit",
+startPos: [2, 106],
+startRoom: "WHIR_C04",
+endPos: [0, 106],
+endRoom: "WHIR_C04",
+},
+{
+type: "RoomExit",
+startPos: [51, 106],
+startRoom: "WHIR_C04",
+endPos: [53, 106],
+endRoom: "WHIR_C04",
+},
+{
+type: "RoomExit",
+startPos: [48, 40],
+startRoom: "WHIR_C04",
+endPos: [52, 41],
+endRoom: "WHIR_C04",
+},
+{
+type: "NPCTransportation",
+startPos: [5, 37],
+startRoom: "WHIR_C04",
+endPos: [2, 37],
+endRoom: "WHIR_C04",
+},
+{
+type: "Normal",
+startPos: [5, 35],
+startRoom: "WHIR_C04",
+endPos: [6, 27],
+endRoom: "WHIR_C04",
+},
+{
+type: "Normal",
+startPos: [6, 27],
+startRoom: "WHIR_C04",
+endPos: [5, 35],
+endRoom: "WHIR_C04",
+},
+{
+type: "RoomExit",
+startPos: [6, 25],
+startRoom: "WHIR_C04",
+endPos: [2, 25],
+endRoom: "WHIR_C04",
+},
+],
+}

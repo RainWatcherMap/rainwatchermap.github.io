@@ -1,0 +1,84 @@
+{
+mapPos: [2811.838, 464.9601],
+size: [152, 74],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [127, 64],
+startRoom: "WARC_B09",
+endPos: [127, 71],
+endRoom: "WARC_B09",
+},
+{
+type: "RoomExit",
+startPos: [29, 63],
+startRoom: "WARC_B09",
+endPos: [29, 72],
+endRoom: "WARC_B09",
+},
+{
+type: "DeadEnd",
+startPos: [8, 23],
+startRoom: "WARC_B09",
+endPos: [4, 23],
+endRoom: "WARC_B09",
+},
+{
+type: "RoomExit",
+startPos: [8, 17],
+startRoom: "WARC_B09",
+endPos: [2, 17],
+endRoom: "WARC_B09",
+},
+{
+type: "RoomExit",
+startPos: [138, 17],
+startRoom: "WARC_B09",
+endPos: [149, 17],
+endRoom: "WARC_B09",
+},
+{
+type: "NPCTransportation",
+startPos: [58, 14],
+startRoom: "WARC_B09",
+endPos: [58, 10],
+endRoom: "WARC_B09",
+},
+{
+type: "RoomExit",
+startPos: [75, 13],
+startRoom: "WARC_B09",
+endPos: [75, 5],
+endRoom: "WARC_B09",
+},
+{
+type: "CreatureHole",
+startPos: [32, 12],
+startRoom: "WARC_B09",
+endPos: [32, 5],
+endRoom: "WARC_B09",
+},
+{
+type: "NPCTransportation",
+startPos: [86, 4],
+startRoom: "WARC_B09",
+endPos: [86, 1],
+endRoom: "WARC_B09",
+},
+{
+type: "CreatureHole",
+startPos: [88, 4],
+startRoom: "WARC_B09",
+endPos: [88, 1],
+endRoom: "WARC_B09",
+},
+],
+}

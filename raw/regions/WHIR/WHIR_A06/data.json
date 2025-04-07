@@ -1,0 +1,78 @@
+{
+mapPos: [1401.342, 305.4998],
+size: [54, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [560.1949, 470.2051],
+panelPos: [0, 0],
+destPos: null,
+destRegion: null,
+destRoom: null,
+spawnId: 666,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RegionTransportation",
+startPos: [50, 31],
+startRoom: "WHIR_A06",
+endPos: [52, 31],
+endRoom: "WHIR_A06",
+},
+{
+type: "RoomExit",
+startPos: [50, 29],
+startRoom: "WHIR_A06",
+endPos: [52, 29],
+endRoom: "WHIR_A06",
+},
+{
+type: "NPCTransportation",
+startPos: [50, 27],
+startRoom: "WHIR_A06",
+endPos: [52, 27],
+endRoom: "WHIR_A06",
+},
+{
+type: "RoomExit",
+startPos: [3, 22],
+startRoom: "WHIR_A06",
+endPos: [1, 22],
+endRoom: "WHIR_A06",
+},
+{
+type: "Normal",
+startPos: [3, 20],
+startRoom: "WHIR_A06",
+endPos: [6, 5],
+endRoom: "WHIR_A06",
+},
+{
+type: "RegionTransportation",
+startPos: [6, 7],
+startRoom: "WHIR_A06",
+endPos: [4, 7],
+endRoom: "WHIR_A06",
+},
+{
+type: "Normal",
+startPos: [6, 5],
+startRoom: "WHIR_A06",
+endPos: [3, 20],
+endRoom: "WHIR_A06",
+},
+{
+type: "CreatureHole",
+startPos: [39, 2],
+startRoom: "WHIR_A06",
+endPos: [39, 0],
+endRoom: "WHIR_A06",
+},
+],
+}

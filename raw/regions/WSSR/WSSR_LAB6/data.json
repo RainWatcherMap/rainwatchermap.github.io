@@ -1,0 +1,43 @@
+{
+mapPos: [960.9999, 3164.5],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [482.0687, 368.4155],
+region: "WORA",
+room: null,
+pos: null,
+oneWay: true,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [9, 31],
+startRoom: "WSSR_LAB6",
+endPos: [1, 31],
+endRoom: "WSSR_LAB6",
+},
+{
+type: "DeadEnd",
+startPos: [27, 31],
+startRoom: "WSSR_LAB6",
+endPos: [27, 33],
+endRoom: "WSSR_LAB6",
+},
+{
+type: "RoomExit",
+startPos: [29, 31],
+startRoom: "WSSR_LAB6",
+endPos: [29, 34],
+endRoom: "WSSR_LAB6",
+},
+],
+}

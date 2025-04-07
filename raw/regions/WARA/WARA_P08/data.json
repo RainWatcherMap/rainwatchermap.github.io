@@ -1,0 +1,28 @@
+{
+mapPos: [436.8601, 478.3126],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [31, 8],
+startRoom: "WARA_P08",
+endPos: [28, 5],
+endRoom: "WARA_P08",
+},
+{
+type: "RoomExit",
+startPos: [33, 8],
+startRoom: "WARA_P08",
+endPos: [33, 0],
+endRoom: "WARA_P08",
+},
+],
+}

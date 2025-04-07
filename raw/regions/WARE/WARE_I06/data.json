@@ -1,0 +1,42 @@
+{
+mapPos: [2170.072, 1386.331],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [8, 23],
+startRoom: "WARE_I06",
+endPos: [4, 23],
+endRoom: "WARE_I06",
+},
+{
+type: "Normal",
+startPos: [38, 23],
+startRoom: "WARE_I06",
+endPos: [38, 9],
+endRoom: "WARE_I06",
+},
+{
+type: "Normal",
+startPos: [38, 9],
+startRoom: "WARE_I06",
+endPos: [38, 23],
+endRoom: "WARE_I06",
+},
+{
+type: "RoomExit",
+startPos: [12, 4],
+startRoom: "WARE_I06",
+endPos: [12, 0],
+endRoom: "WARE_I06",
+},
+],
+}

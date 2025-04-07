@@ -1,0 +1,84 @@
+{
+mapPos: [1204.411, 916.9995],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [7, 31],
+startRoom: "SH_A15",
+endPos: [7, 34],
+endRoom: "SH_A15",
+},
+{
+type: "Normal",
+startPos: [7, 21],
+startRoom: "SH_A15",
+endPos: [7, 16],
+endRoom: "SH_A15",
+},
+{
+type: "NPCTransportation",
+startPos: [32, 21],
+startRoom: "SH_A15",
+endPos: [32, 20],
+endRoom: "SH_A15",
+},
+{
+type: "Normal",
+startPos: [7, 16],
+startRoom: "SH_A15",
+endPos: [7, 21],
+endRoom: "SH_A15",
+},
+{
+type: "DeadEnd",
+startPos: [41, 16],
+startRoom: "SH_A15",
+endPos: [41, 22],
+endRoom: "SH_A15",
+},
+{
+type: "RoomExit",
+startPos: [43, 16],
+startRoom: "SH_A15",
+endPos: [43, 34],
+endRoom: "SH_A15",
+},
+{
+type: "NPCTransportation",
+startPos: [32, 9],
+startRoom: "SH_A15",
+endPos: [32, 8],
+endRoom: "SH_A15",
+},
+{
+type: "CreatureHole",
+startPos: [41, 9],
+startRoom: "SH_A15",
+endPos: [41, 8],
+endRoom: "SH_A15",
+},
+{
+type: "CreatureHole",
+startPos: [43, 9],
+startRoom: "SH_A15",
+endPos: [43, 8],
+endRoom: "SH_A15",
+},
+{
+type: "RoomExit",
+startPos: [7, 2],
+startRoom: "SH_A15",
+endPos: [7, 0],
+endRoom: "SH_A15",
+},
+],
+}

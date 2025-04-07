@@ -1,0 +1,63 @@
+{
+mapPos: [174, 557.2461],
+size: [116, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [94, 27],
+startRoom: "HI_W14",
+endPos: [99, 27],
+endRoom: "HI_W14",
+},
+{
+type: "DeadEnd",
+startPos: [94, 24],
+startRoom: "HI_W14",
+endPos: [101, 24],
+endRoom: "HI_W14",
+},
+{
+type: "RoomExit",
+startPos: [94, 21],
+startRoom: "HI_W14",
+endPos: [101, 21],
+endRoom: "HI_W14",
+},
+{
+type: "DeadEnd",
+startPos: [9, 16],
+startRoom: "HI_W14",
+endPos: [3, 16],
+endRoom: "HI_W14",
+},
+{
+type: "DeadEnd",
+startPos: [94, 12],
+startRoom: "HI_W14",
+endPos: [99, 12],
+endRoom: "HI_W14",
+},
+{
+type: "DeadEnd",
+startPos: [94, 9],
+startRoom: "HI_W14",
+endPos: [100, 9],
+endRoom: "HI_W14",
+},
+{
+type: "DeadEnd",
+startPos: [94, 6],
+startRoom: "HI_W14",
+endPos: [99, 6],
+endRoom: "HI_W14",
+},
+],
+}

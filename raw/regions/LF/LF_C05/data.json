@@ -1,0 +1,35 @@
+{
+mapPos: [3797.389, 1727.756],
+size: [48, 120],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [6, 99],
+startRoom: "LF_C05",
+endPos: [1, 99],
+endRoom: "LF_C05",
+},
+{
+type: "RoomExit",
+startPos: [6, 97],
+startRoom: "LF_C05",
+endPos: [0, 97],
+endRoom: "LF_C05",
+},
+{
+type: "RoomExit",
+startPos: [23, 8],
+startRoom: "LF_C05",
+endPos: [23, 1],
+endRoom: "LF_C05",
+},
+],
+}

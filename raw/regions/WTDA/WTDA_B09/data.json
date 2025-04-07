@@ -1,0 +1,84 @@
+{
+mapPos: [2991.066, 736],
+size: [99, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [10, 18],
+startRoom: "WTDA_B09",
+endPos: [5, 18],
+endRoom: "WTDA_B09",
+},
+{
+type: "DeadEnd",
+startPos: [90, 18],
+startRoom: "WTDA_B09",
+endPos: [94, 18],
+endRoom: "WTDA_B09",
+},
+{
+type: "RoomExit",
+startPos: [10, 16],
+startRoom: "WTDA_B09",
+endPos: [2, 16],
+endRoom: "WTDA_B09",
+},
+{
+type: "DeadEnd",
+startPos: [90, 16],
+startRoom: "WTDA_B09",
+endPos: [95, 16],
+endRoom: "WTDA_B09",
+},
+{
+type: "DeadEnd",
+startPos: [10, 14],
+startRoom: "WTDA_B09",
+endPos: [5, 14],
+endRoom: "WTDA_B09",
+},
+{
+type: "RoomExit",
+startPos: [90, 14],
+startRoom: "WTDA_B09",
+endPos: [96, 14],
+endRoom: "WTDA_B09",
+},
+{
+type: "DeadEnd",
+startPos: [21, 10],
+startRoom: "WTDA_B09",
+endPos: [21, 9],
+endRoom: "WTDA_B09",
+},
+{
+type: "NPCTransportation",
+startPos: [23, 10],
+startRoom: "WTDA_B09",
+endPos: [23, 9],
+endRoom: "WTDA_B09",
+},
+{
+type: "CreatureHole",
+startPos: [59, 10],
+startRoom: "WTDA_B09",
+endPos: [59, 9],
+endRoom: "WTDA_B09",
+},
+{
+type: "NPCTransportation",
+startPos: [62, 10],
+startRoom: "WTDA_B09",
+endPos: [62, 9],
+endRoom: "WTDA_B09",
+},
+],
+}

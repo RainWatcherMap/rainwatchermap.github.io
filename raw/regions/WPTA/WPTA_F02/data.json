@@ -1,0 +1,35 @@
+{
+mapPos: [684.398, 1626.236],
+size: [308, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [292, 16],
+startRoom: "WPTA_F02",
+endPos: [290, 34],
+endRoom: "WPTA_F02",
+},
+{
+type: "RoomExit",
+startPos: [10, 7],
+startRoom: "WPTA_F02",
+endPos: [10, 0],
+endRoom: "WPTA_F02",
+},
+{
+type: "RoomExit",
+startPos: [277, 5],
+startRoom: "WPTA_F02",
+endPos: [277, 0],
+endRoom: "WPTA_F02",
+},
+],
+}

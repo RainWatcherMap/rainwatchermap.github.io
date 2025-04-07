@@ -1,0 +1,77 @@
+{
+mapPos: [1362.18, 141.2932],
+size: [152, 37],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [78, 33],
+startRoom: "WRFB_C10",
+endPos: [78, 36],
+endRoom: "WRFB_C10",
+},
+{
+type: "RoomExit",
+startPos: [83, 33],
+startRoom: "WRFB_C10",
+endPos: [89, 36],
+endRoom: "WRFB_C10",
+},
+{
+type: "NPCTransportation",
+startPos: [3, 20],
+startRoom: "WRFB_C10",
+endPos: [0, 20],
+endRoom: "WRFB_C10",
+},
+{
+type: "RoomExit",
+startPos: [148, 20],
+startRoom: "WRFB_C10",
+endPos: [151, 20],
+endRoom: "WRFB_C10",
+},
+{
+type: "RoomExit",
+startPos: [3, 18],
+startRoom: "WRFB_C10",
+endPos: [0, 18],
+endRoom: "WRFB_C10",
+},
+{
+type: "NPCTransportation",
+startPos: [37, 17],
+startRoom: "WRFB_C10",
+endPos: [37, 16],
+endRoom: "WRFB_C10",
+},
+{
+type: "CreatureHole",
+startPos: [40, 17],
+startRoom: "WRFB_C10",
+endPos: [40, 16],
+endRoom: "WRFB_C10",
+},
+{
+type: "NPCTransportation",
+startPos: [43, 17],
+startRoom: "WRFB_C10",
+endPos: [43, 16],
+endRoom: "WRFB_C10",
+},
+{
+type: "CreatureHole",
+startPos: [83, 17],
+startRoom: "WRFB_C10",
+endPos: [83, 16],
+endRoom: "WRFB_C10",
+},
+],
+}

@@ -1,0 +1,49 @@
+{
+mapPos: [2732.021, 467.8987],
+size: [54, 37],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [49, 22],
+startRoom: "HI_A18",
+endPos: [53, 22],
+endRoom: "HI_A18",
+},
+{
+type: "CreatureHole",
+startPos: [22, 9],
+startRoom: "HI_A18",
+endPos: [22, 3],
+endRoom: "HI_A18",
+},
+{
+type: "CreatureHole",
+startPos: [24, 9],
+startRoom: "HI_A18",
+endPos: [24, 3],
+endRoom: "HI_A18",
+},
+{
+type: "RegionTransportation",
+startPos: [26, 9],
+startRoom: "HI_A18",
+endPos: [26, 3],
+endRoom: "HI_A18",
+},
+{
+type: "RoomExit",
+startPos: [10, 3],
+startRoom: "HI_A18",
+endPos: [10, 0],
+endRoom: "HI_A18",
+},
+],
+}

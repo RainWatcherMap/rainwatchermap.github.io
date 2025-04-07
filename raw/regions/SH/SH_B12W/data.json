@@ -1,0 +1,35 @@
+{
+mapPos: [3214.412, 348.9998],
+size: [48, 78],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [44, 67],
+startRoom: "SH_B12W",
+endPos: [47, 67],
+endRoom: "SH_B12W",
+},
+{
+type: "RoomExit",
+startPos: [6, 9],
+startRoom: "SH_B12W",
+endPos: [0, 1],
+endRoom: "SH_B12W",
+},
+{
+type: "RoomExit",
+startPos: [45, 5],
+startRoom: "SH_B12W",
+endPos: [47, 5],
+endRoom: "SH_B12W",
+},
+],
+}

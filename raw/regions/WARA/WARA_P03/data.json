@@ -1,0 +1,66 @@
+{
+mapPos: [437, 311.9211],
+size: [48, 74],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [593.1308, 114.8993],
+},
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [31, 69],
+startRoom: "WARA_P03",
+endPos: [31, 72],
+endRoom: "WARA_P03",
+},
+{
+type: "RoomExit",
+startPos: [33, 69],
+startRoom: "WARA_P03",
+endPos: [33, 73],
+endRoom: "WARA_P03",
+},
+{
+type: "DeadEnd",
+startPos: [35, 69],
+startRoom: "WARA_P03",
+endPos: [35, 72],
+endRoom: "WARA_P03",
+},
+{
+type: "DeadEnd",
+startPos: [41, 28],
+startRoom: "WARA_P03",
+endPos: [42, 28],
+endRoom: "WARA_P03",
+},
+{
+type: "RoomExit",
+startPos: [41, 26],
+startRoom: "WARA_P03",
+endPos: [47, 26],
+endRoom: "WARA_P03",
+},
+{
+type: "RoomExit",
+startPos: [9, 11],
+startRoom: "WARA_P03",
+endPos: [9, 4],
+endRoom: "WARA_P03",
+},
+{
+type: "CreatureHole",
+startPos: [31, 3],
+startRoom: "WARA_P03",
+endPos: [31, 0],
+endRoom: "WARA_P03",
+},
+],
+}

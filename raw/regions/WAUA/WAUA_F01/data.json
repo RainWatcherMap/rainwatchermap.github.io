@@ -1,0 +1,49 @@
+{
+mapPos: [6538.743, 488.1685],
+size: [151, 75],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [6, 55],
+startRoom: "WAUA_F01",
+endPos: [1, 55],
+endRoom: "WAUA_F01",
+},
+{
+type: "DeadEnd",
+startPos: [6, 53],
+startRoom: "WAUA_F01",
+endPos: [1, 53],
+endRoom: "WAUA_F01",
+},
+{
+type: "DeadEnd",
+startPos: [6, 51],
+startRoom: "WAUA_F01",
+endPos: [1, 51],
+endRoom: "WAUA_F01",
+},
+{
+type: "RoomExit",
+startPos: [6, 49],
+startRoom: "WAUA_F01",
+endPos: [0, 49],
+endRoom: "WAUA_F01",
+},
+{
+type: "RoomExit",
+startPos: [145, 6],
+startRoom: "WAUA_F01",
+endPos: [150, 5],
+endRoom: "WAUA_F01",
+},
+],
+}

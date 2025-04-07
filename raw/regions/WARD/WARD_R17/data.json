@@ -1,0 +1,35 @@
+{
+mapPos: [1264.044, 219],
+size: [48, 74],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [24, 66],
+startRoom: "WARD_R17",
+endPos: [24, 73],
+endRoom: "WARD_R17",
+},
+{
+type: "CreatureHole",
+startPos: [42, 51],
+startRoom: "WARD_R17",
+endPos: [45, 51],
+endRoom: "WARD_R17",
+},
+{
+type: "RoomExit",
+startPos: [24, 8],
+startRoom: "WARD_R17",
+endPos: [24, 1],
+endRoom: "WARD_R17",
+},
+],
+}

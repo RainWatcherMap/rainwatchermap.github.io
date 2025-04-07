@@ -1,0 +1,28 @@
+{
+mapPos: [7220.834, 569.8776],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [37, 28],
+startRoom: "WRRA_A20",
+endPos: [41, 28],
+endRoom: "WRRA_A20",
+},
+{
+type: "RoomExit",
+startPos: [38, 9],
+startRoom: "WRRA_A20",
+endPos: [46, 9],
+endRoom: "WRRA_A20",
+},
+],
+}

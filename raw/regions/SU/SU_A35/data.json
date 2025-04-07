@@ -1,0 +1,70 @@
+{
+mapPos: [1972.917, 1039.504],
+size: [54, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [14, 27],
+startRoom: "SU_A35",
+endPos: [14, 30],
+endRoom: "SU_A35",
+},
+{
+type: "NPCTransportation",
+startPos: [17, 27],
+startRoom: "SU_A35",
+endPos: [17, 30],
+endRoom: "SU_A35",
+},
+{
+type: "DeadEnd",
+startPos: [7, 22],
+startRoom: "SU_A35",
+endPos: [4, 22],
+endRoom: "SU_A35",
+},
+{
+type: "RoomExit",
+startPos: [48, 22],
+startRoom: "SU_A35",
+endPos: [52, 30],
+endRoom: "SU_A35",
+},
+{
+type: "DeadEnd",
+startPos: [7, 20],
+startRoom: "SU_A35",
+endPos: [4, 20],
+endRoom: "SU_A35",
+},
+{
+type: "RegionTransportation",
+startPos: [7, 17],
+startRoom: "SU_A35",
+endPos: [3, 17],
+endRoom: "SU_A35",
+},
+{
+type: "RegionTransportation",
+startPos: [7, 15],
+startRoom: "SU_A35",
+endPos: [3, 15],
+endRoom: "SU_A35",
+},
+{
+type: "NPCTransportation",
+startPos: [48, 15],
+startRoom: "SU_A35",
+endPos: [50, 15],
+endRoom: "SU_A35",
+},
+],
+}

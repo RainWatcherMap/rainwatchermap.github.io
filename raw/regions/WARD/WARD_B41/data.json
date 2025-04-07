@@ -1,0 +1,50 @@
+{
+mapPos: [1933.33, 1012.271],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+{
+pos: [341.05, 370.2433],
+region: "WSKD",
+room: "wskd_b38",
+pos: [530, 230],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [2, 29],
+startRoom: "WARD_B41",
+endPos: [2, 34],
+endRoom: "WARD_B41",
+},
+{
+type: "RoomExit",
+startPos: [34, 11],
+startRoom: "WARD_B41",
+endPos: [47, 11],
+endRoom: "WARD_B41",
+},
+{
+type: "RoomExit",
+startPos: [5, 3],
+startRoom: "WARD_B41",
+endPos: [5, 0],
+endRoom: "WARD_B41",
+},
+{
+type: "CreatureHole",
+startPos: [14, 3],
+startRoom: "WARD_B41",
+endPos: [14, 0],
+endRoom: "WARD_B41",
+},
+],
+}

@@ -1,0 +1,57 @@
+{
+mapPos: [1432.208, 172.5],
+size: [48, 115],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [687.5314, 387.975],
+region: "WVWA",
+room: "wvwa_h01",
+pos: [470, 4930],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [23, 105],
+startRoom: "WPTA_C07",
+endPos: [23, 111],
+endRoom: "WPTA_C07",
+},
+{
+type: "RoomExit",
+startPos: [25, 105],
+startRoom: "WPTA_C07",
+endPos: [25, 112],
+endRoom: "WPTA_C07",
+},
+{
+type: "Normal",
+startPos: [25, 27],
+startRoom: "WPTA_C07",
+endPos: [9, 18],
+endRoom: "WPTA_C07",
+},
+{
+type: "Normal",
+startPos: [9, 18],
+startRoom: "WPTA_C07",
+endPos: [25, 27],
+endRoom: "WPTA_C07",
+},
+{
+type: "DeadEnd",
+startPos: [9, 16],
+startRoom: "WPTA_C07",
+endPos: [8, 16],
+endRoom: "WPTA_C07",
+},
+],
+}

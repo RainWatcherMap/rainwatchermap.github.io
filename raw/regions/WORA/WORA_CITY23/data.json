@@ -1,0 +1,98 @@
+{
+mapPos: [9297, 644.3633],
+size: [62, 24],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RegionTransportation",
+startPos: [12, 15],
+startRoom: "WORA_CITY23",
+endPos: [12, 18],
+endRoom: "WORA_CITY23",
+},
+{
+type: "RoomExit",
+startPos: [15, 15],
+startRoom: "WORA_CITY23",
+endPos: [15, 22],
+endRoom: "WORA_CITY23",
+},
+{
+type: "DeadEnd",
+startPos: [18, 15],
+startRoom: "WORA_CITY23",
+endPos: [18, 17],
+endRoom: "WORA_CITY23",
+},
+{
+type: "CreatureHole",
+startPos: [43, 15],
+startRoom: "WORA_CITY23",
+endPos: [43, 19],
+endRoom: "WORA_CITY23",
+},
+{
+type: "RegionTransportation",
+startPos: [46, 15],
+startRoom: "WORA_CITY23",
+endPos: [46, 18],
+endRoom: "WORA_CITY23",
+},
+{
+type: "DeadEnd",
+startPos: [49, 15],
+startRoom: "WORA_CITY23",
+endPos: [49, 19],
+endRoom: "WORA_CITY23",
+},
+{
+type: "Normal",
+startPos: [8, 12],
+startRoom: "WORA_CITY23",
+endPos: [8, 4],
+endRoom: "WORA_CITY23",
+},
+{
+type: "CreatureHole",
+startPos: [53, 12],
+startRoom: "WORA_CITY23",
+endPos: [58, 12],
+endRoom: "WORA_CITY23",
+},
+{
+type: "RoomExit",
+startPos: [8, 10],
+startRoom: "WORA_CITY23",
+endPos: [1, 10],
+endRoom: "WORA_CITY23",
+},
+{
+type: "RoomExit",
+startPos: [53, 9],
+startRoom: "WORA_CITY23",
+endPos: [60, 9],
+endRoom: "WORA_CITY23",
+},
+{
+type: "Normal",
+startPos: [8, 4],
+startRoom: "WORA_CITY23",
+endPos: [8, 12],
+endRoom: "WORA_CITY23",
+},
+{
+type: "NPCTransportation",
+startPos: [53, 4],
+startRoom: "WORA_CITY23",
+endPos: [54, 4],
+endRoom: "WORA_CITY23",
+},
+],
+}

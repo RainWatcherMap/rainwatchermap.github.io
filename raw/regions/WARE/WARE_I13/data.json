@@ -1,0 +1,28 @@
+{
+mapPos: [2244.477, 982.0002],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [12, 17],
+startRoom: "WARE_I13",
+endPos: [6, 17],
+endRoom: "WARE_I13",
+},
+{
+type: "CreatureHole",
+startPos: [30, 14],
+startRoom: "WARE_I13",
+endPos: [30, 9],
+endRoom: "WARE_I13",
+},
+],
+}

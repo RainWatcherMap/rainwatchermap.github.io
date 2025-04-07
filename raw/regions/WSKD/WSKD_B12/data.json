@@ -1,0 +1,64 @@
+{
+mapPos: [1945.058, 1413.736],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [1444.198, 474.0925],
+region: "WARG",
+room: "warg_w11",
+pos: [570, 190],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [57, 18],
+startRoom: "WSKD_B12",
+endPos: [57, 17],
+endRoom: "WSKD_B12",
+},
+{
+type: "RoomExit",
+startPos: [78, 15],
+startRoom: "WSKD_B12",
+endPos: [78, 5],
+endRoom: "WSKD_B12",
+},
+{
+type: "CreatureHole",
+startPos: [80, 15],
+startRoom: "WSKD_B12",
+endPos: [80, 14],
+endRoom: "WSKD_B12",
+},
+{
+type: "RoomExit",
+startPos: [26, 13],
+startRoom: "WSKD_B12",
+endPos: [26, 5],
+endRoom: "WSKD_B12",
+},
+{
+type: "CreatureHole",
+startPos: [28, 13],
+startRoom: "WSKD_B12",
+endPos: [28, 12],
+endRoom: "WSKD_B12",
+},
+{
+type: "NPCTransportation",
+startPos: [34, 12],
+startRoom: "WSKD_B12",
+endPos: [34, 11],
+endRoom: "WSKD_B12",
+},
+],
+}

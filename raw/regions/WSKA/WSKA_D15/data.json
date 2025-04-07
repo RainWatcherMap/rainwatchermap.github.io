@@ -1,0 +1,85 @@
+{
+mapPos: [1475.715, 256.6143],
+size: [152, 115],
+layer: 2,
+shelter: false,
+warpPoints: [
+{
+pos: [1675.7, 551.2532],
+region: "WRFA",
+room: "wrfa_a12",
+pos: [290, 370],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [11, 110],
+startRoom: "WSKA_D15",
+endPos: [9, 114],
+endRoom: "WSKA_D15",
+},
+{
+type: "CreatureHole",
+startPos: [141, 99],
+startRoom: "WSKA_D15",
+endPos: [142, 99],
+endRoom: "WSKA_D15",
+},
+{
+type: "RoomExit",
+startPos: [11, 85],
+startRoom: "WSKA_D15",
+endPos: [2, 85],
+endRoom: "WSKA_D15",
+},
+{
+type: "RoomExit",
+startPos: [140, 85],
+startRoom: "WSKA_D15",
+endPos: [150, 85],
+endRoom: "WSKA_D15",
+},
+{
+type: "RoomExit",
+startPos: [144, 21],
+startRoom: "WSKA_D15",
+endPos: [146, 33],
+endRoom: "WSKA_D15",
+},
+{
+type: "RoomExit",
+startPos: [7, 19],
+startRoom: "WSKA_D15",
+endPos: [6, 33],
+endRoom: "WSKA_D15",
+},
+{
+type: "RoomExit",
+startPos: [71, 4],
+startRoom: "WSKA_D15",
+endPos: [75, 2],
+endRoom: "WSKA_D15",
+},
+{
+type: "CreatureHole",
+startPos: [135, 3],
+startRoom: "WSKA_D15",
+endPos: [135, 2],
+endRoom: "WSKA_D15",
+},
+{
+type: "CreatureHole",
+startPos: [23, 2],
+startRoom: "WSKA_D15",
+endPos: [23, 1],
+endRoom: "WSKA_D15",
+},
+],
+}

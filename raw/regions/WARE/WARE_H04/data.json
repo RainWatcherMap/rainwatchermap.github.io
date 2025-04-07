@@ -1,0 +1,70 @@
+{
+mapPos: [692.2311, 332.5755],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [6, 24],
+startRoom: "WARE_H04",
+endPos: [6, 30],
+endRoom: "WARE_H04",
+},
+{
+type: "RoomExit",
+startPos: [34, 21],
+startRoom: "WARE_H04",
+endPos: [45, 21],
+endRoom: "WARE_H04",
+},
+{
+type: "CreatureHole",
+startPos: [9, 18],
+startRoom: "WARE_H04",
+endPos: [9, 15],
+endRoom: "WARE_H04",
+},
+{
+type: "CreatureHole",
+startPos: [12, 18],
+startRoom: "WARE_H04",
+endPos: [12, 15],
+endRoom: "WARE_H04",
+},
+{
+type: "CreatureHole",
+startPos: [30, 13],
+startRoom: "WARE_H04",
+endPos: [30, 11],
+endRoom: "WARE_H04",
+},
+{
+type: "DeadEnd",
+startPos: [33, 13],
+startRoom: "WARE_H04",
+endPos: [33, 12],
+endRoom: "WARE_H04",
+},
+{
+type: "CreatureHole",
+startPos: [36, 13],
+startRoom: "WARE_H04",
+endPos: [36, 11],
+endRoom: "WARE_H04",
+},
+{
+type: "RoomExit",
+startPos: [40, 8],
+startRoom: "WARE_H04",
+endPos: [40, 0],
+endRoom: "WARE_H04",
+},
+],
+}

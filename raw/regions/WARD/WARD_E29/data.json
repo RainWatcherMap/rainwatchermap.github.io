@@ -1,0 +1,52 @@
+{
+mapPos: [753.332, 1796.273],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [671.6153, 256.3226],
+},
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [8, 18],
+startRoom: "WARD_E29",
+endPos: [7, 18],
+endRoom: "WARD_E29",
+},
+{
+type: "RoomExit",
+startPos: [8, 15],
+startRoom: "WARD_E29",
+endPos: [2, 15],
+endRoom: "WARD_E29",
+},
+{
+type: "CreatureHole",
+startPos: [35, 10],
+startRoom: "WARD_E29",
+endPos: [35, 6],
+endRoom: "WARD_E29",
+},
+{
+type: "Normal",
+startPos: [31, 7],
+startRoom: "WARD_E29",
+endPos: [14, 6],
+endRoom: "WARD_E29",
+},
+{
+type: "Normal",
+startPos: [14, 6],
+startRoom: "WARD_E29",
+endPos: [31, 7],
+endRoom: "WARD_E29",
+},
+],
+}

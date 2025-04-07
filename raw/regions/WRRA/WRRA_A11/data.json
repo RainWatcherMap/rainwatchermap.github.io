@@ -1,0 +1,84 @@
+{
+mapPos: [7086.349, 221.793],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [45, 28],
+startRoom: "WRRA_A11",
+endPos: [45, 34],
+endRoom: "WRRA_A11",
+},
+{
+type: "RoomExit",
+startPos: [4, 27],
+startRoom: "WRRA_A11",
+endPos: [4, 33],
+endRoom: "WRRA_A11",
+},
+{
+type: "DeadEnd",
+startPos: [29, 19],
+startRoom: "WRRA_A11",
+endPos: [29, 18],
+endRoom: "WRRA_A11",
+},
+{
+type: "Normal",
+startPos: [12, 14],
+startRoom: "WRRA_A11",
+endPos: [27, 6],
+endRoom: "WRRA_A11",
+},
+{
+type: "Normal",
+startPos: [20, 13],
+startRoom: "WRRA_A11",
+endPos: [28, 13],
+endRoom: "WRRA_A11",
+},
+{
+type: "Normal",
+startPos: [28, 13],
+startRoom: "WRRA_A11",
+endPos: [20, 13],
+endRoom: "WRRA_A11",
+},
+{
+type: "NPCTransportation",
+startPos: [19, 9],
+startRoom: "WRRA_A11",
+endPos: [18, 9],
+endRoom: "WRRA_A11",
+},
+{
+type: "NPCTransportation",
+startPos: [34, 9],
+startRoom: "WRRA_A11",
+endPos: [33, 9],
+endRoom: "WRRA_A11",
+},
+{
+type: "RoomExit",
+startPos: [42, 7],
+startRoom: "WRRA_A11",
+endPos: [47, 7],
+endRoom: "WRRA_A11",
+},
+{
+type: "Normal",
+startPos: [27, 6],
+startRoom: "WRRA_A11",
+endPos: [12, 14],
+endRoom: "WRRA_A11",
+},
+],
+}

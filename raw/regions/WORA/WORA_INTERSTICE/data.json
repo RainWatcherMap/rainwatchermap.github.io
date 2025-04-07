@@ -1,0 +1,77 @@
+{
+mapPos: [10482.88, 542.0554],
+size: [48, 45],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [5, 42],
+startRoom: "WORA_INTERSTICE",
+endPos: [5, 43],
+endRoom: "WORA_INTERSTICE",
+},
+{
+type: "CreatureHole",
+startPos: [3, 39],
+startRoom: "WORA_INTERSTICE",
+endPos: [1, 39],
+endRoom: "WORA_INTERSTICE",
+},
+{
+type: "RoomExit",
+startPos: [39, 35],
+startRoom: "WORA_INTERSTICE",
+endPos: [46, 35],
+endRoom: "WORA_INTERSTICE",
+},
+{
+type: "DeadEnd",
+startPos: [42, 33],
+startRoom: "WORA_INTERSTICE",
+endPos: [42, 37],
+endRoom: "WORA_INTERSTICE",
+},
+{
+type: "CreatureHole",
+startPos: [3, 28],
+startRoom: "WORA_INTERSTICE",
+endPos: [1, 28],
+endRoom: "WORA_INTERSTICE",
+},
+{
+type: "RoomExit",
+startPos: [3, 21],
+startRoom: "WORA_INTERSTICE",
+endPos: [1, 21],
+endRoom: "WORA_INTERSTICE",
+},
+{
+type: "RoomExit",
+startPos: [39, 21],
+startRoom: "WORA_INTERSTICE",
+endPos: [46, 21],
+endRoom: "WORA_INTERSTICE",
+},
+{
+type: "DeadEnd",
+startPos: [42, 16],
+startRoom: "WORA_INTERSTICE",
+endPos: [42, 15],
+endRoom: "WORA_INTERSTICE",
+},
+{
+type: "CreatureHole",
+startPos: [5, 14],
+startRoom: "WORA_INTERSTICE",
+endPos: [5, 10],
+endRoom: "WORA_INTERSTICE",
+},
+],
+}

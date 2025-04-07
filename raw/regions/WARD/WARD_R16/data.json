@@ -1,0 +1,24 @@
+{
+mapPos: [1608.044, 1135.503],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [467.0729, 133.7206],
+},
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [9, 17],
+startRoom: "WARD_R16",
+endPos: [0, 17],
+endRoom: "WARD_R16",
+},
+],
+}

@@ -1,0 +1,56 @@
+{
+mapPos: [1000.045, 1110.504],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [4, 25],
+startRoom: "WARD_R08",
+endPos: [0, 25],
+endRoom: "WARD_R08",
+},
+{
+type: "Normal",
+startPos: [34, 25],
+startRoom: "WARD_R08",
+endPos: [36, 11],
+endRoom: "WARD_R08",
+},
+{
+type: "Normal",
+startPos: [36, 11],
+startRoom: "WARD_R08",
+endPos: [34, 25],
+endRoom: "WARD_R08",
+},
+{
+type: "DeadEnd",
+startPos: [11, 9],
+startRoom: "WARD_R08",
+endPos: [11, 8],
+endRoom: "WARD_R08",
+},
+{
+type: "DeadEnd",
+startPos: [14, 9],
+startRoom: "WARD_R08",
+endPos: [14, 8],
+endRoom: "WARD_R08",
+},
+{
+type: "RoomExit",
+startPos: [42, 7],
+startRoom: "WARD_R08",
+endPos: [47, 7],
+endRoom: "WARD_R08",
+},
+],
+}

@@ -1,0 +1,84 @@
+{
+mapPos: [1512.517, 2934.764],
+size: [362, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [329, 18],
+startRoom: "CC_H01",
+endPos: [327, 13],
+endRoom: "CC_H01",
+},
+{
+type: "Normal",
+startPos: [327, 13],
+startRoom: "CC_H01",
+endPos: [329, 18],
+endRoom: "CC_H01",
+},
+{
+type: "RoomExit",
+startPos: [327, 11],
+startRoom: "CC_H01",
+endPos: [349, 11],
+endRoom: "CC_H01",
+},
+{
+type: "RoomExit",
+startPos: [5, 8],
+startRoom: "CC_H01",
+endPos: [0, 5],
+endRoom: "CC_H01",
+},
+{
+type: "Normal",
+startPos: [7, 8],
+startRoom: "CC_H01",
+endPos: [9, 5],
+endRoom: "CC_H01",
+},
+{
+type: "Normal",
+startPos: [65, 8],
+startRoom: "CC_H01",
+endPos: [63, 5],
+endRoom: "CC_H01",
+},
+{
+type: "Normal",
+startPos: [68, 8],
+startRoom: "CC_H01",
+endPos: [70, 5],
+endRoom: "CC_H01",
+},
+{
+type: "Normal",
+startPos: [9, 5],
+startRoom: "CC_H01",
+endPos: [7, 8],
+endRoom: "CC_H01",
+},
+{
+type: "Normal",
+startPos: [63, 5],
+startRoom: "CC_H01",
+endPos: [65, 8],
+endRoom: "CC_H01",
+},
+{
+type: "Normal",
+startPos: [70, 5],
+startRoom: "CC_H01",
+endPos: [68, 8],
+endRoom: "CC_H01",
+},
+],
+}

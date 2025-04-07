@@ -1,0 +1,77 @@
+{
+mapPos: [179, 235.9998],
+size: [54, 78],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [5, 64],
+startRoom: "WDSR_B03",
+endPos: [2, 64],
+endRoom: "WDSR_B03",
+},
+{
+type: "DeadEnd",
+startPos: [48, 64],
+startRoom: "WDSR_B03",
+endPos: [51, 64],
+endRoom: "WDSR_B03",
+},
+{
+type: "RoomExit",
+startPos: [5, 62],
+startRoom: "WDSR_B03",
+endPos: [1, 62],
+endRoom: "WDSR_B03",
+},
+{
+type: "DeadEnd",
+startPos: [48, 62],
+startRoom: "WDSR_B03",
+endPos: [51, 62],
+endRoom: "WDSR_B03",
+},
+{
+type: "NPCTransportation",
+startPos: [5, 60],
+startRoom: "WDSR_B03",
+endPos: [1, 60],
+endRoom: "WDSR_B03",
+},
+{
+type: "RoomExit",
+startPos: [48, 60],
+startRoom: "WDSR_B03",
+endPos: [52, 60],
+endRoom: "WDSR_B03",
+},
+{
+type: "NPCTransportation",
+startPos: [44, 57],
+startRoom: "WDSR_B03",
+endPos: [44, 56],
+endRoom: "WDSR_B03",
+},
+{
+type: "NPCTransportation",
+startPos: [31, 48],
+startRoom: "WDSR_B03",
+endPos: [31, 47],
+endRoom: "WDSR_B03",
+},
+{
+type: "RoomExit",
+startPos: [36, 5],
+startRoom: "WDSR_B03",
+endPos: [49, 4],
+endRoom: "WDSR_B03",
+},
+],
+}

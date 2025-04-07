@@ -1,0 +1,77 @@
+{
+mapPos: [967, 1446.5],
+size: [48, 188],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [20, 184],
+startRoom: "WSSR_portholes",
+endPos: [20, 187],
+endRoom: "WSSR_portholes",
+},
+{
+type: "DeadEnd",
+startPos: [23, 184],
+startRoom: "WSSR_portholes",
+endPos: [23, 187],
+endRoom: "WSSR_portholes",
+},
+{
+type: "RoomExit",
+startPos: [26, 184],
+startRoom: "WSSR_portholes",
+endPos: [26, 187],
+endRoom: "WSSR_portholes",
+},
+{
+type: "DeadEnd",
+startPos: [44, 136],
+startRoom: "WSSR_portholes",
+endPos: [44, 142],
+endRoom: "WSSR_portholes",
+},
+{
+type: "DeadEnd",
+startPos: [3, 11],
+startRoom: "WSSR_portholes",
+endPos: [3, 6],
+endRoom: "WSSR_portholes",
+},
+{
+type: "DeadEnd",
+startPos: [6, 8],
+startRoom: "WSSR_portholes",
+endPos: [6, 4],
+endRoom: "WSSR_portholes",
+},
+{
+type: "DeadEnd",
+startPos: [34, 8],
+startRoom: "WSSR_portholes",
+endPos: [34, 3],
+endRoom: "WSSR_portholes",
+},
+{
+type: "RoomExit",
+startPos: [40, 8],
+startRoom: "WSSR_portholes",
+endPos: [40, 2],
+endRoom: "WSSR_portholes",
+},
+{
+type: "DeadEnd",
+startPos: [9, 5],
+startRoom: "WSSR_portholes",
+endPos: [9, 1],
+endRoom: "WSSR_portholes",
+},
+],
+}

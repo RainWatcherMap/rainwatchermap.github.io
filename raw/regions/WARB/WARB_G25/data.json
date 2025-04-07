@@ -1,0 +1,49 @@
+{
+mapPos: [1127, 863.3259],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [22, 25],
+startRoom: "WARB_G25",
+endPos: [21, 13],
+endRoom: "WARB_G25",
+},
+{
+type: "RoomExit",
+startPos: [40, 25],
+startRoom: "WARB_G25",
+endPos: [45, 25],
+endRoom: "WARB_G25",
+},
+{
+type: "RoomExit",
+startPos: [15, 13],
+startRoom: "WARB_G25",
+endPos: [15, 17],
+endRoom: "WARB_G25",
+},
+{
+type: "Normal",
+startPos: [21, 13],
+startRoom: "WARB_G25",
+endPos: [22, 25],
+endRoom: "WARB_G25",
+},
+{
+type: "DeadEnd",
+startPos: [8, 3],
+startRoom: "WARB_G25",
+endPos: [8, 2],
+endRoom: "WARB_G25",
+},
+],
+}

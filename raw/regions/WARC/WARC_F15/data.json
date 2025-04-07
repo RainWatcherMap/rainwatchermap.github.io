@@ -1,0 +1,35 @@
+{
+mapPos: [562.8, 1245.315],
+size: [100, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [4, 16],
+startRoom: "WARC_F15",
+endPos: [4, 10],
+endRoom: "WARC_F15",
+},
+{
+type: "RoomExit",
+startPos: [93, 14],
+startRoom: "WARC_F15",
+endPos: [93, 19],
+endRoom: "WARC_F15",
+},
+{
+type: "CreatureHole",
+startPos: [23, 8],
+startRoom: "WARC_F15",
+endPos: [23, 5],
+endRoom: "WARC_F15",
+},
+],
+}

@@ -1,0 +1,101 @@
+{
+mapPos: [1541.918, 1308.503],
+size: [54, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [334.9265, 479.064],
+},
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [12, 31],
+startRoom: "SU_A12",
+endPos: [12, 32],
+endRoom: "SU_A12",
+},
+{
+type: "RoomExit",
+startPos: [14, 31],
+startRoom: "SU_A12",
+endPos: [14, 34],
+endRoom: "SU_A12",
+},
+{
+type: "DeadEnd",
+startPos: [4, 28],
+startRoom: "SU_A12",
+endPos: [1, 28],
+endRoom: "SU_A12",
+},
+{
+type: "DeadEnd",
+startPos: [49, 28],
+startRoom: "SU_A12",
+endPos: [50, 28],
+endRoom: "SU_A12",
+},
+{
+type: "DeadEnd",
+startPos: [4, 26],
+startRoom: "SU_A12",
+endPos: [1, 26],
+endRoom: "SU_A12",
+},
+{
+type: "DeadEnd",
+startPos: [49, 26],
+startRoom: "SU_A12",
+endPos: [50, 26],
+endRoom: "SU_A12",
+},
+{
+type: "DeadEnd",
+startPos: [4, 24],
+startRoom: "SU_A12",
+endPos: [1, 24],
+endRoom: "SU_A12",
+},
+{
+type: "DeadEnd",
+startPos: [49, 24],
+startRoom: "SU_A12",
+endPos: [50, 24],
+endRoom: "SU_A12",
+},
+{
+type: "RoomExit",
+startPos: [4, 22],
+startRoom: "SU_A12",
+endPos: [1, 22],
+endRoom: "SU_A12",
+},
+{
+type: "RoomExit",
+startPos: [49, 22],
+startRoom: "SU_A12",
+endPos: [52, 22],
+endRoom: "SU_A12",
+},
+{
+type: "DeadEnd",
+startPos: [31, 19],
+startRoom: "SU_A12",
+endPos: [31, 18],
+endRoom: "SU_A12",
+},
+{
+type: "DeadEnd",
+startPos: [33, 19],
+startRoom: "SU_A12",
+endPos: [33, 18],
+endRoom: "SU_A12",
+},
+],
+}

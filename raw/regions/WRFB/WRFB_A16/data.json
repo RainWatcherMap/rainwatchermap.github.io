@@ -1,0 +1,28 @@
+{
+mapPos: [1618.691, 349.7188],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [4, 30],
+startRoom: "WRFB_A16",
+endPos: [0, 30],
+endRoom: "WRFB_A16",
+},
+{
+type: "CreatureHole",
+startPos: [40, 29],
+startRoom: "WRFB_A16",
+endPos: [41, 29],
+endRoom: "WRFB_A16",
+},
+],
+}

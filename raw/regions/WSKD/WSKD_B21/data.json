@@ -1,0 +1,49 @@
+{
+mapPos: [1280.163, 478.5673],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RegionTransportation",
+startPos: [23, 30],
+startRoom: "WSKD_B21",
+endPos: [23, 34],
+endRoom: "WSKD_B21",
+},
+{
+type: "RoomExit",
+startPos: [25, 30],
+startRoom: "WSKD_B21",
+endPos: [25, 34],
+endRoom: "WSKD_B21",
+},
+{
+type: "RegionTransportation",
+startPos: [38, 13],
+startRoom: "WSKD_B21",
+endPos: [42, 13],
+endRoom: "WSKD_B21",
+},
+{
+type: "RoomExit",
+startPos: [38, 11],
+startRoom: "WSKD_B21",
+endPos: [46, 11],
+endRoom: "WSKD_B21",
+},
+{
+type: "RoomExit",
+startPos: [13, 10],
+startRoom: "WSKD_B21",
+endPos: [4, 10],
+endRoom: "WSKD_B21",
+},
+],
+}

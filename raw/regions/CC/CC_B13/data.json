@@ -1,0 +1,56 @@
+{
+mapPos: [1812.561, 2239.638],
+size: [54, 80],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [7, 75],
+startRoom: "CC_B13",
+endPos: [7, 74],
+endRoom: "CC_B13",
+},
+{
+type: "RoomExit",
+startPos: [4, 55],
+startRoom: "CC_B13",
+endPos: [0, 48],
+endRoom: "CC_B13",
+},
+{
+type: "Normal",
+startPos: [34, 31],
+startRoom: "CC_B13",
+endPos: [3, 25],
+endRoom: "CC_B13",
+},
+{
+type: "Normal",
+startPos: [3, 25],
+startRoom: "CC_B13",
+endPos: [34, 31],
+endRoom: "CC_B13",
+},
+{
+type: "RoomExit",
+startPos: [34, 14],
+startRoom: "CC_B13",
+endPos: [52, 10],
+endRoom: "CC_B13",
+},
+{
+type: "NPCTransportation",
+startPos: [37, 14],
+startRoom: "CC_B13",
+endPos: [37, 13],
+endRoom: "CC_B13",
+},
+],
+}

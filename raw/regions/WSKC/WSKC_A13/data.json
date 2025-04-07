@@ -1,0 +1,28 @@
+{
+mapPos: [2381.399, 60.18118],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [12, 15],
+startRoom: "WSKC_A13",
+endPos: [7, 15],
+endRoom: "WSKC_A13",
+},
+{
+type: "RoomExit",
+startPos: [35, 15],
+startRoom: "WSKC_A13",
+endPos: [40, 15],
+endRoom: "WSKC_A13",
+},
+],
+}

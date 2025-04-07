@@ -1,0 +1,98 @@
+{
+mapPos: [3660.998, 1862.534],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [11, 19],
+startRoom: "GATE_SI_LF",
+endPos: [1, 34],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "DeadEnd",
+startPos: [36, 19],
+startRoom: "GATE_SI_LF",
+endPos: [36, 20],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "DeadEnd",
+startPos: [2, 15],
+startRoom: "GATE_SI_LF",
+endPos: [0, 15],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "DeadEnd",
+startPos: [45, 15],
+startRoom: "GATE_SI_LF",
+endPos: [47, 15],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "DeadEnd",
+startPos: [2, 13],
+startRoom: "GATE_SI_LF",
+endPos: [0, 13],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "DeadEnd",
+startPos: [45, 13],
+startRoom: "GATE_SI_LF",
+endPos: [47, 13],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "DeadEnd",
+startPos: [2, 11],
+startRoom: "GATE_SI_LF",
+endPos: [0, 11],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "DeadEnd",
+startPos: [45, 11],
+startRoom: "GATE_SI_LF",
+endPos: [47, 11],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "DeadEnd",
+startPos: [2, 9],
+startRoom: "GATE_SI_LF",
+endPos: [0, 9],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "RoomExit",
+startPos: [45, 9],
+startRoom: "GATE_SI_LF",
+endPos: [47, 9],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "RoomExit",
+startPos: [11, 5],
+startRoom: "GATE_SI_LF",
+endPos: [11, 0],
+endRoom: "GATE_SI_LF",
+},
+{
+type: "DeadEnd",
+startPos: [36, 5],
+startRoom: "GATE_SI_LF",
+endPos: [36, 4],
+endRoom: "GATE_SI_LF",
+},
+],
+}

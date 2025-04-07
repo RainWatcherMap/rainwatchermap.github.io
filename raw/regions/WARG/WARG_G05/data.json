@@ -1,0 +1,38 @@
+{
+mapPos: [2078.501, 1047.055],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [676.7056, 353.6831],
+},
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [42, 17],
+startRoom: "WARG_G05",
+endPos: [47, 17],
+endRoom: "WARG_G05",
+},
+{
+type: "RoomExit",
+startPos: [6, 7],
+startRoom: "WARG_G05",
+endPos: [0, 7],
+endRoom: "WARG_G05",
+},
+{
+type: "RegionTransportation",
+startPos: [28, 3],
+startRoom: "WARG_G05",
+endPos: [28, 0],
+endRoom: "WARG_G05",
+},
+],
+}

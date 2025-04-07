@@ -1,0 +1,35 @@
+{
+mapPos: [520.004, 1195.828],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [43, 21],
+startRoom: "WARD_R04",
+endPos: [43, 26],
+endRoom: "WARD_R04",
+},
+{
+type: "RoomExit",
+startPos: [4, 17],
+startRoom: "WARD_R04",
+endPos: [0, 17],
+endRoom: "WARD_R04",
+},
+{
+type: "RoomExit",
+startPos: [32, 9],
+startRoom: "WARD_R04",
+endPos: [32, 3],
+endRoom: "WARD_R04",
+},
+],
+}

@@ -1,0 +1,28 @@
+{
+mapPos: [2275.597, 622.2789],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [5, 18],
+startRoom: "WSKD_B42",
+endPos: [3, 18],
+endRoom: "WSKD_B42",
+},
+{
+type: "RoomExit",
+startPos: [5, 16],
+startRoom: "WSKD_B42",
+endPos: [0, 16],
+endRoom: "WSKD_B42",
+},
+],
+}

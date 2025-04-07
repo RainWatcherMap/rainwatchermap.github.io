@@ -1,0 +1,98 @@
+{
+mapPos: [1399.852, 756.8696],
+size: [148, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [61, 31],
+startRoom: "SU_CAVE02",
+endPos: [54, 34],
+endRoom: "SU_CAVE02",
+},
+{
+type: "CreatureHole",
+startPos: [77, 31],
+startRoom: "SU_CAVE02",
+endPos: [80, 31],
+endRoom: "SU_CAVE02",
+},
+{
+type: "RoomExit",
+startPos: [137, 31],
+startRoom: "SU_CAVE02",
+endPos: [146, 34],
+endRoom: "SU_CAVE02",
+},
+{
+type: "RoomExit",
+startPos: [6, 11],
+startRoom: "SU_CAVE02",
+endPos: [0, 11],
+endRoom: "SU_CAVE02",
+},
+{
+type: "CreatureHole",
+startPos: [75, 9],
+startRoom: "SU_CAVE02",
+endPos: [75, 8],
+endRoom: "SU_CAVE02",
+},
+{
+type: "CreatureHole",
+startPos: [72, 8],
+startRoom: "SU_CAVE02",
+endPos: [72, 7],
+endRoom: "SU_CAVE02",
+},
+{
+type: "CreatureHole",
+startPos: [22, 7],
+startRoom: "SU_CAVE02",
+endPos: [19, 7],
+endRoom: "SU_CAVE02",
+},
+{
+type: "CreatureHole",
+startPos: [44, 7],
+startRoom: "SU_CAVE02",
+endPos: [47, 7],
+endRoom: "SU_CAVE02",
+},
+{
+type: "CreatureHole",
+startPos: [87, 7],
+startRoom: "SU_CAVE02",
+endPos: [85, 7],
+endRoom: "SU_CAVE02",
+},
+{
+type: "CreatureHole",
+startPos: [98, 7],
+startRoom: "SU_CAVE02",
+endPos: [100, 7],
+endRoom: "SU_CAVE02",
+},
+{
+type: "CreatureHole",
+startPos: [116, 7],
+startRoom: "SU_CAVE02",
+endPos: [113, 7],
+endRoom: "SU_CAVE02",
+},
+{
+type: "RoomExit",
+startPos: [137, 7],
+startRoom: "SU_CAVE02",
+endPos: [145, 1],
+endRoom: "SU_CAVE02",
+},
+],
+}

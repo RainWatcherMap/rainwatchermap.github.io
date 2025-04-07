@@ -1,0 +1,50 @@
+{
+mapPos: [956.9993, 141.7817],
+size: [152, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [1467.321, 157.4426],
+panelPos: [-40.02356, -206.1049],
+destPos: [470, 410],
+destRegion: "WSKC",
+destRoom: "wskc_a03",
+spawnId: 7,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [108, 27],
+startRoom: "WARE_H05",
+endPos: [108, 33],
+endRoom: "WARE_H05",
+},
+{
+type: "RoomExit",
+startPos: [10, 25],
+startRoom: "WARE_H05",
+endPos: [10, 34],
+endRoom: "WARE_H05",
+},
+{
+type: "RoomExit",
+startPos: [137, 22],
+startRoom: "WARE_H05",
+endPos: [137, 34],
+endRoom: "WARE_H05",
+},
+{
+type: "RoomExit",
+startPos: [137, 10],
+startRoom: "WARE_H05",
+endPos: [137, 0],
+endRoom: "WARE_H05",
+},
+],
+}

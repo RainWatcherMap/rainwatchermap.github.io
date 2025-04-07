@@ -1,0 +1,70 @@
+{
+mapPos: [225.146, 1172.619],
+size: [48, 120],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [3, 103],
+startRoom: "SH_C11",
+endPos: [1, 103],
+endRoom: "SH_C11",
+},
+{
+type: "DeadEnd",
+startPos: [3, 101],
+startRoom: "SH_C11",
+endPos: [1, 101],
+endRoom: "SH_C11",
+},
+{
+type: "RoomExit",
+startPos: [3, 99],
+startRoom: "SH_C11",
+endPos: [0, 99],
+endRoom: "SH_C11",
+},
+{
+type: "DeadEnd",
+startPos: [3, 97],
+startRoom: "SH_C11",
+endPos: [1, 97],
+endRoom: "SH_C11",
+},
+{
+type: "NPCTransportation",
+startPos: [6, 12],
+startRoom: "SH_C11",
+endPos: [6, 10],
+endRoom: "SH_C11",
+},
+{
+type: "Normal",
+startPos: [13, 12],
+startRoom: "SH_C11",
+endPos: [33, 12],
+endRoom: "SH_C11",
+},
+{
+type: "Normal",
+startPos: [33, 12],
+startRoom: "SH_C11",
+endPos: [13, 12],
+endRoom: "SH_C11",
+},
+{
+type: "RoomExit",
+startPos: [38, 12],
+startRoom: "SH_C11",
+endPos: [47, 10],
+endRoom: "SH_C11",
+},
+],
+}

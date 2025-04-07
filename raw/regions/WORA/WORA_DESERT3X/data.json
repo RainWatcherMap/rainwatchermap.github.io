@@ -1,0 +1,84 @@
+{
+mapPos: [6993.924, 221.2601],
+size: [252, 76],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [248, 60],
+startRoom: "WORA_DESERT3X",
+endPos: [249, 60],
+endRoom: "WORA_DESERT3X",
+},
+{
+type: "DeadEnd",
+startPos: [248, 58],
+startRoom: "WORA_DESERT3X",
+endPos: [249, 58],
+endRoom: "WORA_DESERT3X",
+},
+{
+type: "RoomExit",
+startPos: [248, 56],
+startRoom: "WORA_DESERT3X",
+endPos: [250, 56],
+endRoom: "WORA_DESERT3X",
+},
+{
+type: "RoomExit",
+startPos: [115, 27],
+startRoom: "WORA_DESERT3X",
+endPos: [115, 68],
+endRoom: "WORA_DESERT3X",
+},
+{
+type: "CreatureHole",
+startPos: [137, 17],
+startRoom: "WORA_DESERT3X",
+endPos: [137, 16],
+endRoom: "WORA_DESERT3X",
+},
+{
+type: "CreatureHole",
+startPos: [6, 14],
+startRoom: "WORA_DESERT3X",
+endPos: [2, 14],
+endRoom: "WORA_DESERT3X",
+},
+{
+type: "RoomExit",
+startPos: [6, 12],
+startRoom: "WORA_DESERT3X",
+endPos: [2, 12],
+endRoom: "WORA_DESERT3X",
+},
+{
+type: "DeadEnd",
+startPos: [63, 9],
+startRoom: "WORA_DESERT3X",
+endPos: [63, 8],
+endRoom: "WORA_DESERT3X",
+},
+{
+type: "DeadEnd",
+startPos: [65, 9],
+startRoom: "WORA_DESERT3X",
+endPos: [65, 8],
+endRoom: "WORA_DESERT3X",
+},
+{
+type: "CreatureHole",
+startPos: [67, 9],
+startRoom: "WORA_DESERT3X",
+endPos: [67, 8],
+endRoom: "WORA_DESERT3X",
+},
+],
+}

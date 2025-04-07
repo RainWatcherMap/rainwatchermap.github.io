@@ -1,0 +1,56 @@
+{
+mapPos: [686.0104, 504.6797],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [39, 31],
+startRoom: "WARE_H03",
+endPos: [47, 31],
+endRoom: "WARE_H03",
+},
+{
+type: "RoomExit",
+startPos: [39, 29],
+startRoom: "WARE_H03",
+endPos: [47, 29],
+endRoom: "WARE_H03",
+},
+{
+type: "NPCTransportation",
+startPos: [37, 13],
+startRoom: "WARE_H03",
+endPos: [43, 13],
+endRoom: "WARE_H03",
+},
+{
+type: "NPCTransportation",
+startPos: [43, 8],
+startRoom: "WARE_H03",
+endPos: [47, 8],
+endRoom: "WARE_H03",
+},
+{
+type: "RoomExit",
+startPos: [43, 6],
+startRoom: "WARE_H03",
+endPos: [47, 6],
+endRoom: "WARE_H03",
+},
+{
+type: "RoomExit",
+startPos: [6, 5],
+startRoom: "WARE_H03",
+endPos: [6, 0],
+endRoom: "WARE_H03",
+},
+],
+}

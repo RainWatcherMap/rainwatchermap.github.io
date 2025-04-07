@@ -1,0 +1,70 @@
+{
+mapPos: [804.9999, 3164.5],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [9, 31],
+startRoom: "WSSR_LAB2",
+endPos: [2, 31],
+endRoom: "WSSR_LAB2",
+},
+{
+type: "DeadEnd",
+startPos: [27, 31],
+startRoom: "WSSR_LAB2",
+endPos: [27, 33],
+endRoom: "WSSR_LAB2",
+},
+{
+type: "DeadEnd",
+startPos: [29, 31],
+startRoom: "WSSR_LAB2",
+endPos: [29, 33],
+endRoom: "WSSR_LAB2",
+},
+{
+type: "RoomExit",
+startPos: [43, 31],
+startRoom: "WSSR_LAB2",
+endPos: [47, 31],
+endRoom: "WSSR_LAB2",
+},
+{
+type: "DeadEnd",
+startPos: [8, 3],
+startRoom: "WSSR_LAB2",
+endPos: [1, 3],
+endRoom: "WSSR_LAB2",
+},
+{
+type: "DeadEnd",
+startPos: [43, 3],
+startRoom: "WSSR_LAB2",
+endPos: [46, 3],
+endRoom: "WSSR_LAB2",
+},
+{
+type: "DeadEnd",
+startPos: [24, 2],
+startRoom: "WSSR_LAB2",
+endPos: [24, 1],
+endRoom: "WSSR_LAB2",
+},
+{
+type: "RoomExit",
+startPos: [26, 2],
+startRoom: "WSSR_LAB2",
+endPos: [26, 0],
+endRoom: "WSSR_LAB2",
+},
+],
+}

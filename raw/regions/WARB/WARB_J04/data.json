@@ -1,0 +1,77 @@
+{
+mapPos: [1503.04, 957.9999],
+size: [100, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [34, 29],
+startRoom: "WARB_J04",
+endPos: [34, 31],
+endRoom: "WARB_J04",
+},
+{
+type: "DeadEnd",
+startPos: [36, 29],
+startRoom: "WARB_J04",
+endPos: [36, 31],
+endRoom: "WARB_J04",
+},
+{
+type: "CreatureHole",
+startPos: [38, 29],
+startRoom: "WARB_J04",
+endPos: [38, 32],
+endRoom: "WARB_J04",
+},
+{
+type: "DeadEnd",
+startPos: [8, 18],
+startRoom: "WARB_J04",
+endPos: [6, 18],
+endRoom: "WARB_J04",
+},
+{
+type: "DeadEnd",
+startPos: [91, 18],
+startRoom: "WARB_J04",
+endPos: [96, 18],
+endRoom: "WARB_J04",
+},
+{
+type: "RoomExit",
+startPos: [8, 16],
+startRoom: "WARB_J04",
+endPos: [1, 16],
+endRoom: "WARB_J04",
+},
+{
+type: "RoomExit",
+startPos: [91, 16],
+startRoom: "WARB_J04",
+endPos: [98, 16],
+endRoom: "WARB_J04",
+},
+{
+type: "NPCTransportation",
+startPos: [45, 8],
+startRoom: "WARB_J04",
+endPos: [45, 4],
+endRoom: "WARB_J04",
+},
+{
+type: "NPCTransportation",
+startPos: [82, 6],
+startRoom: "WARB_J04",
+endPos: [82, 3],
+endRoom: "WARB_J04",
+},
+],
+}

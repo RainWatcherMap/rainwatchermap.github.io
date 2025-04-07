@@ -1,0 +1,36 @@
+{
+mapPos: [298, 657.6111],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [597.1206, 198.6596],
+region: "WSKD",
+room: "wskd_b12",
+pos: [1390, 490],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [75, 5],
+startRoom: "WARG_W11",
+endPos: [75, 0],
+endRoom: "WARG_W11",
+},
+{
+type: "RoomExit",
+startPos: [6, 2],
+startRoom: "WARG_W11",
+endPos: [0, 2],
+endRoom: "WARG_W11",
+},
+],
+}

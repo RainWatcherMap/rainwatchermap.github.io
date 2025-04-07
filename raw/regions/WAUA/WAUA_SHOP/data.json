@@ -1,0 +1,56 @@
+{
+mapPos: [4425.824, 419.3162],
+size: [252, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [216, 33],
+startRoom: "WAUA_SHOP",
+endPos: [225, 34],
+endRoom: "WAUA_SHOP",
+},
+{
+type: "RoomExit",
+startPos: [12, 26],
+startRoom: "WAUA_SHOP",
+endPos: [5, 34],
+endRoom: "WAUA_SHOP",
+},
+{
+type: "DeadEnd",
+startPos: [246, 19],
+startRoom: "WAUA_SHOP",
+endPos: [250, 19],
+endRoom: "WAUA_SHOP",
+},
+{
+type: "DeadEnd",
+startPos: [246, 17],
+startRoom: "WAUA_SHOP",
+endPos: [250, 17],
+endRoom: "WAUA_SHOP",
+},
+{
+type: "DeadEnd",
+startPos: [246, 15],
+startRoom: "WAUA_SHOP",
+endPos: [250, 15],
+endRoom: "WAUA_SHOP",
+},
+{
+type: "RoomExit",
+startPos: [246, 13],
+startRoom: "WAUA_SHOP",
+endPos: [251, 13],
+endRoom: "WAUA_SHOP",
+},
+],
+}

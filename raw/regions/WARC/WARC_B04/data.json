@@ -1,0 +1,35 @@
+{
+mapPos: [4777.08, 423.1721],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [33, 18],
+startRoom: "WARC_B04",
+endPos: [34, 18],
+endRoom: "WARC_B04",
+},
+{
+type: "RoomExit",
+startPos: [13, 17],
+startRoom: "WARC_B04",
+endPos: [5, 17],
+endRoom: "WARC_B04",
+},
+{
+type: "RegionTransportation",
+startPos: [33, 15],
+startRoom: "WARC_B04",
+endPos: [36, 15],
+endRoom: "WARC_B04",
+},
+],
+}

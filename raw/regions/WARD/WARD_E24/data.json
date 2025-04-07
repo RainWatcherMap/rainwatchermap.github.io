@@ -1,0 +1,70 @@
+{
+mapPos: [860.5701, 1815.62],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [24, 29],
+startRoom: "WARD_E24",
+endPos: [23, 29],
+endRoom: "WARD_E24",
+},
+{
+type: "DeadEnd",
+startPos: [38, 29],
+startRoom: "WARD_E24",
+endPos: [39, 29],
+endRoom: "WARD_E24",
+},
+{
+type: "DeadEnd",
+startPos: [24, 27],
+startRoom: "WARD_E24",
+endPos: [23, 27],
+endRoom: "WARD_E24",
+},
+{
+type: "RoomExit",
+startPos: [38, 27],
+startRoom: "WARD_E24",
+endPos: [47, 27],
+endRoom: "WARD_E24",
+},
+{
+type: "RoomExit",
+startPos: [9, 23],
+startRoom: "WARD_E24",
+endPos: [9, 31],
+endRoom: "WARD_E24",
+},
+{
+type: "RoomExit",
+startPos: [18, 9],
+startRoom: "WARD_E24",
+endPos: [18, 0],
+endRoom: "WARD_E24",
+},
+{
+type: "DeadEnd",
+startPos: [42, 6],
+startRoom: "WARD_E24",
+endPos: [43, 6],
+endRoom: "WARD_E24",
+},
+{
+type: "RoomExit",
+startPos: [42, 4],
+startRoom: "WARD_E24",
+endPos: [47, 4],
+endRoom: "WARD_E24",
+},
+],
+}

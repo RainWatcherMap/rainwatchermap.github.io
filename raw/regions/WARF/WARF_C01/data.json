@@ -1,0 +1,63 @@
+{
+mapPos: [1836.607, 1497.771],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [37, 30],
+startRoom: "WARF_C01",
+endPos: [37, 34],
+endRoom: "WARF_C01",
+},
+{
+type: "CreatureHole",
+startPos: [3, 28],
+startRoom: "WARF_C01",
+endPos: [3, 33],
+endRoom: "WARF_C01",
+},
+{
+type: "DeadEnd",
+startPos: [91, 10],
+startRoom: "WARF_C01",
+endPos: [93, 10],
+endRoom: "WARF_C01",
+},
+{
+type: "RoomExit",
+startPos: [91, 8],
+startRoom: "WARF_C01",
+endPos: [99, 8],
+endRoom: "WARF_C01",
+},
+{
+type: "RoomExit",
+startPos: [14, 2],
+startRoom: "WARF_C01",
+endPos: [14, 0],
+endRoom: "WARF_C01",
+},
+{
+type: "CreatureHole",
+startPos: [74, 2],
+startRoom: "WARF_C01",
+endPos: [74, 0],
+endRoom: "WARF_C01",
+},
+{
+type: "NPCTransportation",
+startPos: [76, 2],
+startRoom: "WARF_C01",
+endPos: [76, 0],
+endRoom: "WARF_C01",
+},
+],
+}

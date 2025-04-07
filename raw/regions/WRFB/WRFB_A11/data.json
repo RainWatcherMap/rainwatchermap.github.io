@@ -1,0 +1,84 @@
+{
+mapPos: [1137.59, 352.0002],
+size: [50, 36],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [41, 33],
+startRoom: "WRFB_A11",
+endPos: [41, 35],
+endRoom: "WRFB_A11",
+},
+{
+type: "DeadEnd",
+startPos: [21, 32],
+startRoom: "WRFB_A11",
+endPos: [20, 32],
+endRoom: "WRFB_A11",
+},
+{
+type: "Normal",
+startPos: [26, 32],
+startRoom: "WRFB_A11",
+endPos: [37, 9],
+endRoom: "WRFB_A11",
+},
+{
+type: "DeadEnd",
+startPos: [2, 25],
+startRoom: "WRFB_A11",
+endPos: [1, 25],
+endRoom: "WRFB_A11",
+},
+{
+type: "DeadEnd",
+startPos: [47, 25],
+startRoom: "WRFB_A11",
+endPos: [48, 25],
+endRoom: "WRFB_A11",
+},
+{
+type: "RoomExit",
+startPos: [2, 22],
+startRoom: "WRFB_A11",
+endPos: [0, 22],
+endRoom: "WRFB_A11",
+},
+{
+type: "RoomExit",
+startPos: [47, 22],
+startRoom: "WRFB_A11",
+endPos: [49, 22],
+endRoom: "WRFB_A11",
+},
+{
+type: "RoomExit",
+startPos: [41, 19],
+startRoom: "WRFB_A11",
+endPos: [41, 11],
+endRoom: "WRFB_A11",
+},
+{
+type: "Normal",
+startPos: [37, 9],
+startRoom: "WRFB_A11",
+endPos: [26, 32],
+endRoom: "WRFB_A11",
+},
+{
+type: "DeadEnd",
+startPos: [37, 7],
+startRoom: "WRFB_A11",
+endPos: [38, 7],
+endRoom: "WRFB_A11",
+},
+],
+}

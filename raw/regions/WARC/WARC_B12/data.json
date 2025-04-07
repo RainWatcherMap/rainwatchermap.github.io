@@ -1,0 +1,29 @@
+{
+mapPos: [5532.34, 520.5701],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [1531.017, 207.0246],
+region: "WARB",
+room: "warb_f18",
+pos: [650, 330],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [55, 17],
+startRoom: "WARC_B12",
+endPos: [5, 17],
+endRoom: "WARC_B12",
+},
+],
+}

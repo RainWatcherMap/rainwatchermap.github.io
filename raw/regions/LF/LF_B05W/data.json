@@ -1,0 +1,84 @@
+{
+mapPos: [3373.898, 231.9999],
+size: [48, 78],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [5, 52],
+startRoom: "LF_B05W",
+endPos: [1, 52],
+endRoom: "LF_B05W",
+},
+{
+type: "DeadEnd",
+startPos: [41, 52],
+startRoom: "LF_B05W",
+endPos: [43, 52],
+endRoom: "LF_B05W",
+},
+{
+type: "DeadEnd",
+startPos: [5, 50],
+startRoom: "LF_B05W",
+endPos: [1, 50],
+endRoom: "LF_B05W",
+},
+{
+type: "DeadEnd",
+startPos: [41, 50],
+startRoom: "LF_B05W",
+endPos: [43, 50],
+endRoom: "LF_B05W",
+},
+{
+type: "RoomExit",
+startPos: [5, 48],
+startRoom: "LF_B05W",
+endPos: [0, 48],
+endRoom: "LF_B05W",
+},
+{
+type: "NPCTransportation",
+startPos: [41, 48],
+startRoom: "LF_B05W",
+endPos: [43, 48],
+endRoom: "LF_B05W",
+},
+{
+type: "DeadEnd",
+startPos: [39, 17],
+startRoom: "LF_B05W",
+endPos: [46, 17],
+endRoom: "LF_B05W",
+},
+{
+type: "DeadEnd",
+startPos: [39, 15],
+startRoom: "LF_B05W",
+endPos: [46, 15],
+endRoom: "LF_B05W",
+},
+{
+type: "NPCTransportation",
+startPos: [5, 13],
+startRoom: "LF_B05W",
+endPos: [1, 13],
+endRoom: "LF_B05W",
+},
+{
+type: "RoomExit",
+startPos: [39, 13],
+startRoom: "LF_B05W",
+endPos: [47, 13],
+endRoom: "LF_B05W",
+},
+],
+}

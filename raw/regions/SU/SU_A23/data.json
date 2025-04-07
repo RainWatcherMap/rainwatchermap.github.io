@@ -1,0 +1,63 @@
+{
+mapPos: [2668.918, 777.5035],
+size: [54, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [27, 33],
+startRoom: "SU_A23",
+endPos: [22, 33],
+endRoom: "SU_A23",
+},
+{
+type: "DeadEnd",
+startPos: [27, 31],
+startRoom: "SU_A23",
+endPos: [21, 31],
+endRoom: "SU_A23",
+},
+{
+type: "RoomExit",
+startPos: [42, 30],
+startRoom: "SU_A23",
+endPos: [48, 34],
+endRoom: "SU_A23",
+},
+{
+type: "NPCTransportation",
+startPos: [27, 29],
+startRoom: "SU_A23",
+endPos: [22, 29],
+endRoom: "SU_A23",
+},
+{
+type: "RoomExit",
+startPos: [6, 12],
+startRoom: "SU_A23",
+endPos: [1, 0],
+endRoom: "SU_A23",
+},
+{
+type: "RoomExit",
+startPos: [46, 9],
+startRoom: "SU_A23",
+endPos: [52, 9],
+endRoom: "SU_A23",
+},
+{
+type: "NPCTransportation",
+startPos: [24, 6],
+startRoom: "SU_A23",
+endPos: [24, 4],
+endRoom: "SU_A23",
+},
+],
+}

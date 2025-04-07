@@ -1,0 +1,29 @@
+{
+mapPos: [150, 351.3241],
+size: [100, 75],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [294.1339, 1034.489],
+panelPos: [0, 0],
+destPos: [1510, 510],
+destRegion: "WSKD",
+destRoom: "wskd_b01",
+spawnId: 9,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [79, 60],
+startRoom: "WBLA_D03",
+endPos: [79, 74],
+endRoom: "WBLA_D03",
+},
+],
+}

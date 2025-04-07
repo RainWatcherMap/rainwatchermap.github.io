@@ -1,0 +1,57 @@
+{
+mapPos: [440, 1729.326],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [654.3783, 380.9694],
+region: "WARC",
+room: "WARC_B12",
+pos: [1630, 70],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [30, 25],
+startRoom: "WARB_F18",
+endPos: [30, 32],
+endRoom: "WARB_F18",
+},
+{
+type: "RoomExit",
+startPos: [9, 21],
+startRoom: "WARB_F18",
+endPos: [4, 21],
+endRoom: "WARB_F18",
+},
+{
+type: "RoomExit",
+startPos: [17, 14],
+startRoom: "WARB_F18",
+endPos: [17, 10],
+endRoom: "WARB_F18",
+},
+{
+type: "DeadEnd",
+startPos: [22, 14],
+startRoom: "WARB_F18",
+endPos: [22, 13],
+endRoom: "WARB_F18",
+},
+{
+type: "CreatureHole",
+startPos: [39, 12],
+startRoom: "WARB_F18",
+endPos: [43, 12],
+endRoom: "WARB_F18",
+},
+],
+}

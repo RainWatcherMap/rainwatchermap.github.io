@@ -1,0 +1,70 @@
+{
+mapPos: [1074.343, 60.5],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [5, 30],
+startRoom: "WHIR_A26",
+endPos: [5, 34],
+endRoom: "WHIR_A26",
+},
+{
+type: "Normal",
+startPos: [17, 30],
+startRoom: "WHIR_A26",
+endPos: [26, 30],
+endRoom: "WHIR_A26",
+},
+{
+type: "Normal",
+startPos: [26, 30],
+startRoom: "WHIR_A26",
+endPos: [17, 30],
+endRoom: "WHIR_A26",
+},
+{
+type: "RoomExit",
+startPos: [45, 30],
+startRoom: "WHIR_A26",
+endPos: [45, 34],
+endRoom: "WHIR_A26",
+},
+{
+type: "Normal",
+startPos: [41, 14],
+startRoom: "WHIR_A26",
+endPos: [28, 11],
+endRoom: "WHIR_A26",
+},
+{
+type: "Normal",
+startPos: [28, 11],
+startRoom: "WHIR_A26",
+endPos: [41, 14],
+endRoom: "WHIR_A26",
+},
+{
+type: "Normal",
+startPos: [4, 10],
+startRoom: "WHIR_A26",
+endPos: [17, 7],
+endRoom: "WHIR_A26",
+},
+{
+type: "Normal",
+startPos: [17, 7],
+startRoom: "WHIR_A26",
+endPos: [4, 10],
+endRoom: "WHIR_A26",
+},
+],
+}

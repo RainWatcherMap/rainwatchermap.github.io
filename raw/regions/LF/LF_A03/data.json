@@ -1,0 +1,42 @@
+{
+mapPos: [2720.898, 1010],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [44, 32],
+startRoom: "LF_A03",
+endPos: [44, 34],
+endRoom: "LF_A03",
+},
+{
+type: "RoomExit",
+startPos: [3, 30],
+startRoom: "LF_A03",
+endPos: [3, 34],
+endRoom: "LF_A03",
+},
+{
+type: "CreatureHole",
+startPos: [41, 2],
+startRoom: "LF_A03",
+endPos: [42, 2],
+endRoom: "LF_A03",
+},
+{
+type: "RoomExit",
+startPos: [5, 1],
+startRoom: "LF_A03",
+endPos: [4, 1],
+endRoom: "LF_A03",
+},
+],
+}

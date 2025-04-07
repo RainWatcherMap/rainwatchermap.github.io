@@ -1,0 +1,63 @@
+{
+mapPos: [1571.411, 1129],
+size: [164, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "CreatureHole",
+startPos: [4, 24],
+startRoom: "SH_C02",
+endPos: [3, 24],
+endRoom: "SH_C02",
+},
+{
+type: "RoomExit",
+startPos: [6, 19],
+startRoom: "SH_C02",
+endPos: [2, 19],
+endRoom: "SH_C02",
+},
+{
+type: "RoomExit",
+startPos: [142, 18],
+startRoom: "SH_C02",
+endPos: [139, 0],
+endRoom: "SH_C02",
+},
+{
+type: "RegionTransportation",
+startPos: [110, 16],
+startRoom: "SH_C02",
+endPos: [110, 15],
+endRoom: "SH_C02",
+},
+{
+type: "RegionTransportation",
+startPos: [148, 16],
+startRoom: "SH_C02",
+endPos: [148, 15],
+endRoom: "SH_C02",
+},
+{
+type: "RoomExit",
+startPos: [150, 16],
+startRoom: "SH_C02",
+endPos: [163, 14],
+endRoom: "SH_C02",
+},
+{
+type: "CreatureHole",
+startPos: [45, 13],
+startRoom: "SH_C02",
+endPos: [45, 9],
+endRoom: "SH_C02",
+},
+],
+}

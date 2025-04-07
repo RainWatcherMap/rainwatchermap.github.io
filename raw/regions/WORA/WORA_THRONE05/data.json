@@ -1,0 +1,24 @@
+{
+mapPos: [324, 906.8633],
+size: [108, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [391.5119, 194.1696],
+},
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [94, 7],
+startRoom: "WORA_THRONE05",
+endPos: [104, 9],
+endRoom: "WORA_THRONE05",
+},
+],
+}

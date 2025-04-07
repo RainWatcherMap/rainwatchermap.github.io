@@ -1,0 +1,73 @@
+{
+mapPos: [1054.141, 245.3813],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [215.1217, 509.8466],
+},
+],
+shortcuts: [
+{
+type: "CreatureHole",
+startPos: [4, 32],
+startRoom: "WARE_H21",
+endPos: [2, 32],
+endRoom: "WARE_H21",
+},
+{
+type: "Normal",
+startPos: [42, 24],
+startRoom: "WARE_H21",
+endPos: [41, 19],
+endRoom: "WARE_H21",
+},
+{
+type: "Normal",
+startPos: [45, 24],
+startRoom: "WARE_H21",
+endPos: [41, 11],
+endRoom: "WARE_H21",
+},
+{
+type: "Normal",
+startPos: [41, 19],
+startRoom: "WARE_H21",
+endPos: [42, 24],
+endRoom: "WARE_H21",
+},
+{
+type: "CreatureHole",
+startPos: [5, 17],
+startRoom: "WARE_H21",
+endPos: [5, 11],
+endRoom: "WARE_H21",
+},
+{
+type: "Normal",
+startPos: [41, 11],
+startRoom: "WARE_H21",
+endPos: [45, 24],
+endRoom: "WARE_H21",
+},
+{
+type: "CreatureHole",
+startPos: [11, 8],
+startRoom: "WARE_H21",
+endPos: [11, 3],
+endRoom: "WARE_H21",
+},
+{
+type: "RoomExit",
+startPos: [24, 4],
+startRoom: "WARE_H21",
+endPos: [24, 0],
+endRoom: "WARE_H21",
+},
+],
+}

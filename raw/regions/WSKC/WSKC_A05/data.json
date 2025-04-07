@@ -1,0 +1,70 @@
+{
+mapPos: [2842.995, 716.4407],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RegionTransportation",
+startPos: [15, 26],
+startRoom: "WSKC_A05",
+endPos: [15, 25],
+endRoom: "WSKC_A05",
+},
+{
+type: "Normal",
+startPos: [28, 22],
+startRoom: "WSKC_A05",
+endPos: [16, 21],
+endRoom: "WSKC_A05",
+},
+{
+type: "Normal",
+startPos: [16, 21],
+startRoom: "WSKC_A05",
+endPos: [28, 22],
+endRoom: "WSKC_A05",
+},
+{
+type: "NPCTransportation",
+startPos: [24, 18],
+startRoom: "WSKC_A05",
+endPos: [23, 18],
+endRoom: "WSKC_A05",
+},
+{
+type: "RegionTransportation",
+startPos: [24, 12],
+startRoom: "WSKC_A05",
+endPos: [23, 12],
+endRoom: "WSKC_A05",
+},
+{
+type: "NPCTransportation",
+startPos: [39, 12],
+startRoom: "WSKC_A05",
+endPos: [40, 12],
+endRoom: "WSKC_A05",
+},
+{
+type: "NPCTransportation",
+startPos: [25, 2],
+startRoom: "WSKC_A05",
+endPos: [25, 1],
+endRoom: "WSKC_A05",
+},
+{
+type: "RoomExit",
+startPos: [27, 2],
+startRoom: "WSKC_A05",
+endPos: [32, 0],
+endRoom: "WSKC_A05",
+},
+],
+}

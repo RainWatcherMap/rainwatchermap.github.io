@@ -1,0 +1,56 @@
+{
+mapPos: [1525.5, 669.0562],
+size: [100, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [89, 17],
+startRoom: "WARG_B37",
+endPos: [99, 17],
+endRoom: "WARG_B37",
+},
+{
+type: "DeadEnd",
+startPos: [12, 16],
+startRoom: "WARG_B37",
+endPos: [6, 16],
+endRoom: "WARG_B37",
+},
+{
+type: "DeadEnd",
+startPos: [12, 14],
+startRoom: "WARG_B37",
+endPos: [6, 14],
+endRoom: "WARG_B37",
+},
+{
+type: "RoomExit",
+startPos: [12, 12],
+startRoom: "WARG_B37",
+endPos: [5, 12],
+endRoom: "WARG_B37",
+},
+{
+type: "CreatureHole",
+startPos: [74, 9],
+startRoom: "WARG_B37",
+endPos: [74, 3],
+endRoom: "WARG_B37",
+},
+{
+type: "CreatureHole",
+startPos: [69, 8],
+startRoom: "WARG_B37",
+endPos: [69, 3],
+endRoom: "WARG_B37",
+},
+],
+}

@@ -1,0 +1,84 @@
+{
+mapPos: [12806.06, 1015.445],
+size: [56, 37],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "CreatureHole",
+startPos: [6, 21],
+startRoom: "WORA_ALFESQUE",
+endPos: [4, 21],
+endRoom: "WORA_ALFESQUE",
+},
+{
+type: "CreatureHole",
+startPos: [49, 20],
+startRoom: "WORA_ALFESQUE",
+endPos: [53, 20],
+endRoom: "WORA_ALFESQUE",
+},
+{
+type: "Normal",
+startPos: [6, 18],
+startRoom: "WORA_ALFESQUE",
+endPos: [14, 5],
+endRoom: "WORA_ALFESQUE",
+},
+{
+type: "RoomExit",
+startPos: [49, 17],
+startRoom: "WORA_ALFESQUE",
+endPos: [54, 17],
+endRoom: "WORA_ALFESQUE",
+},
+{
+type: "RoomExit",
+startPos: [10, 13],
+startRoom: "WORA_ALFESQUE",
+endPos: [6, 13],
+endRoom: "WORA_ALFESQUE",
+},
+{
+type: "Normal",
+startPos: [45, 13],
+startRoom: "WORA_ALFESQUE",
+endPos: [37, 5],
+endRoom: "WORA_ALFESQUE",
+},
+{
+type: "RoomExit",
+startPos: [10, 9],
+startRoom: "WORA_ALFESQUE",
+endPos: [6, 9],
+endRoom: "WORA_ALFESQUE",
+},
+{
+type: "NPCTransportation",
+startPos: [41, 9],
+startRoom: "WORA_ALFESQUE",
+endPos: [51, 9],
+endRoom: "WORA_ALFESQUE",
+},
+{
+type: "Normal",
+startPos: [14, 5],
+startRoom: "WORA_ALFESQUE",
+endPos: [6, 18],
+endRoom: "WORA_ALFESQUE",
+},
+{
+type: "Normal",
+startPos: [37, 5],
+startRoom: "WORA_ALFESQUE",
+endPos: [45, 13],
+endRoom: "WORA_ALFESQUE",
+},
+],
+}

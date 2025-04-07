@@ -1,0 +1,84 @@
+{
+mapPos: [1429.04, 809.9999],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [17, 26],
+startRoom: "WARB_J05",
+endPos: [17, 27],
+endRoom: "WARB_J05",
+},
+{
+type: "DeadEnd",
+startPos: [21, 26],
+startRoom: "WARB_J05",
+endPos: [21, 27],
+endRoom: "WARB_J05",
+},
+{
+type: "DeadEnd",
+startPos: [25, 25],
+startRoom: "WARB_J05",
+endPos: [25, 26],
+endRoom: "WARB_J05",
+},
+{
+type: "DeadEnd",
+startPos: [29, 25],
+startRoom: "WARB_J05",
+endPos: [29, 26],
+endRoom: "WARB_J05",
+},
+{
+type: "DeadEnd",
+startPos: [36, 19],
+startRoom: "WARB_J05",
+endPos: [37, 19],
+endRoom: "WARB_J05",
+},
+{
+type: "CreatureHole",
+startPos: [10, 18],
+startRoom: "WARB_J05",
+endPos: [6, 18],
+endRoom: "WARB_J05",
+},
+{
+type: "RoomExit",
+startPos: [36, 17],
+startRoom: "WARB_J05",
+endPos: [41, 17],
+endRoom: "WARB_J05",
+},
+{
+type: "DeadEnd",
+startPos: [15, 9],
+startRoom: "WARB_J05",
+endPos: [14, 9],
+endRoom: "WARB_J05",
+},
+{
+type: "DeadEnd",
+startPos: [31, 9],
+startRoom: "WARB_J05",
+endPos: [32, 9],
+endRoom: "WARB_J05",
+},
+{
+type: "DeadEnd",
+startPos: [19, 7],
+startRoom: "WARB_J05",
+endPos: [18, 7],
+endRoom: "WARB_J05",
+},
+],
+}

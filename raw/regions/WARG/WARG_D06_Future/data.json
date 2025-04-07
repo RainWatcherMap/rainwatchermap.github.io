@@ -1,0 +1,64 @@
+{
+mapPos: [3190.82, 1367.607],
+size: [152, 78],
+layer: 0,
+shelter: false,
+warpPoints: [
+{
+pos: [431.5437, 1231.817],
+region: "WARD",
+room: "ward_e01",
+pos: [630, 550],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [92, 62],
+startRoom: "WARG_D06_Future",
+endPos: [98, 62],
+endRoom: "WARG_D06_Future",
+},
+{
+type: "CreatureHole",
+startPos: [69, 56],
+startRoom: "WARG_D06_Future",
+endPos: [83, 56],
+endRoom: "WARG_D06_Future",
+},
+{
+type: "NPCTransportation",
+startPos: [68, 50],
+startRoom: "WARG_D06_Future",
+endPos: [75, 47],
+endRoom: "WARG_D06_Future",
+},
+{
+type: "RoomExit",
+startPos: [144, 21],
+startRoom: "WARG_D06_Future",
+endPos: [151, 21],
+endRoom: "WARG_D06_Future",
+},
+{
+type: "NPCTransportation",
+startPos: [107, 16],
+startRoom: "WARG_D06_Future",
+endPos: [107, 13],
+endRoom: "WARG_D06_Future",
+},
+{
+type: "CreatureHole",
+startPos: [73, 10],
+startRoom: "WARG_D06_Future",
+endPos: [73, 6],
+endRoom: "WARG_D06_Future",
+},
+],
+}

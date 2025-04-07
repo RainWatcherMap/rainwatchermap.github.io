@@ -1,0 +1,77 @@
+{
+mapPos: [5233.18, 1061.742],
+size: [152, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [27, 29],
+startRoom: "WARG_O04_Future",
+endPos: [27, 34],
+endRoom: "WARG_O04_Future",
+},
+{
+type: "RoomExit",
+startPos: [126, 28],
+startRoom: "WARG_O04_Future",
+endPos: [126, 34],
+endRoom: "WARG_O04_Future",
+},
+{
+type: "DeadEnd",
+startPos: [147, 12],
+startRoom: "WARG_O04_Future",
+endPos: [148, 12],
+endRoom: "WARG_O04_Future",
+},
+{
+type: "RoomExit",
+startPos: [6, 10],
+startRoom: "WARG_O04_Future",
+endPos: [0, 10],
+endRoom: "WARG_O04_Future",
+},
+{
+type: "CreatureHole",
+startPos: [147, 10],
+startRoom: "WARG_O04_Future",
+endPos: [151, 10],
+endRoom: "WARG_O04_Future",
+},
+{
+type: "CreatureHole",
+startPos: [90, 5],
+startRoom: "WARG_O04_Future",
+endPos: [90, 0],
+endRoom: "WARG_O04_Future",
+},
+{
+type: "DeadEnd",
+startPos: [27, 1],
+startRoom: "WARG_O04_Future",
+endPos: [27, 0],
+endRoom: "WARG_O04_Future",
+},
+{
+type: "DeadEnd",
+startPos: [84, 1],
+startRoom: "WARG_O04_Future",
+endPos: [84, 0],
+endRoom: "WARG_O04_Future",
+},
+{
+type: "DeadEnd",
+startPos: [126, 1],
+startRoom: "WARG_O04_Future",
+endPos: [126, 0],
+endRoom: "WARG_O04_Future",
+},
+],
+}

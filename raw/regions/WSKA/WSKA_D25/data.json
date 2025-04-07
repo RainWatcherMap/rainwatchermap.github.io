@@ -1,0 +1,84 @@
+{
+mapPos: [518.301, 52.7374],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [16, 30],
+startRoom: "WSKA_D25",
+endPos: [16, 31],
+endRoom: "WSKA_D25",
+},
+{
+type: "RoomExit",
+startPos: [21, 30],
+startRoom: "WSKA_D25",
+endPos: [21, 33],
+endRoom: "WSKA_D25",
+},
+{
+type: "DeadEnd",
+startPos: [26, 30],
+startRoom: "WSKA_D25",
+endPos: [26, 31],
+endRoom: "WSKA_D25",
+},
+{
+type: "RoomExit",
+startPos: [31, 30],
+startRoom: "WSKA_D25",
+endPos: [31, 33],
+endRoom: "WSKA_D25",
+},
+{
+type: "CreatureHole",
+startPos: [9, 19],
+startRoom: "WSKA_D25",
+endPos: [8, 19],
+endRoom: "WSKA_D25",
+},
+{
+type: "DeadEnd",
+startPos: [43, 18],
+startRoom: "WSKA_D25",
+endPos: [45, 18],
+endRoom: "WSKA_D25",
+},
+{
+type: "RoomExit",
+startPos: [43, 16],
+startRoom: "WSKA_D25",
+endPos: [47, 16],
+endRoom: "WSKA_D25",
+},
+{
+type: "DeadEnd",
+startPos: [6, 13],
+startRoom: "WSKA_D25",
+endPos: [5, 13],
+endRoom: "WSKA_D25",
+},
+{
+type: "RoomExit",
+startPos: [6, 11],
+startRoom: "WSKA_D25",
+endPos: [0, 11],
+endRoom: "WSKA_D25",
+},
+{
+type: "CreatureHole",
+startPos: [34, 5],
+startRoom: "WSKA_D25",
+endPos: [35, 5],
+endRoom: "WSKA_D25",
+},
+],
+}

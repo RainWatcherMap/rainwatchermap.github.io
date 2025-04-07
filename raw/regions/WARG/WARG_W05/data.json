@@ -1,0 +1,31 @@
+{
+mapPos: [1602.71, 256.5],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [651.1509, 347.1312],
+},
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [8, 18],
+startRoom: "WARG_W05",
+endPos: [7, 18],
+endRoom: "WARG_W05",
+},
+{
+type: "RoomExit",
+startPos: [8, 16],
+startRoom: "WARG_W05",
+endPos: [1, 16],
+endRoom: "WARG_W05",
+},
+],
+}

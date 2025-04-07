@@ -1,0 +1,29 @@
+{
+mapPos: [301.5, 757.0249],
+size: [201, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [1506.179, 223.313],
+panelPos: [-209, 55],
+destPos: [450, 1230],
+destRegion: "SB",
+destRoom: "sb_d07",
+spawnId: 19,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [188, 4],
+startRoom: "WAUA_BATH",
+endPos: [200, 2],
+endRoom: "WAUA_BATH",
+},
+],
+}

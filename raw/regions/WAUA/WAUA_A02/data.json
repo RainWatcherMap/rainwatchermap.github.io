@@ -1,0 +1,28 @@
+{
+mapPos: [5734.447, 547.0946],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [42, 25],
+startRoom: "WAUA_A02",
+endPos: [47, 25],
+endRoom: "WAUA_A02",
+},
+{
+type: "RoomExit",
+startPos: [14, 6],
+startRoom: "WAUA_A02",
+endPos: [14, 0],
+endRoom: "WAUA_A02",
+},
+],
+}

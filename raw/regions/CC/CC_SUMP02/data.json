@@ -1,0 +1,70 @@
+{
+mapPos: [1539.447, 593.12],
+size: [48, 112],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [35, 110],
+startRoom: "CC_SUMP02",
+endPos: [35, 111],
+endRoom: "CC_SUMP02",
+},
+{
+type: "RoomExit",
+startPos: [18, 97],
+startRoom: "CC_SUMP02",
+endPos: [12, 105],
+endRoom: "CC_SUMP02",
+},
+{
+type: "RoomExit",
+startPos: [35, 63],
+startRoom: "CC_SUMP02",
+endPos: [42, 70],
+endRoom: "CC_SUMP02",
+},
+{
+type: "DeadEnd",
+startPos: [19, 62],
+startRoom: "CC_SUMP02",
+endPos: [12, 67],
+endRoom: "CC_SUMP02",
+},
+{
+type: "DeadEnd",
+startPos: [44, 22],
+startRoom: "CC_SUMP02",
+endPos: [47, 22],
+endRoom: "CC_SUMP02",
+},
+{
+type: "RoomExit",
+startPos: [9, 15],
+startRoom: "CC_SUMP02",
+endPos: [5, 2],
+endRoom: "CC_SUMP02",
+},
+{
+type: "DeadEnd",
+startPos: [43, 15],
+startRoom: "CC_SUMP02",
+endPos: [47, 15],
+endRoom: "CC_SUMP02",
+},
+{
+type: "NPCTransportation",
+startPos: [44, 8],
+startRoom: "CC_SUMP02",
+endPos: [47, 8],
+endRoom: "CC_SUMP02",
+},
+],
+}

@@ -1,0 +1,77 @@
+{
+mapPos: [2823.502, 685.0551],
+size: [152, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [132, 18],
+startRoom: "WARG_G19",
+endPos: [137, 29],
+endRoom: "WARG_G19",
+},
+{
+type: "RoomExit",
+startPos: [127, 14],
+startRoom: "WARG_G19",
+endPos: [142, 14],
+endRoom: "WARG_G19",
+},
+{
+type: "NPCTransportation",
+startPos: [42, 10],
+startRoom: "WARG_G19",
+endPos: [42, 6],
+endRoom: "WARG_G19",
+},
+{
+type: "Normal",
+startPos: [92, 9],
+startRoom: "WARG_G19",
+endPos: [72, 5],
+endRoom: "WARG_G19",
+},
+{
+type: "NPCTransportation",
+startPos: [62, 8],
+startRoom: "WARG_G19",
+endPos: [62, 4],
+endRoom: "WARG_G19",
+},
+{
+type: "CreatureHole",
+startPos: [65, 6],
+startRoom: "WARG_G19",
+endPos: [65, 0],
+endRoom: "WARG_G19",
+},
+{
+type: "Normal",
+startPos: [72, 5],
+startRoom: "WARG_G19",
+endPos: [92, 9],
+endRoom: "WARG_G19",
+},
+{
+type: "RoomExit",
+startPos: [21, 3],
+startRoom: "WARG_G19",
+endPos: [12, 3],
+endRoom: "WARG_G19",
+},
+{
+type: "NPCTransportation",
+startPos: [106, 3],
+startRoom: "WARG_G19",
+endPos: [106, 0],
+endRoom: "WARG_G19",
+},
+],
+}

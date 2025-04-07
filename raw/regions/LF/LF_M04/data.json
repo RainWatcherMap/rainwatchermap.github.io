@@ -1,0 +1,49 @@
+{
+mapPos: [996.8939, 904.0441],
+size: [232, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [26, 25],
+startRoom: "LF_M04",
+endPos: [11, 28],
+endRoom: "LF_M04",
+},
+{
+type: "RoomExit",
+startPos: [218, 4],
+startRoom: "LF_M04",
+endPos: [227, 0],
+endRoom: "LF_M04",
+},
+{
+type: "NPCTransportation",
+startPos: [207, 3],
+startRoom: "LF_M04",
+endPos: [206, 3],
+endRoom: "LF_M04",
+},
+{
+type: "RegionTransportation",
+startPos: [190, 2],
+startRoom: "LF_M04",
+endPos: [190, 1],
+endRoom: "LF_M04",
+},
+{
+type: "NPCTransportation",
+startPos: [193, 2],
+startRoom: "LF_M04",
+endPos: [193, 1],
+endRoom: "LF_M04",
+},
+],
+}

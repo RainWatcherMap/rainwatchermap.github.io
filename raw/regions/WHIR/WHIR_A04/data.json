@@ -1,0 +1,35 @@
+{
+mapPos: [1202.342, 161.2364],
+size: [54, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [29, 17],
+startRoom: "WHIR_A04",
+endPos: [29, 0],
+endRoom: "WHIR_A04",
+},
+{
+type: "RoomExit",
+startPos: [33, 17],
+startRoom: "WHIR_A04",
+endPos: [33, 0],
+endRoom: "WHIR_A04",
+},
+{
+type: "RoomExit",
+startPos: [5, 3],
+startRoom: "WHIR_A04",
+endPos: [5, 0],
+endRoom: "WHIR_A04",
+},
+],
+}

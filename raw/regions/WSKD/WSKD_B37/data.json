@@ -1,0 +1,84 @@
+{
+mapPos: [1642.051, 312.297],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [21, 28],
+startRoom: "WSKD_B37",
+endPos: [21, 29],
+endRoom: "WSKD_B37",
+},
+{
+type: "NPCTransportation",
+startPos: [34, 28],
+startRoom: "WSKD_B37",
+endPos: [34, 29],
+endRoom: "WSKD_B37",
+},
+{
+type: "DeadEnd",
+startPos: [16, 24],
+startRoom: "WSKD_B37",
+endPos: [15, 24],
+endRoom: "WSKD_B37",
+},
+{
+type: "DeadEnd",
+startPos: [39, 24],
+startRoom: "WSKD_B37",
+endPos: [40, 24],
+endRoom: "WSKD_B37",
+},
+{
+type: "Normal",
+startPos: [16, 21],
+startRoom: "WSKD_B37",
+endPos: [15, 16],
+endRoom: "WSKD_B37",
+},
+{
+type: "RoomExit",
+startPos: [39, 21],
+startRoom: "WSKD_B37",
+endPos: [45, 25],
+endRoom: "WSKD_B37",
+},
+{
+type: "Normal",
+startPos: [15, 16],
+startRoom: "WSKD_B37",
+endPos: [16, 21],
+endRoom: "WSKD_B37",
+},
+{
+type: "DeadEnd",
+startPos: [10, 12],
+startRoom: "WSKD_B37",
+endPos: [9, 12],
+endRoom: "WSKD_B37",
+},
+{
+type: "RoomExit",
+startPos: [10, 9],
+startRoom: "WSKD_B37",
+endPos: [2, 9],
+endRoom: "WSKD_B37",
+},
+{
+type: "NPCTransportation",
+startPos: [15, 5],
+startRoom: "WSKD_B37",
+endPos: [15, 4],
+endRoom: "WSKD_B37",
+},
+],
+}

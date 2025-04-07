@@ -1,0 +1,36 @@
+{
+mapPos: [3693.412, 707.0001],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [647.808, 357.6914],
+panelPos: [44, 106],
+destPos: [4050, 370],
+destRegion: "WSKA",
+destRoom: "wska_d02",
+spawnId: 17,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [45, 9],
+startRoom: "SH_A08",
+endPos: [47, 0],
+endRoom: "SH_A08",
+},
+{
+type: "RoomExit",
+startPos: [4, 7],
+startRoom: "SH_A08",
+endPos: [0, 0],
+endRoom: "SH_A08",
+},
+],
+}

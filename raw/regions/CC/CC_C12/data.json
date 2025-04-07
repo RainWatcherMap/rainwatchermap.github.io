@@ -1,0 +1,36 @@
+{
+mapPos: [858.5168, 3205.766],
+size: [61, 121],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [933.9406, 2132.439],
+panelPos: [18, 77],
+destPos: [490, 510],
+destRegion: "WSKB",
+destRoom: "wskb_c17",
+spawnId: 15,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [45, 16],
+startRoom: "CC_C12",
+endPos: [45, 0],
+endRoom: "CC_C12",
+},
+{
+type: "DeadEnd",
+startPos: [47, 16],
+startRoom: "CC_C12",
+endPos: [47, 15],
+endRoom: "CC_C12",
+},
+],
+}

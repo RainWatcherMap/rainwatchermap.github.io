@@ -1,0 +1,43 @@
+{
+mapPos: [2624.866, 204.9442],
+size: [48, 115],
+layer: 2,
+shelter: false,
+warpPoints: [
+{
+pos: [278.3431, 2045.426],
+region: null,
+room: null,
+pos: null,
+oneWay: true,
+ripple: true,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [5, 98],
+startRoom: "WSKA_D07",
+endPos: [0, 98],
+endRoom: "WSKA_D07",
+},
+{
+type: "RoomExit",
+startPos: [1, 15],
+startRoom: "WSKA_D07",
+endPos: [0, 29],
+endRoom: "WSKA_D07",
+},
+{
+type: "RoomExit",
+startPos: [33, 2],
+startRoom: "WSKA_D07",
+endPos: [40, 0],
+endRoom: "WSKA_D07",
+},
+],
+}

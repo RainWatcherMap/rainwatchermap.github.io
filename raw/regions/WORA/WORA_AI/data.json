@@ -1,0 +1,42 @@
+{
+mapPos: [249, 1356.863],
+size: [166, 57],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+{
+pos: [590.8846, 389.2884],
+},
+{
+pos: [1652.106, 342.3885],
+},
+{
+pos: [1784.429, 317.3389],
+},
+{
+pos: [2008.404, 287.3777],
+},
+{
+pos: [1142.093, 332.1234],
+},
+{
+pos: [945.0549, 352.9561],
+},
+{
+pos: [804.3253, 360.1853],
+},
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [158, 18],
+startRoom: "WORA_AI",
+endPos: [163, 18],
+endRoom: "WORA_AI",
+},
+],
+}

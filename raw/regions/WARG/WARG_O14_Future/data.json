@@ -1,0 +1,28 @@
+{
+mapPos: [5396.83, 1189.806],
+size: [100, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [82, 18],
+startRoom: "WARG_O14_Future",
+endPos: [74, 23],
+endRoom: "WARG_O14_Future",
+},
+{
+type: "CreatureHole",
+startPos: [94, 9],
+startRoom: "WARG_O14_Future",
+endPos: [94, 1],
+endRoom: "WARG_O14_Future",
+},
+],
+}

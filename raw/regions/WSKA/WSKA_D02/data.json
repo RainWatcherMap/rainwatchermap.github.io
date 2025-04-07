@@ -1,0 +1,98 @@
+{
+mapPos: [2047.276, 84.2917],
+size: [256, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [242, 23],
+startRoom: "WSKA_D02",
+endPos: [242, 22],
+endRoom: "WSKA_D02",
+},
+{
+type: "RoomExit",
+startPos: [244, 23],
+startRoom: "WSKA_D02",
+endPos: [247, 3],
+endRoom: "WSKA_D02",
+},
+{
+type: "RoomExit",
+startPos: [74, 12],
+startRoom: "WSKA_D02",
+endPos: [80, 11],
+endRoom: "WSKA_D02",
+},
+{
+type: "NPCTransportation",
+startPos: [105, 12],
+startRoom: "WSKA_D02",
+endPos: [104, 12],
+endRoom: "WSKA_D02",
+},
+{
+type: "CreatureHole",
+startPos: [111, 12],
+startRoom: "WSKA_D02",
+endPos: [112, 12],
+endRoom: "WSKA_D02",
+},
+{
+type: "CreatureHole",
+startPos: [142, 12],
+startRoom: "WSKA_D02",
+endPos: [141, 12],
+endRoom: "WSKA_D02",
+},
+{
+type: "NPCTransportation",
+startPos: [148, 12],
+startRoom: "WSKA_D02",
+endPos: [149, 12],
+endRoom: "WSKA_D02",
+},
+{
+type: "RoomExit",
+startPos: [179, 12],
+startRoom: "WSKA_D02",
+endPos: [174, 11],
+endRoom: "WSKA_D02",
+},
+{
+type: "RoomExit",
+startPos: [8, 10],
+startRoom: "WSKA_D02",
+endPos: [2, 3],
+endRoom: "WSKA_D02",
+},
+{
+type: "NPCTransportation",
+startPos: [10, 10],
+startRoom: "WSKA_D02",
+endPos: [10, 9],
+endRoom: "WSKA_D02",
+},
+{
+type: "NPCTransportation",
+startPos: [192, 10],
+startRoom: "WSKA_D02",
+endPos: [192, 9],
+endRoom: "WSKA_D02",
+},
+{
+type: "CreatureHole",
+startPos: [194, 10],
+startRoom: "WSKA_D02",
+endPos: [194, 9],
+endRoom: "WSKA_D02",
+},
+],
+}

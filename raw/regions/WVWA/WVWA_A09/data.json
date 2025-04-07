@@ -1,0 +1,36 @@
+{
+mapPos: [1313.879, 919.9377],
+size: [48, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+{
+pos: [482.251, 546.1553],
+region: null,
+room: null,
+pos: null,
+oneWay: true,
+ripple: true,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [6, 27],
+startRoom: "WVWA_A09",
+endPos: [0, 27],
+endRoom: "WVWA_A09",
+},
+{
+type: "RoomExit",
+startPos: [42, 27],
+startRoom: "WVWA_A09",
+endPos: [47, 27],
+endRoom: "WVWA_A09",
+},
+],
+}

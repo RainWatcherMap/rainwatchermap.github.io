@@ -1,0 +1,70 @@
+{
+mapPos: [1295.209, 787.3161],
+size: [256, 75],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [247, 55],
+startRoom: "WAUA_E01B",
+endPos: [254, 55],
+endRoom: "WAUA_E01B",
+},
+{
+type: "DeadEnd",
+startPos: [247, 53],
+startRoom: "WAUA_E01B",
+endPos: [254, 53],
+endRoom: "WAUA_E01B",
+},
+{
+type: "DeadEnd",
+startPos: [247, 51],
+startRoom: "WAUA_E01B",
+endPos: [254, 51],
+endRoom: "WAUA_E01B",
+},
+{
+type: "RoomExit",
+startPos: [247, 49],
+startRoom: "WAUA_E01B",
+endPos: [255, 49],
+endRoom: "WAUA_E01B",
+},
+{
+type: "DeadEnd",
+startPos: [5, 19],
+startRoom: "WAUA_E01B",
+endPos: [0, 19],
+endRoom: "WAUA_E01B",
+},
+{
+type: "DeadEnd",
+startPos: [5, 17],
+startRoom: "WAUA_E01B",
+endPos: [0, 17],
+endRoom: "WAUA_E01B",
+},
+{
+type: "DeadEnd",
+startPos: [5, 15],
+startRoom: "WAUA_E01B",
+endPos: [0, 15],
+endRoom: "WAUA_E01B",
+},
+{
+type: "RoomExit",
+startPos: [5, 13],
+startRoom: "WAUA_E01B",
+endPos: [0, 13],
+endRoom: "WAUA_E01B",
+},
+],
+}

@@ -1,0 +1,49 @@
+{
+mapPos: [1438.33, 531.0414],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RegionTransportation",
+startPos: [33, 25],
+startRoom: "HI_W06",
+endPos: [36, 25],
+endRoom: "HI_W06",
+},
+{
+type: "RoomExit",
+startPos: [33, 23],
+startRoom: "HI_W06",
+endPos: [39, 23],
+endRoom: "HI_W06",
+},
+{
+type: "RegionTransportation",
+startPos: [33, 13],
+startRoom: "HI_W06",
+endPos: [38, 13],
+endRoom: "HI_W06",
+},
+{
+type: "RegionTransportation",
+startPos: [33, 11],
+startRoom: "HI_W06",
+endPos: [40, 11],
+endRoom: "HI_W06",
+},
+{
+type: "RegionTransportation",
+startPos: [18, 6],
+startRoom: "HI_W06",
+endPos: [18, 2],
+endRoom: "HI_W06",
+},
+],
+}

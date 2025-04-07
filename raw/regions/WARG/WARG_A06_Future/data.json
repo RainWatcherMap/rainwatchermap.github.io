@@ -1,0 +1,43 @@
+{
+mapPos: [5512.95, 2413.817],
+size: [100, 78],
+layer: 2,
+shelter: false,
+warpPoints: [
+{
+pos: [1664.141, 1126.082],
+region: "WTDB",
+room: "wtdb_a04",
+pos: [290, 410],
+oneWay: false,
+ripple: false,
+},
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "Normal",
+startPos: [90, 48],
+startRoom: "WARG_A06_Future",
+endPos: [90, 31],
+endRoom: "WARG_A06_Future",
+},
+{
+type: "Normal",
+startPos: [90, 31],
+startRoom: "WARG_A06_Future",
+endPos: [90, 48],
+endRoom: "WARG_A06_Future",
+},
+{
+type: "RoomExit",
+startPos: [81, 10],
+startRoom: "WARG_A06_Future",
+endPos: [81, 2],
+endRoom: "WARG_A06_Future",
+},
+],
+}

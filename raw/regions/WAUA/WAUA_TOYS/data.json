@@ -1,0 +1,36 @@
+{
+mapPos: [3389.968, 517.5656],
+size: [48, 115],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [377.1898, 1866.425],
+panelPos: [0, 0],
+destPos: null,
+destRegion: null,
+destRoom: null,
+spawnId: 39,
+},
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [40, 105],
+startRoom: "WAUA_TOYS",
+endPos: [21, 109],
+endRoom: "WAUA_TOYS",
+},
+{
+type: "RoomExit",
+startPos: [42, 10],
+startRoom: "WAUA_TOYS",
+endPos: [47, 10],
+endRoom: "WAUA_TOYS",
+},
+],
+}

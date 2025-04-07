@@ -1,0 +1,91 @@
+{
+mapPos: [2141.119, 930.4238],
+size: [202, 74],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "NPCTransportation",
+startPos: [3, 56],
+startRoom: "WRFA_H01",
+endPos: [0, 56],
+endRoom: "WRFA_H01",
+},
+{
+type: "NPCTransportation",
+startPos: [192, 55],
+startRoom: "WRFA_H01",
+endPos: [192, 56],
+endRoom: "WRFA_H01",
+},
+{
+type: "RoomExit",
+startPos: [3, 54],
+startRoom: "WRFA_H01",
+endPos: [0, 54],
+endRoom: "WRFA_H01",
+},
+{
+type: "RoomExit",
+startPos: [197, 52],
+startRoom: "WRFA_H01",
+endPos: [201, 52],
+endRoom: "WRFA_H01",
+},
+{
+type: "CreatureHole",
+startPos: [167, 48],
+startRoom: "WRFA_H01",
+endPos: [167, 47],
+endRoom: "WRFA_H01",
+},
+{
+type: "CreatureHole",
+startPos: [45, 46],
+startRoom: "WRFA_H01",
+endPos: [45, 45],
+endRoom: "WRFA_H01",
+},
+{
+type: "NPCTransportation",
+startPos: [47, 46],
+startRoom: "WRFA_H01",
+endPos: [47, 45],
+endRoom: "WRFA_H01",
+},
+{
+type: "CreatureHole",
+startPos: [164, 27],
+startRoom: "WRFA_H01",
+endPos: [164, 26],
+endRoom: "WRFA_H01",
+},
+{
+type: "NPCTransportation",
+startPos: [167, 27],
+startRoom: "WRFA_H01",
+endPos: [167, 26],
+endRoom: "WRFA_H01",
+},
+{
+type: "CreatureHole",
+startPos: [145, 11],
+startRoom: "WRFA_H01",
+endPos: [145, 10],
+endRoom: "WRFA_H01",
+},
+{
+type: "CreatureHole",
+startPos: [69, 2],
+startRoom: "WRFA_H01",
+endPos: [69, 1],
+endRoom: "WRFA_H01",
+},
+],
+}

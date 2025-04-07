@@ -1,0 +1,98 @@
+{
+mapPos: [989.67, 497.325],
+size: [48, 78],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [19, 72],
+startRoom: "WARG_G28",
+endPos: [19, 77],
+endRoom: "WARG_G28",
+},
+{
+type: "NPCTransportation",
+startPos: [32, 67],
+startRoom: "WARG_G28",
+endPos: [36, 67],
+endRoom: "WARG_G28",
+},
+{
+type: "Normal",
+startPos: [34, 59],
+startRoom: "WARG_G28",
+endPos: [39, 46],
+endRoom: "WARG_G28",
+},
+{
+type: "Normal",
+startPos: [39, 46],
+startRoom: "WARG_G28",
+endPos: [34, 59],
+endRoom: "WARG_G28",
+},
+{
+type: "NPCTransportation",
+startPos: [30, 41],
+startRoom: "WARG_G28",
+endPos: [30, 38],
+endRoom: "WARG_G28",
+},
+{
+type: "CreatureHole",
+startPos: [32, 41],
+startRoom: "WARG_G28",
+endPos: [32, 40],
+endRoom: "WARG_G28",
+},
+{
+type: "NPCTransportation",
+startPos: [9, 27],
+startRoom: "WARG_G28",
+endPos: [9, 23],
+endRoom: "WARG_G28",
+},
+{
+type: "CreatureHole",
+startPos: [26, 10],
+startRoom: "WARG_G28",
+endPos: [26, 13],
+endRoom: "WARG_G28",
+},
+{
+type: "DeadEnd",
+startPos: [33, 10],
+startRoom: "WARG_G28",
+endPos: [33, 11],
+endRoom: "WARG_G28",
+},
+{
+type: "RoomExit",
+startPos: [6, 6],
+startRoom: "WARG_G28",
+endPos: [0, 6],
+endRoom: "WARG_G28",
+},
+{
+type: "RoomExit",
+startPos: [37, 6],
+startRoom: "WARG_G28",
+endPos: [42, 6],
+endRoom: "WARG_G28",
+},
+{
+type: "NPCTransportation",
+startPos: [27, 2],
+startRoom: "WARG_G28",
+endPos: [27, 0],
+endRoom: "WARG_G28",
+},
+],
+}

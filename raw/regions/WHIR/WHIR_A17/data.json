@@ -1,0 +1,70 @@
+{
+mapPos: [710.3424, 87.5],
+size: [54, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [11, 30],
+startRoom: "WHIR_A17",
+endPos: [11, 34],
+endRoom: "WHIR_A17",
+},
+{
+type: "RoomExit",
+startPos: [4, 23],
+startRoom: "WHIR_A17",
+endPos: [1, 23],
+endRoom: "WHIR_A17",
+},
+{
+type: "Normal",
+startPos: [4, 21],
+startRoom: "WHIR_A17",
+endPos: [4, 14],
+endRoom: "WHIR_A17",
+},
+{
+type: "RoomExit",
+startPos: [50, 17],
+startRoom: "WHIR_A17",
+endPos: [52, 17],
+endRoom: "WHIR_A17",
+},
+{
+type: "Normal",
+startPos: [4, 14],
+startRoom: "WHIR_A17",
+endPos: [4, 21],
+endRoom: "WHIR_A17",
+},
+{
+type: "Normal",
+startPos: [23, 10],
+startRoom: "WHIR_A17",
+endPos: [31, 10],
+endRoom: "WHIR_A17",
+},
+{
+type: "Normal",
+startPos: [31, 10],
+startRoom: "WHIR_A17",
+endPos: [23, 10],
+endRoom: "WHIR_A17",
+},
+{
+type: "CreatureHole",
+startPos: [33, 10],
+startRoom: "WHIR_A17",
+endPos: [33, 5],
+endRoom: "WHIR_A17",
+},
+],
+}

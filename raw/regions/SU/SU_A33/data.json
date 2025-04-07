@@ -1,0 +1,42 @@
+{
+mapPos: [2279.918, 1100.504],
+size: [48, 37],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [14, 34],
+startRoom: "SU_A33",
+endPos: [14, 36],
+endRoom: "SU_A33",
+},
+{
+type: "RoomExit",
+startPos: [44, 31],
+startRoom: "SU_A33",
+endPos: [47, 31],
+endRoom: "SU_A33",
+},
+{
+type: "DeadEnd",
+startPos: [44, 28],
+startRoom: "SU_A33",
+endPos: [46, 28],
+endRoom: "SU_A33",
+},
+{
+type: "RoomExit",
+startPos: [3, 27],
+startRoom: "SU_A33",
+endPos: [0, 27],
+endRoom: "SU_A33",
+},
+],
+}

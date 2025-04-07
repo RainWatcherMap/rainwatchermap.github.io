@@ -1,0 +1,35 @@
+{
+mapPos: [2161.276, 82.2917],
+size: [48, 35],
+layer: 2,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [6, 12],
+startRoom: "WSKA_D03",
+endPos: [1, 12],
+endRoom: "WSKA_D03",
+},
+{
+type: "RoomExit",
+startPos: [41, 12],
+startRoom: "WSKA_D03",
+endPos: [46, 12],
+endRoom: "WSKA_D03",
+},
+{
+type: "CreatureHole",
+startPos: [21, 9],
+startRoom: "WSKA_D03",
+endPos: [21, 8],
+endRoom: "WSKA_D03",
+},
+],
+}

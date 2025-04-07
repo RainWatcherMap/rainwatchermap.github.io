@@ -1,0 +1,70 @@
+{
+mapPos: [737.9999, 953.9995],
+size: [48, 35],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [18, 33],
+startRoom: "WGWR_A12",
+endPos: [18, 34],
+endRoom: "WGWR_A12",
+},
+{
+type: "DeadEnd",
+startPos: [20, 33],
+startRoom: "WGWR_A12",
+endPos: [20, 34],
+endRoom: "WGWR_A12",
+},
+{
+type: "DeadEnd",
+startPos: [22, 33],
+startRoom: "WGWR_A12",
+endPos: [22, 34],
+endRoom: "WGWR_A12",
+},
+{
+type: "DeadEnd",
+startPos: [24, 33],
+startRoom: "WGWR_A12",
+endPos: [24, 34],
+endRoom: "WGWR_A12",
+},
+{
+type: "CreatureHole",
+startPos: [33, 12],
+startRoom: "WGWR_A12",
+endPos: [33, 11],
+endRoom: "WGWR_A12",
+},
+{
+type: "CreatureHole",
+startPos: [9, 9],
+startRoom: "WGWR_A12",
+endPos: [9, 8],
+endRoom: "WGWR_A12",
+},
+{
+type: "RoomExit",
+startPos: [4, 3],
+startRoom: "WGWR_A12",
+endPos: [4, 0],
+endRoom: "WGWR_A12",
+},
+{
+type: "RoomExit",
+startPos: [40, 2],
+startRoom: "WGWR_A12",
+endPos: [40, 0],
+endRoom: "WGWR_A12",
+},
+],
+}

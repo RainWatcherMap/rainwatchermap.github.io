@@ -1,0 +1,102 @@
+{
+mapPos: [865.1617, 401.5673],
+size: [152, 77],
+layer: 0,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+{
+pos: [545.6909, 1246.809],
+panelPos: [324, -87],
+destPos: [350, 350],
+destRegion: "WARD",
+destRoom: "ward_r15",
+spawnId: 11,
+},
+],
+karmaFlowers: [
+{
+pos: [2576.549, 1408.694],
+},
+],
+shortcuts: [
+{
+type: "DeadEnd",
+startPos: [134, 65],
+startRoom: "WSKD_B40",
+endPos: [134, 64],
+endRoom: "WSKD_B40",
+},
+{
+type: "DeadEnd",
+startPos: [136, 65],
+startRoom: "WSKD_B40",
+endPos: [136, 64],
+endRoom: "WSKD_B40",
+},
+{
+type: "DeadEnd",
+startPos: [19, 56],
+startRoom: "WSKD_B40",
+endPos: [19, 55],
+endRoom: "WSKD_B40",
+},
+{
+type: "RegionTransportation",
+startPos: [21, 56],
+startRoom: "WSKD_B40",
+endPos: [21, 55],
+endRoom: "WSKD_B40",
+},
+{
+type: "RoomExit",
+startPos: [146, 17],
+startRoom: "WSKD_B40",
+endPos: [151, 17],
+endRoom: "WSKD_B40",
+},
+{
+type: "RegionTransportation",
+startPos: [9, 12],
+startRoom: "WSKD_B40",
+endPos: [9, 11],
+endRoom: "WSKD_B40",
+},
+{
+type: "Normal",
+startPos: [11, 12],
+startRoom: "WSKD_B40",
+endPos: [40, 12],
+endRoom: "WSKD_B40",
+},
+{
+type: "Normal",
+startPos: [40, 12],
+startRoom: "WSKD_B40",
+endPos: [11, 12],
+endRoom: "WSKD_B40",
+},
+{
+type: "RegionTransportation",
+startPos: [40, 10],
+startRoom: "WSKD_B40",
+endPos: [39, 10],
+endRoom: "WSKD_B40",
+},
+{
+type: "DeadEnd",
+startPos: [87, 8],
+startRoom: "WSKD_B40",
+endPos: [87, 7],
+endRoom: "WSKD_B40",
+},
+{
+type: "RegionTransportation",
+startPos: [89, 8],
+startRoom: "WSKD_B40",
+endPos: [89, 7],
+endRoom: "WSKD_B40",
+},
+],
+}

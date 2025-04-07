@@ -1,0 +1,70 @@
+{
+mapPos: [1771.607, 1158.771],
+size: [152, 35],
+layer: 1,
+shelter: false,
+warpPoints: [
+],
+echoSpots: [
+],
+karmaFlowers: [
+],
+shortcuts: [
+{
+type: "RoomExit",
+startPos: [62, 27],
+startRoom: "WARF_C02",
+endPos: [62, 34],
+endRoom: "WARF_C02",
+},
+{
+type: "DeadEnd",
+startPos: [6, 8],
+startRoom: "WARF_C02",
+endPos: [5, 8],
+endRoom: "WARF_C02",
+},
+{
+type: "RoomExit",
+startPos: [6, 6],
+startRoom: "WARF_C02",
+endPos: [0, 6],
+endRoom: "WARF_C02",
+},
+{
+type: "Normal",
+startPos: [62, 6],
+startRoom: "WARF_C02",
+endPos: [58, 3],
+endRoom: "WARF_C02",
+},
+{
+type: "Normal",
+startPos: [58, 3],
+startRoom: "WARF_C02",
+endPos: [62, 6],
+endRoom: "WARF_C02",
+},
+{
+type: "Normal",
+startPos: [66, 3],
+startRoom: "WARF_C02",
+endPos: [51, 2],
+endRoom: "WARF_C02",
+},
+{
+type: "RoomExit",
+startPos: [145, 3],
+startRoom: "WARF_C02",
+endPos: [145, 0],
+endRoom: "WARF_C02",
+},
+{
+type: "Normal",
+startPos: [51, 2],
+startRoom: "WARF_C02",
+endPos: [66, 3],
+endRoom: "WARF_C02",
+},
+],
+}
