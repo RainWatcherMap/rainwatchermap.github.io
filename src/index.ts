@@ -149,8 +149,6 @@ const context = {
 
 setup(context)
 
-const regionsEl = (window as any).regions
-
 function setSelected(el?: HTMLElement) {
     for(const other of document.querySelectorAll('.region-selected')) {
         other.classList.remove('region-selected')
@@ -159,6 +157,25 @@ function setSelected(el?: HTMLElement) {
 }
 
 let regionEls: Map<string, HTMLElement> = new Map()
+
+const inputEls = [...document.querySelectorAll('#regions > label > input[name="region"]')]
+for(const el0 of inputEls) {
+    const el = el0 as HTMLInputElement
+    const parent = el.parentNode as HTMLElement
+
+    const reg = regions[el.value]
+    if(!reg) {
+        parent.style.display = 'none'
+        continue
+    }
+
+    el.onchange = () => {
+        if(!el.checked) return
+        setSelected(parent)
+        showRegion(el.value, reg)
+    }
+    regionEls.set(el.value, el)
+}
 
 // null if show all
 function fillRegions(filter: string | null) {
@@ -169,17 +186,16 @@ function fillRegions(filter: string | null) {
         if(filter && !regK.includes(filter)) continue
         regs.push({ key: regK as any, region: regions[regK] })
     }
-    regionsEl.innerHTML = ''
-    for(const reg of regs) {
-        const el = document.createElement('div')
-        el.append(document.createTextNode(regionNames.get(reg.key)!))
-        el.classList.add('region')
-        el.onclick = () => {
-            setSelected(el)
-            showRegion(reg.key, reg.region)
+
+    for(const el0 of inputEls) {
+        const el = el0 as HTMLInputElement
+        const reg = regions[el.value]
+        if((filter && !el.value.includes(filter)) || !reg) {
+            (el.parentNode as HTMLElement).style.display = 'none'
         }
-        regionsEl.append(el)
-        regionEls.set(reg.key, el)
+        else {
+            (el.parentNode as HTMLElement).style.display = ''
+        }
     }
 }
 
@@ -399,10 +415,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             form.append(cont)
         }
 
-        layerEl.append(
-            document.createTextNode('Layers:'),
-            form,
-        )
+        layerEl.append(form)
     }
 
     context.onClick = (cx, cy) => {
@@ -509,7 +522,4 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
 
 fillRegions(null)
 
-{
-    setSelected(regionEls.get('HI'))
-    showRegion('HI', regions['HI'], [-0, 150], 1)
-}
+showRegion('HI', regions['HI'], [-0, 150], 1)

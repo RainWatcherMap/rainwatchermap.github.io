@@ -36,27 +36,48 @@ body {
     display: flex;
     flex-direction: column;
 }
-#regions {
+
+.regions {
+    padding: 0.5rem;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+#regions {
+    padding: 0.5rem;
+    flex-grow: 1;
+    gap: 1rem;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
+    & input[name='region'] {
+        display: none;
+    }
 }
+
+.title {
+    font-size: 1.1rem;
+}
+
 .region {
-    padding: 0.5rem;
     transition: color 0.2s;
 }
-#layers {
-    min-height: 5rem;
+.layers {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    padding-bottom: 1rem;
+}
+#layers {
+    padding: 0.5rem;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
     & > form {
         display: flex;
         flex-direction: column;
     }
 }
+
 .region-selected {
     color: #2060ae;
 }
@@ -100,11 +121,17 @@ body {
     background: #e0e020;
 }
 
+.element {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
 #element {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
 }
+
 .marker-selected {
     border: 2px solid red;
 }
