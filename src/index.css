@@ -66,10 +66,11 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 999999px;
-    background: #20e0e0;
+    background: #4a4aff;
 }
+
 .warp-oneway {
-    background: #2020e0;
+    background: #20e0e0;
 }
 
 .marker-echo {
@@ -78,7 +79,7 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 999999px;
-    background: #20e020;
+    background: #ff6000;
 }
 
 .marker-backlink {
@@ -86,6 +87,15 @@ body {
     position: absolute;
     width: 10px;
     height: 10px;
+    border-radius: 999999px;
+    background: #fa59d9;
+}
+
+.marker-karma {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 7px;
+    height: 7px;
     border-radius: 999999px;
     background: #e0e020;
 }

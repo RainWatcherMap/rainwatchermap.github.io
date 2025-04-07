@@ -208,6 +208,11 @@ type Marker = {
     position: [number, number]
     data: WarpTrace
 }
+| {
+    type: 'karma-flower',
+    position: Pos
+    data: { pos: Pos }
+}
 
 function showRegion(regionName: RegionKey, region: Region, pos?: [number, number], layerI?: number) {
     inner.innerHTML = ''
@@ -321,6 +326,21 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             m.style.top = -y + 'px'
             v.append(m)
             markers.push({ type: 'backlink', position: [x, y], data: remBacklinks[i], element: m })
+        }
+
+        for(let i = 0; i < room.data.karmaFlowers.length; i++) {
+            const it = room.data.karmaFlowers[i]
+
+            const x = it.pos ? bx + it.pos[0] / 20 : mx
+            const y = it.pos ? by + it.pos[1] / 20 : my
+
+            const v = lget(markerLayerEls, layer)
+            const m = document.createElement('div')
+            m.classList.add('marker-karma')
+            m.style.left = x + 'px'
+            m.style.top = -y + 'px'
+            v.append(m)
+            markers.push({ type: 'karma-flower', position: [x, y], data: it, element: m })
         }
     }
 
@@ -471,7 +491,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 const b = gotoButton(it.destRegion, it.destRoom)
                 if(b) elementEl.append(b)
             }
-            else {
+            else if(c[1].type === 'backlink') {
                 const it = c[1].data
                 elementEl.append(wrap('Other side of a warp'))
                 elementEl.append(wrap('From region: ' + (it.fromRegion ? regionNames.get(it.fromRegion) : it.fromRegion)))
@@ -479,6 +499,9 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 //elementEl.append(wrap('Destination position: ' + it.destPos))
                 const b = gotoButton(it.fromRegion, it.fromRoom)
                 if(b) elementEl.append(b)
+            }
+            else {
+                elementEl.append(wrap('Karma flower'))
             }
         }
     }
