@@ -230,6 +230,9 @@ type Marker = {
     data: { pos: Pos }
 }
 
+const halfWidth = 69 * 0.5
+const halfHeight = 39 * 0.5
+
 function showRegion(regionName: RegionKey, region: Region, pos?: [number, number], layerI?: number) {
     inner.innerHTML = ''
     var minX = Infinity
@@ -280,8 +283,8 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             lget(layerEls, layer).append(image)
         }
 
-        const mx = totalX / count + 69 * 0.5
-        const my = totalY / count + 39 * 0.5
+        const mx = totalX / count + halfWidth
+        const my = totalY / count + halfHeight
 
         const remBacklinks = backlinks[regionName.toLowerCase()]?.[k.toLowerCase()]?.slice()
         function clearBacklink(fromRegion: string | null, fromRoom: string | null) {
@@ -455,7 +458,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 return a
             }
 
-            function gotoButton(regionName: RegionKey | null, roomName: string | null) {
+            function gotoButton(regionName: RegionKey | null, roomName: string | null, destPos: Pos | null) {
                 if(!regionName || !roomName) return
 
                 const el = document.createElement('button')
@@ -463,21 +466,22 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 el.append(document.createTextNode('go to'))
                 el.onclick = () => {
                     for(const regK in allRegions) {
-                        if(regionName.toLowerCase() === regK.toLowerCase()) {
-                            const region = allRegions[regK]
-                            for(const roomK in region.rooms) {
-                                if(roomName.toLowerCase() === roomK.toLowerCase()) {
-                                    const room = region.rooms[roomK]
-                                    if(room && room.data.mapPos) {
-                                        let x = room.data.mapPos[0] / 3 - room.data.size[0] * 0.5
-                                        let y = room.data.mapPos[1] / 3 - room.data.size[1] * 0.5
-                                        pos = [x, y]
-                                    }
-                                }
-                            }
+                        if(regionName.toLowerCase() !== regK.toLowerCase()) continue
+                        const region = allRegions[regK]
+                        for(const roomK in region.rooms) {
+                            if(roomName.toLowerCase() !== roomK.toLowerCase()) continue
+                            const room = region.rooms[roomK]
+                            if(!room || !room.data.mapPos) continue
+
+                            let x = room.data.mapPos[0] / 3 - room.data.size[0] * 0.5
+                            let y = room.data.mapPos[1] / 3 - room.data.size[1] * 0.5
+
+                            x += destPos ? destPos[0] / 20 : halfWidth
+                            y += destPos ? destPos[1] / 20 : halfHeight
+
+                            pos = [x, y]
                         }
                     }
-                    console.log(pos)
                     showRegion(regionName, allRegions[regionName], pos ?? undefined)
                     setSelected(regionEls.get(regionName))
                 }
@@ -492,7 +496,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 //elementEl.append(wrap('Destination position: ' + it.pos))
                 elementEl.append(wrap('One way?: ' + it.oneWay))
                 elementEl.append(wrap('Ripple (likely goes to Daemon): ' + it.ripple))
-                const b = gotoButton(it.destRegion, it.destRoom)
+                const b = gotoButton(it.destRegion, it.destRoom, it.destPos)
                 if(b) elementEl.append(b)
             }
             else if(c[1].type === 'echo') {
@@ -501,7 +505,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 elementEl.append(wrap('Destination destRegion: ' + (it.destRegion ? regionNames.get(it.destRegion) : it.destRegion)))
                 elementEl.append(wrap('Destination room: ' + it.destRoom))
                 //elementEl.append(wrap('Destination position: ' + it.destPos))
-                const b = gotoButton(it.destRegion, it.destRoom)
+                const b = gotoButton(it.destRegion, it.destRoom, it.destPos)
                 if(b) elementEl.append(b)
             }
             else if(c[1].type === 'backlink') {
@@ -510,7 +514,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 elementEl.append(wrap('From region: ' + (it.fromRegion ? regionNames.get(it.fromRegion) : it.fromRegion)))
                 elementEl.append(wrap('From room: ' + it.fromRoom))
                 //elementEl.append(wrap('Destination position: ' + it.destPos))
-                const b = gotoButton(it.fromRegion, it.fromRoom)
+                const b = gotoButton(it.fromRegion, it.fromRoom, it.from.data.pos)
                 if(b) elementEl.append(b)
             }
             else {
