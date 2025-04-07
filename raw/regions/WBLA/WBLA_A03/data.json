@@ -15,17 +15,17 @@ pos: [614.285, 484.7461],
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [9, 29],
 startRoom: "WBLA_A03",
+startPos: [9, 29],
+endRoom: "WBLA_F04",
 endPos: [0, 29],
-endRoom: "WBLA_A03",
 },
 {
 type: "DeadEnd",
-startPos: [17, 24],
 startRoom: "WBLA_A03",
+startPos: [17, 24],
+endRoom: null,
 endPos: [13, 24],
-endRoom: "WBLA_A03",
 },
 ],
 }

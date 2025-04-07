@@ -15,17 +15,17 @@ pos: [651.1509, 347.1312],
 shortcuts: [
 {
 type: "DeadEnd",
-startPos: [8, 18],
 startRoom: "WARG_W05",
+startPos: [8, 18],
+endRoom: null,
 endPos: [7, 18],
-endRoom: "WARG_W05",
 },
 {
 type: "RoomExit",
-startPos: [8, 16],
 startRoom: "WARG_W05",
+startPos: [8, 16],
+endRoom: "WARG_W03",
 endPos: [1, 16],
-endRoom: "WARG_W05",
 },
 ],
 }

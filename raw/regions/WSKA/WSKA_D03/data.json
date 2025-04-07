@@ -12,24 +12,24 @@ karmaFlowers: [
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [6, 12],
 startRoom: "WSKA_D03",
+startPos: [6, 12],
+endRoom: "WSKA_D04",
 endPos: [1, 12],
-endRoom: "WSKA_D03",
 },
 {
 type: "RoomExit",
-startPos: [41, 12],
 startRoom: "WSKA_D03",
+startPos: [41, 12],
+endRoom: "WSKA_D02",
 endPos: [46, 12],
-endRoom: "WSKA_D03",
 },
 {
 type: "CreatureHole",
-startPos: [21, 9],
 startRoom: "WSKA_D03",
+startPos: [21, 9],
+endRoom: null,
 endPos: [21, 8],
-endRoom: "WSKA_D03",
 },
 ],
 }

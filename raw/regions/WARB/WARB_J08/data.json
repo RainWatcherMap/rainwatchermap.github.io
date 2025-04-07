@@ -20,10 +20,10 @@ karmaFlowers: [
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [24, 13],
 startRoom: "WARB_J08",
+startPos: [24, 13],
+endRoom: "WARB_J06",
 endPos: [24, 7],
-endRoom: "WARB_J08",
 },
 ],
 }

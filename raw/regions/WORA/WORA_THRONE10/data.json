@@ -15,10 +15,10 @@ pos: [448.0042, 129.1373],
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [3, 30],
 startRoom: "WORA_THRONE10",
+startPos: [3, 30],
+endRoom: "WORA_THRONE02",
 endPos: [0, 32],
-endRoom: "WORA_THRONE10",
 },
 ],
 }

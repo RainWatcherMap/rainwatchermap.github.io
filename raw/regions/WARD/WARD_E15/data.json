@@ -15,17 +15,17 @@ pos: [320.4207, 252.5664],
 shortcuts: [
 {
 type: "CreatureHole",
-startPos: [8, 13],
 startRoom: "WARD_E15",
+startPos: [8, 13],
+endRoom: null,
 endPos: [6, 13],
-endRoom: "WARD_E15",
 },
 {
 type: "RoomExit",
-startPos: [37, 13],
 startRoom: "WARD_E15",
+startPos: [37, 13],
+endRoom: "WARD_E05",
 endPos: [46, 14],
-endRoom: "WARD_E15",
 },
 ],
 }

@@ -15,10 +15,10 @@ pos: [467.0729, 133.7206],
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [9, 17],
 startRoom: "WARD_R16",
+startPos: [9, 17],
+endRoom: "WARD_R22",
 endPos: [0, 17],
-endRoom: "WARD_R16",
 },
 ],
 }

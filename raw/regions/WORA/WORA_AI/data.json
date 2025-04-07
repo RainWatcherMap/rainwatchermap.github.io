@@ -33,10 +33,10 @@ pos: [804.3253, 360.1853],
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [158, 18],
 startRoom: "WORA_AI",
+startPos: [158, 18],
+endRoom: "WORA_THRONE02",
 endPos: [163, 18],
-endRoom: "WORA_AI",
 },
 ],
 }

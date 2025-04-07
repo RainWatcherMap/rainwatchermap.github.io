@@ -12,17 +12,17 @@ karmaFlowers: [
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [30, 23],
 startRoom: "WARG_A03_Future",
+startPos: [30, 23],
+endRoom: "WARG_A06_Future",
 endPos: [30, 30],
-endRoom: "WARG_A03_Future",
 },
 {
 type: "RoomExit",
-startPos: [27, 8],
 startRoom: "WARG_A03_Future",
+startPos: [27, 8],
+endRoom: "WARG_A02_Future",
 endPos: [27, 3],
-endRoom: "WARG_A03_Future",
 },
 ],
 }

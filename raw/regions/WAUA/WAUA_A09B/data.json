@@ -15,17 +15,17 @@ pos: [230.1305, 228.3868],
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [41, 22],
 startRoom: "WAUA_A09B",
+startPos: [41, 22],
+endRoom: "WAUA_E02B",
 endPos: [47, 22],
-endRoom: "WAUA_A09B",
 },
 {
 type: "CreatureHole",
-startPos: [32, 11],
 startRoom: "WAUA_A09B",
+startPos: [32, 11],
+endRoom: null,
 endPos: [33, 11],
-endRoom: "WAUA_A09B",
 },
 ],
 }

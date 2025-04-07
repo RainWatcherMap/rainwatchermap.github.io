@@ -15,17 +15,17 @@ pos: [524.4401, 283.5592],
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [20, 27],
 startRoom: "HI_A21",
+startPos: [20, 27],
+endRoom: "HI_C04",
 endPos: [1, 31],
-endRoom: "HI_A21",
 },
 {
 type: "RoomExit",
-startPos: [22, 10],
 startRoom: "HI_A21",
+startPos: [22, 10],
+endRoom: "HI_S02",
 endPos: [22, 1],
-endRoom: "HI_A21",
 },
 ],
 }

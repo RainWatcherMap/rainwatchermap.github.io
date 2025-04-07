@@ -15,17 +15,17 @@ pos: [328.5182, 409.8604],
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [6, 31],
 startRoom: "WARB_F01",
+startPos: [6, 31],
+endRoom: null,
 endPos: [0, 31],
-endRoom: "WARB_F01",
 },
 {
 type: "RoomExit",
-startPos: [43, 8],
 startRoom: "WARB_F01",
+startPos: [43, 8],
+endRoom: "WARB_F02",
 endPos: [47, 8],
-endRoom: "WARB_F01",
 },
 ],
 }

@@ -12,24 +12,24 @@ karmaFlowers: [
 shortcuts: [
 {
 type: "NPCTransportation",
+startRoom: "WHIR_A04",
 startPos: [29, 17],
-startRoom: "WHIR_A04",
+endRoom: null,
 endPos: [29, 0],
-endRoom: "WHIR_A04",
 },
 {
 type: "RoomExit",
+startRoom: "WHIR_A04",
 startPos: [33, 17],
-startRoom: "WHIR_A04",
+endRoom: "WHIR_B15",
 endPos: [33, 0],
-endRoom: "WHIR_A04",
 },
 {
 type: "RoomExit",
-startPos: [5, 3],
 startRoom: "WHIR_A04",
+startPos: [5, 3],
+endRoom: "WHIR_A26",
 endPos: [5, 0],
-endRoom: "WHIR_A04",
 },
 ],
 }

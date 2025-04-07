@@ -15,17 +15,17 @@ pos: [537.2098, 309.1373],
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [24, 24],
 startRoom: "WARA_P10",
+startPos: [24, 24],
+endRoom: "WARA_P09",
 endPos: [24, 30],
-endRoom: "WARA_P10",
 },
 {
 type: "RoomExit",
-startPos: [28, 10],
 startRoom: "WARA_P10",
+startPos: [28, 10],
+endRoom: "WARA_P11",
 endPos: [28, 6],
-endRoom: "WARA_P10",
 },
 ],
 }

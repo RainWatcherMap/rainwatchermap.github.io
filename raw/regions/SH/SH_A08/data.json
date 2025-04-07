@@ -20,17 +20,17 @@ karmaFlowers: [
 shortcuts: [
 {
 type: "RoomExit",
-startPos: [45, 9],
 startRoom: "SH_A08",
+startPos: [45, 9],
+endRoom: null,
 endPos: [47, 0],
-endRoom: "SH_A08",
 },
 {
 type: "RoomExit",
-startPos: [4, 7],
 startRoom: "SH_A08",
+startPos: [4, 7],
+endRoom: "SH_A09",
 endPos: [0, 0],
-endRoom: "SH_A08",
 },
 ],
 }

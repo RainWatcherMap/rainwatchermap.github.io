@@ -20,17 +20,17 @@ karmaFlowers: [
 shortcuts: [
 {
 type: "CreatureHole",
-startPos: [29, 23],
 startRoom: "WSKB_C07",
+startPos: [29, 23],
+endRoom: null,
 endPos: [30, 23],
-endRoom: "WSKB_C07",
 },
 {
 type: "RoomExit",
-startPos: [41, 11],
 startRoom: "WSKB_C07",
+startPos: [41, 11],
+endRoom: "WSKB_C06",
 endPos: [41, 3],
-endRoom: "WSKB_C07",
 },
 ],
 }

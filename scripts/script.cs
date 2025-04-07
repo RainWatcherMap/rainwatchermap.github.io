@@ -237,13 +237,23 @@ class StartPlease : MonoBehaviour {
                             var conn = shortcut.connection;
                             var s = conn.startCoord;
                             var e = conn.destinationCoord;
+                            // lol. destinationCoord is world coord, but room is not correct.
+                            // It is constructed from source room. Why would you do that?
+                            string eRoomName = null;
+                            try {
+                                var eRoom = world.GetAbstractRoom(room.connections[shortcut.destNode]);
+                                eRoomName = eRoom.name;
+                            }
+                            catch(Exception ee) {
+                                log.WriteLine("While extracting connection: " + ee);
+                            }
 
                             sw2.WriteLine("{");
                             sw2.WriteLine("type: \"" + shortcut.shortCutType.value + "\",");
-                            sw2.WriteLine("startPos: [" + s.x + ", " + s.y + "],");
                             sw2.WriteLine("startRoom: \"" + s.ResolveRoomName() + "\",");
+                            sw2.WriteLine("startPos: [" + s.x + ", " + s.y + "],");
+                            sw2.WriteLine("endRoom: " + (eRoomName != null ? "\"" + eRoomName + "\"" : "null") + ",");
                             sw2.WriteLine("endPos: [" + e.x + ", " + e.y + "],");
-                            sw2.WriteLine("endRoom: \"" + e.ResolveRoomName() + "\",");
                             sw2.WriteLine("},");
                         }
                         sw2.WriteLine("],");

@@ -12,17 +12,17 @@ karmaFlowers: [
 shortcuts: [
 {
 type: "DeadEnd",
-startPos: [6, 24],
 startRoom: "WAUA_PEARL",
+startPos: [6, 24],
+endRoom: null,
 endPos: [1, 24],
-endRoom: "WAUA_PEARL",
 },
 {
 type: "RoomExit",
-startPos: [6, 22],
 startRoom: "WAUA_PEARL",
+startPos: [6, 22],
+endRoom: "WAUA_A07B",
 endPos: [0, 22],
-endRoom: "WAUA_PEARL",
 },
 ],
 }
