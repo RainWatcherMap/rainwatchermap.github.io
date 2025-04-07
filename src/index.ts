@@ -149,7 +149,13 @@ const context = {
 
 setup(context)
 
-function setSelected(el?: HTMLElement) {
+function setSelected(region: string) {
+    const el = regionEls.get(region)
+    if(!el) return
+    (el as HTMLInputElement).checked = true
+    showSelected(el.parentNode as any)
+}
+function showSelected(el?: HTMLElement) {
     for(const other of document.querySelectorAll('.region-selected')) {
         other.classList.remove('region-selected')
     }
@@ -171,7 +177,7 @@ for(const el0 of inputEls) {
 
     el.onchange = () => {
         if(!el.checked) return
-        setSelected(parent)
+        showSelected(parent)
         showRegion(el.value, reg)
     }
     regionEls.set(el.value, el)
@@ -179,8 +185,6 @@ for(const el0 of inputEls) {
 
 // null if show all
 function fillRegions(filter: string | null) {
-    regionEls = new Map()
-
     const regs: Array<{ key: RegionKey, region: Region }> = []
     for(const regK in regions) {
         if(filter && !regK.includes(filter)) continue
@@ -422,7 +426,6 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
     }
 
     context.onClick = (cx, cy) => {
-        console.log(cx, cy)
         const closest: [distance: number, object: (Marker & { element: HTMLElement }) | null][] = Array(20)
         for(let i = 0; i < closest.length; i++) {
             closest[i] = [1/0, null]
@@ -483,7 +486,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                         }
                     }
                     showRegion(regionName, allRegions[regionName], pos ?? undefined)
-                    setSelected(regionEls.get(regionName))
+                    setSelected(regionName.toUpperCase())
                 }
                 return el
             }
