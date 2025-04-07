@@ -9,6 +9,7 @@ type WarpPoint = {
     destRoom: string | null
     destPos: Pos | null // within room
     oneWay: boolean
+    ripple: boolean
 }
 type EchoData = {
     pos: Pos
@@ -457,6 +458,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
                 elementEl.append(wrap('Destination room: ' + it.destRoom))
                 //elementEl.append(wrap('Destination position: ' + it.pos))
                 elementEl.append(wrap('One way?: ' + it.oneWay))
+                elementEl.append(wrap('Ripple (likely goes to Daemon): ' + it.ripple))
                 const b = gotoButton(it.destRegion, it.destRoom)
                 if(b) elementEl.append(b)
             }
