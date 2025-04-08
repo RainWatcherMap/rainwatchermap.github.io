@@ -515,7 +515,7 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             else if(c[1].type === 'echo') {
                 const it = c[1].data
                 elementEl.append(wrap('Echo'))
-                elementEl.append(wrap('Destination destRegion: ' + (it.destRegion ? regionNames.get(it.destRegion) : it.destRegion)))
+                elementEl.append(wrap('Destination region: ' + (it.destRegion ? regionNames.get(it.destRegion) : it.destRegion)))
                 elementEl.append(wrap('Destination room: ' + it.destRoom))
                 //elementEl.append(wrap('Destination position: ' + it.destPos))
                 const b = gotoButton(it.destRegion, it.destRoom, it.destPos)
