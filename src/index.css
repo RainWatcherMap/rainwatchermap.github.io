@@ -171,6 +171,7 @@ body {
     }
     & > label {
         cursor: pointer;
+        & > input { display: none; }
         background: #eaeaea;
         padding: 0.5rem 0.2rem;
         border-radius: 0.5rem;

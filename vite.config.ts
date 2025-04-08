@@ -77,7 +77,7 @@ pages.index = {
         )
         .replace(
             '$$$DESC$$$',
-            'Interactive map of Rain World: The Watcher DLC. Warps, echoes, and karma flowers.'
+            'Interactive map of Rain World: The Watcher DLC. Regions, warps, echoes, and karma flowers.'
         )
         .replace(
             '$$$KEYWORDS$$$',
@@ -102,29 +102,51 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
         },
         worker: { format: 'es' },
         plugins: [
-            virtualHtml({
-                pages,
-                indexPage: 'index',
-            })
+            virtualHtml({ pages })
         ],
     }
 })
 
-function virtualHtml({ pages, indexPage }: { pages: Record<string, PageObject>, indexPage: string }): Plugin {
-    function getPage(url: string) {
-        if(url === '/') return pages[indexPage]
-        else if(url === indexPage) return undefined
-        else return pages[url.substring(1)]
+type InputOption = string | string[] | Record<string, string>
+
+function virtualHtml({ pages }: { pages: Record<string, PageObject> }): Plugin {
+    function mki(input?: InputOption): InputOption {
+        if(typeof input === 'string') {
+            return [input, ...Object.keys(pages).map(it => '/' + it + '.html')]
+        }
+        else if(Array.isArray(input)) {
+            return [...input, ...Object.keys(pages).map(it => '/' + it + '.html')]
+        }
+        else {
+            const res = { ...input }
+            for(const k in pages) res[k] = k + '.html'
+            return res
+        }
     }
 
+    const name = 'my-vite-plugin-virtual-html'
+    let curRoot: string = undefined as any
+
     return {
-        name: 'my-vite-plugin-virtual-html',
-        config: (config, { command }) => {
+        name,
+        config: config => {
+            curRoot = config.root as any
+            return {
+                ...config,
+                build: {
+                    ...config.build,
+                    rollupOptions: {
+                        ...config.build?.rollupOptions,
+                        input: mki(config.build?.rollupOptions?.input),
+                    }
+                }
+            }
         },
         configureServer: server => {
             server.middlewares.use(async(req, res, next) => {
                 if(req.url == null || req.originalUrl == null) return next()
-                const page = getPage(req.originalUrl)
+                const id = req.originalUrl.substring(1)
+                const page = id === '' ? pages.index : pages[id]
                 if(!page) return next()
 
                 res.end(Buffer.from(
@@ -136,10 +158,24 @@ function virtualHtml({ pages, indexPage }: { pages: Record<string, PageObject>, 
                 ))
             })
         },
-        load: (id) => {
+        resolveId: (id) => {
+            if(id.endsWith('.html')) {
+                if(pages[id.substring(0, id.length - '.html'.length)]) {
+                    return curRoot + '/' + id
+                }
+            }
         },
-        transform: (code, id) => {
-
+        load: (id) => {
+            const prefix = curRoot + '/'
+            if(id.startsWith(prefix) && id.endsWith('.html')) {
+                const p = pages[id.substring(prefix.length, id.length - '.html'.length)]
+                if(p) {
+                    return {
+                        code: p.render(),
+                        name: id,
+                    }
+                }
+            }
         },
     }
 }

@@ -165,7 +165,6 @@ function showSelected(el: HTMLElement | undefined, region: string) {
 let regionEls: Map<string, HTMLElement> = new Map()
 
 const regionElsArr = [...document.querySelectorAll('#regions > .region')]
-console.log(regionElsArr.length)
 for(const el0 of regionElsArr) {
     const el = el0 as HTMLElement
     const regK = el.getAttribute('data-region') as string
@@ -561,12 +560,15 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
     showRegion(defaultReg, regions[defaultReg], pos, 1)
 
     const showRegionsEl = (window as any).show_regions as HTMLInputElement
-    function showRegions() {
-        (window as any).regions.classList.remove('regions-hidden')
-        (document.querySelector('.unhide') as HTMLElement).style.display = 'none'
-    }
-    if(showRegionsEl.checked) showRegions()
-    showRegionsEl.onchange = () => {
+    if(showRegionsEl) {
+        function showRegions() {
+            (window as any).regions.classList.remove('regions-hidden')
+            const unhide = (document.querySelector('.unhide') as HTMLElement)
+            if(unhide) unhide.style.display = 'none'
+        }
         if(showRegionsEl.checked) showRegions()
+        showRegionsEl.onchange = () => {
+            if(showRegionsEl.checked) showRegions()
+        }
     }
 }
