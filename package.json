@@ -5,7 +5,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"cbg": "node compress_backgrounds.js",
-		"hi": "node gen_files.mjs"
+		"hi": "node gen_files.mjs",
+        "sitemap": "node scripts/gen_sitemap.mjs"
 	},
 	"dependencies": {
 		"json5": "^2.2.3",
