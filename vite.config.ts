@@ -73,7 +73,7 @@ pages.index = {
         const html = template
         .replace(
             '$$$TITLE$$$',
-            'Rain World: The Watcher DLC'
+            'Map of Rain World: The Watcher DLC'
         )
         .replace(
             '$$$DESC$$$',
