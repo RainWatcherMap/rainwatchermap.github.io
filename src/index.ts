@@ -152,10 +152,10 @@ setup(context)
 function setSelected(region: string) {
     const el = regionEls.get(region)
     if(!el) return
-    (el as HTMLInputElement).checked = true
-    showSelected(el.parentNode as any)
+    showSelected(el.parentNode as any, region)
 }
-function showSelected(el?: HTMLElement) {
+function showSelected(el: HTMLElement | undefined, region: string) {
+    history.pushState({}, '', '/' + region.toLowerCase())
     for(const other of document.querySelectorAll('.region-selected')) {
         other.classList.remove('region-selected')
     }
@@ -164,23 +164,24 @@ function showSelected(el?: HTMLElement) {
 
 let regionEls: Map<string, HTMLElement> = new Map()
 
-const inputEls = [...document.querySelectorAll('#regions > label > input[name="region"]')]
-for(const el0 of inputEls) {
-    const el = el0 as HTMLInputElement
-    const parent = el.parentNode as HTMLElement
+const regionElsArr = [...document.querySelectorAll('#regions > .region')]
+console.log(regionElsArr.length)
+for(const el0 of regionElsArr) {
+    const el = el0 as HTMLElement
+    const regK = el.getAttribute('data-region') as string
 
-    const reg = regions[el.value]
+    const reg = regions[regK]
     if(!reg) {
-        parent.style.display = 'none'
+        el.style.display = 'none'
         continue
     }
 
-    el.onchange = () => {
-        if(!el.checked) return
-        showSelected(parent)
-        showRegion(el.value, reg)
+    el.onclick = (ev) => {
+        ev.preventDefault()
+        showSelected(el, regK)
+        showRegion(regK, reg)
     }
-    regionEls.set(el.value, el)
+    regionEls.set(regK, el)
 }
 
 // null if show all
@@ -191,14 +192,15 @@ function fillRegions(filter: string | null) {
         regs.push({ key: regK as any, region: regions[regK] })
     }
 
-    for(const el0 of inputEls) {
-        const el = el0 as HTMLInputElement
-        const reg = regions[el.value]
-        if((filter && !el.value.includes(filter)) || !reg) {
-            (el.parentNode as HTMLElement).style.display = 'none'
+    for(const el0 of regionElsArr) {
+        const el = el0 as HTMLElement
+        const regK = el.getAttribute('data-region') as string
+        const reg = regions[regK]
+        if((filter && !regK.includes(filter)) || !reg) {
+            el.style.display = 'none'
         }
         else {
-            (el.parentNode as HTMLElement).style.display = ''
+            el.style.display = ''
         }
     }
 }
@@ -527,6 +529,44 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
     }
 }
 
-fillRegions(null)
 
-showRegion('HI', regions['HI'], [-0, 150], 1)
+{
+    const defaultReg = (window as any).defaultRegion as string
+
+    let pos: Pos
+    if(new URL(window.location.toString()).pathname === '/') {
+        pos = [-0, 150]
+    }
+    else {
+        const reg = regions[defaultReg]
+
+        let totalX = 0
+        let totalY = 0
+        let count = 0
+        for(const roomK in reg.rooms) {
+            const room = reg.rooms[roomK]
+            if(!room.data.mapPos) continue
+            totalX += room.data.mapPos[0] / 3 - room.data.size[0] * 0.5
+            totalY += room.data.mapPos[1] / 3 - room.data.size[1] * 0.5
+            count++
+        }
+
+        const avgX = totalX / count + halfWidth
+        const avgY = totalY / count + halfHeight
+
+        pos = [avgX, avgY]
+    }
+
+    fillRegions(null)
+    showRegion(defaultReg, regions[defaultReg], pos, 1)
+
+    const showRegionsEl = (window as any).show_regions as HTMLInputElement
+    function showRegions() {
+        (window as any).regions.classList.remove('regions-hidden')
+        (document.querySelector('.unhide') as HTMLElement).style.display = 'none'
+    }
+    if(showRegionsEl.checked) showRegions()
+    showRegionsEl.onchange = () => {
+        if(showRegionsEl.checked) showRegions()
+    }
+}

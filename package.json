@@ -4,7 +4,7 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-        "cbg": "node compress_backgrounds.js",
+		"cbg": "node compress_backgrounds.js",
 		"hi": "node gen_files.mjs"
 	},
 	"dependencies": {
@@ -12,6 +12,7 @@
 		"vite": "^6.2.5"
 	},
 	"devDependencies": {
+		"@types/node": "^22.14.0",
 		"sharp": "^0.33.5"
 	}
 }
