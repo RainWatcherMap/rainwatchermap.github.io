@@ -162,6 +162,15 @@ function showSelected(el: HTMLElement | undefined, region: string) {
     if(el) el.classList.add('region-selected')
 }
 
+window.addEventListener('popstate', () => {
+    const url = new URL(window.location.toString())
+    const regionName = url.pathname.substring(1).toUpperCase()
+    const region = regions[regionName]
+    if(region) {
+        showRegion(regionName, regions[regionName], undefined)
+    }
+})
+
 let regionEls: Map<string, HTMLElement> = new Map()
 
 const regionElsArr = [...document.querySelectorAll('#regions > .region')]
@@ -402,8 +411,8 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
     setLayer(curLayer)
 
     if(!pos) pos = [(minX + maxX) * 0.5, (minY + maxY) * 0.5]
-    context.camera.posX = pos[0]
-    context.camera.posY = pos[1]
+    context.camera.posX = pos[0] + halfWidth
+    context.camera.posY = pos[1] + halfHeight
     context.requestRender()
 
     {
@@ -532,28 +541,9 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
 {
     const defaultReg = (window as any).defaultRegion as string
 
-    let pos: Pos
+    let pos: Pos | undefined = undefined
     if(new URL(window.location.toString()).pathname === '/') {
         pos = [-0, 150]
-    }
-    else {
-        const reg = regions[defaultReg]
-
-        let totalX = 0
-        let totalY = 0
-        let count = 0
-        for(const roomK in reg.rooms) {
-            const room = reg.rooms[roomK]
-            if(!room.data.mapPos) continue
-            totalX += room.data.mapPos[0] / 3 - room.data.size[0] * 0.5
-            totalY += room.data.mapPos[1] / 3 - room.data.size[1] * 0.5
-            count++
-        }
-
-        const avgX = totalX / count + halfWidth
-        const avgY = totalY / count + halfHeight
-
-        pos = [avgX, avgY]
     }
 
     fillRegions(null)
