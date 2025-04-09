@@ -26,22 +26,30 @@
                     </div>
                 </div>
             </div>
-            <div id="menu">
-                <div class='element'>
-                    <span class='title'>Seleted:</span>
-                    <div id="element">
-                    </div>
+            <form class='tabs'>
+                <label>
+                    <input id='tab-map' type='radio' name='tab' value='map' checked>
+                    <span>Map</span>
+                </label>
+                <label>
+                    <input id='tab-regions' type='radio' name='tab' value='regions'>
+                    <span>Regions</span>
+                </label>
+            </form>
+            <div class='element'>
+                <span class='title'>Seleted:</span>
+                <div id="element">
                 </div>
+            </div>
 
-                <div class='layers'>
-                    <span class='title'>Layers:</span>
-                    <div id="layers">
-                    </div>
+            <div class='layers'>
+                <span class='title'>Layers:</span>
+                <div id="layers">
                 </div>
-                <div class="regions">
-                    <span class='title'>Regions:</span>
-                    $$$REGIONS$$$
-                </div>
+            </div>
+            <div class="regions">
+                <span class='title'>Regions:</span>
+                $$$REGIONS$$$
             </div>
         </div>
     </body>
