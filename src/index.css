@@ -161,23 +161,6 @@ body {
     border: 2px solid red;
 }
 
-@media screen and (orientation: portrait) {
-    #root {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 30%;
-    }
-    #menu {
-        border-top: 1px solid gray;
-        overflow-y: scroll;
-    }
-    .regions {
-        overflow: unset;
-    }
-    #regions {
-        overflow-y: unset;
-    }
-}
-
 .regions-hidden {
     display: none !important;
 }
@@ -210,4 +193,24 @@ body {
         stroke-width: 0.5;
         stroke-dasharray: 1 1;
     }
- }
+}
+
+@media screen and (orientation: portrait) {
+    #root {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 30%;
+    }
+    #menu {
+        border-top: 1px solid gray;
+        overflow-y: scroll;
+    }
+    .regions {
+        overflow: unset;
+    }
+    #regions {
+        overflow-y: unset;
+    }
+    .unhide {
+        overflow-y: unset;
+    }
+}
