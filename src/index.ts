@@ -541,13 +541,15 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
 {
     const defaultReg = (window as any).defaultRegion as string
 
-    let pos: Pos | undefined = undefined
+    let pos: Pos | undefined
+    let layer: number | undefined
     if(new URL(window.location.toString()).pathname === '/') {
         pos = [-0, 150]
+        layer = 1
     }
 
     fillRegions(null)
-    showRegion(defaultReg, regions[defaultReg], pos, 1)
+    showRegion(defaultReg, regions[defaultReg], pos, layer)
 
     const showRegionsEl = (window as any).show_regions as HTMLInputElement
     if(showRegionsEl) {
