@@ -7,12 +7,10 @@ const cur = import.meta.dirname
 
 const hierarchyP = fsp.readFile(join(cur, 'src', 'hierarchy.json'))
 const ignoreP = fsp.readFile(join(cur, 'src', 'ignore.json'))
-const templateP = fsp.readFile(join(cur, 'src', 'index.html'))
-const [hierarchyB, ignoreB, templateB] = await Promise.all([hierarchyP, ignoreP, templateP])
+const [hierarchyB, ignoreB] = await Promise.all([hierarchyP, ignoreP])
 
 const hierarchy = JSON.parse(hierarchyB.toString('utf8'))
 const ignore = JSON.parse(ignoreB.toString('utf8'))
-const template = templateB.toString('utf8')
 
 const regions: string[] = []
 for(const regK in hierarchy) {
@@ -37,15 +35,20 @@ function genRegions(curName: string, addHidden: boolean) {
 }
 
 type PageObject = {
-    render: () => string
+    render: () => Promise<string>
+}
+
+async function readTemplate() {
+    const templateB = await fsp.readFile(join(cur, 'src', 'index.html'))
+    return templateB.toString('utf8')
 }
 
 const pages: Record<string, PageObject> = {}
 for(const regK of regions) {
     pages[regK.toLowerCase()] = {
-        render: () => {
+        render: async() => {
             const regName = hierarchy[regK].data.name
-            const html = template
+            const html = (await readTemplate())
             .replace(
                 '$$$TITLE$$$',
                 regName + ' Map — Rain World: The Watcher DLC'
@@ -69,8 +72,8 @@ for(const regK of regions) {
 }
 
 pages.index = {
-    render: () => {
-        const html = template
+    render: async() => {
+        const html = (await readTemplate())
         .replace(
             '$$$TITLE$$$',
             'Map of Rain World: The Watcher DLC'
@@ -152,7 +155,7 @@ function virtualHtml({ pages }: { pages: Record<string, PageObject> }): Plugin {
                 res.end(Buffer.from(
                     await server.transformIndexHtml(
                         req.url,
-                        page.render()
+                        await page.render()
                     ),
                     'utf8',
                 ))
@@ -165,13 +168,13 @@ function virtualHtml({ pages }: { pages: Record<string, PageObject> }): Plugin {
                 }
             }
         },
-        load: (id) => {
+        load: async(id) => {
             const prefix = curRoot + '/'
             if(id.startsWith(prefix) && id.endsWith('.html')) {
                 const p = pages[id.substring(prefix.length, id.length - '.html'.length)]
                 if(p) {
                     return {
-                        code: p.render(),
+                        code: await p.render(),
                         name: id,
                     }
                 }
