@@ -115,6 +115,7 @@ body {
 }
 
 .marker-karma {
+    font-size: 2px;
     transform: translate(-50%, -50%);
     position: absolute;
     width: 7px;
@@ -176,5 +177,13 @@ body {
         padding: 0.5rem 0.2rem;
         border-radius: 0.5rem;
         text-align: center;
+    }
+}
+
+.connection {
+    position: absolute;
+    & > line {
+        stroke: red;
+        stroke-width: 1;
     }
 }

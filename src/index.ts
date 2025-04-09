@@ -35,8 +35,8 @@ type Room = {
                 | 'RegionTransportation' | 'DeadEnd'
             startPos: Pos
             startRoom: string
-            endPos: Pos
-            endRoom: string
+            endPos: Pos | null
+            endRoom: string | null
         }[]
     } | { mapPos?: never }
 }
@@ -248,6 +248,7 @@ const halfWidth = 69 * 0.5
 const halfHeight = 39 * 0.5
 
 function showRegion(regionName: RegionKey, region: Region, pos?: [number, number], layerI?: number) {
+    let iii = 0
     inner.innerHTML = ''
     var minX = Infinity
     var maxX = -Infinity
@@ -374,6 +375,89 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             m.style.top = -y + 'px'
             v.append(m)
             markers.push({ type: 'karma-flower', position: [x, y], data: it, element: m })
+        }
+
+        for(let i = 0; i < room.data.shortcuts.length; i++) {
+            const it = room.data.shortcuts[i]
+            console.log(it)
+            if(it.endRoom == null || it.endPos == null) continue
+            if(it.type !== 'RoomExit') continue
+
+            const eroom = region.rooms[it.endRoom]
+            if(!eroom || !eroom.data.mapPos) {
+                console.warn(it.endRoom)
+                continue
+            }
+            const ebx = eroom.data.mapPos[0] / 3 - eroom.data.size[0] * 0.5
+            const eby = eroom.data.mapPos[1] / 3 - eroom.data.size[1] * 0.5
+
+
+            const sx = bx + it.startPos[0]
+            const sy = -(by + it.startPos[1])
+
+            const ex = bx + it.endPos[0]
+            const ey = -(by + it.endPos[1])
+
+            const minX = Math.min(sx, ex)
+            const maxX = Math.max(sx, ex)
+
+            const minY = Math.min(sy, ey)
+            const maxY = Math.max(sy, ey)
+
+            {
+                const width = maxX - minX
+                const height = maxY - minY
+
+                const v = lget(markerLayerEls, layer)
+                /*const m = document.createElement('div')
+                m.classList.add('marker-karma')
+                m.style.left = x + 'px'
+                m.style.top = -y + 'px'*/
+                const m = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+                m.classList.add('connection')
+                m.style.left = minX + 'px'
+                m.style.top = minY + 'px'
+                m.style.width = width + 'px'
+                m.style.height = height + 'py'
+                m.setAttribute('viewBox', '0 0 ' + width + ' ' + height)
+
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line')
+                line.setAttribute('x1', (sx - minX).toString())
+                line.setAttribute('x2', (ex - minX).toString())
+                line.setAttribute('y1', '' + (sy - minY))
+                line.setAttribute('y2', '' + (ey - minY))
+                m.append(line)
+
+                v.append(m)
+            }
+
+            {
+                const x = bx + it.startPos[0]
+                const y = by + it.startPos[1]
+
+                const v = lget(markerLayerEls, layer)
+                const m = document.createElement('div')
+                m.classList.add('marker-karma')
+                m.style.left = x + 'px'
+                m.style.top = -y + 'px'
+                m.append(document.createTextNode(++iii))
+                v.append(m)
+                markers.push({ type: 'karma-flower', position: [x, y], data: it, element: m })
+            }
+
+            {
+                const x = bx + it.endPos[0]
+                const y = by + it.endPos[1]
+
+                const v = lget(markerLayerEls, layer)
+                const m = document.createElement('div')
+                m.classList.add('marker-karma')
+                m.style.left = x + 'px'
+                m.style.top = -y + 'px'
+                m.append(document.createTextNode(iii))
+                v.append(m)
+                markers.push({ type: 'karma-flower', position: [x, y], data: it, element: m })
+            }
         }
     }
 
@@ -542,12 +626,14 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
     const defaultReg = (window as any).defaultRegion as string
 
     let pos: Pos | undefined = undefined
+    let layer: number | undefined = undefined
     if(new URL(window.location.toString()).pathname === '/') {
         pos = [-0, 150]
+        layer = 1
     }
 
     fillRegions(null)
-    showRegion(defaultReg, regions[defaultReg], pos, 1)
+    showRegion(defaultReg, regions[defaultReg], pos, layer)
 
     const showRegionsEl = (window as any).show_regions as HTMLInputElement
     if(showRegionsEl) {
