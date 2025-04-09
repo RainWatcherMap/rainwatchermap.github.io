@@ -537,8 +537,12 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
         layerEl.innerHTML = ''
 
         const form = document.createElement('form')
+
+        const layers = document.createElement('div')
+        layers.classList.add('layer-inputs')
         for(const l of layersArr) {
             const cont = document.createElement('label')
+            cont.classList.add('layer')
             const input = document.createElement('input')
             input.setAttribute('type', 'radio')
             if(l == curLayer) input.setAttribute('checked', '')
@@ -546,8 +550,9 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             input.setAttribute('value', '' + l)
             input.onchange = () => setLayer(l)
             cont.append(input, document.createTextNode('' + (l === undefined ? '<none>' : l)))
-            form.append(cont)
+            layers.append(cont)
         }
+        form.append(layers)
 
         {
             const cont = document.createElement('label')

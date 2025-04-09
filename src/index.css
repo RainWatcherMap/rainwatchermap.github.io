@@ -74,9 +74,32 @@ body {
     min-height: 5rem;
     display: flex;
     flex-direction: column;
-    & > form {
+    & > * {
         display: flex;
         flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.layer-inputs {
+    display: flex;
+    & > .layer {
+        flex-grow: 1;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        background: #80808010;
+        & > input { display: none; }
+        &:has(> input:checked) {
+            background: #80808020;
+        }
+    }
+    & > .layer:first-child {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+    & > .layer:last-child {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
     }
 }
 
