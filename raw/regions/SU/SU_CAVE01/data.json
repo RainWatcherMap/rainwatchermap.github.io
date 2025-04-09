@@ -9,41 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "SU_CAVE01",
-startPos: [5, 31],
-endRoom: "SU_PS1",
-endPos: [1, 34],
-},
-{
-type: "RoomExit",
-startRoom: "SU_CAVE01",
-startPos: [5, 20],
-endRoom: "SU_CAVE02",
-endPos: [2, 6],
-},
-{
-type: "CreatureHole",
-startRoom: "SU_CAVE01",
-startPos: [39, 13],
-endRoom: null,
-endPos: [40, 13],
-},
-{
-type: "CreatureHole",
-startRoom: "SU_CAVE01",
-startPos: [39, 11],
-endRoom: null,
-endPos: [40, 11],
-},
-{
-type: "RoomExit",
-startRoom: "SU_CAVE01",
-startPos: [40, 7],
-endRoom: "SU_C04",
-endPos: [47, 7],
-},
-],
 }

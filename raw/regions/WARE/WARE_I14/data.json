@@ -17,20 +17,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "DeadEnd",
-startRoom: "WARE_I14",
-startPos: [6, 19],
-endRoom: null,
-endPos: [2, 19],
-},
-{
-type: "RoomExit",
-startRoom: "WARE_I14",
-startPos: [6, 17],
-endRoom: "WARE_I15",
-endPos: [0, 17],
-},
-],
 }

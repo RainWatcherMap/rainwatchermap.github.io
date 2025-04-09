@@ -17,48 +17,4 @@ spawnId: 666,
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "NPCTransportation",
-startRoom: "WHIR_A22",
-startPos: [36, 17],
-endRoom: null,
-endPos: [36, 16],
-},
-{
-type: "Normal",
-startRoom: "WHIR_A22",
-startPos: [38, 17],
-endRoom: null,
-endPos: [31, 12],
-},
-{
-type: "RoomExit",
-startRoom: "WHIR_A22",
-startPos: [17, 13],
-endRoom: "WHIR_C14",
-endPos: [17, 0],
-},
-{
-type: "Normal",
-startRoom: "WHIR_A22",
-startPos: [31, 12],
-endRoom: null,
-endPos: [38, 17],
-},
-{
-type: "RoomExit",
-startRoom: "WHIR_A22",
-startPos: [31, 10],
-endRoom: "WHIR_B02",
-endPos: [39, 10],
-},
-{
-type: "NPCTransportation",
-startRoom: "WHIR_A22",
-startPos: [12, 7],
-endRoom: null,
-endPos: [12, 6],
-},
-],
 }

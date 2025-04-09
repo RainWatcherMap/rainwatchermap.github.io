@@ -9,41 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WARF_A05",
-startPos: [44, 30],
-endRoom: "WARF_A04",
-endPos: [44, 33],
-},
-{
-type: "DeadEnd",
-startRoom: "WARF_A05",
-startPos: [1, 13],
-endRoom: null,
-endPos: [0, 13],
-},
-{
-type: "RoomExit",
-startRoom: "WARF_A05",
-startPos: [1, 11],
-endRoom: "WARF_A08",
-endPos: [0, 5],
-},
-{
-type: "DeadEnd",
-startRoom: "WARF_A05",
-startPos: [3, 5],
-endRoom: null,
-endPos: [2, 5],
-},
-{
-type: "CreatureHole",
-startRoom: "WARF_A05",
-startPos: [3, 3],
-endRoom: null,
-endPos: [1, 3],
-},
-],
 }

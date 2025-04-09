@@ -9,48 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "NPCTransportation",
-startRoom: "WRFB_A10",
-startPos: [2, 29],
-endRoom: null,
-endPos: [0, 29],
-},
-{
-type: "NPCTransportation",
-startRoom: "WRFB_A10",
-startPos: [45, 29],
-endRoom: null,
-endPos: [47, 29],
-},
-{
-type: "RoomExit",
-startRoom: "WRFB_A10",
-startPos: [2, 26],
-endRoom: "WRFB_D03",
-endPos: [0, 12],
-},
-{
-type: "RoomExit",
-startRoom: "WRFB_A10",
-startPos: [45, 26],
-endRoom: "WRFB_B01",
-endPos: [47, 26],
-},
-{
-type: "CreatureHole",
-startRoom: "WRFB_A10",
-startPos: [40, 7],
-endRoom: null,
-endPos: [41, 7],
-},
-{
-type: "CreatureHole",
-startRoom: "WRFB_A10",
-startPos: [40, 5],
-endRoom: null,
-endPos: [41, 5],
-},
-],
 }

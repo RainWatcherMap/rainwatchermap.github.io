@@ -17,34 +17,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "CreatureHole",
-startRoom: "WTDB_A03",
-startPos: [16, 9],
-endRoom: null,
-endPos: [15, 9],
-},
-{
-type: "NPCTransportation",
-startRoom: "WTDB_A03",
-startPos: [42, 8],
-endRoom: null,
-endPos: [43, 8],
-},
-{
-type: "NPCTransportation",
-startRoom: "WTDB_A03",
-startPos: [17, 4],
-endRoom: null,
-endPos: [16, 4],
-},
-{
-type: "RoomExit",
-startRoom: "WTDB_A03",
-startPos: [40, 4],
-endRoom: "WTDB_A02",
-endPos: [46, 0],
-},
-],
 }

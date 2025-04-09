@@ -1,3 +1,21 @@
 {
 name: "Daemon",
+shortcuts: [
+{
+roomA: "WRSA_L01",
+roomB: "WRSA_D01",
+posA: [21, 60],
+posB: [92, 24],
+dirA: 3,
+dirB: 3,
+},
+{
+roomA: "WRSA_L01",
+roomB: "WRSA_C01",
+posA: [143, 61],
+posB: [12, 21],
+dirA: 3,
+dirB: 3,
+},
+],
 }

@@ -9,41 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "DeadEnd",
-startRoom: "WSKA_D20",
-startPos: [5, 16],
-endRoom: null,
-endPos: [4, 16],
-},
-{
-type: "RoomExit",
-startRoom: "WSKA_D20",
-startPos: [5, 14],
-endRoom: "WSKA_D21",
-endPos: [0, 14],
-},
-{
-type: "RoomExit",
-startRoom: "WSKA_D20",
-startPos: [143, 3],
-endRoom: "WSKA_D19",
-endPos: [149, 1],
-},
-{
-type: "CreatureHole",
-startRoom: "WSKA_D20",
-startPos: [90, 2],
-endRoom: null,
-endPos: [90, 1],
-},
-{
-type: "CreatureHole",
-startRoom: "WSKA_D20",
-startPos: [55, 1],
-endRoom: null,
-endPos: [55, 0],
-},
-],
 }

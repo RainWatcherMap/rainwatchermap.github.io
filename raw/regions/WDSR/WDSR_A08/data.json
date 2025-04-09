@@ -9,48 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WDSR_A08",
-startPos: [41, 34],
-endRoom: "WDSR_B07",
-endPos: [52, 34],
-},
-{
-type: "NPCTransportation",
-startRoom: "WDSR_A08",
-startPos: [8, 29],
-endRoom: null,
-endPos: [7, 29],
-},
-{
-type: "RoomExit",
-startRoom: "WDSR_A08",
-startPos: [5, 16],
-endRoom: "WDSR_B04",
-endPos: [1, 16],
-},
-{
-type: "RoomExit",
-startRoom: "WDSR_A08",
-startPos: [45, 6],
-endRoom: "WDSR_S04",
-endPos: [45, 0],
-},
-{
-type: "NPCTransportation",
-startRoom: "WDSR_A08",
-startPos: [17, 2],
-endRoom: null,
-endPos: [17, 1],
-},
-{
-type: "NPCTransportation",
-startRoom: "WDSR_A08",
-startPos: [36, 2],
-endRoom: null,
-endPos: [36, 1],
-},
-],
 }

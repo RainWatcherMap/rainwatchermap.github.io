@@ -9,27 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "DeadEnd",
-startRoom: "WARC_B04",
-startPos: [33, 18],
-endRoom: null,
-endPos: [34, 18],
-},
-{
-type: "RoomExit",
-startRoom: "WARC_B04",
-startPos: [13, 17],
-endRoom: "WARC_B03",
-endPos: [5, 17],
-},
-{
-type: "RegionTransportation",
-startRoom: "WARC_B04",
-startPos: [33, 15],
-endRoom: null,
-endPos: [36, 15],
-},
-],
 }

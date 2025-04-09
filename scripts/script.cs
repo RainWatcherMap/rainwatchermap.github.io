@@ -115,6 +115,16 @@ class StartPlease : MonoBehaviour {
         unrand();
         foreach (Region r in Region.LoadAllRegions(SlugcatStats.Name.Night)) {
             if(list.Contains(r.name)) continue;
+            if(r.name != "HI") continue;
+
+			assert(rainWorld != null, "rainWorld is null");
+            var ow = rainWorld.overWorld;
+            assert(rainWorld.overWorld != null, "overWorld is null");
+			ow.LoadWorld(r.name, SlugcatStats.Name.Night, SlugcatStats.Timeline.Watcher, false);
+
+			World world = ow.activeWorld;
+            assert(world != null, "world is null");
+
             {
                 var name = Region.GetRegionFullName(r.name, SlugcatStats.Name.Night);
 
@@ -122,18 +132,26 @@ class StartPlease : MonoBehaviour {
                 System.IO.Directory.CreateDirectory(dirname);
                 using(var sw2 = new StreamWriter(dirname + "data.json", false)) {
                     sw2.WriteLine("{");
+
                     sw2.WriteLine("name: \"" + name + "\",");
+
+                    sw2.WriteLine("shortcuts: [");
+                    foreach(var c in LoadConnectionPositions(world, rainWorld, r.name)) {
+                        sw2.WriteLine("{");
+                        sw2.WriteLine("roomA: \"" + c.roomA + "\",");
+                        sw2.WriteLine("roomB: \"" + c.roomB + "\",");
+                        sw2.WriteLine("posA: [" + c.posA.x + ", " + c.posA.y + "],");
+                        sw2.WriteLine("posB: [" + c.posB.x + ", " + c.posB.y + "],");
+                        sw2.WriteLine("dirA: " + c.dirA + ",");
+                        sw2.WriteLine("dirB: " + c.dirB + ",");
+                        sw2.WriteLine("},");
+                    }
+                    sw2.WriteLine("],");
+
+
                     sw2.WriteLine("}");
                 }
             }
-
-            assert(rainWorld != null, "rainWorld is null");
-            var ow = rainWorld.overWorld;
-            assert(rainWorld.overWorld != null, "overWorld is null");
-			ow.LoadWorld(r.name, SlugcatStats.Name.Night, SlugcatStats.Timeline.Watcher, false);
-
-			World world = ow.activeWorld;
-            assert(world != null, "world is null");
 
             var cam = rainWorld.rainWorld.MainCamera;
 			var renderSize = 256;
@@ -232,32 +250,6 @@ class StartPlease : MonoBehaviour {
                         }
                         sw2.WriteLine("],");
 
-                        sw2.WriteLine("shortcuts: [");
-                        foreach(var shortcut in room.realizedRoom.shortcuts) {
-                            var conn = shortcut.connection;
-                            var s = conn.startCoord;
-                            var e = conn.destinationCoord;
-                            // lol. destinationCoord is world coord, but room is not correct.
-                            // It is constructed from source room. Why would you do that?
-                            string eRoomName = null;
-                            try {
-                                var eRoom = world.GetAbstractRoom(room.connections[shortcut.destNode]);
-                                eRoomName = eRoom.name;
-                            }
-                            catch(Exception ee) {
-                                log.WriteLine("While extracting connection: " + ee);
-                            }
-
-                            sw2.WriteLine("{");
-                            sw2.WriteLine("type: \"" + shortcut.shortCutType.value + "\",");
-                            sw2.WriteLine("startRoom: \"" + s.ResolveRoomName() + "\",");
-                            sw2.WriteLine("startPos: [" + s.x + ", " + s.y + "],");
-                            sw2.WriteLine("endRoom: " + (eRoomName != null ? "\"" + eRoomName + "\"" : "null") + ",");
-                            sw2.WriteLine("endPos: [" + e.x + ", " + e.y + "],");
-                            sw2.WriteLine("},");
-                        }
-                        sw2.WriteLine("],");
-
                         sw2.WriteLine("}");
                     }
                     continue;
@@ -291,5 +283,82 @@ class StartPlease : MonoBehaviour {
                 }
             }
         }
+    }
+
+    struct Connection {
+        public string roomA;
+        public string roomB;
+        public Vector2 posA;
+        public Vector2 posB;
+        public int dirA;
+        public int dirB;
+    }
+
+    // From Map
+    private static List<Connection> LoadConnectionPositions(World world, RainWorldGame game, string regionName) {
+        var mapName = WorldLoader.MapNameManipulator(regionName, game);
+        var mapData = new HUD.Map.MapData(world, game.rainWorld);
+
+        var mapConnections = new List<Connection>();
+        string text = AssetManager.ResolveFilePath(
+            "World"
+            + Path.DirectorySeparatorChar.ToString()
+            + regionName
+            + Path.DirectorySeparatorChar.ToString()
+            + "map_"
+            + mapName
+            + "-"
+            + SlugcatStats.Name.Night
+            + ".txt"
+        );
+        if (!File.Exists(text)) {
+            text = AssetManager.ResolveFilePath(
+                "World"
+                + Path.DirectorySeparatorChar.ToString()
+                + regionName
+                + Path.DirectorySeparatorChar.ToString()
+                + "map_"
+                + mapName
+                + ".txt"
+            );
+            if (!File.Exists(text)) {
+                return null;
+            }
+        }
+
+        string[] array = File.ReadAllLines(text);
+        for (int i = 0; i < array.Length; i++) {
+            string[] array2 = System.Text.RegularExpressions.Regex.Split(Custom.ValidateSpacedDelimiter(array[i], ":"), ": ");
+            if (array2.Length == 2 && array2[0] == "Connection") {
+                string[] array3 = System.Text.RegularExpressions.Regex.Split(array2[1], ",");
+                if (array3.Length == 8) {
+                    int num = -1;
+                    int num2 = -1;
+                    if (!(array3[0] == "HR_LAYERS_OF_REALITY") && !(array3[1] == "HR_LAYERS_OF_REALITY")) {
+                        var roomA = array3[0];
+                        var roomB = array3[1];
+
+                        if (mapData.roomConnections.Contains(roomA + "," + roomB) || mapData.roomConnections.Contains(roomB + "," + roomA)) {
+                            mapConnections.Add(new Connection{
+                                roomA = roomA,
+                                roomB = roomB,
+                                posA = new Vector2(
+                                    int.Parse(array3[2]),
+                                    int.Parse(array3[3])
+                                ),
+                                posB = new Vector2(
+                                    int.Parse(array3[4]),
+                                    int.Parse(array3[5])
+                                ),
+                                dirA = int.Parse(array3[6]),
+                                dirB = int.Parse(array3[7])
+                            });
+                        }
+                    }
+                }
+            }
+        }
+
+        return mapConnections;
     }
 }

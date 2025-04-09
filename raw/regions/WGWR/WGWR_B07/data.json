@@ -9,41 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "NPCTransportation",
-startRoom: "WGWR_B07",
-startPos: [19, 57],
-endRoom: null,
-endPos: [19, 56],
-},
-{
-type: "RoomExit",
-startRoom: "WGWR_B07",
-startPos: [4, 47],
-endRoom: "WGWR_A04",
-endPos: [4, 43],
-},
-{
-type: "RoomExit",
-startRoom: "WGWR_B07",
-startPos: [35, 9],
-endRoom: "WGWR_B03",
-endPos: [43, 9],
-},
-{
-type: "CreatureHole",
-startRoom: "WGWR_B07",
-startPos: [27, 4],
-endRoom: null,
-endPos: [27, 3],
-},
-{
-type: "NPCTransportation",
-startRoom: "WGWR_B07",
-startPos: [29, 4],
-endRoom: null,
-endPos: [29, 3],
-},
-],
 }

@@ -17,41 +17,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WARB_F18",
-startPos: [30, 25],
-endRoom: null,
-endPos: [30, 32],
-},
-{
-type: "RoomExit",
-startRoom: "WARB_F18",
-startPos: [9, 21],
-endRoom: null,
-endPos: [4, 21],
-},
-{
-type: "RoomExit",
-startRoom: "WARB_F18",
-startPos: [17, 14],
-endRoom: "WARB_F17",
-endPos: [17, 10],
-},
-{
-type: "DeadEnd",
-startRoom: "WARB_F18",
-startPos: [22, 14],
-endRoom: null,
-endPos: [22, 13],
-},
-{
-type: "CreatureHole",
-startRoom: "WARB_F18",
-startPos: [39, 12],
-endRoom: null,
-endPos: [43, 12],
-},
-],
 }

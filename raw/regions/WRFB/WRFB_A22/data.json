@@ -17,13 +17,4 @@ spawnId: 8,
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WRFB_A22",
-startPos: [43, 15],
-endRoom: "WRFB_C08",
-endPos: [47, 15],
-},
-],
 }

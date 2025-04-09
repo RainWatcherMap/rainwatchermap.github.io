@@ -17,34 +17,4 @@ spawnId: 7,
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WARE_H05",
-startPos: [108, 27],
-endRoom: "WARE_H21",
-endPos: [108, 33],
-},
-{
-type: "RoomExit",
-startRoom: "WARE_H05",
-startPos: [10, 25],
-endRoom: "WARE_H04",
-endPos: [10, 34],
-},
-{
-type: "RoomExit",
-startRoom: "WARE_H05",
-startPos: [137, 22],
-endRoom: "WARE_H06",
-endPos: [137, 34],
-},
-{
-type: "RoomExit",
-startRoom: "WARE_H05",
-startPos: [137, 10],
-endRoom: null,
-endPos: [137, 0],
-},
-],
 }

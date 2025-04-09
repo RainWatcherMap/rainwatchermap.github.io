@@ -17,41 +17,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RegionTransportation",
-startRoom: "WTDA_Z07",
-startPos: [142, 24],
-endRoom: null,
-endPos: [145, 24],
-},
-{
-type: "RoomExit",
-startRoom: "WTDA_Z07",
-startPos: [142, 22],
-endRoom: "WTDA_Z06",
-endPos: [150, 22],
-},
-{
-type: "NPCTransportation",
-startRoom: "WTDA_Z07",
-startPos: [1, 14],
-endRoom: null,
-endPos: [0, 14],
-},
-{
-type: "RoomExit",
-startRoom: "WTDA_Z07",
-startPos: [4, 10],
-endRoom: "WTDA_Z16",
-endPos: [1, 4],
-},
-{
-type: "NPCTransportation",
-startRoom: "WTDA_Z07",
-startPos: [140, 8],
-endRoom: null,
-endPos: [141, 8],
-},
-],
 }

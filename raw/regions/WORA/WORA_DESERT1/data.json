@@ -9,34 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WORA_DESERT1",
-startPos: [295, 18],
-endRoom: "WORA_CITY9",
-endPos: [301, 18],
-},
-{
-type: "DeadEnd",
-startRoom: "WORA_DESERT1",
-startPos: [9, 16],
-endRoom: null,
-endPos: [7, 16],
-},
-{
-type: "RoomExit",
-startRoom: "WORA_DESERT1",
-startPos: [9, 14],
-endRoom: "WORA_DESERT2X",
-endPos: [5, 14],
-},
-{
-type: "DeadEnd",
-startRoom: "WORA_DESERT1",
-startPos: [9, 12],
-endRoom: null,
-endPos: [6, 12],
-},
-],
 }

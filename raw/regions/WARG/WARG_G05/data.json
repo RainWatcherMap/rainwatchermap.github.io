@@ -12,27 +12,4 @@ karmaFlowers: [
 pos: [676.7056, 353.6831],
 },
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WARG_G05",
-startPos: [42, 17],
-endRoom: "WARG_S10",
-endPos: [47, 17],
-},
-{
-type: "RoomExit",
-startRoom: "WARG_G05",
-startPos: [6, 7],
-endRoom: "WARG_G06",
-endPos: [0, 7],
-},
-{
-type: "RegionTransportation",
-startRoom: "WARG_G05",
-startPos: [28, 3],
-endRoom: null,
-endPos: [28, 0],
-},
-],
 }

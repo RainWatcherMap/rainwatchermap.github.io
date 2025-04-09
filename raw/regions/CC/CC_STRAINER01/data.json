@@ -9,48 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "NPCTransportation",
-startRoom: "CC_STRAINER01",
-startPos: [57, 68],
-endRoom: null,
-endPos: [57, 69],
-},
-{
-type: "RoomExit",
-startRoom: "CC_STRAINER01",
-startPos: [76, 52],
-endRoom: "CC_SUMP02",
-endPos: [83, 52],
-},
-{
-type: "NPCTransportation",
-startRoom: "CC_STRAINER01",
-startPos: [74, 8],
-endRoom: null,
-endPos: [75, 8],
-},
-{
-type: "RoomExit",
-startRoom: "CC_STRAINER01",
-startPos: [15, 4],
-endRoom: "CC_SUMP03",
-endPos: [15, 0],
-},
-{
-type: "CreatureHole",
-startRoom: "CC_STRAINER01",
-startPos: [26, 4],
-endRoom: null,
-endPos: [26, 0],
-},
-{
-type: "CreatureHole",
-startRoom: "CC_STRAINER01",
-startPos: [38, 4],
-endRoom: null,
-endPos: [38, 0],
-},
-],
 }

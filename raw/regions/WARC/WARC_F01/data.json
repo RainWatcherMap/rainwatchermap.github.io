@@ -17,20 +17,4 @@ spawnId: 4,
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "DeadEnd",
-startRoom: "WARC_F01",
-startPos: [91, 9],
-endRoom: null,
-endPos: [94, 9],
-},
-{
-type: "RoomExit",
-startRoom: "WARC_F01",
-startPos: [91, 7],
-endRoom: "WARC_F05",
-endPos: [98, 7],
-},
-],
 }

@@ -9,48 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WAUA_A08B",
-startPos: [23, 30],
-endRoom: "WAUA_C02B",
-endPos: [23, 34],
-},
-{
-type: "RoomExit",
-startRoom: "WAUA_A08B",
-startPos: [41, 17],
-endRoom: "WAUA_E02B",
-endPos: [47, 17],
-},
-{
-type: "Normal",
-startRoom: "WAUA_A08B",
-startPos: [18, 14],
-endRoom: null,
-endPos: [29, 14],
-},
-{
-type: "Normal",
-startRoom: "WAUA_A08B",
-startPos: [29, 14],
-endRoom: null,
-endPos: [18, 14],
-},
-{
-type: "CreatureHole",
-startRoom: "WAUA_A08B",
-startPos: [36, 14],
-endRoom: null,
-endPos: [36, 13],
-},
-{
-type: "RoomExit",
-startRoom: "WAUA_A08B",
-startPos: [23, 5],
-endRoom: "WAUA_B07B",
-endPos: [23, 0],
-},
-],
 }

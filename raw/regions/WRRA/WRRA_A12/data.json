@@ -9,48 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WRRA_A12",
-startPos: [7, 30],
-endRoom: "WRRA_S03",
-endPos: [7, 34],
-},
-{
-type: "RoomExit",
-startRoom: "WRRA_A12",
-startPos: [12, 30],
-endRoom: "WRRA_A07",
-endPos: [12, 34],
-},
-{
-type: "DeadEnd",
-startRoom: "WRRA_A12",
-startPos: [46, 21],
-endRoom: null,
-endPos: [47, 21],
-},
-{
-type: "RoomExit",
-startRoom: "WRRA_A12",
-startPos: [5, 11],
-endRoom: "WRRA_B09",
-endPos: [1, 11],
-},
-{
-type: "RoomExit",
-startRoom: "WRRA_A12",
-startPos: [35, 8],
-endRoom: "WRRA_B05",
-endPos: [35, 3],
-},
-{
-type: "RegionTransportation",
-startRoom: "WRRA_A12",
-startPos: [40, 8],
-endRoom: null,
-endPos: [40, 6],
-},
-],
 }

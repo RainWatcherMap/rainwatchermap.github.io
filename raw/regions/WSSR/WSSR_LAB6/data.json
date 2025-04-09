@@ -17,27 +17,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WSSR_LAB6",
-startPos: [9, 31],
-endRoom: "WSSR_LAB2",
-endPos: [1, 31],
-},
-{
-type: "DeadEnd",
-startRoom: "WSSR_LAB6",
-startPos: [27, 31],
-endRoom: null,
-endPos: [27, 33],
-},
-{
-type: "RoomExit",
-startRoom: "WSSR_LAB6",
-startPos: [29, 31],
-endRoom: null,
-endPos: [29, 34],
-},
-],
 }

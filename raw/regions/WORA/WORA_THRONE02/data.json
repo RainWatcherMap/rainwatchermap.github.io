@@ -9,48 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WORA_THRONE02",
-startPos: [20, 209],
-endRoom: "WORA_AI",
-endPos: [12, 213],
-},
-{
-type: "RoomExit",
-startRoom: "WORA_THRONE02",
-startPos: [17, 136],
-endRoom: "WORA_THRONE09",
-endPos: [11, 126],
-},
-{
-type: "RoomExit",
-startRoom: "WORA_THRONE02",
-startPos: [51, 129],
-endRoom: "WORA_THRONE07",
-endPos: [55, 121],
-},
-{
-type: "RoomExit",
-startRoom: "WORA_THRONE02",
-startPos: [13, 57],
-endRoom: "WORA_THRONE05",
-endPos: [1, 57],
-},
-{
-type: "DeadEnd",
-startRoom: "WORA_THRONE02",
-startPos: [55, 53],
-endRoom: "WORA_THRONE10",
-endPos: [66, 52],
-},
-{
-type: "RoomExit",
-startRoom: "WORA_THRONE02",
-startPos: [34, 8],
-endRoom: "WORA_THRONE06",
-endPos: [38, 1],
-},
-],
 }

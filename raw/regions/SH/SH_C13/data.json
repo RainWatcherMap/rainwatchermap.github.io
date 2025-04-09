@@ -9,48 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "DeadEnd",
-startRoom: "SH_C13",
-startPos: [146, 22],
-endRoom: null,
-endPos: [150, 22],
-},
-{
-type: "DeadEnd",
-startRoom: "SH_C13",
-startPos: [2, 21],
-endRoom: null,
-endPos: [0, 21],
-},
-{
-type: "DeadEnd",
-startRoom: "SH_C13",
-startPos: [146, 20],
-endRoom: null,
-endPos: [150, 20],
-},
-{
-type: "RoomExit",
-startRoom: "SH_C13",
-startPos: [2, 19],
-endRoom: "SH_E05",
-endPos: [0, 19],
-},
-{
-type: "DeadEnd",
-startRoom: "SH_C13",
-startPos: [146, 18],
-endRoom: null,
-endPos: [150, 18],
-},
-{
-type: "RoomExit",
-startRoom: "SH_C13",
-startPos: [146, 16],
-endRoom: "GATE_SH_SL",
-endPos: [151, 16],
-},
-],
 }

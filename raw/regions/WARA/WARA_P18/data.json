@@ -9,48 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "CreatureHole",
-startRoom: "WARA_P18",
-startPos: [2, 70],
-endRoom: null,
-endPos: [2, 73],
-},
-{
-type: "DeadEnd",
-startRoom: "WARA_P18",
-startPos: [41, 70],
-endRoom: null,
-endPos: [45, 70],
-},
-{
-type: "RoomExit",
-startRoom: "WARA_P18",
-startPos: [41, 68],
-endRoom: "WARA_P14",
-endPos: [47, 68],
-},
-{
-type: "RegionTransportation",
-startRoom: "WARA_P18",
-startPos: [42, 59],
-endRoom: null,
-endPos: [47, 59],
-},
-{
-type: "RoomExit",
-startRoom: "WARA_P18",
-startPos: [6, 19],
-endRoom: "WARA_P12",
-endPos: [0, 19],
-},
-{
-type: "CreatureHole",
-startRoom: "WARA_P18",
-startPos: [22, 13],
-endRoom: null,
-endPos: [22, 7],
-},
-],
 }

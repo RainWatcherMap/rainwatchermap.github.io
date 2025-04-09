@@ -12,34 +12,4 @@ karmaFlowers: [
 pos: [512.8805, 505.4103],
 },
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WVWA_A06",
-startPos: [7, 25],
-endRoom: null,
-endPos: [0, 25],
-},
-{
-type: "CreatureHole",
-startRoom: "WVWA_A06",
-startPos: [43, 20],
-endRoom: null,
-endPos: [44, 20],
-},
-{
-type: "CreatureHole",
-startRoom: "WVWA_A06",
-startPos: [7, 13],
-endRoom: null,
-endPos: [6, 13],
-},
-{
-type: "RoomExit",
-startRoom: "WVWA_A06",
-startPos: [43, 11],
-endRoom: "WVWA_H01",
-endPos: [47, 14],
-},
-],
 }

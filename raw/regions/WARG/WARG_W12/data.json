@@ -17,27 +17,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "CreatureHole",
-startRoom: "WARG_W12",
-startPos: [5, 26],
-endRoom: null,
-endPos: [2, 26],
-},
-{
-type: "RoomExit",
-startRoom: "WARG_W12",
-startPos: [42, 11],
-endRoom: "WARG_W07",
-endPos: [47, 11],
-},
-{
-type: "RegionTransportation",
-startRoom: "WARG_W12",
-startPos: [32, 7],
-endRoom: null,
-endPos: [32, 3],
-},
-],
 }

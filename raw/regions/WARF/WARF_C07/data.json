@@ -12,27 +12,4 @@ karmaFlowers: [
 pos: [383.4011, 252.5517],
 },
 ],
-shortcuts: [
-{
-type: "DeadEnd",
-startRoom: "WARF_C07",
-startPos: [21, 25],
-endRoom: null,
-endPos: [22, 25],
-},
-{
-type: "RoomExit",
-startRoom: "WARF_C07",
-startPos: [43, 18],
-endRoom: "WARF_C03",
-endPos: [47, 18],
-},
-{
-type: "CreatureHole",
-startRoom: "WARF_C07",
-startPos: [31, 10],
-endRoom: null,
-endPos: [31, 6],
-},
-],
 }

@@ -9,41 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "CreatureHole",
-startRoom: "WORA_START",
-startPos: [3, 167],
-endRoom: null,
-endPos: [1, 167],
-},
-{
-type: "NPCTransportation",
-startRoom: "WORA_START",
-startPos: [44, 76],
-endRoom: null,
-endPos: [46, 76],
-},
-{
-type: "NPCTransportation",
-startRoom: "WORA_START",
-startPos: [3, 44],
-endRoom: null,
-endPos: [1, 44],
-},
-{
-type: "DeadEnd",
-startRoom: "WORA_START",
-startPos: [21, 6],
-endRoom: null,
-endPos: [21, 2],
-},
-{
-type: "RoomExit",
-startRoom: "WORA_START",
-startPos: [26, 6],
-endRoom: "WORA_DESERT11",
-endPos: [26, 1],
-},
-],
 }

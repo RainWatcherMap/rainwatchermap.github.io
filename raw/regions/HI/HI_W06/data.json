@@ -9,41 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RegionTransportation",
-startRoom: "HI_W06",
-startPos: [33, 25],
-endRoom: null,
-endPos: [36, 25],
-},
-{
-type: "RoomExit",
-startRoom: "HI_W06",
-startPos: [33, 23],
-endRoom: "HI_W05",
-endPos: [39, 23],
-},
-{
-type: "RegionTransportation",
-startRoom: "HI_W06",
-startPos: [33, 13],
-endRoom: null,
-endPos: [38, 13],
-},
-{
-type: "RegionTransportation",
-startRoom: "HI_W06",
-startPos: [33, 11],
-endRoom: null,
-endPos: [40, 11],
-},
-{
-type: "RegionTransportation",
-startRoom: "HI_W06",
-startPos: [18, 6],
-endRoom: null,
-endPos: [18, 2],
-},
-],
 }

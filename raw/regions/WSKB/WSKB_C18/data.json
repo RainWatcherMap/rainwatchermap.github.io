@@ -17,34 +17,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "DeadEnd",
-startRoom: "WSKB_C18",
-startPos: [3, 13],
-endRoom: null,
-endPos: [1, 13],
-},
-{
-type: "DeadEnd",
-startRoom: "WSKB_C18",
-startPos: [3, 11],
-endRoom: null,
-endPos: [1, 11],
-},
-{
-type: "RoomExit",
-startRoom: "WSKB_C18",
-startPos: [3, 9],
-endRoom: "WSKB_C01",
-endPos: [0, 9],
-},
-{
-type: "CreatureHole",
-startRoom: "WSKB_C18",
-startPos: [47, 9],
-endRoom: null,
-endPos: [48, 9],
-},
-],
 }

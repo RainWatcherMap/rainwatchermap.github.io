@@ -17,48 +17,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WARE_G15",
-startPos: [3, 22],
-endRoom: null,
-endPos: [0, 22],
-},
-{
-type: "DeadEnd",
-startRoom: "WARE_G15",
-startPos: [43, 18],
-endRoom: null,
-endPos: [46, 18],
-},
-{
-type: "DeadEnd",
-startRoom: "WARE_G15",
-startPos: [43, 16],
-endRoom: null,
-endPos: [46, 16],
-},
-{
-type: "DeadEnd",
-startRoom: "WARE_G15",
-startPos: [43, 14],
-endRoom: null,
-endPos: [46, 14],
-},
-{
-type: "RoomExit",
-startRoom: "WARE_G15",
-startPos: [43, 12],
-endRoom: "WARE_H01",
-endPos: [47, 12],
-},
-{
-type: "RegionTransportation",
-startRoom: "WARE_G15",
-startPos: [22, 9],
-endRoom: null,
-endPos: [22, 3],
-},
-],
 }

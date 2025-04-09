@@ -30,21 +30,21 @@ type Room = {
         warpPoints: WarpPoint[]
         echoSpots: EchoData[]
         karmaFlowers: { pos: Pos }[]
-        shortcuts: {
-            type: 'Normal' | 'RoomExit' | 'CreatureHole' | 'NPCTransportation'
-                | 'RegionTransportation' | 'DeadEnd'
-            startPos: Pos
-            startRoom: string
-            endPos: Pos
-            endRoom: string
-        }[]
     } | { mapPos?: never }
 }
 type RegionKey = string
 type Region = {
     rooms: Record<string, Room>
     data: {
-      name: string
+        name: string
+        shortcuts: {
+            roomA: string
+            roomB: string
+            posA: Pos
+            posB: Pos
+            dirA: string
+            dirB: string
+        }[]
     }
 }
 
@@ -62,7 +62,7 @@ for(const rk in allRegions) {
         if(!ro.data.mapPos) continue
         for(const sc of ro.data.shortcuts) {
             iiii++
-            if(sc.startRoom != sc.endRoom) console.log(rok, sc.endRoom)
+            if(sc.startRoom != sc.roomB) console.log(rok, sc.roomB)
         }
     }*/
 }
@@ -247,6 +247,8 @@ type Marker = {
 const halfWidth = 69 * 0.5
 const halfHeight = 39 * 0.5
 
+let showConnections = true
+
 function showRegion(regionName: RegionKey, region: Region, pos?: [number, number], layerI?: number) {
     inner.innerHTML = ''
     var minX = Infinity
@@ -258,8 +260,8 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
     const layerEls: Map<number | 'shelter', HTMLElement> = new Map()
 
     const markerLayerEls: Map<number | 'shelter', HTMLElement> = new Map()
-
     const markers: Array<Marker & { element: HTMLElement }> = []
+    const connectionLayer = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
 
     for(const k in region.rooms) {
         const room = region.rooms[k]
@@ -377,6 +379,113 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
         }
     }
 
+    {
+        let minX = Infinity
+        let maxX = -Infinity
+        let minY = Infinity
+        let maxY = -Infinity
+
+        for(const it of region.data.shortcuts) {
+            const room = region.rooms[it.roomA]
+            if(!room || !room.data.mapPos) {
+                console.warn(it.roomA)
+                continue
+            }
+            const eroom = region.rooms[it.roomB]
+            if(!eroom || !eroom.data.mapPos) {
+                console.warn(it.roomB)
+                continue
+            }
+
+            const bx = room.data.mapPos[0] / 3 - room.data.size[0] * 0.5
+            const by = room.data.mapPos[1] / 3 - room.data.size[1] * 0.5
+
+            const ebx = eroom.data.mapPos[0] / 3 - eroom.data.size[0] * 0.5
+            const eby = eroom.data.mapPos[1] / 3 - eroom.data.size[1] * 0.5
+
+            const sx = bx + it.posA[0]
+            const sy = -(by + it.posA[1])
+
+            const ex = ebx + it.posB[0]
+            const ey = -(eby + it.posB[1])
+
+            minX = Math.min(minX, sx, ex)
+            maxX = Math.max(maxX, sx, ex)
+
+            minY = Math.min(minY, sy, ey)
+            maxY = Math.max(maxY, sy, ey)
+
+            {
+                /*const m = document.createElement('div')
+                 m.classList.add('marker-karma')
+                 m.style.left = x + 'px'
+                 m.style.top = -y + 'px'*/
+
+                // Note: upside down from game
+                const directions = [[-1, 0], [0, 1], [1, 0], [0, -1]].map(it => [it[0] * 10, it[1] * 10])
+
+                /*const line = document.createElementNS('http://www.w3.org/2000/svg', 'line')
+                line.setAttribute('x1', (sx - minX).toString())
+                line.setAttribute('x2', (ex - minX).toString())
+                line.setAttribute('y1', '' + (sy - minY))
+                line.setAttribute('y2', '' + (ey - minY))
+                m.append(line)*/
+
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+                path.setAttribute(
+                    'd',
+                    'M ' + sx
+                        + ' ' + sy
+                        + ' C ' + (sx - directions[it.dirA][0])
+                        + ' ' + (sy - directions[it.dirA][1])
+                        + ' ' + (ex - directions[it.dirB][0])
+                        + ' ' + (ey - directions[it.dirB][1])
+                        + ' ' + ex
+                        + ' ' + ey
+                )
+                connectionLayer.append(path)
+            }
+
+            if(false) {
+                const x = bx + it.posA[0]
+                const y = by + it.posA[1]
+
+                const m = document.createElement('div')
+                m.classList.add('marker-karma')
+                m.style.left = x + 'px'
+                m.style.top = -y + 'px'
+                v.append(m)
+                markers.push({ type: 'karma-flower', position: [x, y], data: it, element: m })
+            }
+
+            if(false) {
+                const x = bx + it.posB[0]
+                const y = by + it.posB[1]
+
+                const m = document.createElement('div')
+                m.classList.add('marker-karma')
+                m.style.left = x + 'px'
+                m.style.top = -y + 'px'
+                v.append(m)
+                markers.push({ type: 'karma-flower', position: [x, y], data: it, element: m })
+            }
+        }
+
+        minX -= 20
+        minY -= 20
+        maxX += 20
+        maxY += 20
+        const width = maxX - minX
+        const height = maxY - minY
+
+        connectionLayer.classList.add('connection')
+        connectionLayer.style.left = minX + 'px'
+        connectionLayer.style.top = minY + 'px'
+        connectionLayer.style.width = width + 'px'
+        connectionLayer.style.height = height + 'py'
+        connectionLayer.setAttribute('viewBox', `${minX} ${minY} ${width} ${height}`)
+    }
+
     const layersArr = [...layers]
     layersArr.sort((a, b) => {
         if(a === 'shelter' && b === 'shelter') return 0
@@ -394,6 +503,8 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
         if(e) inner.append(e)
     }
 
+    inner.append(connectionLayer)
+
     let curLayer = layersArr[layerI ?? 0]
     function setLayer(l: number | 'shelter') {
         curLayer = l
@@ -409,6 +520,12 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
         }
     }
     setLayer(curLayer)
+
+    function updConnections() {
+        if(showConnections) connectionLayer.style.opacity = '1'
+        else connectionLayer.style.opacity = '0'
+    }
+    updConnections()
 
     if(!pos) pos = [(minX + maxX) * 0.5, (minY + maxY) * 0.5]
     context.camera.posX = pos[0] + halfWidth
@@ -431,6 +548,22 @@ function showRegion(regionName: RegionKey, region: Region, pos?: [number, number
             cont.append(input, document.createTextNode('' + (l === undefined ? '<none>' : l)))
             form.append(cont)
         }
+
+        {
+            const cont = document.createElement('label')
+            const input = document.createElement('input')
+            input.setAttribute('type', 'checkbox')
+            if(showConnections) input.setAttribute('checked', '')
+            input.setAttribute('name', 'connections')
+            input.onchange = () => {
+                showConnections = input.checked
+                updConnections()
+            }
+            cont.append(input, 'Room connections')
+            form.append(cont)
+
+        }
+
 
         layerEl.append(form)
     }

@@ -12,27 +12,4 @@ karmaFlowers: [
 pos: [234.0673, 370.8051],
 },
 ],
-shortcuts: [
-{
-type: "DeadEnd",
-startRoom: "WPTA_B10",
-startPos: [65, 30],
-endRoom: null,
-endPos: [55, 32],
-},
-{
-type: "DeadEnd",
-startRoom: "WPTA_B10",
-startPos: [68, 30],
-endRoom: null,
-endPos: [83, 32],
-},
-{
-type: "RoomExit",
-startRoom: "WPTA_B10",
-startPos: [92, 28],
-endRoom: "WPTA_A05",
-endPos: [98, 28],
-},
-],
 }

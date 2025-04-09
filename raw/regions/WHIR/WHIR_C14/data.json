@@ -9,41 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WHIR_C14",
-startPos: [18, 117],
-endRoom: "WHIR_A22",
-endPos: [18, 120],
-},
-{
-type: "NPCTransportation",
-startRoom: "WHIR_C14",
-startPos: [29, 98],
-endRoom: null,
-endPos: [29, 93],
-},
-{
-type: "CreatureHole",
-startRoom: "WHIR_C14",
-startPos: [39, 51],
-endRoom: null,
-endPos: [39, 50],
-},
-{
-type: "NPCTransportation",
-startRoom: "WHIR_C14",
-startPos: [19, 26],
-endRoom: null,
-endPos: [18, 26],
-},
-{
-type: "RoomExit",
-startRoom: "WHIR_C14",
-startPos: [15, 9],
-endRoom: "WHIR_B05",
-endPos: [15, 2],
-},
-],
 }

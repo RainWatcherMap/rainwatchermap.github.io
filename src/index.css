@@ -178,3 +178,13 @@ body {
         text-align: center;
     }
 }
+
+.connection {
+    position: absolute;
+    & > * {
+        fill: transparent;
+        stroke: #790202;
+        stroke-width: 0.5;
+        stroke-dasharray: 1 1;
+    }
+ }

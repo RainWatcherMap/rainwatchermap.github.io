@@ -30,13 +30,4 @@ pos: [945.0549, 352.9561],
 pos: [804.3253, 360.1853],
 },
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WORA_AI",
-startPos: [158, 18],
-endRoom: "WORA_THRONE02",
-endPos: [163, 18],
-},
-],
 }

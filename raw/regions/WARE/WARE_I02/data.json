@@ -9,34 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WARE_I02",
-startPos: [3, 14],
-endRoom: "WARE_I01x",
-endPos: [0, 14],
-},
-{
-type: "DeadEnd",
-startRoom: "WARE_I02",
-startPos: [42, 13],
-endRoom: null,
-endPos: [43, 13],
-},
-{
-type: "DeadEnd",
-startRoom: "WARE_I02",
-startPos: [42, 11],
-endRoom: null,
-endPos: [43, 11],
-},
-{
-type: "RoomExit",
-startRoom: "WARE_I02",
-startPos: [42, 9],
-endRoom: "WARE_I03",
-endPos: [47, 9],
-},
-],
 }

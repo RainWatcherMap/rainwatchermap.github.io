@@ -9,41 +9,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WORA_CITY16",
-startPos: [43, 17],
-endRoom: "WORA_CITY17",
-endPos: [47, 17],
-},
-{
-type: "DeadEnd",
-startRoom: "WORA_CITY16",
-startPos: [43, 12],
-endRoom: null,
-endPos: [46, 12],
-},
-{
-type: "DeadEnd",
-startRoom: "WORA_CITY16",
-startPos: [23, 6],
-endRoom: null,
-endPos: [23, 3],
-},
-{
-type: "RoomExit",
-startRoom: "WORA_CITY16",
-startPos: [25, 6],
-endRoom: "WORA_CITY14X",
-endPos: [25, 1],
-},
-{
-type: "DeadEnd",
-startRoom: "WORA_CITY16",
-startPos: [27, 6],
-endRoom: null,
-endPos: [27, 3],
-},
-],
 }

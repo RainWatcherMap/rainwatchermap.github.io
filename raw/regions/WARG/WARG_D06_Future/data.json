@@ -17,48 +17,4 @@ echoSpots: [
 ],
 karmaFlowers: [
 ],
-shortcuts: [
-{
-type: "RoomExit",
-startRoom: "WARG_D06_Future",
-startPos: [92, 62],
-endRoom: "WARG_S27",
-endPos: [98, 62],
-},
-{
-type: "CreatureHole",
-startRoom: "WARG_D06_Future",
-startPos: [69, 56],
-endRoom: null,
-endPos: [83, 56],
-},
-{
-type: "NPCTransportation",
-startRoom: "WARG_D06_Future",
-startPos: [68, 50],
-endRoom: null,
-endPos: [75, 47],
-},
-{
-type: "RoomExit",
-startRoom: "WARG_D06_Future",
-startPos: [144, 21],
-endRoom: "WARG_B29_Future",
-endPos: [151, 21],
-},
-{
-type: "NPCTransportation",
-startRoom: "WARG_D06_Future",
-startPos: [107, 16],
-endRoom: null,
-endPos: [107, 13],
-},
-{
-type: "CreatureHole",
-startRoom: "WARG_D06_Future",
-startPos: [73, 10],
-endRoom: null,
-endPos: [73, 6],
-},
-],
 }
