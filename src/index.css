@@ -23,6 +23,9 @@ body {
 #map_container {
     flex-grow: 1;
     position: relative;
+    background: black;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .regions {
@@ -201,7 +204,7 @@ body {
     position: absolute;
     & > * {
         fill: transparent;
-        stroke: #790202;
+        stroke: #ffffff;
         stroke-width: 0.5;
         stroke-dasharray: 1 1;
     }
@@ -210,7 +213,7 @@ body {
 #root {
     flex-grow: 1;
     display: grid;
-    grid-template-columns: 1fr 20rem;
+    grid-template-columns: 1fr 18rem;
     grid-template-rows: auto auto 1fr;
     & > .map {
         grid-column: 1;
@@ -225,7 +228,7 @@ body {
 @media screen and (orientation: portrait) {
     #root:not(:has(#tab-regions:checked)) {
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr min(30%, 10rem) auto;
+        grid-template-rows: auto 1fr auto;
         & > .layers {
             grid-row: 4;
             flex-direction: row;
@@ -246,12 +249,33 @@ body {
             grid-row: 2;
         }
         & > .element {
-            border-top: 1px solid gray;
+            display: none;
         }
         & > .regions {
             display: none;
         }
     }
+    #root:has(#tab-element:checked) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        & > .tabs {
+            display: flex;
+            grid-row: 1;
+        }
+        & > .layers {
+            display: none;
+        }
+        & > .map {
+            display: none;
+        }
+        & > .element {
+            display: block;
+        }
+        & > .regions {
+            display: none;
+        }
+    }
+
     #root:has(#tab-regions:checked) {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
@@ -272,8 +296,11 @@ body {
             display: flex;
         }
     }
-    .element {
-        overflow-y: scroll;
+    #map_container {
+        margin-top: 1rem;
+    }
+    .element > .title {
+        display: none;
     }
     .regions > .title {
         display: none;
